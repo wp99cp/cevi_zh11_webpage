@@ -27,4 +27,6 @@ auszutoben und zu entfalten. In diesem Punkt unterscheidet sich der Cevi deutlic
 Freizeitvereinen, bei uns gibt es kein ständiger Leistungsdruck, keine Qualifikationen und kein Druck in eine höhere
 Liga aufzusteigen. Die Kinder dürfen bei uns Kinder bleiben!
 
-{% image assets/Giraffe_Stufe_Sinai.jpg :: Stufe Esperia am Feuer :: Die Kinder der Stufe Esperia am %}
+
+![Die Kinder der Stufe Esperia am Feuer!](assets/Giraffe_Stufe_Sinai.jpg)
+
