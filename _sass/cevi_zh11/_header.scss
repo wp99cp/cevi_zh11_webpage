@@ -1,0 +1,145 @@
+@import "colors";
+@import "shadows_borders";
+@import "sizes";
+
+#header-container {
+  position: fixed;
+  top: 0;
+
+  height: $header-height;
+  overflow: hidden;
+  background-color: white;
+
+  #menu-opener {
+    position: fixed;
+    top: 0;
+    height: 44px;
+    width: 44px;
+    left: 0;
+    opacity: 0;
+  }
+
+  #menu-opener:checked {
+
+    width: 100vw;
+    height: 100vh;
+
+  }
+
+  #header {
+    padding: 0 10px;
+    border-bottom: $separator-border;
+    height: calc(100% - 1px);
+    overflow: hidden;
+    color: $title-gray;
+
+    .header-title {
+      display: block;
+      line-height: 50px;
+      font-weight: bold;
+      width: calc(100vw - 20px);
+      text-align: center;
+      font-size: 20px;
+      top: 10px;
+    }
+
+    .weblogo {
+      margin: 10px;
+      height: 28px;
+      position: absolute;
+      right: 0;
+    }
+
+    #open-nav {
+      position: absolute;
+      top: 0;
+      line-height: 50px;
+    }
+
+  }
+
+}
+
+#menu-opener:not(:checked) ~ #header-nav-container{
+  display: none;
+}
+
+#header-nav-container {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+  width: 280px;
+
+  background: white;
+  border-right: $separator-border;
+
+  #header-nav {
+
+    margin-left: 12px;
+
+    a {
+      line-height: 40px;
+      display: block;
+      text-decoration: none;
+      width: 100%;
+
+      span {
+        padding: 10px 12px;
+        color: $font-color;
+        font-weight: 500;
+      }
+
+    }
+
+  }
+
+}
+
+.logo-container {
+
+  width: 280px;
+  margin-bottom: 25px;
+
+  a {
+    text-decoration: none;
+  }
+
+  .iconText {
+    display: grid;
+    grid-template-columns: 70px auto;
+    grid-template-rows: 35px 15px;
+    grid-template-areas:
+        "logo logoName"
+        "logo logoSubname";
+    padding: 7px 0;
+    margin-top: 18px;
+    user-select: none;
+
+    .logo {
+      margin: 10px 19px 10px 21px;
+      grid-area: logo;
+      width: 30px;
+    }
+
+    .logoName {
+      font-size: 22px;
+      line-height: 35px;
+      color: $title-gray;
+      grid-area: logoName;
+      font-weight: 600;
+    }
+
+    .logoSubname {
+      font-size: 12px;
+      line-height: 15px;
+      grid-area: logoSubname;
+      color: $cevi-green;
+      font-weight: 600;
+    }
+
+  }
+
+}

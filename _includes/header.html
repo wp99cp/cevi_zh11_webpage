@@ -1,0 +1,38 @@
+<header id="header-container">
+    <div id="header">
+        <img alt="Weblogo des Cevi Züri 11" src="/_template_assets/weblogo.svg" class="weblogo"/>
+        <span class="header-title">Cevi Züri 11</span>
+
+        <mat-icon class="mat-icon" id="open-nav">menu</mat-icon>
+        <input id="menu-opener" name="toggle" type="checkbox"/>
+
+        <div id="header-nav-container">
+
+            <div class="logo-container">
+                <a class="iconText" href="/">
+                    <img src="/_template_assets/weblogo.svg" alt="Logo Cevi Züri 11" class="logo">
+                    <span class="logoName">Cevi Züri 11</span>
+                    <span class="logoSubname">8052 Zürich</span>
+                </a>
+                <hr>
+            </div>
+
+            <nav id="header-nav">
+
+                {%- assign pages = site.html_pages -%}
+                {%- for page in pages -%}
+                    {%- if page.main-menu -%}
+                        <a href="{{ page.url }}">
+                            <span>{{ page.main-menu }}</span>
+                        </a>
+                    {%- endif -%}
+                {% endfor %}
+
+            </nav>
+
+
+        </div>
+
+    </div>
+</header>
+

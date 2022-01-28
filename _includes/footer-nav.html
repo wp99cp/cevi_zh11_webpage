@@ -1,0 +1,16 @@
+<div id="footer-nav-container">
+    <div id="footer-nav">
+
+        <span><b>Cevi Züri 11 - Kontakt</b></span>
+
+        {%- assign pages = site.html_pages -%}
+        {%- for page in pages -%}
+        {%- if page.footer-menu -%}
+        <a href="{{ page.url }}">
+            <span>{{ page.footer-menu u }}</span>
+        </a>
+        {%- endif -%}
+        {% endfor %}
+        
+    </div>
+</div>

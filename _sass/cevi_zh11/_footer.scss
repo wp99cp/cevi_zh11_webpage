@@ -1,0 +1,50 @@
+@import "colors";
+@import "sizes";
+
+#footer-nav-container {
+  height: $footer-nav-height;
+  overflow: hidden;
+  background-color: $footer-nav-background-color;
+  text-align: center;
+  color: $footer-nav-color;
+
+  #footer-nav {
+    padding: 50px 10px;
+    overflow: hidden;
+
+    a {
+      text-decoration: none;
+      color: $footer-nav-color;
+      font-weight: normal;
+    }
+
+    span {
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+      display: block;
+    }
+
+  }
+}
+
+#footer-container {
+  height: $footer-height;
+  overflow: hidden;
+  background-color: $footer-background-color;
+  color: $footer-color;
+  text-align: center;
+
+  #footer {
+    padding: 25px 10px;
+    overflow: hidden;
+
+    span {
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+      display: block;
+    }
+
+  }
+
+}
+

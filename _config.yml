@@ -1,0 +1,17 @@
+title: Cevi Züri 11
+email: info@zh11.ch
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://zh11.ch" # the base hostname & protocol for your site
+
+include:
+  - _template_assets
+
+imageoptim:
+  svgo: false   # Disabling svgo because it throws some error
+  jpegrecompress:
+    allow_lossy: true
+    quality: 3
+  jpegoptim:
+    allow_lossy: true
+    max_quality: 75
