@@ -1,8 +1,6 @@
 ---
-layout: page
-main-menu: Unterseite
-footer-menu: Unterseite
 permalink: /cevi-zueri-11/test
+news-entry-caption: Das ist die Caption eines News Beitrages
 ---
 
 # Über den Cevi Züri 11

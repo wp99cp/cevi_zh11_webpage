@@ -13,6 +13,12 @@ defaults:
     values:
       main-menu-priority: "99"
       footer-menu-priority: "99"
+      layout: "page"
+  - scope:
+      path: "content/news"
+    values:
+      news-entry: true
+
 
 imageoptim:
   svgo: false   # Disabling svgo because it throws some error

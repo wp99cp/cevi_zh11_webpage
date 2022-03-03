@@ -1,5 +1,4 @@
 ---
-layout: page
 main-menu: Über uns
 main-menu-priority: 2
 footer-menu: Über uns

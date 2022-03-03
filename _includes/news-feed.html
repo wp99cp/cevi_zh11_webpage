@@ -1,0 +1,13 @@
+{%- assign pages = site.html_pages | where: 'news-entry', true -%}
+
+<h2>Aktuelles: {{pages[0].news-entry-caption}}</h2>
+
+<ul>
+    {%- for p in pages -%}
+    <li>
+        <a href="{{ p.url }}">
+            <span>{{ p.news-entry-caption }}</span>
+        </a>
+    </li>
+    {% endfor %}
+</ul>

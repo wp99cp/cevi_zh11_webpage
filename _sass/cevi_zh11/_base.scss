@@ -28,6 +28,11 @@ main {
     line-height: 1.05em;
     margin: 10px 0 25px;
     font-family: $base-title-font-family;
+
+    @media only screen and (min-width: $keep-nav-open-breakpoint) {
+      margin-top: 100px;
+    }
+
   }
 
   h2, h3 {
@@ -92,7 +97,7 @@ figure {
     margin: 0 -12px;
   }
 
-    img {
+  img {
     width: 100%;
   }
 
