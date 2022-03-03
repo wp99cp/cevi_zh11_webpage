@@ -8,6 +8,11 @@
   text-align: center;
   color: $footer-nav-color;
 
+  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+    padding-left: 330px;
+    padding-right: 50px;
+  }
+
   #footer-nav {
     padding: 50px 10px;
     overflow: hidden;
@@ -33,6 +38,11 @@
   background-color: $footer-background-color;
   color: $footer-color;
   text-align: center;
+
+  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+    padding-left: 330px;
+    padding-right: 50px;
+  }
 
   #footer {
     padding: 25px 10px;

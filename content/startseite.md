@@ -13,7 +13,7 @@ Im Cevi Züri 11 erlebst du jeden Samstag von 14:00 bis 17:00 Uhr ein spannendes
 Kinder und Jugendlichen bieten wir eine abwechslungsreiche und sinnvolle Freizeitbeschäftigung voller Sport, Spass und
 Action.
 
-<button>Cevianer werden!</button>
+[<button>Cevianer werden!</button>](/cevi-zueri-11)
 
 Dadurch, dass die Kinder im Cevi genau einmal die Gruppe wechseln, nämlich von den Fröschli zu den Grossen. Bieten wir
 ihnen die einmalige Gelegenheit, ihre komplette Kindheit und Jugend mit denselben Bezugspersonen (Leitern) zu
@@ -24,7 +24,7 @@ Nicht selten entstanden aus dem Cevi Beziehungen und Freundschaften, die ein Leb
 Leiter aus Stufen des Cevi Züri 11, die auch gemeinsam in die Ferien fahren oder gar zusammen in eine WG ziehen.
 
 
-![Die Kinder der Stufe Esperia am Feuer!](../assets/Giraffe_Stufe_Sinai.jpg)
+![Die Kinder der Stufe Esperia am Feuer!](/assets/Giraffe_Stufe_Sinai.jpg)
 
 Wir versuchen den Kindern die Möglichkeit zu bieten, sich in unseren Programmen frei von Leistungsdruck zu entwickeln,
 auszutoben und zu entfalten. In diesem Punkt unterscheidet sich der Cevi deutlich von anderen Sport- und

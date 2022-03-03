@@ -50,7 +50,12 @@ $ sudo apt-get install imagemagick
 ```
 
 5) Install jekyll following the instructions on the [official webpage](https://jekyllrb.com/docs/installation/).
-6) Serve the webpage locally by running the following command:
+6) Install all dependencies as listed in the `Gemfile` using
+```bash 
+$ bundle install
+```
+
+8) Serve the webpage locally by running the following command:
 
 ```bash 
 $ bundle exec jekyll serve --livereload
