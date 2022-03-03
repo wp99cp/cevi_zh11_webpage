@@ -16,4 +16,14 @@ Bei uns sind alle ab 4 Jahren herzlich willkommen.
 
 [Erfahre mehr über den Cevi Züri 11](/ueber-uns)
 
-<section> {%- include news-feed.html -%} </section>
+![Fröschli Stufe](/assets/Froeschli.jpg)
+
+<section class="news-feed-inline-container"> {%- include news-feed.html n_limit="3" -%} </section>
+
+## Fallbalken und Mietmaterial
+Planst du demnächst einen Anlass und suchst noch nach einer Attraktivität? Für das Quertier­fest, den Sporttag oder den Familien­anlass? Mit unserem Fallbalken liegst du garantiert nie daneben.
+
+### Wer getroffen wird, der fällt!
+Mit Bällen versuchen die Spieler ihre Gegner zum Fallen zu bringen. Eine kleine Metallklappe getroffen, löst ein raffinierter Mechanismus das Fallbrett aus und der Gegner fällt auf die weiche Matte.
+
+[Fallbalken mieten](/material)

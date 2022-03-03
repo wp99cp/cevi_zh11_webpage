@@ -2,6 +2,7 @@
 @import "colors";
 @import "shadows_borders";
 @import "fonts";
+@import "news-entry";
 
 html, body {
   height: 100%;
@@ -11,12 +12,28 @@ html, body {
   font-size: $base-font-size;
 }
 
-main {
+.main-content {
+
+  display: grid;
+  min-height: calc(100vh - #{$footer-height + $footer-nav-height});
+
+  @media only screen and (min-width: $news-feed-breakpoint) {
+    grid-template-columns: auto 950px;
+  }
+
+}
+
+main, .news-feed-container {
 
   margin: 0 auto;
-  max-width: 1200px;
-  padding: #{$header-height + 25px} 12px 25px 12px;
-  min-height: calc(100vh - #{$footer-height + $footer-nav-height} - 100px);
+
+  @media only screen and (min-width: $news-feed-breakpoint) {
+    margin: 0 10px;
+  }
+
+  max-width: 1000px;
+  padding: #{$header-height + 25px} 12px 75px 12px;
+  min-height: calc(100vh - #{$footer-height + $footer-nav-height} - 250px);
 
   @media only screen and (min-width: $keep-nav-open-breakpoint) {
     padding-left: 330px;
@@ -35,11 +52,18 @@ main {
 
   }
 
+  h2 {
+    margin: 50px 0 15px;
+  }
+
   h2, h3 {
     color: $title-gray;
     line-height: 1.15em;
-    margin: 25px 0 15px;
     font-family: $base-title-font-family;
+  }
+
+  h3 {
+    margin: 25px 0 15px;
   }
 
   p {

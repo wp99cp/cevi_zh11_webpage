@@ -5,10 +5,12 @@
 #header-container {
   position: fixed;
   top: 0;
+  z-index: 999;
+
+  background-color: white;
 
   height: $header-height;
   overflow: hidden;
-  background-color: white;
 
   #menu-opener {
     position: fixed;
@@ -32,6 +34,7 @@
     height: calc(100% - 1px);
     overflow: hidden;
     color: $title-gray;
+    background-color: white;
 
     .header-title {
       display: block;

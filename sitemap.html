@@ -1,0 +1,16 @@
+---
+permalink: /sitemap
+footer-menu: Sitemap
+layout: page
+---
+
+<h1>Hier findest du alle Seiten unserer Webseite aufgelistet.</h1>
+<p>Auf dieser Seite findest du die Links zu allen Unterseiten dieser Webpage:</p>
+
+{%- assign pages = site.html_pages | sort: 'url' -%}
+{%- for page in pages -%}
+<span>
+    - {{page.main-menu}} <a href="{{ page.url }}">{{ page.url  }}</a>
+</span>
+<br>
+{% endfor %}

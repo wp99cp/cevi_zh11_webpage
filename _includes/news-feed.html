@@ -1,13 +1,17 @@
-{%- assign pages = site.html_pages | where: 'news-entry', true -%}
+<h2>News aus der Cevi-Welt.</h2>
+<p>Bei uns im Cevi ist immer etwas los! Hier findest du unsere neusten Beiträge auf der Webseite.</p>
 
-<h2>Aktuelles: {{pages[0].news-entry-caption}}</h2>
 
-<ul>
-    {%- for p in pages -%}
-    <li>
-        <a href="{{ p.url }}">
-            <span>{{ p.news-entry-caption }}</span>
-        </a>
-    </li>
+<div class="news-feed">
+    {%- assign pages = site.html_pages | sort: 'date' | reverse | where: 'news-entry' , true -%}
+    {%- for p in pages limit: include.n_limit-%}
+    <div class="news-entry">
+        <span class="news-entry-date">{{ p.date | date: "%m.%d.%Y, %H:%M Uhr" }}</span>
+        <h3 class="news-entry-title">{{ p.news-entry-title}}</h3>
+        <p class="news-entry-content">{{p.news-entry-caption}} <a href="{{ p.url }}"> Mehr lesen... </a></p>
+    </div>
+
     {% endfor %}
-</ul>
+
+</div>
+
