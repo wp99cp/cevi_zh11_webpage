@@ -3,11 +3,11 @@
 
         <span><b>Cevi Züri 11 - Kontakt</b></span>
 
-        {%- assign pages = site.html_pages -%}
+        {%- assign pages = site.html_pages | sort: 'footer-menu-priority' -%}
         {%- for page in pages -%}
         {%- if page.footer-menu -%}
         <a href="{{ page.url }}">
-            <span>{{ page.footer-menu u }}</span>
+            <span>{{ page.footer-menu }}</span>
         </a>
         {%- endif -%}
         {% endfor %}

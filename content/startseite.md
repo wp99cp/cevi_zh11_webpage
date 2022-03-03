@@ -1,6 +1,7 @@
 ---
 layout: home
-main-menu: Home 
+main-menu: Home
+main-menu-priority: 1
 permalink: /
 ---
 
@@ -22,11 +23,10 @@ Schule usw.) bieten kann.
 Nicht selten entstanden aus dem Cevi Beziehungen und Freundschaften, die ein Leben lang halten. So gibt es immer wieder
 Leiter aus Stufen des Cevi Züri 11, die auch gemeinsam in die Ferien fahren oder gar zusammen in eine WG ziehen.
 
+
+![Die Kinder der Stufe Esperia am Feuer!](../assets/Giraffe_Stufe_Sinai.jpg)
+
 Wir versuchen den Kindern die Möglichkeit zu bieten, sich in unseren Programmen frei von Leistungsdruck zu entwickeln,
 auszutoben und zu entfalten. In diesem Punkt unterscheidet sich der Cevi deutlich von anderen Sport- und
 Freizeitvereinen, bei uns gibt es kein ständiger Leistungsdruck, keine Qualifikationen und kein Druck in eine höhere
 Liga aufzusteigen. Die Kinder dürfen bei uns Kinder bleiben!
-
-
-![Die Kinder der Stufe Esperia am Feuer!](assets/Giraffe_Stufe_Sinai.jpg)
-

@@ -19,11 +19,11 @@
 
             <nav id="header-nav">
 
-                {%- assign pages = site.html_pages -%}
-                {%- for page in pages -%}
-                    {%- if page.main-menu -%}
-                        <a href="{{ page.url }}">
-                            <span>{{ page.main-menu }}</span>
+                {%- assign pages = site.html_pages | sort: 'main-menu-priority' -%}
+                {%- for p in pages -%}
+                    {%- if p.main-menu -%}
+                        <a href="{{ p.url }}" class="{% if p.url == page.url %} active {% endif %}">
+                            <span>{{ p.main-menu }}</span>
                         </a>
                     {%- endif -%}
                 {% endfor %}

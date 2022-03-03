@@ -7,6 +7,13 @@ url: "https://zh11.ch" # the base hostname & protocol for your site
 include:
   - _template_assets
 
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      main-menu-priority: "99"
+      footer-menu-priority: "99"
+
 imageoptim:
   svgo: false   # Disabling svgo because it throws some error
   jpegrecompress:

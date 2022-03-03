@@ -70,21 +70,21 @@
   top: 0;
   left: 0;
 
+  border-right: $separator-border;
+
   height: 100vh;
   width: 280px;
 
   background: white;
-  border-right: $separator-border;
 
   #header-nav {
 
-    margin-left: 12px;
-
     a {
+      padding-left: 12px;
       line-height: 40px;
       display: block;
       text-decoration: none;
-      width: 100%;
+      width: calc(100% - 12px);
 
       span {
         padding: 10px 12px;
@@ -92,6 +92,10 @@
         font-weight: 500;
       }
 
+    }
+
+    .active {
+      background-color: #f3f3f3;
     }
 
   }
