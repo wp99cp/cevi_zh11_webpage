@@ -16,7 +16,6 @@ Bei uns sind alle ab 4 Jahren herzlich willkommen.
 
 [Erfahre mehr über den Cevi Züri 11](/ueber-uns)
 
-![Fröschli Stufe](/assets/Froeschli.jpg)
 
 <section class="news-feed-inline-container"> {%- include news-feed.html n_limit="3" -%} </section>
 
