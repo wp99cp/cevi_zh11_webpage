@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-
 ---
 layout: page
 ---
+
+<!DOCTYPE html>
 
 <html>
 
@@ -12,9 +12,7 @@ layout: page
 
 {%- include header.html -%}
 
-<div id="header-spacer"></div>
-
-<content class="main-content">
+<div class="main-content">
     <main class="page-content">
         {{ content }}
     </main>
@@ -23,7 +21,7 @@ layout: page
         {%- include news-feed.html n_limit="5" -%}
     </section>
 
-</content>
+</div>
 
 {%- include footer-nav.html -%}
 {%- include footer.html -%}
