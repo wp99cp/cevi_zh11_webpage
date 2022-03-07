@@ -26,3 +26,5 @@ Planst du demnächst einen Anlass und suchst noch nach einer Attraktivität? Fü
 Mit Bällen versuchen die Spieler ihre Gegner zum Fallen zu bringen. Eine kleine Metallklappe getroffen, löst ein raffinierter Mechanismus das Fallbrett aus und der Gegner fällt auf die weiche Matte.
 
 [Fallbalken mieten](/material)
+
+{% document /documents/test.pdf :: Jahresplan des Cevi Züri 11 :: 02. März 2022 %}

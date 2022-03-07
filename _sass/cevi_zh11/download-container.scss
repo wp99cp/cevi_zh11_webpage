@@ -1,0 +1,62 @@
+@import "shadows_borders";
+@import "colors";
+
+$container-spacing: 12px;
+
+.download-container a {
+
+  user-select: none;
+
+  border: $separator-border;
+  border-radius: 10px;
+  padding: $container-spacing;
+  height: 60px;
+  width: calc(100% - #{2 * $container-spacing + 4px});
+  max-width: 380px;
+
+  display: grid;
+  grid-template-columns: 60px auto;
+  grid-template-rows: 36px auto;
+  grid-column-gap: 2 * $container-spacing;
+
+  margin: 10px 0;
+
+  .download-icon {
+
+    height: 60px;
+    width: 60px;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+  }
+
+  .pdf-icon {
+    background-image: url(https://zh11.ch/templates/zh11/res/icons/pdf.svg);
+  }
+
+  .download-title {
+
+    margin-top: 10px;
+    line-height: 26px;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+
+  }
+
+  .download-change-date {
+
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+
+  }
+
+}
+
+.download-container a:hover {
+
+  background-color: $contrast-background;
+
+}
