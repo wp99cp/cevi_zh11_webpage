@@ -26,7 +26,7 @@ $container-spacing: 12px;
   padding: $container-spacing;
   height: 60px;
   width: calc(100% - #{2 * $container-spacing + 4px});
-  max-width: 380px;
+  // max-width: 380px;
 
   display: grid;
   grid-template-columns: 60px auto;

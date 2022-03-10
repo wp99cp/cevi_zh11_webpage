@@ -27,9 +27,3 @@ Mit Bällen versuchen die Spieler ihre Gegner zum Fallen zu bringen. Eine kleine
 
 [Fallbalken mieten](/material)
 
-## Das ist ein einzelnes Dokument
-[[ google_drive document :: 115qZ_Yr60DDYEBR-Ek4K962E4QdGdCl7 ]]
-
-## Dies ist ein Google Drive Folder
-[[ google_drive folder :: 1hRo56FAfwtUcE2ftzNv9tZ23YmIkdc74 ]]
-[[ google_drive folder :: 1kPPe5ruXVmJGXcpYPhIfAUzqGBrW_Kad ]]

@@ -39,7 +39,7 @@ def download_document(drive_service, file)
 end
 
 def generate_liquid_tag(file, full_file_name)
-  "{% document #{full_file_name} :: #{file.name} :: #{date_to_string(file.modified_time)}  %}"
+  "{% document #{full_file_name} :: #{file.name.gsub(/\.[^.]*\Z/, '')} :: #{date_to_string(file.modified_time)}  %}"
 end
 
 def google_drive(element_type, uuid)
