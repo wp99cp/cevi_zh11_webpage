@@ -14,7 +14,7 @@ def date_to_string(timestamp)
 
   return '' if timestamp == nil
 
-  DateTime.parse(timestamp.to_s).strftime('%d. %b %Y').to_s
+  DateTime.parse(timestamp.to_s).strftime('%d.%m.%Y').to_s
 
 end
 
@@ -83,7 +83,8 @@ def google_drive(element_type, uuid)
 
   when 'document'
 
-    file = drive_service.get_file(uuid, supports_all_drives: true)
+    fields = 'id, name, mimeType, size, parents, modifiedTime'
+    file = drive_service.get_file(uuid, supports_all_drives: true, fields: fields)
 
     full_file_name = download_document(drive_service, file)
     generate_liquid_tag(file, full_file_name)
