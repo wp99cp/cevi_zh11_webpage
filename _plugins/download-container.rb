@@ -1,5 +1,5 @@
 module Jekyll
-  class RenderTimeTag < Liquid::Tag
+  class DownloadDocument < Liquid::Tag
 
     def initialize(tag_name, input, tokens)
       super
@@ -7,7 +7,7 @@ module Jekyll
     end
 
     def split_params(params)
-      params.split("::").map(&:strip)
+      params.split('::').map(&:strip)
     end
 
     def render(context)
@@ -17,7 +17,7 @@ module Jekyll
       doc_description = args[1]
       doc_change_date = args[2]
 
-      output = "<div class=\" download-container \">
+      "<div class=\" download-container \">
         <a href=\"#{doc_path}\">
           <icon class=\" download-icon pdf-icon \"></icon>
           <span class=\" download-title \">#{doc_description}</span>
@@ -25,10 +25,9 @@ module Jekyll
         </a>
       </div>"
 
-      output
-
     end
   end
 end
 
-Liquid::Template.register_tag('document', Jekyll::RenderTimeTag)
+
+Liquid::Template.register_tag('document', Jekyll::DownloadDocument)

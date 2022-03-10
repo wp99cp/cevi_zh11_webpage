@@ -1,7 +1,21 @@
 @import "shadows_borders";
 @import "colors";
+@import "sizes";
 
 $container-spacing: 12px;
+
+.documents {
+
+  display: grid;
+  grid-column-gap: 10px;
+  margin-bottom: 30px;
+  grid-template-columns:100%;
+
+  @media only screen and (min-width: $download-breakpoint) {
+    grid-template-columns: 50% 50%;
+  }
+
+}
 
 .download-container a {
 

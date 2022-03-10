@@ -7,8 +7,10 @@ ein spannendes Programm im und um den Wald an.
 ## Wie bearbeite ich den Inhalt?
 
 Um den Inhalt der Seite zu bearbeiten, kannst du die meisten Files ein diesem Ordner ignorieren. Für dich ist lediglich
-der Ordner `content`, `docs` und `assets` wichtig. Alle anderen Ordner und Dateien werden für das Layout und den Style
-usw. gebraucht.
+der Ordner `content` und `assets` wichtig. Alle anderen Ordner und Dateien werden für das Layout und den Style usw.
+gebraucht.
+
+### Content: Der eigentliche Text der Webseite
 
 Der Ordner  `content` enthält für jede Unterseite auf der Webpage ein eigens Dokument. Geschrieben in Markdown, dies
 erlaubt es dir den Text wie in Word rudimentär zu stylen, trotzdem sieht die Webseite anschliessend einheitlich
@@ -32,9 +34,45 @@ permalink: /uerber-uns
 ---
 ```
 
+### Assets: Speicherort für Bilder usw.
+
 Im Ordner `assets` werden sämtliche Bilder gespeichert, Bilder müssen immer im `assets` Ordner gespeichert werden und
 ___NICHT___ im `imgs` Ordner. Denn hier werden die optimierten und resized Bilder automatisch abgelegt. Im Ordner `docs`
 alle Dokument, die heruntergeladen werden können.
+
+Bilder können anschliessend einfach eingefügt werden, hierzu wird der standard Markdown-Tag verwendet:
+
+```markdown
+![Titel des Bildes](/assets/path/to/image.jpg)
+```
+
+Alternativ kannst du auch direkt den entsprechenden Liquid Tag verwenden,
+siehe https://github.com/wp99cp/responsive_images_for_jekyll.
+
+### Dokumente und Ordner einfügen
+
+Dokeumente sollen direkt von Google Drive eingefügt werden. Speichere hierzu dein Dokument auf dem Cevi Züri 11 Drive im
+Ordner [Dokumente für Webseite](https://drive.google.com/drive/folders/161HIx9ViSero3GOUQQKNzQKNPswFPTPJ?usp=sharing).
+Hierzu kannst du an einer beliebigen Stelle in deinem Markdown File die folgende Zeile einfügen:
+
+```markdown
+[[ google_drive <<element_type>> :: <<element_ref_id>> ]]
+```
+
+Dabei musst du `<<element_type>>` mit `folder` oder `document` ersetzten. Je nach dem, ob du einen ganzen Ordner oder
+nur ein einzelnes Dokument zum Download freigeben willst. Die `<<element_ref_id>>` musst du mit der entsprechenden ID
+des Ordners bzw. Dokumentes ersetzten. Siehe folgendes Beispiel:
+
+1) Du möchtest folgendes Dokument
+   freigeben: [Teilnahmebedingungen](https://drive.google.com/file/d/115qZ_Yr60DDYEBR-Ek4K962E4QdGdCl7/view?usp=sharing)
+2) Das Dokument ist bereits im richtigen Ordner abgespeichert, du brauchst also nur noch die `<<element_ref_id>>`, diese
+   ist Teil des Freigabelinks: `https://drive.google.com/file/d/115qZ_Yr60DDYEBR-Ek4K962E4QdGdCl7/view?usp=sharing`
+   ergibt `115qZ_Yr60DDYEBR-Ek4K962E4QdGdCl7` als `<<element_ref_id>>`.
+3) Zusammen ergibt es folgende Zeile, wichtig ist dabei dass es vor und nach `::` jeweils einen Leerschlag hat ebenso
+   vor bzw. nach den doppelten, eckigen Klammern.
+   ```markdown
+   [[ google_drive document :: 115qZ_Yr60DDYEBR-Ek4K962E4QdGdCl7 ]]
+   ```
 
 # For developers
 
@@ -51,9 +89,14 @@ $ sudo apt-get install imagemagick
 
 5) Install jekyll following the instructions on the [official webpage](https://jekyllrb.com/docs/installation/).
 6) Install all dependencies as listed in the `Gemfile` using
+
 ```bash 
 $ bundle install
 ```
+
+7) In order to support including documents from your organization's Google Drive, you need to create a service account
+   in the Google Cloud Console and share the folder containing the document with that service account. Then place the
+   JSON containing the secrets inside the folder `_secrets/credentials.json`.
 
 8) Serve the webpage locally by running the following command:
 
@@ -61,43 +104,4 @@ $ bundle install
 $ bundle exec jekyll serve --livereload
 ```
 
-4) Start editing and enjoy!
-
-## Image Optimizing Pipeline
-
-We are using an automatic pipeline for image optimizing. This allows us for the content creator to use images out of a
-camara, those images are huge in filesize, e.g. around 2MB. The pipeline now automatically creates five images in
-different size and optimizes them for file site. From our original image we get for example a 450x300px image with a
-file size of 40kB.
-
-The image optimizing pipeline is implemented in `_plugins/pre-processor.rb` and `_plugins/image-optimizer.rb`.
-
-The first script converts the markdown image tag into a custom format, which is the used by the second script to
-generate HTML code.
-
-The pre-processor takes in markdown code and converts an image:
-
-```markdown
-![Image description used as subtitle and alt text.](assets/path/to/image.jpg)
-```
-
-to the custom liquid tag:
-
-```markdown
-{{% image assets/path/to/image.jpg :: Image description used as subtitle and alt text. :: Image description used as
-subtitle and alt text. %}
-```
-
-Which then gets processed by the image optimizer into, the image-optimizer automatically creates all needed image files
-and stores them in the `imgs` folder.
-
-```html
-<figure>
-    <img src="/imgs/path/to/image.jpg_1800x1200.jpg" alt="Image description used as subtitle and alt text."
-         srcset=" /imgs/path/to/image_1800x1200.jpg 1800w, /imgs/path/to/image_1200x800.jpg 1200w,
-                               /imgs/path/to/image_1125x750.jpg 1125w,  /imgs/path/to/image_600x400.jpg 600w,
-                               /imgs/path/to/image_450x300.jpg 450w ">
-    <span> Image description used as subtitle and alt text. </span>
-</figure>
-```
-
+9) Start editing and enjoy!
