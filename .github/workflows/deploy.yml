@@ -1,0 +1,28 @@
+name: Jekyll Deploy Page
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  jekyll_preview:
+    name: Build and deploy Jekyll site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+
+      # Build the jekyll page
+      - name: Build 🏗️
+        uses: helaili/jekyll-action@v2
+        with:
+          build_only: true
+          pre_build_commands: apk --update add imagemagick
+
+      - name: Deploy 🚀 to GitHub Pages Branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          cname: preview.zh11.ch
