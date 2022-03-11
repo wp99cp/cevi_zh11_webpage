@@ -14,6 +14,9 @@ Der Cevi Züri 11 bietet eine sinnvolle und abwechslungsreiche Freizeitbeschäft
 Jeden Samstag bietet der Cevi Züri 11 für Naturbegeisterte spannende Programme im und um den Wald an. Jeweils zwischen
 14.00 und 17.00 Uhr.
 
+## Nimm mit uns Kontakt auf
+[[ contact-form ]]
+
 Bräteln und Feuer machen, spielen, basteln, stauen, lernen, lachen, rennen, Velo fahren… Diese Liste könnte ewig
 weitergeführt werden. Unsere Programme sind vielfältig, abwechslungsreich und an die Bedürfnisse der Kinder angepasst.
 

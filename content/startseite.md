@@ -16,12 +16,19 @@ Bei uns sind alle ab 4 Jahren herzlich willkommen.
 
 [[ news-feed ]]
 
+## Nimm mit uns Kontakt auf!
+
+[[ contact-form ]]
 
 ## Fallbalken und Mietmaterial
-Planst du demnächst einen Anlass und suchst noch nach einer Attraktivität? Für das Quertierfest, den Sporttag oder den Familienanlass? Mit unserem Fallbalken liegst du garantiert nie daneben.
+
+Planst du demnächst einen Anlass und suchst noch nach einer Attraktivität? Für das Quertierfest, den Sporttag oder den
+Familienanlass? Mit unserem Fallbalken liegst du garantiert nie daneben.
 
 ### Wer getroffen wird, der fällt!
-Mit Bällen versuchen die Spieler ihre Gegner zum Fallen zu bringen. Eine kleine Metallklappe getroffen, löst ein raffinierter Mechanismus das Fallbrett aus und der Gegner fällt auf die weiche Matte.
+
+Mit Bällen versuchen die Spieler ihre Gegner zum Fallen zu bringen. Eine kleine Metallklappe getroffen, löst ein
+raffinierter Mechanismus das Fallbrett aus und der Gegner fällt auf die weiche Matte.
 
 [Fallbalken mieten](/material)
 

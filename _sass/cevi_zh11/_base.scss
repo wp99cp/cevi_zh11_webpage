@@ -4,6 +4,7 @@
 @import "fonts";
 @import "news-entry";
 @import "download-container";
+@import "contact_form";
 
 html, body {
   height: 100%;
@@ -88,16 +89,20 @@ main, .news-feed-container {
   button {
 
     display: block;
-    margin: 0 auto;
-    color: white;
     background-color: $cevi-red;
     border: none;
     border-radius: 5px;
     box-shadow: $button-shadow;
-    padding: 12px 20px;
+    padding: 16px 25px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 20px;
+    color: white;
 
+    opacity: 0.8
+
+  }
+  button:hover, button:focus {
+    opacity: 1
   }
 
 }
