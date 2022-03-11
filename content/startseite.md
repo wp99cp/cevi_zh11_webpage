@@ -14,10 +14,7 @@ Action.
 
 Bei uns sind alle ab 4 Jahren herzlich willkommen.
 
-
-<div>
-<section class="news-feed-inline-container"> {%- include news-feed.html n_limit="2" -%} </section>
-</div>
+[[ news-feed ]]
 
 
 ## Fallbalken und Mietmaterial
