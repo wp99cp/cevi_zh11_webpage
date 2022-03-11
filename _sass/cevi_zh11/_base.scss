@@ -165,3 +165,32 @@ figure {
   }
 
 }
+
+.cite-block {
+
+  display: block;
+  font-size: 26px;
+  font-family: $font-family-cite;
+  padding: 25px 0;
+  line-height: 28px;
+
+  text-align: center;
+
+  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+    margin: 10px 150px;
+    padding: 25px 12px;
+  }
+
+  .author-block {
+
+    display: block;
+    font-family: $base-font-family;
+
+    margin-top: 10px;
+
+    font-size: 12px;
+    font-style: italic;
+
+  }
+
+}

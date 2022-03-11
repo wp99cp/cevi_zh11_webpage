@@ -12,6 +12,9 @@ Im Cevi Züri 11 erlebst du jeden Samstag von 14:00 bis 17:00 Uhr ein spannendes
 Kinder und Jugendlichen bieten wir eine abwechslungsreiche und sinnvolle Freizeitbeschäftigung voller Sport, Spass und
 Action.
 
+[[ cite :: Cyrill Püntener, Abteilungsleiter :: Von nun an fährst du mit dem Velo in den Wald und hast jeden Samstag Cevi. Durch die Unterteilung in die verschiedenen Stufen, können wir optimal auf die unterschiedlichsten Bedürfnisse der Kinder eingehen. ]]
+
+
 Bei uns sind alle ab 4 Jahren herzlich willkommen.
 
 [[ news-feed ]]

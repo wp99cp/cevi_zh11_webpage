@@ -15,6 +15,7 @@ Jeden Samstag bietet der Cevi Züri 11 für Naturbegeisterte spannende Programme
 14.00 und 17.00 Uhr.
 
 ## Nimm mit uns Kontakt auf
+
 [[ contact-form ]]
 
 Bräteln und Feuer machen, spielen, basteln, stauen, lernen, lachen, rennen, Velo fahren… Diese Liste könnte ewig
@@ -32,13 +33,11 @@ Bereits ab 4 Jahren kannst du von unseren Angeboten profitieren. In der Fröschl
 zu zweimal im Monat lernen die Jungen und Mädchen im Kindergartenalter den Wald Schritt für Schritt kennen. Erleben
 Geschichten und die Natur.
 
+
 Ab der 1. Klasse, also ca. mit 6 Jahren, geht es dann so richtig los. Du wechselst zu den Grossen. Von nun an finden die
 Programme in alters- und geschlechter­getrennten Gruppen statt. Den Stufen.
 
 [[ google_drive folder :: 1hRo56FAfwtUcE2ftzNv9tZ23YmIkdc74 ]]
-
-Von nun an fährst du mit dem Velo in den Wald und hast jeden Samstag Cevi. Durch die Unterteilung in die verschiedenen
-Stufen, können wir optimal auf die unterschiedlichsten Bedürfnisse der Kinder eingehen.
 
 [[ swisstopo centered :: 47.41727/8.52754 :: 8_500 ]]
 
