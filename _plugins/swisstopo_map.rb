@@ -21,7 +21,7 @@ Jekyll::Hooks.register :pages, :pre_render do |post, payload|
   # only process if we deal with a markdown file
   if payload['site']['markdown_ext'].include? doc_ext
 
-    post.content = post.content.gsub(%r{\[\[ swisstopo centered (.+)/(.+) :: (.+) \]\]}) do
+    post.content = post.content.gsub(%r{\[\[ swisstopo centered :: (.+)/(.+) :: (.+) \]\]}) do
       swisstopo(Regexp.last_match(1), Regexp.last_match(2), Regexp.last_match(3))
     end
 
