@@ -2,16 +2,35 @@
 <p>Bei uns im Cevi ist immer etwas los! Hier findest du unsere neusten Beiträge auf der Webseite.</p>
 
 
+{%- assign pages = site.html_pages | sort: 'date' | reverse | where: 'news-entry' , true -%}
+{%- assign count_without_last = pages.size | at_most: include.n_limit | minus: 1 -%}
+
 <div class="news-feed">
-    {%- assign pages = site.html_pages | sort: 'date' | reverse | where: 'news-entry' , true -%}
-    {%- for p in pages limit: include.n_limit-%}
+
+    {%- for p in pages limit: count_without_last -%}
     <div class="news-entry">
-        <span class="news-entry-date">{{ p.date | date: "%m.%d.%Y, %H:%M Uhr" }}</span>
+        <span class="news-entry-date">{{ p.date | date: "%d.%m.%Y, %H:%M Uhr" }}</span>
         <h3 class="news-entry-title">{{ p.news-entry-title}}</h3>
         <p class="news-entry-content">{{p.news-entry-caption}} <a href="{{ p.url }}"> Mehr lesen... </a></p>
     </div>
 
     {% endfor %}
 
+
 </div>
 
+<div class="news-feed news-feed-sticky">
+
+    {%- assign p = pages[count_without_last]  -%}
+    <div class="news-entry">
+        <span class="news-entry-date">{{ p.date | date: "%m.%d.%Y, %H:%M Uhr" }}</span>
+        <h3 class="news-entry-title">{{ p.news-entry-title}}</h3>
+        <p class="news-entry-content">{{p.news-entry-caption}} <a href="{{ p.url }}"> Mehr lesen... </a></p>
+    </div>
+
+    <div class="news-entry">
+        <span class="news-entry-date">und weitere Beiträge </span>
+        <p class="news-entry-content"><a href="/cevi-news"> Alle Neuigkeiten Anzeigen ... </a></p>
+    </div>
+
+</div>
