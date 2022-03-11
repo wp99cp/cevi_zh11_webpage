@@ -37,6 +37,8 @@ Programme in alters- und geschlechter­getrennten Gruppen statt. Den Stufen.
 Von nun an fährst du mit dem Velo in den Wald und hast jeden Samstag Cevi. Durch die Unterteilung in die verschiedenen
 Stufen, können wir optimal auf die unterschiedlichsten Bedürfnisse der Kinder eingehen.
 
+[[ swisstopo centered 47.41727/8.52754 :: 8_500 ]]
+
 Von nun an fährst du mit dem Velo in den Wald und hast jeden Samstag Cevi. Durch die Unterteilung in die verschiedenen
 Stufen, können wir optimal auf die unterschiedlichsten Bedürfnisse der Kinder eingehen.
 

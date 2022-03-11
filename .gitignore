@@ -9,3 +9,5 @@ vendor
 imgs
 docs
 _secrets/credentials.json
+
+node_modules/

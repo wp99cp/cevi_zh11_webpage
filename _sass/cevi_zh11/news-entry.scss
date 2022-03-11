@@ -13,6 +13,12 @@
 
 }
 
+.news-feed-sticky {
+  margin-top: 0;
+  position: sticky;
+  top: 120px;
+}
+
 .news-feed-container {
   display: none;
 }
@@ -49,7 +55,7 @@
   position: absolute;
   height: 12px;
   width: 12px;
-  top: 0;
+  top: 6px;
   left: -28px;
   background-color: $cevi-red;
   border: 1px solid $cevi-red; // #80808085;
@@ -89,6 +95,7 @@
   }
 
 }
+
 
 .news-entry:last-child {
   margin-bottom: 0;

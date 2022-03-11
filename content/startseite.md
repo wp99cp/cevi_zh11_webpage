@@ -14,10 +14,11 @@ Action.
 
 Bei uns sind alle ab 4 Jahren herzlich willkommen.
 
-[Erfahre mehr über den Cevi Züri 11](/ueber-uns)
 
+<div>
+<section class="news-feed-inline-container"> {%- include news-feed.html n_limit="2" -%} </section>
+</div>
 
-<section class="news-feed-inline-container"> {%- include news-feed.html n_limit="3" -%} </section>
 
 ## Fallbalken und Mietmaterial
 Planst du demnächst einen Anlass und suchst noch nach einer Attraktivität? Für das Quertierfest, den Sporttag oder den Familienanlass? Mit unserem Fallbalken liegst du garantiert nie daneben.
