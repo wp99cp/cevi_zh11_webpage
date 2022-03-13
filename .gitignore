@@ -7,6 +7,7 @@ vendor
 .idea
 
 imgs
+gallery
 docs
 _secrets/credentials.json
 

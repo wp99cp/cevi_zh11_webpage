@@ -12,8 +12,7 @@ Im Cevi Züri 11 erlebst du jeden Samstag von 14:00 bis 17:00 Uhr ein spannendes
 Kinder und Jugendlichen bieten wir eine abwechslungsreiche und sinnvolle Freizeitbeschäftigung voller Sport, Spass und
 Action.
 
-[[ cite :: Cyrill Püntener, Abteilungsleiter :: Von nun an fährst du mit dem Velo in den Wald und hast jeden Samstag Cevi. Durch die Unterteilung in die verschiedenen Stufen, können wir optimal auf die unterschiedlichsten Bedürfnisse der Kinder eingehen. ]]
-
+[[ gallery 1BXA-VgYp_E5QqmS7-lUapeVZ3-mFUFaQ ]]
 
 Bei uns sind alle ab 4 Jahren herzlich willkommen.
 
@@ -27,6 +26,7 @@ Bei uns sind alle ab 4 Jahren herzlich willkommen.
 
 Planst du demnächst einen Anlass und suchst noch nach einer Attraktivität? Für das Quertierfest, den Sporttag oder den
 Familienanlass? Mit unserem Fallbalken liegst du garantiert nie daneben.
+
 
 ### Wer getroffen wird, der fällt!
 

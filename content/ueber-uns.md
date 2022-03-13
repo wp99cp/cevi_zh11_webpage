@@ -44,6 +44,8 @@ Programme in alters- und geschlechter­getrennten Gruppen statt. Den Stufen.
 Von nun an fährst du mit dem Velo in den Wald und hast jeden Samstag Cevi. Durch die Unterteilung in die verschiedenen
 Stufen, können wir optimal auf die unterschiedlichsten Bedürfnisse der Kinder eingehen.
 
+[[ cite :: Cyrill Püntener, Abteilungsleiter :: Von nun an fährst du mit dem Velo in den Wald und hast jeden Samstag Cevi. Durch die Unterteilung in die verschiedenen Stufen, können wir optimal auf die unterschiedlichsten Bedürfnisse der Kinder eingehen. ]]
+
 Mit mehrtägigeren Actionprogrammen stillen wir denn Adrenalin bedarf der Jugendlichen. Das Übernachten in einer Höhle
 oder unter freiem Himmel gehört dabei genau so dazu, wie das Bauen und Überqueren einer Seilbrücke, das Abseilen an
 einer Fellswand oder der Bau eines Baumhauses.
