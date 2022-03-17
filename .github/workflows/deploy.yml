@@ -24,7 +24,7 @@ jobs:
         uses: helaili/jekyll-action@v2
         with:
           build_only: true
-          pre_build_commands: apk --update add imagemagick imagemagick-dev imagemagick-libs
+          pre_build_commands: apk --update add imagemagick imagemagick-dev imagemagick-libs ttf-ubuntu-font-family
 
       - name: Deploy 🚀 to GitHub Pages Branch
         uses: peaceiris/actions-gh-pages@v3
