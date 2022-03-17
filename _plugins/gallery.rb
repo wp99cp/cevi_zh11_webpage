@@ -161,14 +161,14 @@ def download_photos(uuid, site_context)
     full_file_name = download_photo(drive_service, file)
 
     path_1800x1200 = resize_gallery_image(full_file_name, '1800x1200')
-    path_450x300 = resize_gallery_image(full_file_name, '450x300')
+    path_255x170 = resize_gallery_image(full_file_name, '255x170')
 
     optimized_img_paths.append path_1800x1200
-    optimized_img_paths.append path_450x300
+    optimized_img_paths.append path_255x170
 
     html_code += "<a href=\"#{path_1800x1200}\" data-cropped=\"true\" target=\"_blank\"
     data-pswp-width=\"1800\"  data-pswp-height=\"1200\" >
-    <img src=\"#{path_450x300}\" alt=\"#{file.name.gsub(/\.[^.]*\Z/, '')}\"/></a>"
+    <img loading=\"lazy\" src=\"#{path_255x170}\" alt=\"#{file.name.gsub(/\.[^.]*\Z/, '')}\"/></a>"
 
     puts full_file_name
 

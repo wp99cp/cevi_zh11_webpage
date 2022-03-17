@@ -101,6 +101,7 @@ main, .news-feed-container {
     opacity: 0.8
 
   }
+
   button:hover, button:focus {
     opacity: 1
   }
@@ -197,8 +198,24 @@ figure {
 
 .gallery {
 
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-row-gap: 5px;
+  width: calc(100% - 15px);
+
+  grid-column-gap: 5px;
+
+  a {
+    line-height: 0;
+    margin: 0;
+  }
+
   img {
-    max-width: 250px;
+    width: calc(100% - 5px);
+    min-height: 25px;
+    height: auto;
+    background-color: $background-accent-color;
+    display: block;
   }
 
 }
