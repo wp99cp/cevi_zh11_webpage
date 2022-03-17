@@ -20,6 +20,12 @@ jobs:
           build_only: true
           pre_build_commands: apk --update add imagemagick imagemagick-dev imagemagick-libs
 
+      - name: Retrieve the secret and decode it to a file
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          echo $API_KEY > ./_secrets/credentials.json
+
       - name: Deploy 🚀 to GitHub Pages Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
