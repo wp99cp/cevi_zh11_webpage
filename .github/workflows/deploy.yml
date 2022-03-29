@@ -23,7 +23,7 @@ jobs:
             echo $API_KEY > ./_secrets/credentials.json
 
       - name: Give folder access
-        run: usermod 777 $PWD
+        run: chmod 777 $PWD
 
       # Build the jekyll page
       - name: Build 🏗️
