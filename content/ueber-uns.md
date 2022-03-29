@@ -37,8 +37,6 @@ Geschichten und die Natur.
 Ab der 1. Klasse, also ca. mit 6 Jahren, geht es dann so richtig los. Du wechselst zu den Grossen. Von nun an finden die
 Programme in alters- und geschlechter­getrennten Gruppen statt. Den Stufen.
 
-[[ google_drive folder :: 1hRo56FAfwtUcE2ftzNv9tZ23YmIkdc74 ]]
-
 [[ swisstopo centered :: 47.41727/8.52754 :: 8_500 ]]
 
 Von nun an fährst du mit dem Velo in den Wald und hast jeden Samstag Cevi. Durch die Unterteilung in die verschiedenen
