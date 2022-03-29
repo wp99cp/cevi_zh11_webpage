@@ -12,7 +12,7 @@ gem 'jekyll', '~> 4.2.1'
 
 
 group :jekyll_plugins do
-  gem 'responsive-images-for-jekyll', '~> 0.3.0',  git: 'https://github.com/wp99cp/responsive_images_for_jekyll', branch: 'cevi-logo-generator'
+  gem 'responsive-images-for-jekyll', '~> 0.3.1', git: 'https://github.com/wp99cp/responsive_images_for_jekyll', branch: 'cevi-logo-generator'
 end
 
 # Performance-booster for watching directories on Windows

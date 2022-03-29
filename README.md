@@ -105,3 +105,11 @@ $ bundle exec jekyll serve --livereload
 ```
 
 9) Start editing and enjoy!
+
+# Using a docker container to build the page 
+
+```
+$ docker build -t jeykell-custom-builder .
+$ docker run --rm   --volume="$PWD:/srv/jekyll"   -it jeykell-custom-builder  jekyll build
+$ docker run --rm   --volume="$PWD:/srv/jekyll"   --publish [::1]:4000:4000  -it jeykell-custom-builder  jekyll serve
+```

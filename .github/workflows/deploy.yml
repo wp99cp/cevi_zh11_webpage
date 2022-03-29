@@ -13,24 +13,18 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
+      - name: Build the Docker image # push The image to the docker hub
+        run: docker build -t jeykell-custom-builder .
+
       - name: Retrieve the secret and decode it to a file
         env:
             API_KEY: ${{ secrets.API_KEY }}
         run: |
             echo $API_KEY > ./_secrets/credentials.json
 
-      - name: Install fonts
-        run : |
-          wget -O /usr/local/share/fonts/Ubuntu-Regular.ttf https://github.com/google/fonts/blob/3dd4ac120f92c8b9b0e4ec09c167e7552d475073/ufl/ubuntu/Ubuntu-Regular.ttf
-          fc-cache -f -v
-          fc-list
-
       # Build the jekyll page
       - name: Build 🏗️
-        uses: helaili/jekyll-action@v2
-        with:
-          build_only: true
-          pre_build_commands: apk --update add imagemagick imagemagick-dev imagemagick-libs
+        run: docker run --rm --volume="$PWD:/srv/jekyll" -it jeykell-custom-builder  jekyll build
 
       - name: Deploy 🚀 to GitHub Pages Branch
         uses: peaceiris/actions-gh-pages@v3

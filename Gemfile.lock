@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/wp99cp/responsive_images_for_jekyll
-  revision: 38a168f9dd622498c2c42dbd516d5af3c2beab5c
+  revision: 9440ba8f80eb73d981f0fef1e756a8c2de945835
   branch: cevi-logo-generator
   specs:
-    responsive-images-for-jekyll (0.3.0)
+    responsive-images-for-jekyll (0.3.1)
       image_optim (~> 0.31.1)
       image_optim_pack (~> 0.8.0.20220131)
       jekyll (> 3.3, < 5.0)
@@ -156,7 +156,7 @@ DEPENDENCIES
   google-api-client
   googleauth
   jekyll (~> 4.2.1)
-  responsive-images-for-jekyll (~> 0.3.0)!
+  responsive-images-for-jekyll (~> 0.3.1)!
   wdm (~> 0.1.1)
   webrick (~> 1.7)
 
