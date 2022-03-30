@@ -77,6 +77,21 @@ des Ordners bzw. Dokumentes ersetzten. Siehe folgendes Beispiel:
    [[ google_drive document :: 115qZ_Yr60DDYEBR-Ek4K962E4QdGdCl7 ]]
    ```
 
+### Karte mit eingezeichnetem Punkt
+
+Mit folgender Zeile kannst du an der aktuellen Stelle eine Karte einfügen. Dabei kannst du den Kartenmassstab und den
+Mittelpunkt angeben. Für die Karte wird Swisstopo verwendet.
+
+[[ swisstopo centered :: 47.41727/8.52754 :: 8_500 ]]
+
+### Gallery mit Fotos aus einem Google Drive Ordner
+
+Mit folgender Zeile kannst du eine Foto-Gallery erstellt aus einem beliebeigen Google Drive Ordner erstellen.
+
+```markdown
+[[ gallery 1BXA-VgYp_E5QqmS7-lUapeVZ3-mFUFaQ ]]
+```
+
 # For developers
 
 This page uses a custom Jekyll template.
