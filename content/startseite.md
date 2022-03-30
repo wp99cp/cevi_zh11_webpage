@@ -25,14 +25,7 @@ Bei uns sind alle ab 4 Jahren herzlich willkommen.
 Planst du demnächst einen Anlass und suchst noch nach einer Attraktivität? Für das Quertierfest, den Sporttag oder den
 Familienanlass? Mit unserem Fallbalken liegst du garantiert nie daneben.
 
-
-
-<div class="iframe-container">
-<input id="iframe-fullscreen-toggle" type="checkbox" >
-<label class="mat-icon" id="iframe-fullscreen-button-open" for="iframe-fullscreen-toggle" > open_in_full </label>
-<label class="mat-icon" id="iframe-fullscreen-button-close" for="iframe-fullscreen-toggle" > close_fullscreen </label>
-<iframe src="https://finanzaktion.ch" class="iframe"></iframe>
-</div>
+[[ gallery 1BXA-VgYp_E5QqmS7-lUapeVZ3-mFUFaQ ]]
 
 ### Wer getroffen wird, der fällt!
 

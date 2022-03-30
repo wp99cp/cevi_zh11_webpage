@@ -33,7 +33,6 @@ Bereits ab 4 Jahren kannst du von unseren Angeboten profitieren. In der Fröschl
 zu zweimal im Monat lernen die Jungen und Mädchen im Kindergartenalter den Wald Schritt für Schritt kennen. Erleben
 Geschichten und die Natur.
 
-
 Ab der 1. Klasse, also ca. mit 6 Jahren, geht es dann so richtig los. Du wechselst zu den Grossen. Von nun an finden die
 Programme in alters- und geschlechter­getrennten Gruppen statt. Den Stufen.
 
