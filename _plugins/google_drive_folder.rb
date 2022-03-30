@@ -55,9 +55,9 @@ def google_drive(element_type, uuid)
 
   drive_service = Google::Apis::DriveV3::DriveService.new
   drive_service.authorization = authorizer
-  drive_service.client_options.send_timeout_sec=12000
-  drive_service.client_options.open_timeout_sec=12000
-  drive_service.client_options.read_timeout_sec=12000
+  drive_service.client_options.send_timeout_sec=20
+  drive_service.client_options.open_timeout_sec=20
+  drive_service.client_options.read_timeout_sec=20
 
 
   case element_type
