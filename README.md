@@ -1,3 +1,5 @@
+[![Jekyll Deploy Page](https://github.com/wp99cp/cevi_zh11_webpage/actions/workflows/deploy.yml/badge.svg)](https://github.com/wp99cp/cevi_zh11_webpage/actions/workflows/deploy.yml)
+
 # Cevi Züri 11 - Webseite
 
 Dieses Repo enthält die offizielle Webseite des Cevi Züri 11. Unser Ziel ist es alle Kindern und Jugendlichen eine

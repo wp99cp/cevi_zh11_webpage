@@ -10,18 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout the source code
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
-      - name: Build the Docker image # push The image to the docker hub
+      # Used downstream for building the jekyll page
+      - name: Build the Docker image
         run: docker build -t jeykell-builder .
 
+      # fetch and encrypt access credentials for Google Drive
       - name: Retrieve the secret and decode it to a file
         env:
             API_KEY: ${{ secrets.API_KEY }}
         run: |
             echo $API_KEY > ./_secrets/credentials.json
 
+      # Allow the docker container to write to the mounted directory
       - name: Give folder access
         run: chmod 777 $PWD
 

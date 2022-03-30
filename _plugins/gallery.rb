@@ -138,9 +138,9 @@ def download_photos(uuid, site_context)
 
   drive_service = Google::Apis::DriveV3::DriveService.new
   drive_service.authorization = authorizer
-  drive_service.client_options.send_timeout_sec=120
-  drive_service.client_options.open_timeout_sec=120
-  drive_service.client_options.read_timeout_sec=120
+  drive_service.client_options.send_timeout_sec=12000
+  drive_service.client_options.open_timeout_sec=12000
+  drive_service.client_options.read_timeout_sec=12000
 
   puts uuid
 
