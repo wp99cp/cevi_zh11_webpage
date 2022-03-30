@@ -25,10 +25,6 @@ jobs:
         run: |
             echo $API_KEY > ./_secrets/credentials.json
 
-      # Allow the docker container to write to the mounted directory
-      - name: Give folder access
-        run: chmod 777 $PWD
-
       # We cache static resources, i.g. optimized images and documents
       # Make sure to NOT cache the `_secrets` directory, it contains the Google Drive Access Credentials!
       - name: Restore static files from cache
@@ -39,6 +35,10 @@ jobs:
             imgs
             docs
           key: ${{ runner.os }}-static-files
+
+      # Allow the docker container to write to the mounted directory
+      - name: Give folder access
+        run: chmod -R 777 $PWD
 
       # Build the jekyll page
       - name: Build 🏗️
