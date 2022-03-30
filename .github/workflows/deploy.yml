@@ -35,7 +35,7 @@ jobs:
         with:
           path: |
             gallery
-            img
+            imgs
             docs
           key: ${{ runner.os }}-static-files
 
