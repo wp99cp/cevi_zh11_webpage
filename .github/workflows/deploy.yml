@@ -30,6 +30,7 @@ jobs:
         run: chmod 777 $PWD
 
       # We cache static resources, i.g. optimized images and documents
+      # Make sure to NOT cache the `_secrets` directory, it contains the Google Drive Access Credentials!
       - name: Restore static files from cache
         uses: actions/cache@v3
         with:

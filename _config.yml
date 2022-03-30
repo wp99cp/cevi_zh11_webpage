@@ -6,7 +6,7 @@ url: "https://zh11.ch" # the base hostname & protocol for your site
 
 include:
   - _template_assets
-  - script/gallery
+  - script/gallery/*
 
 defaults:
   - scope:
