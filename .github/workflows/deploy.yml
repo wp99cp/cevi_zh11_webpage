@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build the Docker image # push The image to the docker hub
-        run: docker build -t jeykell-custom-builder .
+        run: docker build -t jeykell-builder .
 
       - name: Retrieve the secret and decode it to a file
         env:
@@ -27,7 +27,7 @@ jobs:
 
       # Build the jekyll page
       - name: Build 🏗️
-        run: docker run --rm --volume="$PWD:/srv/jekyll" jeykell-custom-builder  jekyll build
+        run: docker run --rm --volume="$PWD:/srv/jekyll" -it jeykell-builder
 
       - name: Deploy 🚀 to GitHub Pages Branch
         uses: peaceiris/actions-gh-pages@v3

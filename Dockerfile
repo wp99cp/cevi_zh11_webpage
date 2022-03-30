@@ -5,3 +5,6 @@ RUN apk --no-cache add php8-pecl-imagick ghostscript
 
 # Font copy
 COPY ./fonts/ /usr/share/fonts/
+
+COPY ./docker-entrypoint.sh ./
+ENTRYPOINT ["./docker-entrypoint.sh"]

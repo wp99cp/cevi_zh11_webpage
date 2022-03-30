@@ -78,7 +78,40 @@ des Ordners bzw. Dokumentes ersetzten. Siehe folgendes Beispiel:
 
 This page uses a custom Jekyll template.
 
-## Local Development of the page
+## Local Development using Docker
+
+The easiest way to build and serve the site locally is using a Docker container. Assuming you have installed docker, you
+just need to run the following commands without the need of installing any packages or additional software.
+
+Build the container and flag it with `jeykell-builder`
+
+```bash
+$ docker build -t jeykell-builder .
+
+```
+
+Now you can build the page by running the build `jeykell-builder` container:
+
+```bash
+$ docker run --rm --volume="$PWD:/srv/jekyll" -it jeykell-builder
+```
+
+This creates a new directory `./_site` with our build site.
+
+If you wish to serve the page locally, you can run the docker container with the `"jekyll serve"` argument. This will
+first build and then execute these additional commands inside the brackets. This two step build process is needed in
+order to add static files, i.g. the `docs` folder correctly:
+
+```bash
+$ docker run --rm --volume="$PWD:/srv/jekyll" --publish [::1]:4000:4000  -it jeykell-builder "jekyll serve"
+```
+
+Start editing and enjoy!
+
+## Local Development without docker
+
+Alternatively, you can install all dependencies directly to your system and build the page without the docker container.
+Please follow the instructions provided:
 
 1) Clone this repo into a local folder
 2) Install imagemagick:
@@ -106,10 +139,3 @@ $ bundle exec jekyll serve --livereload
 
 9) Start editing and enjoy!
 
-# Using a docker container to build the page 
-
-```
-$ docker build -t jeykell-custom-builder .
-$ docker run --rm   --volume="$PWD:/srv/jekyll"   -it jeykell-custom-builder  jekyll build
-$ docker run --rm   --volume="$PWD:/srv/jekyll"   --publish [::1]:4000:4000  -it jeykell-custom-builder  jekyll serve
-```
