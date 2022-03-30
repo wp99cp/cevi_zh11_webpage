@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # build page
-jekyll build
+jekyll build --incremental
 
 # Copy folder with documents to destination directory ./_site
 mkdir -p ./_site/docs
