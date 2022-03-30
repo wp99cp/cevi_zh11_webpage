@@ -27,7 +27,7 @@ jobs:
 
       # Build the jekyll page
       - name: Build 🏗️
-        run: docker run --rm --volume="$PWD:/srv/jekyll" -it jeykell-builder
+        run: docker run --rm --volume="$PWD:/srv/jekyll" jeykell-builder
 
       - name: Deploy 🚀 to GitHub Pages Branch
         uses: peaceiris/actions-gh-pages@v3
