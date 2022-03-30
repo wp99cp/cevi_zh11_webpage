@@ -1,4 +1,5 @@
 [![Jekyll Deploy Page](https://github.com/wp99cp/cevi_zh11_webpage/actions/workflows/deploy.yml/badge.svg)](https://github.com/wp99cp/cevi_zh11_webpage/actions/workflows/deploy.yml)
+[![pages-build-deployment](https://github.com/wp99cp/cevi_zh11_webpage/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/wp99cp/cevi_zh11_webpage/actions/workflows/pages/pages-build-deployment)
 
 # Cevi Züri 11 - Webseite
 

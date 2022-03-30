@@ -51,11 +51,14 @@ def google_drive(element_type, uuid)
     json_key_io: File.open(credentials), scope: scope
   )
 
+  Google::Apis::RequestOptions.default.retries = 5
+
   drive_service = Google::Apis::DriveV3::DriveService.new
   drive_service.authorization = authorizer
   drive_service.client_options.send_timeout_sec=12000
   drive_service.client_options.open_timeout_sec=12000
   drive_service.client_options.read_timeout_sec=12000
+
 
   case element_type
   when 'folder'

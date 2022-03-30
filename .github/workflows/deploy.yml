@@ -1,4 +1,4 @@
-name: Jekyll Deploy Page
+name: Build Jekyll Page
 
 on:
   push:
@@ -28,6 +28,16 @@ jobs:
       # Allow the docker container to write to the mounted directory
       - name: Give folder access
         run: chmod 777 $PWD
+
+      # We cache static resources, i.g. optimized images and documents
+      - name: Restore static files from cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            gallery
+            img
+            docs
+          key: ${{ runner.os }}-static-files
 
       # Build the jekyll page
       - name: Build 🏗️

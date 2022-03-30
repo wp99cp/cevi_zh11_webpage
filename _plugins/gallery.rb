@@ -136,6 +136,8 @@ def download_photos(uuid, site_context)
     json_key_io: File.open(credentials), scope: scope
   )
 
+  Google::Apis::RequestOptions.default.retries = 5
+
   drive_service = Google::Apis::DriveV3::DriveService.new
   drive_service.authorization = authorizer
   drive_service.client_options.send_timeout_sec=12000
