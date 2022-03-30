@@ -25,7 +25,8 @@ jobs:
         run: |
             echo $API_KEY > ./_secrets/credentials.json
 
-      # We cache static resources, i.g. optimized images and documents
+      # We cache static resources, i.g. optimized images and documents as well as
+      # the _site folder and .jekyll-cache directory
       # Make sure to NOT cache the `_secrets` directory, it contains the Google Drive Access Credentials!
       - name: Restore static files from cache
         uses: actions/cache@v3
@@ -34,6 +35,8 @@ jobs:
             gallery
             imgs
             docs
+            _site
+            .jekyll-cache
           # Updates the cache after every run, by saving a new copy
           key: ${{ runner.os }}-static-files-${{ github.run_id }}
           restore-keys: ${{ runner.os }}-static-files-
