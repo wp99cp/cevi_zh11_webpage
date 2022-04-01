@@ -4,6 +4,7 @@ permalink: /cevi-news
 
 # Cevi News
 
+Bei uns im Cevi ist immer etwas los! Hier findest du alle News-Beiträge in chronologischer Reihenfolge.
 
 <div class="news-feed">
 
