@@ -8,6 +8,13 @@ include:
   - _template_assets
   - script/gallery/*
 
+exclude:
+  - backend
+  - fonts # only used during building
+  - docker-entrypoint.sh
+  - Dockerfile
+  - README.md
+
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
@@ -19,7 +26,6 @@ defaults:
       path: "content/news"
     values:
       news-entry: true
-
 
 imageoptim:
   svgo: false   # Disabling svgo because it throws some error

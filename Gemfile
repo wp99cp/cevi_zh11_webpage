@@ -20,5 +20,5 @@ gem 'wdm', '~> 0.1.1', :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem 'webrick', '~> 1.7'
 
-gem 'google-api-client'
+gem 'google-apis-drive_v3'
 gem 'googleauth'

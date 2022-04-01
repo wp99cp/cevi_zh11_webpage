@@ -82,7 +82,9 @@ des Ordners bzw. Dokumentes ersetzten. Siehe folgendes Beispiel:
 Mit folgender Zeile kannst du an der aktuellen Stelle eine Karte einfügen. Dabei kannst du den Kartenmassstab und den
 Mittelpunkt angeben. Für die Karte wird Swisstopo verwendet.
 
+```markdown
 [[ swisstopo centered :: 47.41727/8.52754 :: 8_500 ]]
+```
 
 ### Gallery mit Fotos aus einem Google Drive Ordner
 
@@ -105,7 +107,6 @@ Build the container and flag it with `jeykell-builder`
 
 ```bash
 $ docker build -t jeykell-builder .
-
 ```
 
 Now you can build the page by running the build `jeykell-builder` container:
@@ -121,7 +122,7 @@ first build and then execute these additional commands inside the brackets. This
 order to add static files, i.g. the `docs` folder correctly:
 
 ```bash
-$ docker run --rm --volume="$PWD:/srv/jekyll" --publish [::1]:4000:4000  -it jeykell-builder "jekyll serve"
+$ docker run --rm --volume="$PWD:/srv/jekyll" --publish [::1]:4000:4000  -it jeykell-builder jekyll serve  --livereload
 ```
 
 Start editing and enjoy!
@@ -152,7 +153,7 @@ $ bundle install
 8) Serve the webpage locally by running the following command:
 
 ```bash 
-$ bundle exec jekyll serve --livereload
+$ bundle exec jekyll serve --livereload --host=0.0.0.0
 ```
 
 9) Start editing and enjoy!

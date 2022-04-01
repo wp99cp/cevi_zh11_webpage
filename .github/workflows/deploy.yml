@@ -49,6 +49,7 @@ jobs:
       - name: Build 🏗️
         run: docker run --rm --volume="$PWD:/srv/jekyll" jeykell-builder
 
+      # Deploy Frontend to GitHub Pages
       - name: Deploy 🚀 to GitHub Pages Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
