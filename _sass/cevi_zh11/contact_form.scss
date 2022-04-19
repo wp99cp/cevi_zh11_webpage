@@ -10,8 +10,10 @@
   margin: 25px 0;
   grid-template-columns: 100%;
 
+  position: relative;
+
   @media only screen and (min-width: $keep-nav-open-breakpoint) {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     grid-column-gap: 10px;
   }
 
@@ -20,11 +22,29 @@
 
     @media only screen and (min-width: $keep-nav-open-breakpoint) {
       grid-column-start: 2;
-      width: calc(100% - 12px);
+      width: 100%
 
     }
   }
 
+}
+
+.input-container-sending {
+  --content_msg: 'Testnachricht';
+}
+
+.input-container-sending:before {
+  content: var(--content_msg);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  background-color: white;
+  z-index: 1;
+  border: $separator-border;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .styled-input {
@@ -34,7 +54,7 @@
 
   width: 100%;
   @media only screen and (min-width: $keep-nav-open-breakpoint) {
-    width: calc(100% - 10px - 2px);
+    width: calc(100% - 2px);
   }
 }
 

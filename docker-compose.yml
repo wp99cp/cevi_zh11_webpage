@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+
+  backend:
+    build:
+      context: ./backend/.
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build:
+      context: .
+    volumes:
+      - type: bind
+        source: ./
+        target: /srv/jekyll
+    command:
+        - 'jekyll serve  --livereload'
+    ports:
+      - "4000:4000"
+    depends_on:
+      - backend

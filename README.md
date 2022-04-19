@@ -100,8 +100,22 @@ This page uses a custom Jekyll template.
 
 ## Local Development using Docker
 
-The easiest way to build and serve the site locally is using a Docker container. Assuming you have installed docker, you
-just need to run the following commands without the need of installing any packages or additional software.
+The easiest way to build and serve the site locally is using docker-compose. Assuming you have installed docker and
+docker-compose, you just need to run the following command without the need of installing any packages or additional
+software.
+
+The command will build and server the frontend and start up a local backend server for the webpage.
+
+```bash
+$ docker-compose up --build
+```
+
+Start editing and enjoy!
+
+### Using Standalone Docker Containers
+
+The application is split in two docker containers, one for the frontend and one for the backend. Here is how to build
+and server the frontend.
 
 Build the container and flag it with `jeykell-builder`
 
@@ -124,8 +138,6 @@ order to add static files, i.g. the `docs` folder correctly:
 ```bash
 $ docker run --rm --volume="$PWD:/srv/jekyll" --publish [::1]:4000:4000  -it jeykell-builder jekyll serve  --livereload
 ```
-
-Start editing and enjoy!
 
 ## Local Development without docker
 
