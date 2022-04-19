@@ -103,14 +103,14 @@ function send_message(uuid, backend_url) {
         if (res.status === 200) {
             set_timed_status(form_element, 'Deine Nachricht wurde erfolgreich übertragen.', 1)
             form_element.reset()
-        } else {
-            set_timed_status(form_element, 'Es ist eine Fehler aufgetreten, versuche es erneut!', -1)
-        }
+        } else
+            throw res;
+
 
     }).catch(err => {
 
         console.log("Request failed! response:", err);
-        set_timed_status(form_element, 'Es ist eine Fehler aufgetreten, versuche es erneut!', -1)
+        set_timed_status(form_element, 'Es ist eine Fehler aufgetreten. Das Formular wurde nicht übermittelt!', -1)
 
     });
 
