@@ -1,6 +1,6 @@
 ---
-main-menu: Home 
-main-menu-priority: 1 
+main-menu: Startseite
+main-menu-priority: 1
 permalink: /
 ---
 
@@ -14,18 +14,20 @@ Action.
 
 Bei uns sind alle ab 4 Jahren herzlich willkommen.
 
+[Erfahre mehr über den Cevi Züri 11](/ueber-uns) oder [nimm mit uns Kontakt auf](/kontakt).
+
+![Die Kinder der Stufe Sinai am Feuer.](/assets/Sinai_am_Feuer.jpg)
+
+[[ gallery 1WjNedRvyPxlytjKgTeUGI7GlC-Xv-CtU ]]
+
 [[ news-feed ]]
-
-## Nimm mit uns Kontakt auf!
-
-[[ contact-form ]]
 
 ## Fallbalken und Mietmaterial
 
 Planst du demnächst einen Anlass und suchst noch nach einer Attraktivität? Für das Quertierfest, den Sporttag oder den
 Familienanlass? Mit unserem Fallbalken liegst du garantiert nie daneben.
 
-[[ gallery 1BXA-VgYp_E5QqmS7-lUapeVZ3-mFUFaQ ]]
+![Unser Fallbalken kannst du mieten.](/assets/Fallbalken.jpg)
 
 ### Wer getroffen wird, der fällt!
 
@@ -33,4 +35,5 @@ Mit Bällen versuchen die Spieler ihre Gegner zum Fallen zu bringen. Eine kleine
 raffinierter Mechanismus das Fallbrett aus und der Gegner fällt auf die weiche Matte.
 
 [Fallbalken mieten](/material)
+
 

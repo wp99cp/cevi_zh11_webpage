@@ -1,8 +1,6 @@
 ---
-main-menu: Über uns 
-main-menu-priority: 2 
-footer-menu: Über uns 
-footer-menu-priority: 1 
+main-menu: Über uns
+main-menu-priority: 2
 permalink: /ueber-uns
 ---
 
@@ -46,5 +44,3 @@ Stufen, können wir optimal auf die unterschiedlichsten Bedürfnisse der Kinder 
 Mit mehrtägigeren Actionprogrammen stillen wir denn Adrenalin bedarf der Jugendlichen. Das Übernachten in einer Höhle
 oder unter freiem Himmel gehört dabei genau so dazu, wie das Bauen und Überqueren einer Seilbrücke, das Abseilen an
 einer Fellswand oder der Bau eines Baumhauses.
-
-![Die Kinder der Fröschli am bastelln.](/assets/Froeschli.jpg)
