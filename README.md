@@ -83,7 +83,7 @@ Mit folgender Zeile kannst du an der aktuellen Stelle eine Karte einfügen. Dabe
 Mittelpunkt angeben. Für die Karte wird Swisstopo verwendet.
 
 ```markdown
-[[ swisstopo centered :: 47.41727/8.52754 :: 8_500 ]]
+[[ swisstopo centered :: 47.41727/8.52754 :: 8_500 :: 47.42010/8.53516 47.41702/8.52278 ]]
 ```
 
 ### Gallery mit Fotos aus einem Google Drive Ordner
