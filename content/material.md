@@ -1,5 +1,5 @@
 ---
-main-menu: Materialmiete
+main-menu: Material
 main-menu-priority: 8
 footer-menu: Materialmiete
 footer-menu-priority: 2

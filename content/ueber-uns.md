@@ -1,5 +1,5 @@
 ---
-main-menu: Über uns
+main-menu: Cevi Züri 11
 main-menu-priority: 2
 permalink: /ueber-uns
 ---
