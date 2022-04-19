@@ -195,7 +195,7 @@ def gallery(path, site)
   html_code = download_photos(path, site)
 
   "<div>
-<script type=\"module\" src=\"script/gallery/gallery.js\"></script>
+<script type=\"module\" src=\"/script/gallery/gallery.js\"></script>
 #{html_code}
 </div>"
 

@@ -1,7 +1,7 @@
 import PhotoSwipeLightbox from "/script/gallery/photoswipe-lightbox.esm.min.js";
 
 var getUrl = window.location;
-var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+var baseUrl = getUrl.protocol + "//" + getUrl.host + "/"
 
 
 const lightbox = new PhotoSwipeLightbox({
