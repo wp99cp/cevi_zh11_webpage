@@ -3,6 +3,11 @@
 @import "fonts";
 @import "sizes";
 
+
+h3 ~ .input-container {
+  margin: -12px 0 25px 0;
+}
+
 .input-container {
   display: grid;
 
