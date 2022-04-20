@@ -3,6 +3,8 @@
     "public": "_site",
     "ignore": [
       "firebase.json"
-    ]
+    ],
+    "cleanUrls": true,
+    "trailingSlash": true
   }
 }
