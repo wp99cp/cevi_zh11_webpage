@@ -50,7 +50,7 @@ jobs:
         run: docker run --rm --volume="$PWD:/srv/jekyll" jeykell-builder
 
       # Deploy Frontend to GitHub Pages
-      - name: Deploy 🚀 to GitHub Pages Branch
+      - name: Deploy 🚀 to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           entryPoint: ./_site
