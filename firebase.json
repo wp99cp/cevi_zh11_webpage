@@ -1,10 +1,25 @@
 {
-  "hosting": {
-    "public": "_site",
-    "ignore": [
-      "firebase.json"
-    ],
-    "cleanUrls": true,
-    "trailingSlash": false
-  }
+  "hosting": [
+    {
+      "site": "cevi-zh11-webpage",
+      "public": "_site",
+      "ignore": [
+        "firebase.json"
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false
+    },
+    {
+      "site": "cevi-zh11-backend",
+      "rewrites": [
+        {
+          "source": "**",
+          "run": {
+            "serviceId": "cevi-zh11-webpage",
+            "region": "europe-west6"
+          }
+        }
+      ]
+    }
+  ]
 }
