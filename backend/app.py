@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, request, send_file, jsonify
 from flask_cors import CORS
 
@@ -14,5 +16,6 @@ def return_status():
     return jsonify(response)
 
 if __name__ == "__main__":
+    PORT = int(os.environ.get("PORT", 5000))
     app.run(debug=(os.environ.get("DEBUG", "False").lower() in ('true', '1', 't')), host="0.0.0.0",
-            port=int(os.environ.get("PORT", 8080)))
+            port=int(os.environ.get("PORT", PORT)))
