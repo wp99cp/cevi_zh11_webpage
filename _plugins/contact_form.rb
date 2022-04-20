@@ -13,7 +13,7 @@ def contact_form(config)
 
   "<form class=\"input-container\" id=\"#{uuid}\"
       action=\"javascript:send_message('#{uuid}', '#{config['backend']}')\">
-  <script src=\"script/contact_form/contact_form.js\"/></script>
+  <script src=\"/script/contact_form/contact_form.js\"/></script>
     <div class=\"styled-input\">
 			<input type=\"text\" required />
 			<label>Vorname</label>
