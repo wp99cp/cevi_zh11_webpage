@@ -16,7 +16,7 @@ Bei uns sind alle ab 4 Jahren herzlich willkommen.
 
 [Erfahre mehr über den Cevi Züri 11](/ueber-uns) oder [nimm mit uns Kontakt auf](/kontakt).
 
-![Die Kinder der Stufe Sinai am Feuer.](/assets/Sinai_am_Feuer.jpg)
+![Der Zvieri auf dem Feuer ist ein fester Bestandteil unserer Programme.](/assets/Sinai_am_Feuer.jpg)
 
 [[ gallery 1WjNedRvyPxlytjKgTeUGI7GlC-Xv-CtU ]]
 
@@ -35,5 +35,4 @@ Mit Bällen versuchen die Spieler ihre Gegner zum Fallen zu bringen. Eine kleine
 raffinierter Mechanismus das Fallbrett aus und der Gegner fällt auf die weiche Matte.
 
 [Fallbalken mieten](/material)
-
 
