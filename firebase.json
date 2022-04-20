@@ -5,6 +5,6 @@
       "firebase.json"
     ],
     "cleanUrls": true,
-    "trailingSlash": true
+    "trailingSlash": false
   }
 }
