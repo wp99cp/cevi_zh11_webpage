@@ -57,6 +57,11 @@ $container-spacing: 12px;
     font-weight: bold;
     overflow: hidden;
 
+    @media only screen and (max-width: $keep-nav-open-breakpoint) {
+      font-size: 18px;
+      margin-top: 8px;
+    }
+
   }
 
   .download-change-date {
