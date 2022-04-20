@@ -230,7 +230,7 @@ figure {
 
 @media only screen and (min-width: 1425px) {
 
-  figure ~ .gallery-container {
+  figure + .gallery-container {
     margin-top: -50px;
   }
 
