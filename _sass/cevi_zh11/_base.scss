@@ -99,7 +99,8 @@ main, .news-feed-container {
     font-size: 20px;
     color: white;
 
-    opacity: 0.8
+    opacity: 0.8;
+    cursor: pointer;
 
   }
 
@@ -126,6 +127,7 @@ a {
   cursor: pointer;
   display: inline;
   font-weight: 600;
+
 }
 
 #viewDiv {
@@ -197,12 +199,20 @@ figure {
 
 }
 
+@media only screen and (min-width: 1425px) {
+
+  figure ~ .gallery-container {
+    margin-top: -50px;
+  }
+
+}
+
 .gallery {
 
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: auto auto auto auto;
   grid-row-gap: 5px;
-  width: calc(100% - 15px);
+  width: 100%;
 
   grid-column-gap: 5px;
 
@@ -212,7 +222,7 @@ figure {
   }
 
   img {
-    width: calc(100% - 5px);
+    width: 100%;
     min-height: 25px;
     height: auto;
     background-color: $background-accent-color;
