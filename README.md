@@ -174,5 +174,3 @@ $ bundle exec jekyll serve --livereload --host=0.0.0.0
 
 We use firebase for hosting our webpage. Each commit / PR to the master branch triggers an automatic deployment to the
 firebase _live_ channel. This workflow is defined in `./github/workflows/deploy.yml`.
-
-For this project we use the 
