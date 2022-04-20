@@ -162,7 +162,9 @@ $ bundle install
    in the Google Cloud Console and share the folder containing the document with that service account. Then place the
    JSON containing the secrets inside the folder `_secrets/credentials.json`.
 
-8) Serve the webpage locally by running the following command:
+   The service account needs access to the Google Drive API.
+
+9) Serve the webpage locally by running the following command:
 
 ```bash 
 $ bundle exec jekyll serve --livereload --host=0.0.0.0
