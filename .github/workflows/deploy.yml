@@ -51,8 +51,10 @@ jobs:
 
       # Deploy Frontend to GitHub Pages
       - name: Deploy 🚀 to GitHub Pages Branch
-        uses: peaceiris/actions-gh-pages@v3
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          cname: preview.zh11.ch
+          entryPoint: ./_site
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CEVI_ZH11_WEBPAGE }}'
+          channelId: live
+          projectId: cevi-zh11-webpage
