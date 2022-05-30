@@ -171,9 +171,9 @@ def download_photos(uuid, site_context)
     optimized_img_paths.append path_1800x1200
     optimized_img_paths.append path_255x170
 
-    html_code += "<a href=\"#{path_1800x1200}\" data-cropped=\"true\" target=\"_blank\"
+    html_code += "<a href=\"{{ site.baseurl }}/#{path_1800x1200}\" data-cropped=\"true\" target=\"_blank\"
     data-pswp-width=\"1800\"  data-pswp-height=\"1200\" >
-    <img loading=\"lazy\" src=\"#{path_255x170}\" alt=\"#{file.name.gsub(/\.[^.]*\Z/, '')}\"/></a>"
+    <img loading=\"lazy\" src=\"{{ site.baseurl }}/#{path_255x170}\" alt=\"#{file.name.gsub(/\.[^.]*\Z/, '')}\"/></a>"
 
     puts full_file_name
 
@@ -195,7 +195,7 @@ def gallery(path, site)
   html_code = download_photos(path, site)
 
   "<div class=\"gallery-container\">
-<script type=\"module\" src=\"/script/gallery/gallery.js\"></script>
+<script type=\"module\" src=\"{{ site.baseurl }}/script/gallery/gallery.js\"></script>
 #{html_code}
 </div>"
 

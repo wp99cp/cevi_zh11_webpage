@@ -12,7 +12,7 @@ def swisstopo(map_center_lat, map_center_lon, scale, pkts)
     const map_center = [#{map_center_lon}, #{map_center_lat}];
     const scale = #{scale};
 </script>
-<script type=\"module\" src=\"script/swisstopo/basic.js\"></script>
+<script type=\"module\" src=\"{{ site.baseurl }}/script/swisstopo/basic.js\"></script>
 </figure>"
 
 end
