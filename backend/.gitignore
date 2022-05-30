@@ -1,4 +1,4 @@
 __pycache__
 
 # Contains Mailadresses which should not be publically viewable
-mail_config.json
+config/mail_config.json

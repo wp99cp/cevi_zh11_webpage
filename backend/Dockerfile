@@ -8,4 +8,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app
 
-CMD exec gunicorn --workers 1 --threads 1 --timeout 120 --reload --bind :$PORT app:app
+RUN chmod +x ./docker-entrypoint.sh
+ENTRYPOINT ["./docker-entrypoint.sh"]

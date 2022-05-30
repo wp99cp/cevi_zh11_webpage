@@ -15,7 +15,7 @@ from googleapiclient.errors import HttpError
 CLIENT_TOKEN_FILE = 'token/token.json'
 CLIENT_CREDENTIALS_FILE = 'credentials/credentials.json'
 SECRET_DIRECTORY = './secrets/'
-MAIL_CONFIG = 'mail_config.json'
+MAIL_CONFIG = './config/mail_config.json'
 SCOPES = ['https://www.googleapis.com/auth/gmail.send']
 
 
