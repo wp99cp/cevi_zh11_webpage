@@ -1,0 +1,4 @@
+{
+  "dispatcher_address": "noreply@example.com",
+  "default_receiver": "receiver@example.com"
+}
