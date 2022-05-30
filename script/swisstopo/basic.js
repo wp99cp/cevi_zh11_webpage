@@ -13,7 +13,7 @@ fetch(base_url + '/script/swisstopo/style.json').then(resp => resp.json().then(s
         (Map, MapView, VectorTileLayer, WMTSLayer, watchUtils, TileInfo, Graphic, GraphicsLayer) => {
 
             const cevi_symbol = {
-                type: "picture-marker", url: base_url + "_template_assets/weblogo.svg", width: "32px", height: "32px"
+                type: "picture-marker", url: base_url + "/_template_assets/weblogo.svg", width: "32px", height: "32px"
             };
 
             const tileLayer = new VectorTileLayer({
