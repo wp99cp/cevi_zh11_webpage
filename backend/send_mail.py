@@ -47,9 +47,9 @@ class MailSender:
                 flow = InstalledAppFlow.from_client_secrets_file(SECRET_DIRECTORY + CLIENT_CREDENTIALS_FILE, SCOPES)
                 creds = flow.run_local_server(port=0)
 
-            # Save the credentials for the next run
-            with open(SECRET_DIRECTORY + CLIENT_TOKEN_FILE, 'w') as token:
-                token.write(creds.to_json())
+                # Save the credentials for the next run
+                with open(SECRET_DIRECTORY + CLIENT_TOKEN_FILE, 'w') as token:
+                    token.write(creds.to_json())
 
         self.service = build('gmail', 'v1', credentials=creds)
 
