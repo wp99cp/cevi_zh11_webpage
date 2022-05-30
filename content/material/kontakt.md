@@ -7,9 +7,11 @@ permalink: /material/kontakt
 ## Kontakt Materialteam
 
 Hast du Fragen rund zum Mietmaterial? Möchtest du etwas mieten? Oder benötigst du eine Auskunft von unserem Matteam?
+
 Unser Matchef Cédric Fauster v/o Chnobli steht dir gerne zu Verfügung.
 
 ### Kontakt Materialteam
+
 [[ contact-form ]]
 
 ## Weitere Kontakte

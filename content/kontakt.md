@@ -31,7 +31,6 @@ deinen Stufenleiter.
 
 TODO: Kontaktformular
 
-
 ### Weitere Kontakte / Vorstand
 
 Möchtest du unseren Fallbalken mieten, brauchst du ein Zelt oder die Gulaschkanone? Möchtest du Kontakt mit unserem

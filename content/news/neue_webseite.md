@@ -7,7 +7,8 @@ date: 2022-04-19T16:00
 
 # Der Cevi Züri 11 hat eine neue Webseite
 
-Stolz können wir verkünden, dass der cevi Züri 11 eine neue Webseite hat.
+Stolz können wir verkünden, dass der Cevi Züri 11 eine neue Webseite hat. Hier findest du alle Informationen rund um den
+Cevi. Egal, ob für das nächste Schupper-Programm, für die Miete unseres Fallbalkens oder für das nächste Sommerlager.
 
-Hier findest du alle Informationen rund um den Cevi. Egal, ob für das nächste Schupper-Programm,
-für die Miete unseres Fallbalkens oder für das nächste Sommerlager, auf [zh11.ch](https://zh11.ch) findest du die entsprechenden Infos.
+Hast du einen Fehler gefunden? Oder möchtest du eine Kritik oder eine Anregung zu unserer Web-Seite hinterlassen, dann
+kannst du [hier](/kontakt) eine Nachricht hinterlassen.
