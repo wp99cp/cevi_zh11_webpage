@@ -4,6 +4,10 @@ on:
   push:
     branches: [ master ]
 
+    # Frontend will not be rebuild if only backend changed
+    paths-ignore:
+      - backend/*
+
 jobs:
   jekyll_preview:
     name: Build and deploy Jekyll site
@@ -21,9 +25,9 @@ jobs:
       # fetch and encrypt access credentials for Google Drive
       - name: Retrieve the secret and decode it to a file
         env:
-            API_KEY: ${{ secrets.API_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
         run: |
-            echo $API_KEY > ./_secrets/credentials.json
+          echo $API_KEY > ./_secrets/credentials.json
 
       # We cache static resources, i.g. optimized images and documents as well as
       # the _site folder and .jekyll-cache directory
