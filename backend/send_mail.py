@@ -16,7 +16,7 @@ CLIENT_TOKEN_FILE = 'token/token.json'
 CLIENT_CREDENTIALS_FILE = 'credentials/credentials.json'
 SECRET_DIRECTORY = './secrets/'
 MAIL_CONFIG = './config/mail_config.json'
-SCOPES = ['https://www.googleapis.com/auth/gmail.send']
+SCOPES = ['https://www.googleapis.com/auth/gmail.compose', 'https://www.googleapis.com/auth/gmail.send']
 
 
 class MailReceiver(str, Enum):
@@ -79,3 +79,4 @@ class MailSender:
 
 if __name__ == '__main__':
     message_sender = MailSender()
+
