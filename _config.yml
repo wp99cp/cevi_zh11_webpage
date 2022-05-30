@@ -10,10 +10,18 @@ include:
   - script/gallery/*
 
 exclude:
-  - backend
+
+  # folders to ignore
+  - backend # this folder contains the source code for the backend
   - fonts # only used during building
+  - .idea # used by IDA
+
+  # Docker files
   - docker-entrypoint.sh
+  - docker-compose.yml
   - Dockerfile
+
+  # other ignored files
   - README.md
 
 defaults:

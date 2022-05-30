@@ -6,18 +6,32 @@ services:
     build:
       context: ./backend/.
     ports:
-      - "5000:5000"
+      - "5000:5000" # backend listens on port 5000
+
+    # We bind the app directory. This is needed
+    # to enable auto-reload of the backend.
+    volumes:
+      - type: bind
+        source: ./backend
+        target: /app
 
   frontend:
     build:
       context: .
+
+    # Set the environment variable `MODE=development`
+    # to enable the development mode (and use localhost as backend).
+    environment:
+      - MODE=development
+
+    ports:
+      - "4000:4000" # the port for the frontend
+      - "35729:35729" # port used for livereload
+
     volumes:
       - type: bind
         source: ./
         target: /srv/jekyll
-    command:
-        - 'jekyll serve  --livereload'
-    ports:
-      - "4000:4000"
+
     depends_on:
       - backend

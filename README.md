@@ -126,7 +126,7 @@ $ docker build -t jeykell-builder .
 Now you can build the page by running the build `jeykell-builder` container:
 
 ```bash
-$ docker run --rm --volume="$PWD:/srv/jekyll" -it jeykell-builder
+$ docker run --rm --volume="$PWD:/srv/jekyll" jeykell-builder
 ```
 
 This creates a new directory `./_site` with our build site.
@@ -136,7 +136,7 @@ first build and then execute these additional commands inside the brackets. This
 order to add static files, i.g. the `docs` folder correctly:
 
 ```bash
-$ docker run --rm --volume="$PWD:/srv/jekyll" --publish [::1]:4000:4000  -it jeykell-builder jekyll serve  --livereload
+$ docker run --rm --volume="$PWD:/srv/jekyll" --publish [::1]:4000:4000 -eMODE=development -it jeykell-builder
 ```
 
 ## Local Development without docker
