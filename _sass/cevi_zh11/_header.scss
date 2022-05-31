@@ -99,12 +99,16 @@
 
   #header-nav {
 
+    height: calc(100vh - 150px);
+    overflow: auto;
+
     a {
       padding-left: 12px;
       line-height: 40px;
       display: block;
       text-decoration: none;
-      width: calc(100% - 12px);
+      width: calc(100% - 12px - 10px);
+      margin-right: 10px;
 
       span {
         padding: 10px 12px;
@@ -116,6 +120,42 @@
 
     .active {
       background-color: #f3f3f3;
+    }
+
+  }
+
+  .menu-item {
+    position: relative;
+    
+    .submenu {
+      padding-left: 25px;
+    }
+
+    .mat-icon, .submenu-opener {
+      line-height: 40px;
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+
+    .submenu-opener {
+      opacity: 0;
+      z-index: 99;
+      height: 40px;
+      width: 40px;
+      margin: 0;
+      border-width: 0;
+    }
+
+    .submenu-opener:not(:checked) ~ .submenu {
+      display: none;
+    }
+
+    .mat-icon {
+      background-color: white;
+      font-size: 35px;
+      text-align: center;
+      width: 40px;
     }
 
   }

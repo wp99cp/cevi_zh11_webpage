@@ -1,5 +1,8 @@
 ---
 permalink: /stufen/froeschli
+sub-menu: Stufen
+sub-menu-name: Fröschli
+sub-menu-priority: 3
 ---
 
 # Der Cevi Fröschli richtet sich an alle Kindergartenkinder!

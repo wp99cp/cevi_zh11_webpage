@@ -22,14 +22,35 @@
                 {%- assign pages = site.html_pages | sort: 'main-menu-priority' -%}
                 {%- for p in pages -%}
                     {%- if p.main-menu -%}
-                        <a href="{{ p.url }}" class="{% if p.url == page.url %} active {% endif %}">
-                            <span>{{ p.main-menu }}</span>
-                        </a>
+                            <div class="menu-item">
+
+                                <a href="{{ p.url }}" class="{% if p.url == page.url %} active {% endif %}">
+                                    <span>{{ p.main-menu }}</span>
+                                </a>
+
+                                <!-- Include Submenu -->
+                                {%- assign subpages = site.html_pages | sort: 'sub-menu-priority' | where: 'sub-menu' , p.main-menu -%}
+                                {%- assign selected = subpages | map: "url" -%}
+
+                                {%- if subpages.size >= 1 -%}
+                                    <mat-icon class="mat-icon" class="expand-more">expand_more</mat-icon>
+                                    <input class="submenu-opener" name="toggle" type="checkbox"
+                                           {% if selected contains page.url %} checked {% endif %} />
+                                    <div class="submenu">
+                                        <mat-icon class="mat-icon" class="expand-less">expand_less</mat-icon>
+                                        {%- for sub_p in subpages -%}
+                                            <a href="{{ sub_p.url }}" class="{% if sub_p.url == page.url %} active {% endif %}">
+                                                <span>{{ sub_p.sub-menu-name}}</span>
+                                            </a>
+                                        {% endfor %}
+                                    </div>
+                                {%- endif -%}
+
+                            </div>
                     {%- endif -%}
                 {% endfor %}
 
             </nav>
-
 
         </div>
 
