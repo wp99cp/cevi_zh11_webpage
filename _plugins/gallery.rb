@@ -105,6 +105,7 @@ end
 #
 def _process_img(src_path, img_dim, dest_path)
   image = MiniMagick::Image.open(src_path)
+  image = image.auto_orient
 
   image.strip
   image.resize img_dim
