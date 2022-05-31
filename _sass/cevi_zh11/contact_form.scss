@@ -81,7 +81,7 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 
 .styled-input, .styled-textarea {
   input:focus ~ label, textarea:focus ~ label,
-  input:not([type=checkbox]):not([value=""]) ~ label, textarea:not([value=""])~ label,
+  input:not([type=checkbox]):not([content=""]) ~ label, textarea:not([content=""])~ label,
   input[type=date] ~ label {
     font-size: 12px;
     top: -5px;

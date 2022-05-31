@@ -9,7 +9,7 @@ function extract_content(form_cells) {
     const form_content = {};
 
     form_cells.forEach(cell => {
-        form_content[cell.nextElementSibling.textContent] = cell.value;
+        form_content[cell.nextElementSibling.textContent] = cell.getAttribute('content');
     });
 
     return form_content;
@@ -119,15 +119,22 @@ function send_message(uuid, backend_url) {
 
 /**
  * Resets the form to its initial state.
+ *
  * @param form_element
+ *
  */
 function reset_form(form_element) {
 
     const form_cells = document.querySelectorAll(`#${form_element.id} > div > input, #${form_element.id} > div > textarea`);
 
     form_cells.forEach(cell => {
-        cell.setAttribute('value', '');
+        cell.setAttribute('content', '');
         cell.value = ''
+
+        // if cell is a checkbox, then uncheck it
+        if (cell.type === 'checkbox')
+            cell.checked = false;
+
     });
 
 }

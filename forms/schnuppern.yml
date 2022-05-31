@@ -23,7 +23,7 @@ cells:
 
   - element: input
     label: Mail
-    type: mail
+    type: email
     required: true
 
   - element: input
