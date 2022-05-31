@@ -24,7 +24,7 @@ def contact_form(config, config_file)
 
       html_code += "<div class=\"styled-input " +
         (cell['style_wide'] ? "wide" : "") + "\">"
-      html_code += "<input onkeyup=\"this.setAttribute('value', this.value);\" value=\"\" type=\""
+      html_code += "<input value='' onkeyup=\"this.setAttribute('value', this.value);\" type=\""
       html_code += (cell['type'] ? cell['type'] : "text")
       html_code += "\" "
       html_code += (cell['required'] ? " required />" : " />")
@@ -33,7 +33,7 @@ def contact_form(config, config_file)
 
       html_code += "<div class=\"styled-textarea " +
         (cell['style_wide'] ? "wide" : "") + "\">"
-      html_code += "<textarea onkeyup=\"this.setAttribute('value', this.value);\" value=\"\""
+      html_code += "<textarea value='' onkeyup=\"this.setAttribute('value', this.value);\" "
       html_code += (cell['required'] ? " required >" : ">") + "</textarea>"
 
     elsif cell['element'] == 'checkbox'
