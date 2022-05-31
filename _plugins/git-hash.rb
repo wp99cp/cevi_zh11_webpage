@@ -16,8 +16,8 @@ module Jekyll
 
     def generate(site)
 
-      hash = %x( git rev-parse --short "$GITHUB_SHA" ).strip
-      puts "Hash:" + hash
+      hash = %x( git rev-parse --short $GITHUB_SHA ).strip
+      puts "Hash [" + %x(echo -n $GITHUB_SHA) + "]: " + hash
 
       site.data['hash'] = hash
     end

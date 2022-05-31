@@ -49,7 +49,7 @@ jobs:
 
       # Build the jekyll page
       - name: Build 🏗️
-        run: docker run --rm --volume="$PWD:/srv/jekyll" jeykell-builder -e GITHUB_SHA=$GITHUB_SHA
+        run: docker run --rm --volume="$PWD:/srv/jekyll" -e GITHUB_SHA=$GITHUB_SHA jeykell-builder
 
       # Deploy Frontend to GitHub Pages
       - name: Deploy 🚀 to Firebase Hosting
