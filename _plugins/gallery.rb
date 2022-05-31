@@ -120,6 +120,9 @@ def _process_img(src_path, img_dim, dest_path)
   image.format "jpeg"
   image.write dest_path
 
+  # File permissions must be set if the format got changed.
+  File.chmod(0644, dest_path)
+
   optimize(dest_path)
 
 end
