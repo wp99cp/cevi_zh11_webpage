@@ -17,7 +17,7 @@ Viele unserer Kinder haben bereits eine Waldspielgruppe besucht und sehen im Cev
 Angebotes. Outdoor-Neulinge sind bei uns aber genau so willkommen - Die Kinder gewöhnen sich in diesem Alter sehr
 schnell an die Natur!
 
-### Wer kann daran teilnehmen?
+[[ gallery 1UqoT-yTu5I2cRSB75yFaci_4e9dNoduK ]]
 
 Angesprochen werden Mädchen und Buben vom 4. bis zum 6. Lebensjahr (Kindergärtner). Wenn die Kinder siebenjährig sind,
 so wechseln sie zu den "Grossen"; den Cevianern.
