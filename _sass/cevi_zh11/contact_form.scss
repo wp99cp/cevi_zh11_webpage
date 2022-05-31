@@ -18,7 +18,7 @@ h3 ~ .input-container {
   position: relative;
 
   @media only screen and (min-width: $keep-nav-open-breakpoint) {
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-column-gap: 10px;
   }
 
@@ -52,7 +52,7 @@ h3 ~ .input-container {
   justify-content: center;
 }
 
-.styled-input {
+.styled-input, .styled-textarea, .styled-checkbox {
   position: relative;
   margin: 10px 0;
   overflow: hidden;
@@ -79,17 +79,24 @@ input:hover, textarea:hover, input:focus, textarea:focus {
   background-color: $contrast-background;
 }
 
-input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
-  font-size: 12px;
-  top: -5px;
-  -webkit-transition: all 0.225s ease;
-  transition: all 0.225s ease;
-  padding: 25px 30px 0 30px;
+.styled-input, .styled-textarea {
+  input:focus ~ label, textarea:focus ~ label,
+  input:not([type=checkbox]):not([value=""]) ~ label, textarea:not([value=""])~ label,
+  input[type=date] ~ label {
+    font-size: 12px;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+    padding: 25px 30px 0 30px;
 
+  }
 }
 
+input[type=date]{
+  resize: none;
+}
 
-.styled-input label {
+.styled-input label, .styled-textarea label {
   padding: 20px 30px 0 30px;
   position: absolute;
   top: 10px;
@@ -100,7 +107,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   font-size: 18px;
 }
 
-.styled-input.wide {
+.styled-input.wide, .styled-textarea.wide, .styled-checkbox.wide {
   @media only screen and (min-width: $keep-nav-open-breakpoint) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -123,10 +130,19 @@ textarea {
   min-height: 150px;
 }
 
-input[type=checkbox] + label {
-  font-style: italic;
+.styled-checkbox {
+  display: grid;
+  grid-template-columns: 40px auto;
+  margin: 15px 0;
 }
 
-input[type=checkbox]:checked + label {
-  font-style: normal;
+input[type=checkbox] {
+  height: 25px;
+  width: 25px;
+}
+
+input[type=checkbox] + label {
+  line-height: 30px;
+  position: relative;
+  padding: 0;
 }

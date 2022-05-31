@@ -102,7 +102,7 @@ function send_message(uuid, backend_url) {
 
         if (res.status === 200) {
             set_timed_status(form_element, 'Deine Nachricht wurde erfolgreich übertragen.', 1)
-            form_element.reset()
+            reset_form(form_element)
         } else
             throw res;
 
@@ -114,5 +114,20 @@ function send_message(uuid, backend_url) {
 
     });
 
+
+}
+
+/**
+ * Resets the form to its initial state.
+ * @param form_element
+ */
+function reset_form(form_element) {
+
+    const form_cells = document.querySelectorAll(`#${form_element.id} > div > input, #${form_element.id} > div > textarea`);
+
+    form_cells.forEach(cell => {
+        cell.setAttribute('value', '');
+        cell.value = ''
+    });
 
 }

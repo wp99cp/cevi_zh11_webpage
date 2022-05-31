@@ -12,7 +12,7 @@ Unser Matchef Cédric Fauster v/o Chnobli steht dir gerne zu Verfügung.
 
 ### Kontakt Materialteam
 
-[[ contact-form ]]
+[[ contact-form :: forms/material.yml ]]
 
 ## Weitere Kontakte
 

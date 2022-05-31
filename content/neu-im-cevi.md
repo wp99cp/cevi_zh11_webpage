@@ -14,4 +14,5 @@ Fülle einfach das nachfolgende Kontaktformular aus und melde dich somit für ei
 Wir werden dich anschliessend per Mail kontaktieren und alle Details zum nächsten Programm zusenden.
 
 Wir freuen uns auf dich!
-[[ contact-form ]]
+
+[[ contact-form :: forms/schnuppern.yml ]]

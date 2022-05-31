@@ -1,0 +1,45 @@
+# see backend/config/forms.yml for the corresponding mail address
+receiver: neu_im_cevi_receiver
+
+# defines the input cells of the form
+cells:
+
+  - element: input
+    label: Vorname
+    required: true
+
+  - element: input
+    label: Nachname
+    required: true
+
+  - element: input
+    label: Geburtsdatum
+    required: true
+    type: date
+
+  - element: input
+    label: Geschlecht
+    required: true
+
+  - element: input
+    label: Mail
+    type: mail
+    required: true
+
+  - element: input
+    label: Telefonnummer (der Eltern)
+    required: true
+
+  - element: input
+    label: Adresse
+    required: true
+    style_wide: true
+
+  - element: textarea
+    label: Nachricht
+    style_wide: true
+
+  - element: checkbox
+    label: Ich bestätige die <a href="/teilnahmebedingungen">Teilnahmebedingungen des Cevi Züri 11</a> gelsen zu haben und bin damit einverstanden.
+    required: true
+    style_wide: true

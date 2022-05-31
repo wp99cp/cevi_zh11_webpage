@@ -12,7 +12,7 @@ Hast du noch offene Fragen, oder ein Anliegen rund um den Cevi Züri 11? Dann ni
 
 ### Kontaktformular für allgemeine Fragen:
 
-[[ contact-form ]]
+[[ contact-form :: forms/default.yml ]]
 
 ## Wir stellen uns vor.
 

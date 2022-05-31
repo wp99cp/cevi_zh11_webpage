@@ -1,0 +1,29 @@
+# see backend/config/forms.yml for the corresponding mail address
+receiver: material_receiver
+
+# defines the input cells of the form
+cells:
+
+  - element: input
+    label: Vorname
+    required: true
+
+  - element: input
+    label: Nachname
+
+  - element: input
+    label: Mail
+    type: mail
+    required: true
+    style_wide: true
+
+  - element: checkbox
+    label: Ich frage für einen Jugendverein an?
+
+  - element: checkbox
+    label: Ich frage für eine Organization des Cevi's an?
+
+  - element: textarea
+    label: Nachricht / Anfrage
+    required: true
+    style_wide: true
