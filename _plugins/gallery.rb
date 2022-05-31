@@ -38,7 +38,7 @@ def download_photo(drive_service, file)
 
   FileUtils.mkdir_p directory unless File.directory?(directory)
 
-  puts "  Download file: #{file_path}".yellow
+  puts "   Download file: #{file_path}".yellow
   drive_service.get_file(file.id, download_dest: file_path, supports_all_drives: true)
   file_path
 
@@ -132,7 +132,7 @@ $imageoptim_options = $imageoptim_options["imageoptim"] || {}
 $image_optim = ImageOptim.new $imageoptim_options
 
 def optimize(image)
-  puts "Optimizing #{image}".green
+  puts "   Optimizing #{image}".green
   $image_optim.optimize_image! image
 end
 
