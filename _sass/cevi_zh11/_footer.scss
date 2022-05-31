@@ -32,13 +32,15 @@
   }
 }
 
-#footer-container {
+#footer-container, #footer a {
   height: $footer-height;
   overflow: hidden;
   background-color: $footer-background-color;
   color: $footer-color;
   text-align: center;
+}
 
+#footer-container {
   @media only screen and (min-width: $keep-nav-open-breakpoint) {
     padding-left: 330px;
     padding-right: 50px;
@@ -47,6 +49,7 @@
   #footer {
     padding: 25px 10px;
     overflow: hidden;
+
 
     span {
       font-size: 0.8rem;
@@ -65,7 +68,7 @@
     margin-top: 15px;
   }
 
-  #footer  > .debug-info ~ .debug-info{
+  #footer > .debug-info ~ .debug-info {
     margin-top: 0;
   }
 
