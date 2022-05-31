@@ -1,6 +1,6 @@
 ---
 main-menu: Cevianer werden
-main-menu-priority: 10
+main-menu-priority: 20
 permalink: /neu-im-cevi
 ---
 

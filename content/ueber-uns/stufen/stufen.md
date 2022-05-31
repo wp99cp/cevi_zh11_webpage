@@ -1,4 +1,6 @@
 ---
+main-menu: Stufen
+main-menu-priority: 4
 permalink: /stufen
 ---
 
