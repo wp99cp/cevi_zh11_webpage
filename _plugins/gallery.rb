@@ -22,7 +22,14 @@ def download_photo(drive_service, file)
   directory = 'gallery'
   file_name = parse_file_name(file.name)
   file_path = File.join(directory, file_name)
-  file_path += '.jpg'
+
+  if file.mime_type == 'image/jpeg'
+    file_path += '.jpg'
+  elsif file.mime_type == 'image/png'
+    file_path += '.png'
+  elsif file.mime_type == 'image/heif'
+    file_path += '.heic'
+  end
 
   if File.file?(file_path.to_s)
     puts 'File is cached'
@@ -162,12 +169,17 @@ def download_photos(uuid, site_context)
 
   response.files.each do |file|
     puts "#{file.name} (#{file.id}, #{file.mime_type})"
-    next unless file.mime_type == 'image/jpeg'
+    next unless (file.mime_type == 'image/jpeg' or file.mime_type == 'image/png' or file.mime_type == 'image/heif')
 
     full_file_name = download_photo(drive_service, file)
 
     path_1800x1200 = resize_gallery_image(full_file_name, '1800x1200')
     path_255x170 = resize_gallery_image(full_file_name, '255x170')
+
+    path_1800x1200 = path_1800x1200.gsub("heic", "jpg")
+    path_1800x1200 = path_1800x1200.gsub("png", "jpg")
+    path_255x170 = path_255x170.gsub("heic", "jpg")
+    path_255x170 = path_255x170.gsub("png", "jpg")
 
     optimized_img_paths.append path_1800x1200
     optimized_img_paths.append path_255x170
