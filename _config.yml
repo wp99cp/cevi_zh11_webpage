@@ -17,6 +17,7 @@ exclude:
   - backend # this folder contains the source code for the backend
   - fonts # only used during building
   - .idea # used by IDA
+  - gallery
 
   # Docker files
   - docker-entrypoint.sh

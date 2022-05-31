@@ -32,13 +32,13 @@ def download_photo(drive_service, file)
   end
 
   if File.file?(file_path.to_s)
-    puts 'File is cached'
+    puts '   File is cached'.green
     return file_path
   end
 
   FileUtils.mkdir_p directory unless File.directory?(directory)
 
-  puts "Download file: #{file_path}"
+  puts "  Download file: #{file_path}".yellow
   drive_service.get_file(file.id, download_dest: file_path, supports_all_drives: true)
   file_path
 
@@ -50,7 +50,7 @@ CACHE_DIR = "imgs/gallery"
 def _dest_filename(src_path, options)
 
   options_slug = options.gsub(/[^\da-z]+/i, "")
-  ext = File.extname(src_path)
+  ext = '.jpg' # File.extname(src_path)
 
   "#{File.basename(src_path, ".*")}_#{options_slug}#{ext}"
 
@@ -94,7 +94,7 @@ def resize_gallery_image(img_src, options)
   FileUtils.mkdir_p(dest_dir)
 
   if _must_create?(src_path, dest_path)
-    puts "Resizing '#{img_src}' to '#{dest_path_rel}' - using options: '#{options}'"
+    puts "   Resizing '#{img_src}' to '#{dest_path_rel}' - using options: '#{options}'".green
 
     _process_img(src_path, options, dest_path)
 
@@ -111,11 +111,13 @@ end
 # param img_desc: e.g. "This is a cat!"
 #
 def _process_img(src_path, img_dim, dest_path)
+
   image = MiniMagick::Image.open(src_path)
   image = image.auto_orient
 
   image.strip
   image.resize img_dim
+  image.format "jpeg"
   image.write dest_path
 
   optimize(dest_path)
@@ -152,7 +154,7 @@ def download_photos(uuid, site_context)
   drive_service.client_options.open_timeout_sec=20
   drive_service.client_options.read_timeout_sec=20
 
-  puts uuid
+  puts ("Download images from folder with ID=" + uuid).yellow
 
   folder_id = uuid
   query = "parents = '#{folder_id}'"
@@ -168,7 +170,7 @@ def download_photos(uuid, site_context)
   optimized_img_paths = []
 
   response.files.each do |file|
-    puts "#{file.name} (#{file.id}, #{file.mime_type})"
+    puts " - #{file.name} (#{file.id}, #{file.mime_type})".green
     next unless (file.mime_type == 'image/jpeg' or file.mime_type == 'image/png' or file.mime_type == 'image/heif')
 
     full_file_name = download_photo(drive_service, file)
@@ -176,19 +178,12 @@ def download_photos(uuid, site_context)
     path_1800x1200 = resize_gallery_image(full_file_name, '1800x1200')
     path_255x170 = resize_gallery_image(full_file_name, '255x170')
 
-    path_1800x1200 = path_1800x1200.gsub("heic", "jpg")
-    path_1800x1200 = path_1800x1200.gsub("png", "jpg")
-    path_255x170 = path_255x170.gsub("heic", "jpg")
-    path_255x170 = path_255x170.gsub("png", "jpg")
-
     optimized_img_paths.append path_1800x1200
     optimized_img_paths.append path_255x170
 
     html_code += "<a href=\"{{ site.baseurl }}/#{path_1800x1200}\" data-cropped=\"true\" target=\"_blank\"
     data-pswp-width=\"1800\"  data-pswp-height=\"1200\" >
     <img loading=\"lazy\" src=\"{{ site.baseurl }}/#{path_255x170}\" alt=\"#{file.name.gsub(/\.[^.]*\Z/, '')}\"/></a>"
-
-    puts full_file_name
 
   end
 
