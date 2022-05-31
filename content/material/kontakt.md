@@ -8,7 +8,7 @@ permalink: /material/kontakt
 
 Hast du Fragen rund zum Mietmaterial? Möchtest du etwas mieten? Oder benötigst du eine Auskunft von unserem Matteam?
 
-Unser Matchef Cédric Fauster v/o Chnobli steht dir gerne zu Verfügung.
+Unsere Matchefen Cédric Fauster v/o Chnobli und Marc Bachmann v/o Taifun steht dir gerne zu Verfügung.
 
 ### Kontakt Materialteam
 
