@@ -54,7 +54,21 @@
       display: block;
     }
 
+    .debug-info {
+      font-size: 0.6rem;
+    }
+
   }
+
+  // margin before first .debug-info element
+  #footer > .debug-info {
+    margin-top: 15px;
+  }
+
+  #footer  > .debug-info ~ .debug-info{
+    margin-top: 0;
+  }
+
 
 }
 

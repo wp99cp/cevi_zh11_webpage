@@ -5,6 +5,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zh11.ch" # the base hostname & protocol for your site
 backend: "https://backend.zh11.ch"
 
+timezone: Europe/Zurich
+
 include:
   - _template_assets
   - script/gallery/*

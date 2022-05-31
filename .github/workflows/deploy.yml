@@ -39,8 +39,6 @@ jobs:
             gallery
             imgs
             docs
-            _site
-            .jekyll-cache
           # Updates the cache after every run, by saving a new copy
           key: ${{ runner.os }}-static-files-${{ github.run_id }}
           restore-keys: ${{ runner.os }}-static-files-
