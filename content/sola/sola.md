@@ -35,6 +35,8 @@ Ceviprogrammen teilnehmen. Einfach anmelden und mitkommen. Bei uns ist jeder wil
 
 Als Mitglied des Cevi Züri 11 bekommst du die Anmeldung fürs Sommerlager direkt per Mail und/oder Post zugestellt.
 
+### Infos zum Sommerlager 2022
+
 [[ google_drive folder :: 139nBfDEZW22ukMM6HfjwpHIw4iVdNSCd ]]
 
 ## Wir werden durch Jugend+Sport unterstützt.
