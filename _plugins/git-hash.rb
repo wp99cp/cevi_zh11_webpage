@@ -15,11 +15,9 @@ module Jekyll
     safe true
 
     def generate(site)
-      hash = %x( git rev-parse --short HEAD ).strip
 
-      unless hash
-        hash = %x( git rev-parse --short "$GITHUB_SHA" )
-      end
+      hash = %x( git rev-parse --short "$GITHUB_SHA" ).strip
+      puts "Hash:" + hash
 
       site.data['hash'] = hash
     end

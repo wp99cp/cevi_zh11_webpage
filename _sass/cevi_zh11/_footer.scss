@@ -40,6 +40,10 @@
   text-align: center;
 }
 
+#footer a {
+  font-weight: normal;
+}
+
 #footer-container {
   @media only screen and (min-width: $keep-nav-open-breakpoint) {
     padding-left: 330px;

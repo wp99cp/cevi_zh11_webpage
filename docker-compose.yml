@@ -26,6 +26,7 @@ services:
     # to enable the development mode (and use localhost as backend).
     environment:
       - MODE=development
+      - GITHUB_SHA=HEAD
 
     ports:
       - "4000:4000" # the port for the frontend
