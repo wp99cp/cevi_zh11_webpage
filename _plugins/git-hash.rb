@@ -17,6 +17,12 @@ module Jekyll
     def generate(site)
 
       hash = %x( git rev-parse --short $GITHUB_SHA ).strip
+
+      # used for CI with GitHub Actions
+      unless hash
+        hash = %x(echo -n $GITHUB_SHA).strip[0, 7]
+      end
+
       puts "Hash [" + %x(echo -n $GITHUB_SHA) + "]: " + hash
 
       site.data['hash'] = hash
