@@ -33,6 +33,15 @@ Immer wieder finden auch Spezialprogramme statt: ein Spielnachmittag im Haus, Ku
 Geleitet werden die Programm der Cevi Fröschli von zwei erfahrenen Cevianerinnen. Unterstütz werden unserer
 Fröschlileiterinnen von HilfsleiterInnen im Jugendalter.
 
-Bei Fragen stehen euch Anja v/o Vanille und Jasmin v/o Pepsi gerne zur Verfügung:
+Bei Fragen stehen euch Anja v/o Vanille gerne zur Verfügung:
 
-[[ contact-form ]]
+## Fragen zu den Föschli?
+
+Hast du Fragen zu den Fröschli? Dann nimm mit uns Kontak auf. Wir freun uns auf deine Nachricht!
+
+Falls du an einem Schnupper-Programm teilnehmen möchtest, kannst du dich gerne an uns wenden. Fülle hierzu aber
+bitte [dieses Formular](/neu-im-cevi) aus.
+
+### Allgemeine Fragen zu den Fröschli
+
+[[ contact-form :: forms/froeschli.yml ]]

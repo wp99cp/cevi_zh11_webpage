@@ -1,0 +1,23 @@
+# see backend/config/forms.yml for the corresponding mail address
+receiver: froeschli_receiver
+
+# defines the input cells of the form
+cells:
+
+  - element: input
+    label: Vorname
+    required: true
+
+  - element: input
+    label: Nachname
+
+  - element: input
+    label: Mail
+    type: email
+    required: true
+    style_wide: true
+
+  - element: textarea
+    label: Nachricht / Frage
+    required: true
+    style_wide: true
