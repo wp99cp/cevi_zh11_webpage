@@ -50,7 +50,7 @@ CACHE_DIR = "imgs/gallery"
 def _dest_filename(src_path, options)
 
   options_slug = options.gsub(/[^\da-z]+/i, "")
-  ext = '.jpg' # File.extname(src_path)
+  ext = '.webp' # File.extname(src_path)
 
   "#{File.basename(src_path, ".*")}_#{options_slug}#{ext}"
 
@@ -117,7 +117,7 @@ def _process_img(src_path, img_dim, dest_path)
 
   image.strip
   image.resize img_dim
-  image.format "jpeg"
+  image.format "webp"
   image.write dest_path
 
   # File permissions must be set if the format got changed.
