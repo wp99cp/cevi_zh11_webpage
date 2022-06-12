@@ -78,9 +78,22 @@ main, .news-feed-container {
     margin: 25px 0 15px;
   }
 
-  p, span {
+  p, span, li {
     color: $font-color;
     line-height: 1.5em;
+  }
+
+  ul, ol {
+    padding-left: 0px;
+  }
+
+  li {
+    padding-left: 26px;
+    list-style: none;
+    background-image: url(/_template_assets/weblogo.svg);
+    background-repeat: no-repeat;
+    background-position: left 7px;
+    background-size: 16px;
   }
 
   #header-spacer {
