@@ -251,12 +251,11 @@ figure {
 
 .gallery {
 
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-row-gap: 5px;
+  grid-gap: 5px;
+  display: flex;
+  flex-direction: row;
   width: 100%;
-
-  grid-column-gap: 5px;
+  flex-wrap: wrap;
 
   a {
     line-height: 0;
@@ -264,11 +263,15 @@ figure {
   }
 
   img {
-    width: 100%;
+    width: 120.625px;
+    height: 180px;
     min-height: 25px;
-    height: auto;
-    background-color: $background-accent-color;
+    background-color: #f3f5f7;
     display: block;
+  }
+
+  img.landscape {
+    width: 246.25px;
   }
 
 }

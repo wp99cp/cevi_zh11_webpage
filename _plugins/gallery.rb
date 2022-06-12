@@ -153,9 +153,9 @@ def download_photos(uuid, site_context)
 
   drive_service = Google::Apis::DriveV3::DriveService.new
   drive_service.authorization = authorizer
-  drive_service.client_options.send_timeout_sec=20
-  drive_service.client_options.open_timeout_sec=20
-  drive_service.client_options.read_timeout_sec=20
+  drive_service.client_options.send_timeout_sec = 20
+  drive_service.client_options.open_timeout_sec = 20
+  drive_service.client_options.read_timeout_sec = 20
 
   puts ("Download images from folder with ID=" + uuid).yellow
 
@@ -184,9 +184,13 @@ def download_photos(uuid, site_context)
     optimized_img_paths.append path_1800x1200
     optimized_img_paths.append path_255x170
 
+    img = MiniMagick::Image.open(path_1800x1200)
+    img = img.auto_orient
+    landscape = img[:width] > img[:height]
+
     html_code += "<a href=\"{{ site.baseurl }}/#{path_1800x1200}\" data-cropped=\"true\" target=\"_blank\"
-    data-pswp-width=\"1800\"  data-pswp-height=\"1200\" >
-    <img loading=\"lazy\" src=\"{{ site.baseurl }}/#{path_255x170}\" alt=\"#{file.name.gsub(/\.[^.]*\Z/, '')}\"/></a>"
+    data-pswp-width=\"#{img[:width]}\"  data-pswp-height=\"#{img[:height]}\" >
+    <img #{if landscape then "class=\"landscape\"" else "" end} loading=\"lazy\" src=\"{{ site.baseurl }}/#{path_255x170}\" alt=\"#{file.name.gsub(/\.[^.]*\Z/, '')}\"/></a>"
 
   end
 
