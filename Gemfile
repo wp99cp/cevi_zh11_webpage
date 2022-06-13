@@ -22,3 +22,6 @@ gem 'webrick', '~> 1.7'
 
 gem 'google-apis-drive_v3'
 gem 'googleauth'
+
+gem 'image_size', '~> 3.0'
+

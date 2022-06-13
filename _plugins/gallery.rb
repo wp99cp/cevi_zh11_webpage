@@ -2,45 +2,13 @@ require 'google/apis/drive_v3'
 require 'googleauth'
 require 'fileutils'
 require 'date'
-
-def parse_file_name(file_name)
-
-  file_name = file_name.gsub(/\s/, '_')
-  file_name.gsub(/\.[^.]*\Z/, '')
-
-end
+require 'benchmark'
+require_relative 'utils/drive_downloader'
 
 def date_to_string(timestamp)
 
   return '' if timestamp.nil?
   DateTime.parse(timestamp.to_s).strftime('%d.%m.%Y').to_s
-
-end
-
-def download_photo(drive_service, file)
-
-  directory = 'gallery'
-  file_name = parse_file_name(file.name)
-  file_path = File.join(directory, file_name)
-
-  if file.mime_type == 'image/jpeg'
-    file_path += '.jpg'
-  elsif file.mime_type == 'image/png'
-    file_path += '.png'
-  elsif file.mime_type == 'image/heif'
-    file_path += '.heic'
-  end
-
-  if File.file?(file_path.to_s)
-    puts '   File is cached'.green
-    return file_path
-  end
-
-  FileUtils.mkdir_p directory unless File.directory?(directory)
-
-  puts "   Download file: #{file_path}".yellow
-  drive_service.get_file(file.id, download_dest: file_path, supports_all_drives: true)
-  file_path
 
 end
 
@@ -140,74 +108,62 @@ def split_params(params)
   params.split("::").map(&:strip)
 end
 
-def download_photos(uuid, site_context)
+def download_photos(config, uuid, site_context)
 
-  credentials = '_secrets/credentials.json'
-  scope = 'https://www.googleapis.com/auth/drive.readonly'
-
-  authorizer = Google::Auth::ServiceAccountCredentials.make_creds(
-    json_key_io: File.open(credentials), scope: scope
-  )
-
-  Google::Apis::RequestOptions.default.retries = 5
-
-  drive_service = Google::Apis::DriveV3::DriveService.new
-  drive_service.authorization = authorizer
-  drive_service.client_options.send_timeout_sec = 20
-  drive_service.client_options.open_timeout_sec = 20
-  drive_service.client_options.read_timeout_sec = 20
-
-  puts ("Download images from folder with ID=" + uuid).yellow
-
-  folder_id = uuid
-  query = "parents = '#{folder_id}'"
-  fields = 'nextPageToken, files(id, name, mimeType, size, parents, modifiedTime)'
-
-  response = drive_service.list_files(q: query, supports_all_drives: true, corpora: 'allDrives',
-                                      include_items_from_all_drives: true, fields: fields)
-
-  puts 'No files found' if response.files.empty?
+  files = DriveDownloader.list_files(config, uuid)
 
   html_code = '<div class="gallery" id="gallery-simple">'
-
   optimized_img_paths = []
 
-  response.files.each do |file|
-    puts " - #{file.name} (#{file.id}, #{file.mime_type})".green
-    next unless (file.mime_type == 'image/jpeg' or file.mime_type == 'image/png' or file.mime_type == 'image/heif')
+  files.each do |file|
+    puts " - #{file['name']} (#{file['id']}, #{file['mimeType']})".green
+    next unless (file['mimeType'] == 'image/jpeg' or file['mimeType'] == 'image/png' or file['mimeType'] == 'image/heif')
 
-    full_file_name = download_photo(drive_service, file)
+    local_file_path = DriveDownloader.download_file(file, 'gallery')
 
-    path_1800x1200 = resize_gallery_image(full_file_name, '1800x1200')
-    path_255x170 = resize_gallery_image(full_file_name, '255x170')
+    path_1800x1200 = resize_gallery_image(local_file_path, '1800x1200')
+    path_255x170 = resize_gallery_image(local_file_path, '255x170')
 
     optimized_img_paths.append path_1800x1200
     optimized_img_paths.append path_255x170
 
-    img = MiniMagick::Image.open(path_1800x1200)
-    img = img.auto_orient
-    landscape = img[:width] > img[:height]
+    image_size = ImageSize.path(path_1800x1200)
+    landscape = image_size.width > image_size.height
 
     html_code += "<a href=\"{{ site.baseurl }}/#{path_1800x1200}\" data-cropped=\"true\" target=\"_blank\"
-    data-pswp-width=\"#{img[:width]}\"  data-pswp-height=\"#{img[:height]}\" >
-    <img #{if landscape then "class=\"landscape\"" else "" end} loading=\"lazy\" src=\"{{ site.baseurl }}/#{path_255x170}\" alt=\"#{file.name.gsub(/\.[^.]*\Z/, '')}\"/></a>"
+    data-pswp-width=\"#{image_size.width}\"  data-pswp-height=\"#{image_size.height}\" >
+    <img #{
+      if landscape then
+        "class=\"landscape\""
+      else
+        ""
+      end} loading=\"lazy\" src=\"{{ site.baseurl }}/#{path_255x170}\" alt=\"#{file['name'].gsub(/\.[^.]*\Z/, '')}\"/></a>"
 
   end
 
   html_code += '</div>'
 
+  # save the path of all site_context.static_files in an array
+  static_files = []
+  site_context.static_files.each do |file|
+    static_files.append file.path
+  end
+
   # Copy files to _site directory
   optimized_img_paths.each do |path|
-    site_context.static_files << Jekyll::StaticFile.new(site_context, site_context.source, CACHE_DIR, File.basename(path))
+
+    static_file = Jekyll::StaticFile.new(site_context, site_context.source, CACHE_DIR, File.basename(path))
+    site_context.static_files << static_file unless static_files.include?(static_file.path)
+
   end
 
   html_code
 
 end
 
-def gallery(path, site)
+def gallery(config, path, site)
 
-  html_code = download_photos(path, site)
+  html_code = download_photos(config, path, site)
 
   "<div class=\"gallery-container\">
 <script type=\"module\" src=\"{{ site.baseurl }}/script/gallery/gallery.js\"></script>
@@ -224,7 +180,7 @@ Jekyll::Hooks.register :pages, :pre_render do |post, payload|
   if payload['site']['markdown_ext'].include? doc_ext
 
     post.content = post.content.gsub(/\[\[ gallery (.*) \]\]/) do
-      gallery(Regexp.last_match(1), post.site)
+      gallery(post.site.config, Regexp.last_match(1), post.site)
     end
 
   end

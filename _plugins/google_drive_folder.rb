@@ -2,6 +2,7 @@ require 'google/apis/drive_v3'
 require 'googleauth'
 require 'fileutils'
 require 'date'
+require_relative 'utils/drive_downloader'
 
 def parse_file_name(file_name)
 
@@ -18,86 +19,38 @@ def date_to_string(timestamp)
 
 end
 
-def download_document(drive_service, file)
-
-  directory = 'docs'
-  file_name = parse_file_name(file.name)
-  file_path = File.join(directory, file_name)
-  file_path += '.pdf'
-
-  if File.file?(file_path.to_s)
-    puts 'File is cached'
-    return file_path
-  end
-
-  FileUtils.mkdir_p directory unless File.directory?(directory)
-
-  puts "Download file: #{file_path}"
-  drive_service.get_file(file.id, download_dest: file_path, supports_all_drives: true)
-  file_path
-
-end
-
 def generate_liquid_tag(file, full_file_name)
-  "{% document #{full_file_name} :: #{file.name.gsub(/\.[^.]*\Z/, '')} :: #{date_to_string(file.modified_time)}  %}"
+  "{% document #{full_file_name} :: #{file['name'].gsub(/\.[^.]*\Z/, '')} :: #{date_to_string(file['modifiedTime'])}  %}"
 end
 
-def google_drive(element_type, uuid)
-
-  credentials = '_secrets/credentials.json'
-  scope = 'https://www.googleapis.com/auth/drive.readonly'
-
-  authorizer = Google::Auth::ServiceAccountCredentials.make_creds(
-    json_key_io: File.open(credentials), scope: scope
-  )
-
-  Google::Apis::RequestOptions.default.retries = 5
-
-  drive_service = Google::Apis::DriveV3::DriveService.new
-  drive_service.authorization = authorizer
-  drive_service.client_options.send_timeout_sec=20
-  drive_service.client_options.open_timeout_sec=20
-  drive_service.client_options.read_timeout_sec=20
-
+def google_drive(config, element_type, uuid)
 
   case element_type
   when 'folder'
 
-    puts uuid
-
-    folder_id = uuid
-    query = "parents = '#{folder_id}'"
-    fields = 'nextPageToken, files(id, name, mimeType, size, parents, modifiedTime)'
-
-    response = drive_service.list_files(q: query, supports_all_drives: true, corpora: 'allDrives',
-                                        include_items_from_all_drives: true, fields: fields)
-
-    puts 'No files found' if response.files.empty?
+    files = DriveDownloader.list_files(config, uuid)
 
     result = '<div class=" documents ">'
-    response.files.each do |file|
-      puts "#{file.name} (#{file.id}, #{file.mime_type})"
-      next unless file.mime_type == 'application/pdf'
+    files.each do |file|
+      puts "#{file['name']} (#{file['id']}, #{file['mimeType']})"
+      next unless file['mimeType'] == 'application/pdf'
 
-      full_file_name = download_document(drive_service, file)
+      full_file_name = DriveDownloader.download_file(file, 'docs')
       result += "\n#{generate_liquid_tag(file, full_file_name)}"
 
     end
 
     result += '</div>'
-    result
+    return result
 
   when 'document'
 
-    fields = 'id, name, mimeType, size, parents, modifiedTime'
-    file = drive_service.get_file(uuid, supports_all_drives: true, fields: fields)
-
-    full_file_name = download_document(drive_service, file)
-    generate_liquid_tag(file, full_file_name)
+    file = DriveDownloader.get_file(config, uuid)
+    full_file_name = DriveDownloader.download_file(file, 'docs')
+    return generate_liquid_tag(file, full_file_name)
 
   else
-    ''
-
+    return ''
   end
 
 end
@@ -109,7 +62,7 @@ Jekyll::Hooks.register :pages, :pre_render do |post, payload|
   # only process if we deal with a markdown file
   if payload['site']['markdown_ext'].include? doc_ext
 
-    post.content = post.content.gsub(/\[\[ google_drive (.+) :: (.+) \]\]/) { google_drive(Regexp.last_match(1), Regexp.last_match(2)) }
+    post.content = post.content.gsub(/\[\[ google_drive (.+) :: (.+) \]\]/) { google_drive(post.site.config, Regexp.last_match(1), Regexp.last_match(2)) }
 
   end
 end

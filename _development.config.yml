@@ -4,3 +4,5 @@
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000" # the base hostname & protocol for your site
 backend: "http://localhost:5000"
+
+ignore_gdrive_cache: false

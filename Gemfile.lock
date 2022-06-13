@@ -140,6 +140,7 @@ PLATFORMS
 DEPENDENCIES
   google-apis-drive_v3
   googleauth
+  image_size (~> 3.0)
   jekyll (~> 4.2.1)
   responsive-images-for-jekyll (~> 0.3.3)!
   wdm (~> 0.1.1)
