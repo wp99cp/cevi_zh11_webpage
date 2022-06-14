@@ -122,7 +122,12 @@ def download_photos(config, uuid, site_context, tagged_with_webpage = true)
 
     local_file_path = ''
     semaphore.synchronize {
-      local_file_path = DriveDownloader.download_file(file, 'gallery')
+      begin
+        local_file_path = DriveDownloader.download_file(file, 'gallery')
+      rescue Exception => e
+        puts "Error downloading file #{file['name']}: #{e.message}".red
+        next
+      end
     }
 
     # check if image should be displayed on webpage
