@@ -3,6 +3,7 @@ require 'googleauth'
 require 'fileutils'
 require 'date'
 require 'benchmark'
+require 'parallel'
 
 module DriveDownloader
 
@@ -105,13 +106,13 @@ module DriveDownloader
     end
 
     if File.file?(file_path.to_s)
-      puts '   File is cached'.green
+      puts " - #{file_path}: File is cached".green
       return file_path
     end
 
     FileUtils.mkdir_p directory unless File.directory?(directory)
 
-    puts "   Download file: #{file_path}".yellow
+    puts " - #{file_path}: Downloading file".yellow
     @@drive_service.get_file(file['id'], download_dest: file_path, supports_all_drives: true)
     file_path
 

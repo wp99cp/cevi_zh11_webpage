@@ -5,6 +5,7 @@ require 'date'
 require 'benchmark'
 require_relative 'utils/drive_downloader'
 require 'exiftool'
+require 'parallel'
 
 def date_to_string(timestamp)
 
@@ -113,18 +114,17 @@ def download_photos(config, uuid, site_context, tagged_with_webpage = true)
 
   files = DriveDownloader.list_files(config, uuid)
 
-  html_code = '<div class="gallery" id="gallery-simple">'
   optimized_img_paths = []
 
-  files.each do |file|
-    puts " - #{file['name']} (#{file['id']}, #{file['mimeType']})".green
+  semaphore = Mutex.new
+  results = Parallel.map(files) do |file|
     next unless (file['mimeType'] == 'image/jpeg' or file['mimeType'] == 'image/png' or file['mimeType'] == 'image/heif')
 
     local_file_path = DriveDownloader.download_file(file, 'gallery')
 
     # check if image should be displayed on webpage
     e = Exiftool.new(local_file_path)
-    next unless (e[:keywords].to_s.include?('Webpage') or not tagged_with_webpage)
+    next unless ((tagged_with_webpage and e[:keywords].to_s.include?('Webpage')) or not tagged_with_webpage)
 
     path_1800x1200 = resize_gallery_image(local_file_path, '1800x1200')
     path_255x170 = resize_gallery_image(local_file_path, '255x170')
@@ -135,17 +135,24 @@ def download_photos(config, uuid, site_context, tagged_with_webpage = true)
     image_size = ImageSize.path(path_1800x1200)
     landscape = image_size.width > image_size.height
 
-    html_code += "<a href=\"{{ site.baseurl }}/#{path_1800x1200}\" data-cropped=\"true\" target=\"_blank\"
+    semaphore.synchronize {
+
+      puts " - #{file['name']} (#{file['id']}, #{file['mimeType']})".green
+
+      "<a href=\"{{ site.baseurl }}/#{path_1800x1200}\" data-cropped=\"true\" target=\"_blank\"
     data-pswp-width=\"#{image_size.width}\"  data-pswp-height=\"#{image_size.height}\" >
     <img #{
-      if landscape then
-        "class=\"landscape\""
-      else
-        ""
-      end} loading=\"lazy\" src=\"{{ site.baseurl }}/#{path_255x170}\" alt=\"#{file['name'].gsub(/\.[^.]*\Z/, '')}\"/></a>"
+        if landscape then
+          "class=\"landscape\""
+        else
+          ""
+        end} loading=\"lazy\" src=\"{{ site.baseurl }}/#{path_255x170}\" alt=\"#{file['name'].gsub(/\.[^.]*\Z/, '')}\"/></a>"
 
+    }
   end
 
+  html_code = '<div class="gallery" id="gallery-simple">'
+  html_code += results.join(" ")
   html_code += '</div>'
 
   # save the path of all site_context.static_files in an array
@@ -162,7 +169,7 @@ def download_photos(config, uuid, site_context, tagged_with_webpage = true)
 
   end
 
-  html_code
+  return html_code
 
 end
 

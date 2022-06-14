@@ -7,4 +7,4 @@ permalink: /fotos
 # Hier findest du die Fotos vergangener Anlässe.
 
 ## Diverse Fotos
-[[ gallery 1J45cjlYfOMXgIHitIjbKy8TPF9FadJuJ :: tagged ]]
+[[ gallery 1vpQbgEDXnWrDUja4ZN4yGVMgqunsrtzv ]]

@@ -27,4 +27,4 @@ gem 'image_size', '~> 3.0'
 
 
 gem 'exiftool_vendored'
-
+gem 'parallel'

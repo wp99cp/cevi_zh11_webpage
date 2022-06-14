@@ -35,4 +35,3 @@ Mit Bällen versuchen die Spieler ihre Gegner zum Fallen zu bringen. Eine kleine
 raffinierter Mechanismus das Fallbrett aus und der Gegner fällt auf die weiche Matte.
 
 [Fallbalken mieten](/material)
-
