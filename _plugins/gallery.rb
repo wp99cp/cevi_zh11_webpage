@@ -121,14 +121,14 @@ def download_photos(config, uuid, site_context, tagged_with_webpage = true)
     next unless (file['mimeType'] == 'image/jpeg' or file['mimeType'] == 'image/png' or file['mimeType'] == 'image/heif')
 
     local_file_path = ''
-    semaphore.synchronize {
-      begin
-        local_file_path = DriveDownloader.download_file(file, 'gallery')
-      rescue Exception => e
-        puts "Error downloading file #{file['name']}: #{e.message}".red
-        next
-      end
-    }
+
+    begin
+      local_file_path = DriveDownloader.download_file(file, 'gallery')
+    rescue Exception => e
+      puts "!!! Error downloading file #{file['name']}: #{e.message} !!!".red
+    end
+
+    next unless local_file_path != ''
 
     # check if image should be displayed on webpage
     e = Exiftool.new(local_file_path)
