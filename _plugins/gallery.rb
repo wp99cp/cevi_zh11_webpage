@@ -117,7 +117,7 @@ def download_photos(config, uuid, site_context, tagged_with_webpage = true)
   optimized_img_paths = []
 
   semaphore = Mutex.new
-  results = Parallel.map(files) do |file|
+  results = files.map do |file| # TODO: the following code won't run inside the GithubAction: `Parallel.map do |file|
     next unless (file['mimeType'] == 'image/jpeg' or file['mimeType'] == 'image/png' or file['mimeType'] == 'image/heif')
 
     local_file_path = DriveDownloader.download_file(file, 'gallery')
