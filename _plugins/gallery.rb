@@ -120,7 +120,10 @@ def download_photos(config, uuid, site_context, tagged_with_webpage = true)
   results = Parallel.map(files) do |file|
     next unless (file['mimeType'] == 'image/jpeg' or file['mimeType'] == 'image/png' or file['mimeType'] == 'image/heif')
 
-    local_file_path = DriveDownloader.download_file(file, 'gallery')
+    local_file_path = ''
+    semaphore.synchronize {
+      local_file_path = DriveDownloader.download_file(file, 'gallery')
+    }
 
     # check if image should be displayed on webpage
     e = Exiftool.new(local_file_path)
