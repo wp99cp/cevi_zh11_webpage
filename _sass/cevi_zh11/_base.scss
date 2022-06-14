@@ -263,7 +263,9 @@ figure {
   }
 
   img {
-    width: 120.625px;
+    max-width: 120.625px;
+    width: calc((100vw - 15px - 30px) / 8);
+    max-height: calc((100vw - 15px - 30px) / 6);
     height: 180px;
     min-height: 25px;
     background-color: #f3f5f7;
@@ -271,7 +273,8 @@ figure {
   }
 
   img.landscape {
-    width: 246.25px;
+    max-width: 246.25px;
+    width: calc((100vw - 15px - 30px) / 4);
   }
 
 }
