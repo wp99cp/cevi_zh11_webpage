@@ -48,8 +48,8 @@ jobs:
             imgs
             docs
           # Updates the cache after every run, by saving a new copy
-          key: ${{ runner.os }}-static-files-v2.5-${{ github.run_id }}
-          restore-keys: ${{ runner.os }}-static-files-v2.5-
+          key: ${{ runner.os }}-static-files-v2.6-${{ github.run_id }}
+          restore-keys: ${{ runner.os }}-static-files-v2.6-
 
       # Allow the docker container to write to the mounted directory
       - name: Give folder access
