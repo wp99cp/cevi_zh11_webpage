@@ -35,18 +35,21 @@ module DriveDownloader
     end
 
     # Define details of the query
-    query = "parents = '#{folder_id}'"
-    fields = 'nextPageToken, files(id, name, mimeType, size, parents, modifiedTime)'
+    query = "'#{folder_id}' in parents"
+    fields = 'nextPageToken, files(id, name, mimeType, size, parents, trashed)'
 
     response = nil
     time = Benchmark.measure {
-      response = @@drive_service.list_files(q: query, supports_all_drives: true, corpora: 'user',
-                                            include_items_from_all_drives: true, fields: fields)
+      response = @@drive_service.list_files(q: query, supports_all_drives: true, corpora: 'user', order_by: 'createdTime desc',
+                                            include_items_from_all_drives: true, fields: fields, page_size: 1000)
     }
 
     # Log the results
     puts 'Time needed to find ' + response.files.length.to_s + ' files: ' + time.real.to_s + 's' unless response.files.empty?
     puts 'No files found' if response.files.empty?
+
+    # filter response.files to only include non-trashed files
+    response.files = response.files.select { |file| !file.trashed }
 
     # Save response.files as JSON into a cache file
     File.open(cache_file, 'w') do |f|
