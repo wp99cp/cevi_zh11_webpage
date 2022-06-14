@@ -22,6 +22,8 @@ module DriveDownloader
   @@drive_service.client_options.open_timeout_sec = 20
   @@drive_service.client_options.read_timeout_sec = 20
 
+  @@semaphore = Mutex.new
+
   def self.list_files(config, folder_id)
 
     ignore_gdrive_cache = config['ignore_gdrive_cache']
@@ -41,8 +43,10 @@ module DriveDownloader
 
     response = nil
     time = Benchmark.measure {
-      response = @@drive_service.list_files(q: query, supports_all_drives: true, corpora: 'user', order_by: 'createdTime desc',
-                                            include_items_from_all_drives: true, fields: fields, page_size: 1000)
+      @@semaphore.synchronize {
+        response = @@drive_service.list_files(q: query, supports_all_drives: true, corpora: 'user', order_by: 'createdTime desc',
+                                              include_items_from_all_drives: true, fields: fields, page_size: 1000)
+      }
     }
 
     # Log the results
@@ -75,8 +79,10 @@ module DriveDownloader
     end
 
     fields = 'id, name, mimeType, size, parents, modifiedTime'
-    file = @@drive_service.get_file(file_id, supports_all_drives: true, fields: fields)
-
+    file = nil
+    @@semaphore.synchronize {
+      file = @@drive_service.get_file(file_id, supports_all_drives: true, fields: fields)
+    }
     # Save response.files as JSON into a cache file
     File.open(cache_file, 'w') do |f|
       f.write(JSON.pretty_generate(file))
