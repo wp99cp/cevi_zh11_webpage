@@ -24,6 +24,10 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     exifr (1.3.9)
+    exiftool (1.2.4)
+      json
+    exiftool_vendored (12.42.0)
+      exiftool (>= 0.7.0)
     faraday (2.2.0)
       faraday-net_http (~> 2.0)
       ruby2_keywords (>= 0.0.4)
@@ -86,6 +90,7 @@ GEM
       sassc (> 2.0.1, < 3.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    json (2.6.2)
     jwt (2.3.0)
     kramdown (2.3.1)
       rexml
@@ -138,6 +143,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  exiftool_vendored
   google-apis-drive_v3
   googleauth
   image_size (~> 3.0)

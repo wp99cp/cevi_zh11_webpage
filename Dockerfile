@@ -1,7 +1,7 @@
 FROM jekyll/builder:latest
 
 # Install Jekyll
-RUN apk --no-cache add php8-pecl-imagick ghostscript go
+RUN apk --no-cache add php8-pecl-imagick ghostscript go exiftool
 
 # Font copy
 COPY ./fonts/ /usr/share/fonts/

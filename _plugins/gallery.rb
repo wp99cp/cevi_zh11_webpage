@@ -4,6 +4,7 @@ require 'fileutils'
 require 'date'
 require 'benchmark'
 require_relative 'utils/drive_downloader'
+require 'exiftool'
 
 def date_to_string(timestamp)
 
@@ -108,7 +109,7 @@ def split_params(params)
   params.split("::").map(&:strip)
 end
 
-def download_photos(config, uuid, site_context)
+def download_photos(config, uuid, site_context, tagged_with_webpage = true)
 
   files = DriveDownloader.list_files(config, uuid)
 
@@ -120,6 +121,10 @@ def download_photos(config, uuid, site_context)
     next unless (file['mimeType'] == 'image/jpeg' or file['mimeType'] == 'image/png' or file['mimeType'] == 'image/heif')
 
     local_file_path = DriveDownloader.download_file(file, 'gallery')
+
+    # check if image should be displayed on webpage
+    e = Exiftool.new(local_file_path)
+    next unless (e[:keywords].to_s.include?('Webpage') or not tagged_with_webpage)
 
     path_1800x1200 = resize_gallery_image(local_file_path, '1800x1200')
     path_255x170 = resize_gallery_image(local_file_path, '255x170')
@@ -161,9 +166,15 @@ def download_photos(config, uuid, site_context)
 
 end
 
-def gallery(config, path, site)
+def gallery(config, gallery_settings, site)
 
-  html_code = download_photos(config, path, site)
+  tagged = false
+  if gallery_settings.include? " :: "
+    gallery_settings = gallery_settings.split(" :: ")[0]
+    tagged = true
+  end
+
+  html_code = download_photos(config, gallery_settings, site, tagged)
 
   "<div class=\"gallery-container\">
 <script type=\"module\" src=\"{{ site.baseurl }}/script/gallery/gallery.js\"></script>
