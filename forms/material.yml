@@ -10,12 +10,17 @@ cells:
 
   - element: input
     label: Nachname
+    required: true
+
+  - element: input
+    label: Telefonnummer
+    type: phone
+    required: true
 
   - element: input
     label: Mail
     type: email
     required: true
-    style_wide: true
 
   - element: checkbox
     label: Ich frage für einen Jugendverein an?

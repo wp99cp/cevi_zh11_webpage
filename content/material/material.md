@@ -51,7 +51,7 @@ Material bei uns zu Mieten ist ganz einfach.
 4) Sobald der unterzeichnete Mietvertrag bei uns eingetroffen ist, gilt deine Miete als definitiv. Es gelten die
    Allgemeinen Mietbedingungen des Cevi Züri 11.
 
-[[ google_drive file :: 1NZwIgN9HqvKyjjVUrAXmTdPAFHk7IL1N/ ]]
+[[ google_drive document :: 1NZwIgN9HqvKyjjVUrAXmTdPAFHk7IL1N ]]
 
 ## Preis-Kategorien
 
