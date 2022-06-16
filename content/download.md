@@ -1,6 +1,6 @@
 ---
 footer-menu: Downloads
-footer-menu-priority: 1
+footer-menu-priority: 3
 permalink: /download
 ---
 
