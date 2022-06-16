@@ -12,7 +12,10 @@
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-
+    {% if page.title %}
+    <title>{{page.title}} - Cevi Züri 11</title>
+    {% else %}
     <title>Cevi Züri 11</title>
+    {% endif %}
 
 </head>
