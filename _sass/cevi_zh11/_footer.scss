@@ -63,6 +63,8 @@
 }
 
 #footer-container, #footer a {
+
+  position: relative;
   height: $footer-height;
   overflow: hidden;
   background-color: $footer-background-color;
@@ -113,5 +115,37 @@
   margin: 10px 0 0 0;
   height: 20px;
   width: 200px;
+}
+
+.footer-decoration-logo {
+  position: absolute;
+  opacity: 0.25;
+}
+
+#footer_decoration-logo_left_bottom {
+  height: 90px;
+  left: 0;
+  bottom: 0;
+
+  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+    left: 280px;
+  }
+}
+
+#footer_decoration-logo_right_top {
+  right: 0;
+  top: 0;
+  height: 75px;
+
+  @media only screen and (max-width: $keep-nav-open-breakpoint) {
+    display: none;
+  }
+
+}
+
+#footer_decoration-logo_right_bottom {
+  right: 0;
+  bottom: 0;
+  height: 120px;
 }
 
