@@ -1,7 +1,31 @@
-<div id="footer-nav-container">
-    <div id="footer-nav">
+<div id="footer-nav">
 
-        <span><b>Cevi Züri 11 - Kontakt</b></span>
+
+    <div class="footer-nav-container">
+
+        <span><b>Dachorganisationen</b></span>
+
+        <div id="footer-logo-container">
+
+            <a href="https://ceviregionzuerich.ch">
+                <img class="footer-logo" src="/_template_assets/partner_logos/logo_cevi_region_zurich.svg"
+                     alt="Logo Cevi Region Zurich">
+            </a>
+
+            <a href="https://cevi.ch">
+                <img class="footer-logo" src="/_template_assets/partner_logos/logo_cevi_schweiz.svg"
+                     alt="Logo Cevi Schweiz"/>
+            </a>
+
+        </div>
+
+    </div>
+
+    <hr class="footer-nav-separator">
+
+    <div class="footer-nav-container">
+
+        <span><b>Cevi Züri 11</b></span>
 
         {%- assign pages = site.html_pages | sort: 'footer-menu-priority' -%}
         {%- for page in pages -%}
@@ -11,6 +35,7 @@
         </a>
         {%- endif -%}
         {% endfor %}
-        
+
     </div>
+
 </div>

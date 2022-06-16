@@ -1,35 +1,65 @@
 @import "colors";
 @import "sizes";
 
-#footer-nav-container {
-  height: $footer-nav-height;
+#footer-nav {
   overflow: hidden;
   background-color: $footer-nav-background-color;
   text-align: center;
   color: $footer-nav-color;
+
+  padding: 50px;
 
   @media only screen and (min-width: $keep-nav-open-breakpoint) {
     padding-left: 330px;
     padding-right: 50px;
   }
 
-  #footer-nav {
-    padding: 50px 10px;
-    overflow: hidden;
+  @media only screen and (max-width: $keep-nav-open-breakpoint) {
+    flex-direction: column-reverse;
+  }
 
-    a {
-      text-decoration: none;
-      color: $footer-nav-color;
-      font-weight: normal;
-    }
+  display: flex;
+  justify-content: center;
+  margin: auto;
 
-    span {
-      font-size: 0.8rem;
-      line-height: 1.5rem;
-      display: block;
+  a {
+    text-decoration: none;
+    color: $footer-nav-color;
+    font-weight: normal;
+  }
+
+  span {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    display: block;
+  }
+
+  .footer-nav-container {
+    width: 200px;
+    margin: 30px;
+    text-align: center;
+
+    @media only screen and (max-width: $keep-nav-open-breakpoint) {
+      margin: 30px auto;
     }
 
   }
+
+  .footer-nav-separator {
+    margin: 0;
+    border: none;
+    border-left: solid 2px #203f6d;
+
+    @media only screen and (max-width: $keep-nav-open-breakpoint) {
+      border-left: none;
+      border-top: solid 2px #203f6d;
+      max-width: 350px;
+      width: calc(100% - 50px);
+      margin: 0 auto;
+    }
+
+  }
+
 }
 
 #footer-container, #footer a {
@@ -77,5 +107,11 @@
   }
 
 
+}
+
+.footer-logo {
+  margin: 10px 0 0 0;
+  height: 20px;
+  width: 200px;
 }
 
