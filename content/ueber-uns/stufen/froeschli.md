@@ -1,4 +1,5 @@
 ---
+title: Stufe Fröschli
 permalink: /stufen/froeschli
 sub-menu: Stufen
 sub-menu-name: Fröschli

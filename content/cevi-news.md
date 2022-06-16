@@ -1,4 +1,5 @@
 ---
+title: Die neusten Updates aus dem Cei Züri 11
 permalink: /cevi-news
 ---
 

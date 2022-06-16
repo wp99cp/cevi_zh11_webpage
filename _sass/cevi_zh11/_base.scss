@@ -278,3 +278,21 @@ figure {
   }
 
 }
+
+#sitemap-list {
+
+  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+  span {
+    line-height: 12px;
+  }
+
+  li {
+    margin: 0;
+  }
+
+}

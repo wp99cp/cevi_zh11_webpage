@@ -1,4 +1,5 @@
 ---
+title: Stufe Sinai
 permalink: /stufen/sinai
 sub-menu: Stufen
 sub-menu-name: Sinai

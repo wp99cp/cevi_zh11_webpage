@@ -1,4 +1,5 @@
 ---
+title: Sitemap Cevi Züri 11
 permalink: /sitemap
 layout: page
 ---
@@ -6,10 +7,9 @@ layout: page
 <h1>Hier findest du alle Seiten unserer Webseite aufgelistet.</h1>
 <p>Auf dieser Seite findest du die Links zu allen Unterseiten dieser Webpage:</p>
 
+<ul id="sitemap-list">
 {%- assign pages = site.html_pages | sort: 'url' -%}
 {%- for page in pages -%}
-<span>
-    - {{page.main-menu}} <a href="{{ page.url }}">{{ page.url  }}</a>
-</span>
-<br>
+    <li><span><b>{{page.title}}</b><br>Link: <a href="{{ page.url }}"> zh11.ch{{ page.url  }}</a></span></li>
 {% endfor %}
+</ul>

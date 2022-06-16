@@ -1,4 +1,5 @@
 ---
+title: Startseite
 main-menu: Startseite
 main-menu-priority: 1
 permalink: /

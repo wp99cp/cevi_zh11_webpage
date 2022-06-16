@@ -1,4 +1,5 @@
 ---
+title: Cevi Schweiz und YMCA
 permalink: /cevi/cevi-schweiz
 ---
 

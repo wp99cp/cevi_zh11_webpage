@@ -1,4 +1,5 @@
 ---
+title: Stufen im Cevi Züri 11
 main-menu: Stufen
 main-menu-priority: 4
 permalink: /stufen

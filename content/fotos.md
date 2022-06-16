@@ -1,4 +1,5 @@
 ---
+title: Fotogallery
 main-menu: Fotos
 main-menu-priority: 7
 permalink: /fotos

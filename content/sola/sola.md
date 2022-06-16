@@ -1,4 +1,5 @@
 ---
+title: Sommerlager des Cevi Züri 11
 main-menu: Sommerlager
 main-menu-priority: 3
 permalink: /sola

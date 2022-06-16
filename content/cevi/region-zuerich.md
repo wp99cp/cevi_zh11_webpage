@@ -1,4 +1,5 @@
 ---
+title: Cevi Region Zürich
 permalink: /cevi/region-zuerich
 ---
 

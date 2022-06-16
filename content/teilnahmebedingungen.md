@@ -1,4 +1,5 @@
 ---
+title: Teilnahmebedingungen
 permalink: /teilnahmebedingungen
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: Kontakt aufnehmen
 permalink: /material/kontakt
 ---
 

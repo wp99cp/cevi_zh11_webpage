@@ -1,4 +1,5 @@
 ---
+title: Über den Cevi Züri 11
 main-menu: Cevi Züri 11
 main-menu-priority: 2
 permalink: /ueber-uns

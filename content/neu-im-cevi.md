@@ -1,4 +1,5 @@
 ---
+title: Ceviluft schnuppern und Cevianer werden
 main-menu: Cevianer werden
 main-menu-priority: 20
 permalink: /neu-im-cevi

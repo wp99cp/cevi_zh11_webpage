@@ -1,4 +1,5 @@
 ---
+title: Stufe Amos
 permalink: /stufen/amos
 sub-menu: Stufen
 sub-menu-name: Amos

@@ -1,4 +1,5 @@
 ---
+title: Der Cevi Züri 11 hat eine neue Webseite
 permalink: /news/neue-webseite
 news-entry-title: Der Cevi Züri 11 hat eine neue Webseite
 news-entry-caption: Der Cevi Züri 11 hat eine neue Webseite. Hier findest du alle Informationen rund um den Cevi.
