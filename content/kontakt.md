@@ -2,6 +2,8 @@
 title: Kontakt aufnehmen
 main-menu: Kontakt
 main-menu-priority: 10
+footer-menu: Kontakt
+footer-menu-priority: 0
 permalink: /kontakt
 ---
 
