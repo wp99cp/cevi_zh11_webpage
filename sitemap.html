@@ -10,6 +10,9 @@ layout: page
 <ul id="sitemap-list">
 {%- assign pages = site.html_pages | sort: 'url' -%}
 {%- for page in pages -%}
+    <!-- Ignore pages containing a redirect_to -->
+    {%- if page.redirect_to == nil -%}
     <li><span><b>{{page.title}}</b><br>Link: <a href="{{ page.url }}"> zh11.ch{{ page.url  }}</a></span></li>
+    {%- endif -%}
 {% endfor %}
 </ul>
