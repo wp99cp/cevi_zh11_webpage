@@ -1,6 +1,9 @@
 ---
 title: Kontakt aufnehmen
 permalink: /material/kontakt
+sub-menu: Material
+sub-menu-name: Mietanfragen
+sub-menu-priority: 0
 ---
 
 # Anfragen und Auskünfte zum Material
