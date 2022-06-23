@@ -39,7 +39,7 @@ module DriveDownloader
 
       # Define details of the query
       query = "'#{folder_id}' in parents"
-      fields = 'nextPageToken, files(id, name, mimeType, size, parents, trashed)'
+      fields = 'nextPageToken, files(id, name, mimeType, size, parents, trashed, modifiedTime)'
 
       response = nil
       time = Benchmark.measure {
