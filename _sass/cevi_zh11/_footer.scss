@@ -23,10 +23,25 @@
   justify-content: center;
   margin: auto;
 
+
+  span, img {
+    opacity: 0.65;
+  }
+
+  .footer-nav-title {
+    opacity: 1;
+  }
+
   a {
     text-decoration: none;
     color: $footer-nav-color;
     font-weight: normal;
+
+    &:hover span, &:hover img {
+      opacity: 1;
+    }
+
+
   }
 
   span {
