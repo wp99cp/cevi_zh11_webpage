@@ -10,10 +10,6 @@ fi
 
 # build page: some pages need two build passes (e.g. the sitemap to including auto generated pages)
 JEKYLL_ENV=$MODE bundler exec jekyll build --incremental --profile --trace --config $CONFIG_FILE
-
-# force rebuild of some pages
-rm -f _site/sitemap.xml
-
 JEKYLL_ENV=$MODE bundler exec jekyll build --incremental --profile --trace --config $CONFIG_FILE
 
 # Copy folder with documents to destination directory ./_site
