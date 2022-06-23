@@ -22,7 +22,7 @@ cells:
     required: true
 
   - element: input
-    label: Mail
+    label: Mail (der Eltern)
     type: email
     required: true
 
