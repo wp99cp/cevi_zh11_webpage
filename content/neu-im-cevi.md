@@ -5,6 +5,7 @@ main-menu-priority: 20
 permalink: /neu-im-cevi
 footer-menu: Ceviluft schnuppern
 footer-menu-priority: 1
+contact_page: true
 ---
 
 # Ceviluft schnuppern

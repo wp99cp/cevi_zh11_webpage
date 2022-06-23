@@ -7,12 +7,27 @@ layout: page
 <h1>Hier findest du alle Seiten unserer Webseite aufgelistet.</h1>
 <p>Auf dieser Seite findest du die Links zu allen Unterseiten dieser Webpage:</p>
 
-<ul id="sitemap-list">
+<ul class="sitemap-list">
 {%- assign pages = site.html_pages | sort: 'url' -%}
 {%- for page in pages -%}
     <!-- Ignore pages containing a redirect_to -->
-    {%- if page.redirect_to == nil -%}
-    <li><span><b>{{page.title}}</b><br>Link: <a href="{{ page.url }}"> zh11.ch{{ page.url  }}</a></span></li>
+    {%- if page.redirect_to == nil and page.contact_page == nil -%}
+    <li><span><b>{{page.title}}</b><br>Link: <a href="{{ page.url }}">
+        {%- if page.url == '/' -%} zh11.ch
+        {%- else -%} {{ page.url }} {%- endif -%}
+    </a></span></li>
     {%- endif -%}
 {% endfor %}
+</ul>
+
+<h2>Kontakt Seiten:</h2>
+
+<ul class="sitemap-list">
+    {%- assign pages = site.html_pages | sort: 'url' -%}
+    {%- for page in pages -%}
+    <!-- Ignore pages containing a redirect_to -->
+    {%- if page.contact_page -%}
+    <li><span><b>{{page.title}}</b><br>Link: <a href="{{ page.url }}"> {{ page.url }}</a></span></li>
+    {%- endif -%}
+    {% endfor %}
 </ul>

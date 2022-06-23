@@ -4,6 +4,7 @@ permalink: /material/kontakt
 sub-menu: Material
 sub-menu-name: Mietanfragen
 sub-menu-priority: 0
+contact_page: true
 ---
 
 # Anfragen und Auskünfte zum Material
