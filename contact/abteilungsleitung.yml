@@ -1,0 +1,27 @@
+type: with_picture
+
+cards:
+  - name: Cyrill Püntener
+    cevi-name: JPG
+    image: /assets/portrait_pictures/cyrill_puentener.jpg
+    function: Abteilungsleiter (Männer)
+    contact_form: forms/default.yml
+
+  - name: Anja Geiser
+    cevi-name: Vanille
+    image: /assets/portrait_pictures/anja_geiser.jpg
+    function: Abteilungsleiterin (Fröschli)
+    contact_form: forms/default.yml
+
+  - name: Cédric Fauster
+    cevi-name: Chnobli
+    image: /assets/portrait_pictures/cedric_fauster.jpg
+    function: Abteilungsleiter (Männer)
+    contact_form: forms/default.yml
+
+  - name: Jaël Göldi
+    cevi-name: Bagheera
+    image: /assets/portrait_pictures/jael_goeldi.jpg
+    function: Abteilungsleiterin (Frauen)
+    contact_form: forms/default.yml
+

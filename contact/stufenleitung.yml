@@ -1,0 +1,27 @@
+type: without_picture
+
+cards:
+  - name: Theresa Schudel
+    cevi-name: Ligula
+    function: Stufe Amos
+    contact_form: forms/default.yml
+
+  - name: Jaël Göldi
+    cevi-name: Bagheera
+    function: Stufe Espiera
+    contact_form: forms/default.yml
+
+  - name: Cédric Fauster
+    cevi-name: Chnobli
+    function: Stufe Nameless
+    contact_form: forms/default.yml
+
+  - name: Cyrill Püntener
+    cevi-name: JPG
+    function: Stufe Sinai
+    contact_form: forms/default.yml
+
+  - name: Anja Geiser
+    cevi-name: Vanille
+    function: Fröschli
+    contact_form: forms/default.yml

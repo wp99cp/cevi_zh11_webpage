@@ -8,7 +8,8 @@ else
   CONFIG_FILE="_config.yml,_development.config.yml"
 fi
 
-# build page
+# build page: some pages need two build passes (e.g. the sitemap to including auto generated pages)
+JEKYLL_ENV=$MODE bundler exec jekyll build --incremental --profile --trace --config $CONFIG_FILE
 JEKYLL_ENV=$MODE bundler exec jekyll build --incremental --profile --trace --config $CONFIG_FILE
 
 # Copy folder with documents to destination directory ./_site

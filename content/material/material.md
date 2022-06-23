@@ -18,6 +18,8 @@ Wir benötigen unser Material nicht immer selber und damit es zwischen Sommerlag
 unbewegt in unserm Materiallager verstaubt, teilen wir es mir dir! Wir vermieten einen Grossteil von unserem Material an
 andere Cevi-Abteilungen, Jugendorganisationen aber auch an Privatpersonen, Organisationen und Schulen.
 
+[[ cards :: content/material/materialmiete.yml ]]
+
 Der Unterhalt sowie die Neuanschaffung von Material ist teuer und mit jedem Gebrauch entsteht auch Abnutzung. Doch ein
 Zelt ist nur brauchbar, wenn es dicht ist. Die Schrauben am Fallbalken müssen auf jeden Fall halten. Daher verlangen wir
 für die Materialmiete eine kleine Entschädigung.

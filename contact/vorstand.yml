@@ -1,0 +1,27 @@
+type: without_picture
+
+cards:
+  - name: Cédric Fauster
+    cevi-name: Chnobli
+    function: Materialchef
+    link: /material/kontakt
+
+  - name: Marc Bachmann
+    cevi-name: Taifun
+    function: Materialchef
+    link: /material/kontakt
+
+  - name: Jasmin Voss
+    cevi-name: Pepsi
+    function: Präsidentin
+    contact_form: forms/default.yml
+
+  - name: Patrick Gan
+    cevi-name: Tiger Ente
+    function: Kassier
+    contact_form: forms/default.yml
+
+  - name: Cyrill Püntener
+    cevi-name: JPG
+    function: Webseite
+    contact_form: forms/default.yml

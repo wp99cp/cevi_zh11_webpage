@@ -1,0 +1,53 @@
+@import "shadows_borders";
+@import "colors";
+@import "sizes";
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin-bottom: 20px;
+
+  .card {
+    display: block;
+    padding: 10px;
+
+    text-align: center;
+
+    border: $separator-border;
+    border-radius: 10px;
+    max-width: 275px;
+
+    &:hover {
+      background-color: $contrast-background;
+
+      .card-image img {
+        border-radius: 5px;
+      }
+
+    }
+
+    span {
+      display: block;
+      padding: 6px;
+      color: $font-color;
+      font-weight: normal;
+    }
+
+    .card-image {
+      overflow: hidden;
+
+      padding-bottom: 20px;
+
+      img {
+        width: 100%;
+        height: auto;
+
+        transition: border-radius 215ms cubic-bezier(.4, 0, 1, 1);
+        border-radius: 50%;
+
+      }
+
+    }
+  }
+}
