@@ -24,6 +24,7 @@ cells:
     label: Telefonnummer
 
   - element: input
+    type: number
     label: Anzahl Personen
 
   - element: checkbox
