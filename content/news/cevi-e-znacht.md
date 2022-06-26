@@ -1,6 +1,9 @@
 ---
 title: Cevi-E Znacht
 permalink: /cevi-e-znacht
+news-entry-title: In Erinnerungen schwelgen und alte Bekannte treffen
+news-entry-caption: Am 11. Hovember laden wir alle ehemaligen Leitenden des Cevi Züri 11 ein!
+date: 2022-06-26T16:00
 contact_page: true
 ---
 
