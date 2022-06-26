@@ -1,6 +1,7 @@
 ---
 title: Die neusten Updates aus dem Cei Züri 11
 permalink: /cevi-news
+regenerate: true
 ---
 
 # Cevi News
@@ -14,7 +15,9 @@ Bei uns im Cevi ist immer etwas los! Hier findest du alle News-Beiträge in chro
 <div class="news-entry">
 <span class="news-entry-date">{{ p.date | date: "%m.%d.%Y, %H:%M Uhr" }}</span>
 <h3 class="news-entry-title">{{ p.news-entry-title}}</h3>
-<p class="news-entry-content">{{p.news-entry-caption}} <a href="{{ p.url }}"> Mehr lesen... </a></p>
+<p class="news-entry-content">{{p.news-entry-caption}} <a href="{{ p.url }}">
+{%- if p.fotos -%} Fotos ansehen... {%- else -%}     Mehr lesen... {%- endif -%}
+</a></p>
 </div>
 
 {% endfor %}

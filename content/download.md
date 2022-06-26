@@ -21,6 +21,10 @@ permalink: /download
 
 [[ google_drive folder :: 1ijQiPBZ8iEBYz2HNI8rOSlpSQVR9ALUS ]]
 
+### Den Cevi Züri 11 sponsoren
+
+[[ google_drive folder :: 1zPeyQhQZQeJpb2FQhLjNPkucqcKdVHVX ]]
+
 ### Jahresberichte des Cevi Züri 11
 
 [[ google_drive folder :: 1Z7oW06ab9XHgKIffUmNv7cP4xetvGjiq ]]
