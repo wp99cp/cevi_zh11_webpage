@@ -1,0 +1,42 @@
+# see backend/config/forms.yml for the corresponding mail address
+receiver: neu_im_cevi_receiver
+
+# defines the input cells of the form
+cells:
+
+  - element: input
+    label: Vorname
+    required: true
+
+  - element: input
+    label: Nachname
+    required: true
+
+  - element: input
+    label: Ceviname
+
+  - element: input
+    label: Mail
+    type: email
+    required: true
+
+  - element: input
+    label: Telefonnummer
+
+  - element: input
+    label: Anzahl Personen
+
+  - element: checkbox
+    label: Ich möchte gerne vegetarisch essen
+
+  - element: input
+    label: Adresse
+    required: true
+    style_wide: true
+
+  - element: checkbox
+    label: Ich bin an einer <a href="/passiv-mitglied">passiv Mitgliederschaft</a> interessiert
+
+  - element: textarea
+    label: Bemerkungen und Allergen
+    style_wide: true
