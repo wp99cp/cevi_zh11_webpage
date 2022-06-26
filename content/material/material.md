@@ -30,6 +30,7 @@ zu reinigen und zu versorgen.
 Eine genaue Übersicht der aktuell geltenden Mietpreise kannst du dem folgenden Dokument entnehmen:
 
 [[ google_drive document :: 1nbNc3CIaiqhaXb7kIvKg-8LWwTXBejfr ]]
+[[ google_drive document :: 1_fGAk4Gbkl_Nd3a0O-4fbBfBmsGLzK9l ]]
 
 ### Anfragen und Auskünfte zum Material
 
@@ -112,3 +113,4 @@ stinkenden Bunker zu verbringen.
 
 Hast du Fragen zum Umgang mit Blachen, Seilen, Gaslampen, Kochern usw., dann steht dir unser Materialteam gerne zur
 Verfügung. [Melde dich ungeniert bei uns.](/material/kontakt)
+

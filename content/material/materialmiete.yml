@@ -6,3 +6,33 @@ cards:
     image: /assets/material_pictures/fallbalken.jpg
     function: Miete ab CHF 150.-
     link: /material/fallbalken
+
+  - name: Transportanhänger
+    cevi-name:
+    image: /assets/material_pictures/anhaenger.jpg
+    function: Miete ab CHF 35.-
+    link: /material/anhaenger
+
+  - name: Verkaufsstand
+    cevi-name:
+    image: /assets/material_pictures/verkaufsstand.jpg
+    function: Miete ab CHF 50.-
+    link: /material/kontakt
+
+  - name: Kochtöpfe
+    cevi-name:
+    image: /assets/material_pictures/kochtopf.jpg
+    function: Miete ab CHF 10.-
+    link: /material/kontakt
+
+  - name: Gulaschkanone
+    cevi-name:
+    image: /assets/material_pictures/gulaschkanone.jpg
+    function: Miete ab CHF 50.-
+    link: /material/kontakt
+
+  - name: Weiteres Material
+    cevi-name:
+    image: /assets/material_pictures/material.jpg
+    function: Auf Anfrage
+    link: /material/kontakt
