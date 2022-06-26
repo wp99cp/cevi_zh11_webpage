@@ -1,5 +1,5 @@
 # see backend/config/forms.yml for the corresponding mail address
-receiver: neu_im_cevi_receiver
+receiver: cevi-e-znacht_receiver
 
 # defines the input cells of the form
 cells:
