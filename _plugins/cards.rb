@@ -7,7 +7,7 @@ $active_forms = "backend/active_forms"
 # Removes the old form config files
 FileUtils.rm_rf Dir.glob("#{$active_forms}/*.yml")
 
-def create_cards(config_file)
+def create_cards(config_file, site_context)
 
   forms_config = YAML.load_file(config_file)
 
@@ -24,8 +24,13 @@ def create_cards(config_file)
 
       html_code += "<a href=\"#{link}\" class=\"card\">"
       if forms_config['type'] == 'with_picture'
+
+        path_215x215 = resize_gallery_image(card['image'][1..-1], '215x215')
+        static_file = Jekyll::StaticFile.new(site_context, site_context.source, "imgs/gallery", File.basename(path_215x215))
+        site_context.static_files << static_file
+
         html_code += "<div class=\"card-image\">"
-        html_code += "<img src=\"#{card['image']}\" alt=\"#{card['name']}\">"
+        html_code += "<img src=\"/#{path_215x215}\" alt=\"#{card['name']}\">"
         html_code += "</div>"
       end
       html_code += "<div class=\"card-content\">"
@@ -67,7 +72,7 @@ Jekyll::Hooks.register :pages, :pre_render do |post, payload|
   if payload['site']['markdown_ext'].include? doc_ext
 
     post.content = post.content.gsub(/\[\[ cards :: (.+) \]\]/) do
-      create_cards(Regexp.last_match(1))
+      create_cards(Regexp.last_match(1), post.site)
     end
 
   end
