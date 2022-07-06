@@ -17,7 +17,7 @@ anschliessend per Mail kontaktieren.
 
 ## Auswahl an Cevi-Artikel
 
-[[ google_drive document :: 1wnBK-iE-XqFAJOznmwKRqK6ky85Z4Ega ]]
+[[ google_drive folder :: 1VD5xsDzii2OHrWGEwmIUeRiVQPnTpsdI ]]
 
 Für weitere Artikel verweisen wir dich an dieser Stelle
 auf [den offizellen Ausrüster des Cevi Schweiz (hajk.ch)](http://hajk.ch/).

@@ -32,3 +32,7 @@ permalink: /download
 ### Protokolle der GVs
 
 [[ google_drive folder :: 1N4lBbPAdPWCT6ziewbH6XiECzkbndYQZ ]]
+
+### Cevilädeli
+
+[[ google_drive folder :: 1VD5xsDzii2OHrWGEwmIUeRiVQPnTpsdI ]]
