@@ -90,10 +90,10 @@ module DriveDownloader
     end
   end
 
-  def self.download_file(file, directory)
+  def self.download_file(file, directory, prefix='')
     @@semaphore.synchronize do
 
-      file_name = self.parse_file_name(file['name'])
+      file_name = prefix + self.parse_file_name(file['name'])
       file_path = File.join(directory, file_name)
 
       # remove leading '_' from file_path
