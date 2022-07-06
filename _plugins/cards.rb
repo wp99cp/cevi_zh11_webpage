@@ -25,7 +25,7 @@ def create_cards(config_file, site_context)
       html_code += "<a href=\"#{link}\" class=\"card\">"
       if forms_config['type'] == 'with_picture'
 
-        path_215x215 = resize_gallery_image(card['image'][1..-1], '215x215')
+        path_215x215 = resize_gallery_image(card['image'][1..-1], '215x215', '')
         static_file = Jekyll::StaticFile.new(site_context, site_context.source, "imgs/gallery", File.basename(path_215x215))
         site_context.static_files << static_file
 

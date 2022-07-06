@@ -6,6 +6,7 @@ require 'benchmark'
 require_relative 'utils/drive_downloader'
 require 'exiftool'
 require 'parallel'
+require 'digest/sha1'
 
 def date_to_string(timestamp)
 
@@ -17,24 +18,24 @@ end
 CACHE_DIR = "imgs/gallery"
 
 # Generate output image filename.
-def _dest_filename(src_path, options)
+def _dest_filename(src_path, options, postfix)
 
   options_slug = options.gsub(/[^\da-z]+/i, "")
   ext = '.webp' # File.extname(src_path)
 
-  "#{File.basename(src_path, ".*")}_#{options_slug}#{ext}"
+  "#{File.basename(src_path, ".*")}_#{options_slug}_#{postfix}#{ext}"
 
 end
 
 # Build the path strings.
-def _paths(img_path, options)
+def _paths(img_path, options, postfix)
 
   src_path = img_path
   raise "Image at #{src_path} is not readable" unless File.readable?(src_path)
 
   dest_dir = CACHE_DIR
 
-  dest_filename = _dest_filename(src_path, options)
+  dest_filename = _dest_filename(src_path, options, postfix)
 
   dest_path = File.join(dest_dir, dest_filename)
   dest_path_rel = File.join(CACHE_DIR, dest_filename)
@@ -53,13 +54,13 @@ end
 # param img_desc: e.g. "800x800>"
 #
 # return dest_path_rel: Relative path for output file.
-def resize_gallery_image(img_src, options)
+def resize_gallery_image(img_src, options, postfix)
   raise "`source` must be a string - got: #{img_src.class}" unless img_src.is_a? String
   raise "`source` may not be empty" unless img_src.length > 0
   raise "`options` must be a string - got: #{options.class}" unless options.is_a? String
   raise "`options` may not be empty" unless options.length > 0
 
-  src_path, dest_path, dest_dir, _, dest_path_rel = _paths(img_src, options)
+  src_path, dest_path, dest_dir, _, dest_path_rel = _paths(img_src, options, postfix)
 
   FileUtils.mkdir_p(dest_dir)
 
@@ -112,12 +113,12 @@ end
 
 def download_photos(config, uuid, site_context, tagged_with_webpage = true)
 
-  files = DriveDownloader.list_files(config, uuid)
+   files = DriveDownloader.list_files(config, uuid)
 
   optimized_img_paths = []
 
   semaphore = Mutex.new
-  results = files.map do |file| # TODO: the following code won't run inside the GithubAction: `Parallel.map do |file|
+  results = files.map do |file|
     next unless (file['mimeType'] == 'image/jpeg' or file['mimeType'] == 'image/png' or file['mimeType'] == 'image/heif')
 
     local_file_path = DriveDownloader.download_file(file, 'gallery')
@@ -126,8 +127,8 @@ def download_photos(config, uuid, site_context, tagged_with_webpage = true)
     e = Exiftool.new(local_file_path)
     next unless ((tagged_with_webpage and e[:keywords].to_s.include?('Webpage')) or not tagged_with_webpage)
 
-    path_1800x1200 = resize_gallery_image(local_file_path, '1800x1200')
-    path_255x170 = resize_gallery_image(local_file_path, '255x170')
+    path_1800x1200 = resize_gallery_image(local_file_path, '1800x1200', uuid[0, 10])
+    path_255x170 = resize_gallery_image(local_file_path, '255x170', uuid[0, 10])
 
     optimized_img_paths.append path_1800x1200
     optimized_img_paths.append path_255x170
