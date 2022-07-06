@@ -14,14 +14,14 @@ cards:
   - name: Jasmin Voss
     cevi-name: Pepsi
     function: Präsidentin
-    contact_form: forms/default.yml
+    contact_form: forms/people/jasmin_voss.yml
 
   - name: Patrick Gan
     cevi-name: Tiger Ente
     function: Kassier
-    contact_form: forms/default.yml
+    contact_form: forms/people/patrick_gan.yml
 
   - name: Cyrill Püntener
     cevi-name: JPG
     function: Webseite
-    contact_form: forms/default.yml
+    contact_form: forms/webadmin.yml

@@ -4,24 +4,24 @@ cards:
   - name: Theresa Schudel
     cevi-name: Ligula
     function: Stufe Amos
-    contact_form: forms/default.yml
+    contact_form: forms/people/theresa_schudel.yml
 
   - name: Jaël Göldi
     cevi-name: Bagheera
     function: Stufe Espiera
-    contact_form: forms/default.yml
+    contact_form: forms/people/jael_goeldi.yml
 
   - name: Cédric Fauster
     cevi-name: Chnobli
     function: Stufe Nameless
-    contact_form: forms/default.yml
+    contact_form: forms/people/cedric_fauster.yml
 
   - name: Cyrill Püntener
     cevi-name: JPG
     function: Stufe Sinai
-    contact_form: forms/default.yml
+    contact_form: forms/people/cyrill_puentener.yml
 
   - name: Anja Geiser
     cevi-name: Vanille
     function: Fröschli
-    contact_form: forms/default.yml
+    contact_form: forms/people/anja_geiser.yml

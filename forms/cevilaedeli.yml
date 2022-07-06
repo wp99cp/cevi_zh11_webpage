@@ -1,0 +1,31 @@
+# see backend/config/forms.yml for the corresponding mail address
+receiver: cevilaedeli_receiver
+
+# defines the input cells of the form
+cells:
+
+  - element: input
+    label: Vorname
+    required: true
+
+  - element: input
+    label: Nachname
+
+  - element: input
+    label: Mail
+    type: email
+    required: true
+
+  - element: input
+    label: Telefonnummer
+    required: true
+
+  - element: input
+    label: Adresse
+    required: true
+    style_wide: true
+
+  - element: textarea
+    label: Deine Anfrage
+    required: true
+    style_wide: true

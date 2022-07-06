@@ -13,7 +13,6 @@ permalink: /kontakt
 
 Hast du noch offene Fragen, oder ein Anliegen rund um den Cevi Züri 11? Dann nimm mit uns Kontakt auf.
 
-
 ### Abteilungsleitung
 
 Die Abteilungsleitung ist zuständig für die Organisation des Cevi Züri 11. Sie organisiert Anlässe und Lager, führt die
