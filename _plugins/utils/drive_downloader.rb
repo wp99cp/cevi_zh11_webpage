@@ -108,6 +108,8 @@ module DriveDownloader
         file_path += '.heic'
       elsif file['mimeType'] == 'application/pdf'
         file_path += '.pdf'
+      elsif file['mimeType'] == 'audio/mpeg'
+        file_path += '.mp3'
       end
 
       if File.file?(file_path.to_s)

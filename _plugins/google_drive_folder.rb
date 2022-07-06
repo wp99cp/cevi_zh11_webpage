@@ -33,7 +33,9 @@ def google_drive(config, element_type, uuid)
     result = '<div class=" documents ">'
     files.each do |file|
       puts "#{file['name']} (#{file['id']}, #{file['mimeType']})"
-      next unless file['mimeType'] == 'application/pdf'
+
+      # filter for supported file types
+      next unless %w[application/pdf audio/mpeg].include? file['mimeType']
 
       full_file_name = DriveDownloader.download_file(file, 'docs')
       result += "\n#{generate_liquid_tag(file, full_file_name)}"

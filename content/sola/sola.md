@@ -29,6 +29,8 @@ stellte sich heraus, dass dort die böse Rote Königin ihr ungemacht verrichtet.
 
 Schwelge in Erinnerungen uns lese die ausführlichen Berichte zu den vergangenen Lagern:
 
+[[ cards :: content/sola/sola_cards.yml ]]
+
 ## Bei uns ist jeder willkommen.
 
 Unsere Sommerlager sind für alle Kinder ab sieben Jahren offen, auch für alle, die normalerweise nicht an den

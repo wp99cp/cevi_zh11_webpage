@@ -1,0 +1,38 @@
+type: with_picture
+
+cards:
+  - name: Im alten Rom
+    cevi-name: Sola 2022
+    image: /assets/sola/rela_sola_2022.png
+    function: Hüntwangen (ZH)
+    link: https://www.rela-zh.ch/
+
+  - name: Zeitreise
+    cevi-name: Sola 2021
+    image: /assets/sola/sola_2021.jpg
+    function: Elgg (ZH)
+    link: /sola/2021
+
+  - name: Auf der Suche nach der Mia Lena
+    cevi-name: Sola 2020
+    image: /assets/sola/sola_2020.jpg
+    function: Wyssachen (BE)
+    link: /sola/2020
+
+  - name: Der Cevi taucht ab!
+    cevi-name: Sola 2019
+    image: /assets/sola/sola_2019.jpg
+    function: Rheinau (ZH)
+    link: /sola/2019
+
+  - name: Alice im Wunderland
+    cevi-name: Sola 2018
+    image: /assets/sola/sola_2018.jpg
+    function: Tschamut-Selva (GR)
+    link: /sola/2018
+
+  - name: Weltstadt-Wissensstadt
+    cevi-name: Sola 2017
+    image: /assets/sola/sola_2017.jpg
+    function: Wäldi (TG)
+    link: /sola/2017

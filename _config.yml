@@ -48,6 +48,11 @@ defaults:
     values:
       news-entry: true
 
+  - scope:
+      path: "content/sola/archiv"
+    values:
+      news-entry: true
+
 imageoptim:
   svgo: false   # Disabling svgo because it throws some error
   jpegrecompress:
