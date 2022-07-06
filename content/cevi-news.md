@@ -2,6 +2,9 @@
 title: Die neusten Updates aus dem Cei Züri 11
 permalink: /cevi-news
 regenerate: true
+sub-menu: Cevi Züri 11
+sub-menu-name: Cevi News
+sub-menu-priority: 3
 ---
 
 # Cevi News
