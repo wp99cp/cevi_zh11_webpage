@@ -23,7 +23,7 @@ def _dest_filename(src_path, options, postfix)
   options_slug = options.gsub(/[^\da-z]+/i, "")
   ext = '.webp' # File.extname(src_path)
 
-  "#{File.basename(src_path, ".*")}_#{options_slug}_#{postfix}#{ext}"
+  "#{File.basename(src_path, ".*")}_#{options_slug}#{"_" unless postfix == ''}#{postfix}#{ext}"
 
 end
 
@@ -127,8 +127,8 @@ def download_photos(config, uuid, site_context, tagged_with_webpage = true)
     e = Exiftool.new(local_file_path)
     next unless ((tagged_with_webpage and e[:keywords].to_s.include?('Webpage')) or not tagged_with_webpage)
 
-    path_1800x1200 = resize_gallery_image(local_file_path, '1800x1200', uuid[0, 10])
-    path_255x170 = resize_gallery_image(local_file_path, '255x170', uuid[0, 10])
+    path_1800x1200 = resize_gallery_image(local_file_path, '1800x1200', '')
+    path_255x170 = resize_gallery_image(local_file_path, '255x170', '')
 
     optimized_img_paths.append path_1800x1200
     optimized_img_paths.append path_255x170
