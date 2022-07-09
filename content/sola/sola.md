@@ -27,7 +27,7 @@ Und schliesslich im Jahr 2018: Der Märzhase brachte uns in die wundervolle Welt
 stellte sich heraus, dass dort die böse Rote Königin ihr ungemacht verrichtet. Glücklicherweise konnten wir sie
 überwältigen…
 
-Schwelge in Erinnerungen uns lese die ausführlichen Berichte zu den vergangenen Lagern:
+Schwelge in Erinnerungen und lese die ausführlichen Berichte zu den vergangenen Lagern:
 
 [[ cards :: content/sola/sola_cards.yml ]]
 
