@@ -32,14 +32,14 @@ def return_status():
 
 
 def send_message_to_consignor(message_sender: MailSender, request_json):
-    receiver = request_json['Mail']
+    receiver = request_json['message']['Mail']
     subject = "Cevi Züri 11 | Bestätigung Kontaktformular"
     msg = "Danke für deine Nachricht: " + json2html.convert(json=request_json)
     message_sender.send_message(receiver, subject, msg)
 
 
 def send_message_to_receiver(message_sender: MailSender, request_json):
-    receiver = MailReceiver.DEFAULT
+    receiver = MailReceiver[request_json['receiver']]
     subject = "Cevi Züri 11 | Nachricht via Kontaktformular"
     msg = "Neue Nachricht: " + json2html.convert(json=request_json)
     message_sender.send_message(receiver, subject, msg)

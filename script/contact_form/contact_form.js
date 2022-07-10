@@ -74,7 +74,7 @@ function set_timed_status(form_element, msg, success) {
  *
  * @param uuid uuid of the form HTMLElement
  */
-function send_message(uuid, backend_url) {
+function send_message(uuid, backend_url, receiver) {
 
     const form_element = document.getElementById(uuid);
 
@@ -84,7 +84,7 @@ function send_message(uuid, backend_url) {
     console.log('Send message for ', uuid)
     const form_cells = document.querySelectorAll(`#${uuid} > div > input, #${uuid} > div > textarea`);
 
-    const form_content = extract_content(form_cells);
+    const form_content = {'message': extract_content(form_cells), 'receiver': receiver};
     console.log(form_content);
 
     // Inform user that the form was send to the server

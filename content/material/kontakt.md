@@ -22,3 +22,4 @@ Unsere Matchefen Cédric Fauster v/o Chnobli und Marc Bachmann v/o Taifun steht 
 ## Weitere Kontakte
 
 Weitere Kontakte findest auf [unserer Kontaktseite](/kontakt).
+

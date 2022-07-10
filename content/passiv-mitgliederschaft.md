@@ -26,3 +26,4 @@ Als Passivmitglied kannst du mit einem jährlichen Beitrag von Fr. 25.00 von fol
 Das ist ganz einfach: fülle einfach folgendes Formular aus. Anschliessend werden wir uns bei dir melden.
 
 [[ contact-form :: forms/passiv-mitglied.yml ]]
+

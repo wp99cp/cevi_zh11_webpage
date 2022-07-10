@@ -20,3 +20,4 @@ Wir werden dich anschliessend per Mail kontaktieren und alle Details zum nächst
 Wir freuen uns auf dich!
 
 [[ contact-form :: forms/schnuppern.yml ]]
+

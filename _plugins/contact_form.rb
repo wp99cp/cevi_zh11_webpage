@@ -15,7 +15,7 @@ def contact_form(config, config_file)
   form_config = YAML.load_file(config_file)
 
   html_code = "<form class=\"input-container\" id=\"#{uuid}\"
-      action=\"javascript:send_message('#{uuid}', '#{config['backend']}')\">
+      action=\"javascript:send_message('#{uuid}', '#{config['backend']}', '#{form_config['receiver']}')\">
   <script src=\"/script/contact_form/contact_form.js\"/></script>"
 
   form_config['cells'].each do |cell|
