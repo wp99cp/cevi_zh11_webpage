@@ -5,7 +5,6 @@ import json
 import os.path
 from email.mime.text import MIMEText
 from enum import Enum
-
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -57,7 +56,7 @@ class MailSender:
 
         try:
             message = MIMEText(msg, 'html')
-            message['To'] = self.mail_config[receiver] if isinstance(receiver, MailReceiver) else receiver
+            message['To'] = self.mail_config[receiver] if receiver in self.mail_config else receiver
             message['From'] = self.mail_config['dispatcher_address']
             message['Subject'] = subject
 
@@ -79,4 +78,3 @@ class MailSender:
 
 if __name__ == '__main__':
     message_sender = MailSender()
-

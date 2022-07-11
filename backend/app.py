@@ -39,10 +39,9 @@ def send_message_to_consignor(message_sender: MailSender, request_json):
 
 
 def send_message_to_receiver(message_sender: MailSender, request_json):
-    receiver = MailReceiver[request_json['receiver']]
     subject = "Cevi Züri 11 | Nachricht via Kontaktformular"
     msg = "Neue Nachricht: " + json2html.convert(json=request_json)
-    message_sender.send_message(receiver, subject, msg)
+    message_sender.send_message(request_json['receiver'], subject, msg)
 
 
 if __name__ == "__main__":
