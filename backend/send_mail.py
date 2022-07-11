@@ -52,13 +52,18 @@ class MailSender:
 
         self.service = build('gmail', 'v1', credentials=creds)
 
-    def send_message(self, receiver: MailReceiver | str, subject: str, msg: str):
+    def send_message(self, receiver: MailReceiver | str, subject: str, msg: str, reply_to: str = None):
 
         try:
             message = MIMEText(msg, 'html')
             message['To'] = self.mail_config[receiver] if receiver in self.mail_config else receiver
             message['From'] = self.mail_config['dispatcher_address']
             message['Subject'] = subject
+
+            # add reply to address if given
+            # allows for easier handling of replies by the receiver
+            if reply_to is not None and reply_to != '':
+                message['Reply-To'] = reply_to
 
             # encoded message
             encoded_message = base64.urlsafe_b64encode(message.as_bytes()).decode()

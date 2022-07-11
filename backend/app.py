@@ -1,9 +1,7 @@
 import os
-from multiprocessing import Process
-
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from json2html import *
+from multiprocessing import Process
 
 from send_mail import MailSender, MailReceiver
 
@@ -31,17 +29,36 @@ def return_status():
     return jsonify(response)
 
 
+def format_to_text(json: any, indent=0) -> str:
+    """
+    Convert json to human-readable text
+    """
+
+    # check if json is a string or a json object
+    if isinstance(json, str):
+        return json
+
+    # recursively convert json to text
+    text = "<br>"
+    for key, value in json.items():
+        text += "&emsp;" * indent
+        text += f'<b>{key}</b>: {format_to_text(value, indent + 1)}' + "<br>"
+    return text
+
+
 def send_message_to_consignor(message_sender: MailSender, request_json):
     receiver = request_json['message']['Mail']
     subject = "Cevi Züri 11 | Bestätigung Kontaktformular"
-    msg = "Danke für deine Nachricht: " + json2html.convert(json=request_json)
+    name = request_json['message']['Vorname'] if 'Vorname' in request_json['message'] else ''
+    msg = f"Lieber {name}<br><br>Vielen Danke für deine Anfrage, du wirst in kürze von uns hören.<br><br>Liebe " \
+          f"Grüsse<br>Cevi Züri 11 Team<br><br> Deine Nachricht:" + format_to_text(json=request_json['message'])
     message_sender.send_message(receiver, subject, msg)
 
 
 def send_message_to_receiver(message_sender: MailSender, request_json):
     subject = "Cevi Züri 11 | Nachricht via Kontaktformular"
-    msg = "Neue Nachricht: " + json2html.convert(json=request_json)
-    message_sender.send_message(request_json['receiver'], subject, msg)
+    msg = "Neue Nachricht von der Webseite: <br>" + format_to_text(json=request_json)
+    message_sender.send_message(request_json['receiver'], subject, msg, request_json['message']['Mail'])
 
 
 if __name__ == "__main__":
