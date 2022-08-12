@@ -13,7 +13,7 @@ contact_page: true
 
 Um alte Cevi-Bekanntschaften wiederzubeleben, Freundschaften neu zu knüpfen und in Erinnerungen zu schwelgem, laden wir dich gerne zu einem gemeinsammen Nachtessen ein.
 
-Mit dem Cevi-E-Znacht wollen wir allen ehemaligen Leiter*innen des Cevi Züri 11, die Gelegenheit geben, sich wieder einmal zu sehen und zu erfahren, wie der Cevi Züri 11 heute aussieht. Nebst einem feinen Znacht, werden wir Fotos zeigen und aus den letzten Lagern berichten. Natürlich kommt auch die Möglichkeit sich mit anderen ehemaligen und aktiven Leiter*innen auszutauschen, nicht zu kurz.
+Mit dem Cevi-E-Znacht wollen wir allen ehemaligen Leiter\*innen des Cevi Züri 11, die Gelegenheit geben, sich wieder einmal zu sehen und zu erfahren, wie der Cevi Züri 11 heute aussieht. Nebst einem feinen Znacht, werden wir Fotos zeigen und aus den letzten Lagern berichten. Natürlich kommt auch die Möglichkeit sich mit anderen ehemaligen und aktiven Leiter\*innen auszutauschen, nicht zu kurz.
 
 - **Wann?** Freitag der 11. November 2022, ab 18.30 Uhr
 - **Wo?** Im PfadihuusZüri direkt beim Zoo Zürich
