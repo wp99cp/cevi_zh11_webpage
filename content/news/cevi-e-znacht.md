@@ -11,7 +11,7 @@ contact_page: true
 
 ## Am 11. November laden wir alle ehemaligen Leitenden des Cevi Züri 11 ein!
 
-Um alte Cevi-Bekanntschaften wiederzubeleben, Freundschaften neu zu knüpfen und in Erinnerungen zu schwelgem, laden wir dich gerne zu einem gemeinsammen Nachtessen ein.
+Um alte Cevi-Bekanntschaften wiederzubeleben, Freundschaften neu zu knüpfen und in Erinnerungen zu schwelgen, laden wir dich gerne zu einem gemeinsamen Nachtessen ein.
 
 Mit dem Cevi-E-Znacht wollen wir allen ehemaligen Leiter\*innen des Cevi Züri 11, die Gelegenheit geben, sich wieder einmal zu sehen und zu erfahren, wie der Cevi Züri 11 heute aussieht. Nebst einem feinen Znacht, werden wir Fotos zeigen und aus den letzten Lagern berichten. Natürlich kommt auch die Möglichkeit sich mit anderen ehemaligen und aktiven Leiter\*innen auszutauschen, nicht zu kurz.
 
