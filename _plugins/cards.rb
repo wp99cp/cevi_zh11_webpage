@@ -16,13 +16,21 @@ def create_cards(config_file, site_context)
   forms_config['cards'].each do |card|
 
     puts config_file.split("/")[-1].split(".")[0]
-    page_name = (config_file.split("/")[-1].split(".")[0] + ' ' + card['name']).downcase.gsub!(/\s/, '_')
-    link = "/kontakt/" + page_name
+
+    page_name = ""
+
+    unless card['link'] or card['contact_form'] == nil or card['contact_form'] == ""
+      page_name = (card['contact_form'].split("/")[-1].split(".")[0]).downcase
+    end
+
+    link = (page_name == nil or page_name == "") ? "" : "/kontakt/" + page_name
     link = card['link'] ? card['link'] : link
 
     if %w[with_picture without_picture].include? forms_config['type']
 
-      html_code += "<a href=\"#{link}\" class=\"card\">"
+      html_code += "<a "
+      html_code += "href=\"#{link}\" " if link != ""
+      html_code += "class=\"card\">"
       if forms_config['type'] == 'with_picture'
 
         path_215x215 = resize_gallery_image(card['image'][1..-1], '215x215', '')
@@ -39,7 +47,7 @@ def create_cards(config_file, site_context)
       html_code += "</div>"
       html_code += "</a>"
 
-      unless card['link']
+      unless card['link'] or page_name == nil
 
         # create a markdown file and save it in the auto_generated_pages folder
         markdown_file = File.new("contact/auto_generated_pages/#{page_name}.md", "w")

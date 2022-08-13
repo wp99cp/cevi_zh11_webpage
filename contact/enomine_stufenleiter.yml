@@ -1,0 +1,26 @@
+type: with_picture
+
+cards:
+  - name: Cédric Fauster
+    cevi-name: Chnobli
+    image: /assets/portrait_pictures/placeholder.png
+    function: Stufenleiter
+    contact_form: forms/people/cedric_fauster.yml
+
+  - name: Kim Hagen
+    cevi-name: Panda
+    image: /assets/portrait_pictures/placeholder.png
+    function: Stufenleiter
+    contact_form: forms/people/kim_hagen.yml
+
+  - name: Marius Schudel
+    cevi-name: Falk
+    image: /assets/portrait_pictures/placeholder.png
+    function: Stufenleiter
+    contact_form: forms/people/marius_schudel.yml
+
+  - name: Marc Bachmann
+    cevi-name: Taifun
+    image: /assets/portrait_pictures/placeholder.png
+    function: Stufenleiter
+    contact_form: forms/people/marc_bachmann.yml

@@ -34,10 +34,10 @@ Immer wieder finden auch Spezialprogramme statt: ein Spielnachmittag im Haus, Ku
 
 ### Wer organisiert die Programme?
 
-Geleitet werden die Programm der Cevi Fröschli von zwei erfahrenen Cevianerinnen. Unterstütz werden unserer
-Fröschlileiterinnen von HilfsleiterInnen im Jugendalter.
+Geleitet werden die Programm der Cevi Fröschli von drei erfahrenen Cevianer:innen. Unterstütz werden unserer
+Fröschlileiter:innen von Hilfsleiter:innen im Jugendalter.
 
-Bei Fragen stehen euch Anja v/o Vanille gerne zur Verfügung:
+[[ cards :: contact/froeschli_team.yml ]]
 
 ## Fragen zu den Föschli?
 

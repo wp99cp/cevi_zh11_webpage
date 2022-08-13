@@ -23,8 +23,9 @@ Fragen jeglicher Art offen.
 
 ### Stufenleiterinnen und Stufenleiter
 
-Hast du eine Frage rund zum Samstag-Nachmittag? Zum nächsten Stufen-PfiLa? Dann kontaktiere direkt deine Stufenleiterin/
-deinen Stufenleiter.
+Hast du eine Frage rund zum Samstag-Nachmittag? Zum nächsten Stufen-PfiLa?
+
+Dann kontaktiere direkt deine verantwortliche Stufenleiterin/deinen verantwortlicher Stufenleiter.
 
 [[ cards :: contact/stufenleitung.yml ]]
 
@@ -34,3 +35,4 @@ Möchtest du unseren Fallbalken mieten, brauchst du ein Zelt oder die Gulaschkan
 Präsidenten oder Kassier aufnehmen?
 
 [[ cards :: contact/vorstand.yml ]]
+

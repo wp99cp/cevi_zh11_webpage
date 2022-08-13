@@ -1,0 +1,32 @@
+type: without_picture
+
+cards:
+  - name: Jérôme Fauster
+    cevi-name: Crash
+    function: Gruppenleiter
+    contact_form:
+
+  - name: Leonardo Hess
+    cevi-name: Funghi
+    function: Gruppenleiter
+    contact_form:
+
+  - name: Leo Kurmann
+    cevi-name: Golf
+    function: Gruppenleiter
+    contact_form:
+
+  - name: Daniel Luterbach
+    cevi-name: Tukan
+    function: Gruppenleiter
+    contact_form:
+
+  - name: Severin Püntener
+    cevi-name: Peanut
+    function: Gruppenleiter
+    contact_form:
+
+  - name: Arijan Staub
+    cevi-name: Ragetä
+    function: Gruppenleiter
+    contact_form:

@@ -1,0 +1,39 @@
+type: with_picture
+
+cards:
+  - name: Fröschli
+    cevi-name: Mädchen und Knaben
+    image: /assets/stufen_pictures/froeschli.jpg
+    function: Kindergarten-Alter
+    link: /stufen/froeschli
+
+  - name: Amos
+    cevi-name: Mädchen
+    image: /assets/sola/sola_2021.jpg
+    function: Unter- und Mittelalter
+    link: /stufen/amos
+
+  - name: Esperia
+    cevi-name: Mädchen
+    image: /assets/stufen_pictures/esperia.jpg
+    function: Sekundarschule
+    link: /stufen/esperia
+
+  - name: Sinai
+    cevi-name: Knaben
+    image: /assets/stufen_pictures/sinai.jpg
+    function: 6- bis 9-Jährig
+    link: /stufen/sinai
+
+  - name: Masada
+    cevi-name: Knaben
+    image: /assets/stufen_pictures/masada.jpg
+    function: 9- bis 12-Jährig
+    link: /stufen/masada
+
+  - name: Enomine
+    cevi-name: Knaben
+    image: /assets/stufen_pictures/enomine.jpg
+    function: 12- bis 15-Jährig
+    link: /stufen/enomine
+
