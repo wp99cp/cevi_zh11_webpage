@@ -18,7 +18,7 @@ Als Passivmitglied kannst du mit einem jährlichen Beitrag von Fr. 25.00 von fol
 
 - ceviname@zh11.ch Mailadresse
 - Einladung an Anlässe des Cevi Zürich 11
-- Mitbestimmungsrecht an der GV
+- Antrags- sowie Gastrecht an der GV (aber weder Stimm- noch Wahlrecht)
 - Unterstützung des Cevi Zürich 11
 
 ## Wie werde ich passiv Mitglied?
