@@ -5,34 +5,34 @@ cards:
     cevi-name: Cevi Züri 11
     image: /assets/cevilaedeli/t-shirt_ZH11.jpg
     function: 25.- CHF
-    link: /cevilaedeli
+    link:
 
   - name: Pulli
     cevi-name: Cevianerli
     image: /assets/cevilaedeli/cevianerli.jpg
     function: 30.- CHF
-    link: /cevilaedeli
+    link:
 
   - name: Pulli
     cevi-name: Cevianerin
     image: /assets/cevilaedeli/cevianerin_pulli.jpg
     function: 50.- CHF
-    link: /cevilaedeli
+    link:
 
   - name: T-Shirt oder Tanktop
     cevi-name: Cevianerin
     image: /assets/cevilaedeli/cevianerin_t-shirt.jpg
     function: 25.- CHF
-    link: /cevilaedeli
+    link:
 
   - name: T-Shirt
     cevi-name: Cevianer
     image: /assets/cevilaedeli/cevianer_t-shirt.jpg
     function: 25.- CHF
-    link: /cevilaedeli
+    link:
 
   - name: Pulli
     cevi-name: Cevianer
     image: /assets/cevilaedeli/cevianer_pulli.jpg
     function: 50.- CHF
-    link: /cevilaedeli
+    link:
