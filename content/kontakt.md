@@ -21,13 +21,13 @@ Fragen jeglicher Art offen.
 
 [[ cards :: contact/abteilungsleitung.yml ]]
 
-### Stufenleiterinnen und Stufenleiter
+### Kontaktpersonen der verschiedenen Stufen
 
 Hast du eine Frage rund zum Samstag-Nachmittag? Zum nächsten Stufen-PfiLa?
 
 Dann kontaktiere direkt deine verantwortliche Stufenleiterin/deinen verantwortlicher Stufenleiter.
 
-[[ cards :: contact/stufenleitung.yml ]]
+[[ cards :: contact/kontakt_stufenleitung.yml ]]
 
 ### Weitere Kontakte / Vorstand
 
