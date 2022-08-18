@@ -9,7 +9,7 @@ cards:
 
   - name: Remo Bachmann
     cevi-name: Lotus
-    image: /assets/portrait_pictures/placeholder.png
+    image: /assets/portrait_pictures/remo_bachmann.jpg
     function: Stufenleiter
     contact_form: forms/people/remo_bachmann.yml
 

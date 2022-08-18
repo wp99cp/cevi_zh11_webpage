@@ -22,6 +22,11 @@ abwechslungsreiches Programm draussen im Wald an. Wir sind ein Team aus 9 Leiten
 
 [[ cards :: contact/sinai_gruppenleiter.yml ]]
 
+## Unser nächstes Lager
+
+Im Dezember 2022 werden wir ein Chlauslager durchführen. Infos folgen im November.
+Das Chlauslager findet vom 3. bis 4. Dezember in Steg im Tösstal (ZH) statt.
+
 ## Fotos aus der Stufe Sinai
 
 [[ gallery 1vpQbgEDXnWrDUja4ZN4yGVMgqunsrtzv ]]
