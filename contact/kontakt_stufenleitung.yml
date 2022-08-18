@@ -13,11 +13,11 @@ cards:
     image: /assets/portrait_pictures/jael_goeldi.jpg
     contact_form: forms/people/jael_goeldi.yml
 
-  - name: Cédric Fauster
-    cevi-name: Chnobli
+  - name: Marius Schudel
+    cevi-name: Falk
     function: Stufe Enomine
-    image: /assets/portrait_pictures/cedric_fauster.jpg
-    contact_form: forms/people/cedric_fauster.yml
+    image: /assets/portrait_pictures/placeholder.png
+    contact_form: forms/people/marius_schudel.yml
 
   - name: Lucien Fauster
     cevi-name: Chnobli
