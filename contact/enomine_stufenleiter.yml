@@ -3,7 +3,7 @@ type: with_picture
 cards:
   - name: Cédric Fauster
     cevi-name: Chnobli
-    image: /assets/portrait_pictures/placeholder.png
+    image: /assets/portrait_pictures/cedric_fauster.jpg
     function: Stufenleiter
     contact_form: forms/people/cedric_fauster.yml
 
