@@ -34,6 +34,13 @@ def format_to_text(json: any, indent=0) -> str:
     Convert json to human-readable text
     """
 
+    if json == 'true' or json == 'false':
+        json = json == 'true'
+
+    # check if it's a bool
+    if isinstance(json, bool):
+        return 'angewählt' if json else 'nicht angewählt'
+
     # check if json is a string or a json object
     if isinstance(json, str):
         return json
@@ -50,8 +57,15 @@ def send_message_to_consignor(message_sender: MailSender, request_json):
     receiver = request_json['message']['Mail']
     subject = "Cevi Züri 11 | Bestätigung Kontaktformular"
     name = request_json['message']['Vorname'] if 'Vorname' in request_json['message'] else ''
-    msg = f"Lieber {name}<br><br>Vielen Danke für deine Anfrage, du wirst in kürze von uns hören.<br><br>Liebe " \
-          f"Grüsse<br>Cevi Züri 11 Team<br><br> Deine Nachricht:" + format_to_text(json=request_json['message'])
+
+    if request_json['receiver'] == 'cevi-e-znacht_receiver':
+        subject = "Cevi Züri 11 | Bestätigung Anmeldung Cevi-E-Znacht"
+        msg = f"Lieber {name}<br><br>Vielen Dank für deine Anmeldung für den Cevi-E-Znacht! Wir freuen uns auf dich!<br>" \
+              f"Weitere Infos folgen ca. 2 Wochen vor dem Anlass.<br><br>Liebe Grüsse" \
+              f"<br>Cevi Züri 11 Team<br><br> Deine Nachricht:" + format_to_text(json=request_json['message'])
+    else:
+        msg = f"Lieber {name}<br><br>Vielen Dank für deine Anfrage, du wirst in Kürze von uns hören.<br><br>Liebe " \
+              f"Grüsse<br>Cevi Züri 11 Team<br><br> Deine Nachricht:" + format_to_text(json=request_json['message'])
     message_sender.send_message(receiver, subject, msg)
 
 
