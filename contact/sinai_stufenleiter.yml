@@ -1,0 +1,20 @@
+type: with_picture
+
+cards:
+  - name: Cyrill Püntener
+    cevi-name: JPG
+    image: /assets/portrait_pictures/cyrill_puentener.jpg
+    function: Stufenleiter
+    contact_form: forms/people/cyrill_puentener.yml
+
+  - name: Remo Bachmann
+    cevi-name: Lotus
+    image: /assets/portrait_pictures/remo_bachmann.jpg
+    function: Stufenleiter
+    contact_form: forms/people/remo_bachmann.yml
+
+  - name: Matthias Ramsauer
+    cevi-name: Petrol
+    image: /assets/portrait_pictures/matthias_ramsauer.jpg
+    function: Stufenleiter
+    contact_form: forms/people/matthias_ramsauer.yml

@@ -21,12 +21,13 @@ Fragen jeglicher Art offen.
 
 [[ cards :: contact/abteilungsleitung.yml ]]
 
-### Stufenleiterinnen und Stufenleiter
+### Kontaktpersonen der verschiedenen Stufen
 
-Hast du eine Frage rund zum Samstag-Nachmittag? Zum nächsten Stufen-PfiLa? Dann kontaktiere direkt deine Stufenleiterin/
-deinen Stufenleiter.
+Hast du eine Frage rund zum Samstag-Nachmittag? Zum nächsten Stufen-PfiLa?
 
-[[ cards :: contact/stufenleitung.yml ]]
+Dann kontaktiere direkt deine verantwortliche Stufenleiterin/deinen verantwortlicher Stufenleiter.
+
+[[ cards :: contact/kontakt_stufenleitung.yml ]]
 
 ### Weitere Kontakte / Vorstand
 
@@ -34,3 +35,4 @@ Möchtest du unseren Fallbalken mieten, brauchst du ein Zelt oder die Gulaschkan
 Präsidenten oder Kassier aufnehmen?
 
 [[ cards :: contact/vorstand.yml ]]
+

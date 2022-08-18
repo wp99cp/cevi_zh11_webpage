@@ -1,0 +1,20 @@
+type: with_picture
+
+cards:
+  - name: Lucien Lauster
+    cevi-name: Thunder
+    image: /assets/portrait_pictures/placeholder.png
+    function: Stufenleiter
+    contact_form: forms/people/lucien_fauster.yml
+
+  - name: Moritz Jufer
+    cevi-name: Mungg
+    image: /assets/portrait_pictures/placeholder.png
+    function: Stufenleiter
+    contact_form: forms/people/moritz_jufer.yml
+
+  - name: Melvyn von Gunten
+    cevi-name: Phönix
+    image: /assets/portrait_pictures/placeholder.png
+    function: Stufenleiter
+    contact_form: forms/people/melvyn_gunten.yml
