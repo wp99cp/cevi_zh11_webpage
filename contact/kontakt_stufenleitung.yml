@@ -20,7 +20,7 @@ cards:
     contact_form: forms/people/marius_schudel.yml
 
   - name: Lucien Fauster
-    cevi-name: Chnobli
+    cevi-name: Thunder
     function: Stufe Masada
     image: /assets/portrait_pictures/placeholder.png
     contact_form: forms/people/lucien_fauster.yml
