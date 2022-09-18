@@ -10,9 +10,17 @@ contact_page: true
 
 # Ceviluft schnuppern
 
+{% comment %}
+###############################
+###############################
+
 ## Schnupperprogramm vom 17. September 2022
 
 Bald schon findet das nächste Cevi-Schnupperprogramm statt. [Infos zum 17. September 2022](/schnuppern).
+
+###############################
+###############################
+{% endcomment %}
 
 ## Komm vorbei! Und werde Cevianer!
 
