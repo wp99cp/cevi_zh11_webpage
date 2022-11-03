@@ -2,35 +2,38 @@
 title: Cevi-E Znacht
 permalink: /cevi-e-znacht
 news-entry-title: In Erinnerungen schwelgen und alte Bekannte treffen
-news-entry-caption: Am 11. November laden wir alle ehemaligen Leitenden des Cevi Züri 11 ein!
-date: 2022-08-11T20:00
+news-entry-caption: Informationen zum Cevi-E-Znacht vom 11. November 2022
+date: 2022-11-03T11:00
 contact_page: true
 ---
 
 # In Erinnerungen schwelgen und alte Bekannte treffen
 
-## Am 11. November laden wir alle ehemaligen Leitenden des Cevi Züri 11 ein!
+## Informationen zum Cevi-E-Znacht vom 11. November 2022
 
-Um alte Cevi-Bekanntschaften wiederzubeleben, Freundschaften neu zu knüpfen und in Erinnerungen zu schwelgen, laden wir dich gerne zu einem gemeinsamen Nachtessen ein.
+Wir freuen uns, dass du dich für den Cevi-E-Znacht angemeldet hast. Bald schon ist es so weit und wir treffen uns, um
+alte Cevi-Bekanntschaften wiederzubeleben, Freundschaften neu zu knüpfen und in Erinnerungen zu schwelgen! In diesem
+Brief findest du alle Informationen dazu.
 
-Mit dem Cevi-E-Znacht wollen wir allen ehemaligen Leiter\*innen des Cevi Züri 11, die Gelegenheit geben, sich wieder einmal zu sehen und zu erfahren, wie der Cevi Züri 11 heute aussieht. Nebst einem feinen Znacht, werden wir Fotos zeigen und aus den letzten Lagern berichten. Natürlich kommt auch die Möglichkeit sich mit anderen ehemaligen und aktiven Leiter\*innen auszutauschen, nicht zu kurz.
+- **Wann?** Freitag, der 11. November 2022, ab 18.30 Uhr (Nachtessen 19.00 Uhr)
+- **Wo?** Im PfadihuusZüri direkt beim Zoo Zürich. Beim Zoo stehen kostenpflichtige Parkplätze zur Verfügung
+- **Adresse?** Pfadihuus Zürich, Rolf-Balsiger-Strasse 8, 8044 Zürich
+- **Wer?** Alle ehemaligen und aktiven Cevileiter*innen des Cevi Züri 11
+- **Kosten?** Der Abend ist für alle ehemaligen Cevianer*innen und alle aktiven Leiter gratis. Aber wir freuen uns
+  natürlich über jede Spende. Mit einem Betrag von 25.- CHF/Person deckt ihr unsere Ausgaben für diesen Abend. Unsere
+  Kontodaten findet ihr in der PDF-Version der Infos.
 
-- **Wann?** Freitag der 11. November 2022, ab 18.30 Uhr
-- **Wo?** Im PfadihuusZüri direkt beim Zoo Zürich
-- **Wer?** Alle ehemaligen und aktiven Cevileiter*innen des Cevi Züri 11 
-- **Anmeldung?** Bitte einfach das folgende Kontaktformular ausfüllen
+## PDF-Version der Infos
 
-Wir freuen uns auf möglichst viele Anmeldungen. Gerne dürft ihr diese Einladung daher an alle, die ihr kennt, weiterleiten. Anmeldeschluss ist der 1. November 2022.
+[[ google_drive document :: 1IaC5k6YQnbJf2fFBcNKdKLD4cEyCYHcq ]]
 
-Falls du an diesem Abend nicht dabei sein kannst, aber trotzdem gerne mit uns in Kontakt bleiben möchtest, dann ist eine Passiv-Mitgliederschaft bei uns genau das richtige. Details erfährst du unter [zh11.ch/passiv-mitglied](/passiv-mitglied).
+## Fragen zum Abend?
 
-## Anmeldung für Cevi-E-Znacht
+Bei Fragen dürft ihr euch gerne bei uns melden!
 
-Wir melden uns für den Cevi-E-Znacht am 11. November 2022 an.
+[[ contact-form :: forms/default.yml ]]
 
-[[ contact-form :: forms/cevi-e-znacht.yml ]]
-
-## Einladung als PDF
-
-[[ google_drive document :: 1eO9MT3nPHtTZaeeDsw67zD9c7tvPYEZ8 ]]
+Falls du an diesem Abend nicht dabei sein kannst, aber trotzdem gerne mit uns in Kontakt bleiben möchtest, dann ist eine
+Passiv-Mitgliederschaft bei uns genau das richtige. Details erfährst du
+unter [zh11.ch/passiv-mitglied](/passiv-mitglied).
 
