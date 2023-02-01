@@ -3,7 +3,7 @@ title: GV Cevi Züri 11
 permalink: /news/gv-cevi-züri-11-2023
 news-entry-title: GV Cevi Züri 11
 news-entry-caption: Einladung für die GV Cevi Züri 11
-date: 2022-01-31T00:00
+date: 2023-01-31T00:00
 ---
 
 # Einladung für die GV Cevi Zürich 11
