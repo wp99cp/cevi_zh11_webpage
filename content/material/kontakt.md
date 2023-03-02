@@ -3,7 +3,7 @@ title: Kontakt aufnehmen
 permalink: /material/kontakt
 sub-menu: Material
 sub-menu-name: Mietanfragen
-sub-menu-priority: 0
+sub-menu-priority: 2
 contact_page: true
 ---
 

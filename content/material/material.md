@@ -2,6 +2,9 @@
 title: Mietmaterial des Cevi Züri 11
 main-menu: Material
 main-menu-priority: 8
+sub-menu: Material
+sub-menu-name: Unser Mietmaterial
+sub-menu-priority: 1
 footer-menu: Materialmiete
 footer-menu-priority: 2
 permalink: /material

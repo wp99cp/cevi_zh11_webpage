@@ -3,7 +3,7 @@ title: Mietmaterial - Fallbalken
 permalink: /material/fallbalken
 sub-menu: Material
 sub-menu-name: Fallbalken
-sub-menu-priority: 1
+sub-menu-priority: 3
 ---
 
 # Wer getroffen wird, der fällt! Unser Fallbalken.

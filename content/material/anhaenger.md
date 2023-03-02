@@ -3,7 +3,7 @@ title: Mietmaterial - Transport-Anhänger
 permalink: /material/anhaenger
 sub-menu: Material
 sub-menu-name: Transportanhänger
-sub-menu-priority: 2
+sub-menu-priority: 4
 ---
 
 # Für das Grosse. Unser Transportanhänger.
