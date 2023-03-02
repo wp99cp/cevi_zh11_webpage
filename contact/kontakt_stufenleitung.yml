@@ -1,11 +1,11 @@
 type: with_picture
 
 cards:
-  - name: Theresa Schudel
-    cevi-name: Ligula
+  - name: Jordis Göldi
+    cevi-name: Marabu
     function: Stufe Amos
     image: /assets/portrait_pictures/placeholder.png
-    contact_form: forms/people/theresa_schudel.yml
+    contact_form: forms/people/jordis_goeldi.yml
 
   - name: Jaël Göldi
     cevi-name: Bagheera
