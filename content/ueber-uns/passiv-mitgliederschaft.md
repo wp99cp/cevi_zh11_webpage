@@ -3,7 +3,7 @@ title: Passiv Mitgliederschaft
 permalink: /passiv-mitglied
 sub-menu: Cevi Züri 11
 sub-menu-name: Passiv Mitglied
-sub-menu-priority: 2
+sub-menu-priority: 3
 ---
 
 # Passivmitgliedschaft beim Cevi Züri 11
