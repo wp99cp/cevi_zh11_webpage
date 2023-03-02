@@ -2,6 +2,9 @@
 title: Stufen im Cevi Züri 11
 main-menu: Stufen
 main-menu-priority: 4
+sub-menu: Stufen
+sub-menu-name: Unsere Stufen
+sub-menu-priority: 1
 permalink: /stufen
 ---
 

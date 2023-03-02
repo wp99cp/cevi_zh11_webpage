@@ -24,8 +24,8 @@ erleben. Gross und Klein sind eingeladen, den Cevi kennenzulernen.
 
 [Erfahre jetzt schon mehr über den Cevi.](/ueber-uns)
 
-Ganz besonders freut sich die Stufe Amos, denn am 25. März 2023 eröffnen sie eine neue
-Gruppe. [Mehr zur Stuffeneröffnung erfahren.](/stufen/amos). Alle Infos zum Schnuppertag findest du im Folgenden.
+Ganz besonders freut sich die Stufe Esperia, denn am 25. März 2023 eröffnen sie eine neue
+Gruppe. [Mehr zur Stuffeneröffnung erfahren.](/stufen/esperia). Alle Infos zum Schnuppertag findest du im Folgenden.
 
 ## Infos zum Schnuppertag vom 25. März 2023
 

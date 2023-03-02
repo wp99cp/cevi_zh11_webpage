@@ -10,13 +10,13 @@ cards:
   - name: Amos
     cevi-name: Mädchen
     image: /assets/stufen_pictures/amos.jpg
-    function: Unter- und Mittelstufe
+    function: Mittel- und Oberstufe
     link: /stufen/amos
 
   - name: Esperia
     cevi-name: Mädchen
     image: /assets/stufen_pictures/esperia.jpg
-    function: Sekundarschule
+    function: 6- bis 9-Jährig
     link: /stufen/esperia
 
   - name: Sinai

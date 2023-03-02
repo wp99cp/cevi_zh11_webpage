@@ -10,13 +10,19 @@ sub-menu-priority: 2
 
 ## Über die Cevi Esperia
 
-Die Stufe Esperia ist die Ältere der zwei Mädchenstufen im Cevi Züri 11.
+Die Stufe Esperia ist die Jüngere der zwei Mädchenstufen im Cevi Züri 11.
 
-Wir sind zwei Leitende mit Teilnehmerinnen im Alter von 12 bis 16 Jahren. Jeden Samstag findet unser Nachmittagsprogram
-im Wald statt. Wenn du Freude an coolen Aktivitäten und Spielen, Basteln und Bräteln hast, melde dich gerne über
-unser [Anmeldeformular](/neu-im-cevi) an.
+Am Schnupper-Proi vom 25. März 2023 eröffnen wir unsere neue Gruppen. Herzlich willkommen sind alle Mädchen im Alter von
+6 bis 8 Jahren.
 
+Betreut werdet ihr von einem motivierten Team von Leiterinnen. Wir freuen uns auf euch!
 
+## Werde Teil der Stufe Esperia
+
+Jeden Samstag findet unser Nachmittagsprogram im Wald statt. Wenn du Freude an coolen Aktivitäten und Spielen, Basteln
+und Bräteln hast!
+
+[[ contact-form :: forms/schnuppern.yml ]]
 
 ## Fotos aus der Stufe Esperia
 
