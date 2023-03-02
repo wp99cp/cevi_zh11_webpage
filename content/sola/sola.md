@@ -7,6 +7,22 @@ permalink: /sola
 
 # Das Sommerlager als Höhepunkt des Cevijahres.
 
+## Anmeldung und Infos zum Sommerlager 2023
+
+Ab sofort kannst du dich für das Sommerlager 2023 anmelden.
+
+Komm mit uns auf eine Reise in die Welt von Mittelerde. Erlebe spannende Abenteuer und tauche ein in die fantastische
+Welt von Hobbits, Zwergen und Elfen.
+
+[Anmeldung und weitere Infos zum Sommerlager 2023](/sola/2023).
+
+### Bei uns ist jeder willkommen! Auch nicht Cevi-Mitglieder.
+
+Unsere Sommerlager sind für alle Kinder ab sieben Jahren offen, auch für alle, die normalerweise nicht an den
+Ceviprogrammen teilnehmen. Einfach anmelden und mitkommen. Bei uns ist jeder willkommen.
+
+Als Mitglied des Cevi Züri 11 bekommst du die Anmeldung fürs Sommerlager direkt per Mail und/oder Post zugestellt.
+
 ## Jedes Lager - eine neue unglaubliche Geschichte.
 
 Doch eins bleibt immer gleich. Du erlebst eine Geschichte. Aufregend und hautnah, fast wie im Kino. Nur besser. Denn du
@@ -30,17 +46,6 @@ stellte sich heraus, dass dort die böse Rote Königin ihr ungemacht verrichtet.
 Schwelge in Erinnerungen und lese die ausführlichen Berichte zu den vergangenen Lagern:
 
 [[ cards :: content/sola/sola_cards.yml ]]
-
-## Bei uns ist jeder willkommen.
-
-Unsere Sommerlager sind für alle Kinder ab sieben Jahren offen, auch für alle, die normalerweise nicht an den
-Ceviprogrammen teilnehmen. Einfach anmelden und mitkommen. Bei uns ist jeder willkommen.
-
-Als Mitglied des Cevi Züri 11 bekommst du die Anmeldung fürs Sommerlager direkt per Mail und/oder Post zugestellt.
-
-### Infos zum Sommerlager 2022
-
-[[ google_drive folder :: 139nBfDEZW22ukMM6HfjwpHIw4iVdNSCd ]]
 
 ## Wir werden durch Jugend+Sport unterstützt.
 

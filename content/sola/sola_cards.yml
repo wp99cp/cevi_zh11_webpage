@@ -1,6 +1,12 @@
 type: with_picture
 
 cards:
+  - name: Herr Der Ringe
+    cevi-name: Sola 2023
+    image: /assets/sola/sola_2023.jpg
+    function: Andwil (SG)
+    link: /sola/2023
+
   - name: Im alten Rom
     cevi-name: Sola 2022
     image: /assets/sola/rela_sola_2022.png
