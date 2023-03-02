@@ -2,6 +2,9 @@
 title: Sommerlager des Cevi Züri 11
 main-menu: Sommerlager
 main-menu-priority: 3
+sub-menu: Sommerlager
+sub-menu-name: Über das SoLa
+sub-menu-priority: 1
 permalink: /sola
 ---
 
