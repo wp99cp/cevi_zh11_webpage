@@ -10,17 +10,15 @@ contact_page: true
 
 # Ceviluft schnuppern
 
+## Schnupperprogramm vom 25. März 2023
+
+Bald schon findet das nächste Cevi-Schnupperprogramm statt. [Infos zum 25. März 2023](/schnuppern).
+
+
 {% comment %}
 ###############################
 ###############################
 
-## Schnupperprogramm vom 17. September 2022
-
-Bald schon findet das nächste Cevi-Schnupperprogramm statt. [Infos zum 17. September 2022](/schnuppern).
-
-###############################
-###############################
-{% endcomment %}
 
 ## Komm vorbei! Und werde Cevianer!
 
@@ -33,3 +31,6 @@ Wir freuen uns auf dich!
 
 [[ contact-form :: forms/schnuppern.yml ]]
 
+###############################
+###############################
+{% endcomment %}
