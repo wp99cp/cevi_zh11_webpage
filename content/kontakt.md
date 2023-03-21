@@ -35,4 +35,3 @@ Möchtest du unseren Fallbalken mieten, brauchst du ein Zelt oder die Gulaschkan
 Präsidenten oder Kassier aufnehmen?
 
 [[ cards :: contact/vorstand.yml ]]
-

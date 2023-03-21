@@ -1,0 +1,8 @@
+type: with_picture
+
+cards:
+  - name: Peter Relly
+    cevi-name:
+    function: Vertreter Männer
+    image: /assets/portrait_pictures/placeholder.png
+    contact_form: forms/people/peter_relly.yml

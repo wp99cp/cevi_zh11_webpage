@@ -25,3 +25,8 @@ cards:
     cevi-name: JPG
     function: Webseite
     contact_form: forms/webadmin.yml
+
+  - name: Peter Relly
+    cevi-name:
+    function: Vertreter Männerabteilung
+    contact_form: forms/people/peter_relly.yml
