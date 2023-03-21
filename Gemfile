@@ -8,7 +8,7 @@ source 'https://rubygems.org'
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem 'jekyll', '~> 4.2.1'
+gem 'jekyll', '~> 4.3.2'
 
 
 group :jekyll_plugins do
@@ -18,7 +18,7 @@ end
 # Performance-booster for watching directories on Windows
 gem 'wdm', '~> 0.1.1', :platforms => [:mingw, :x64_mingw, :mswin]
 
-gem 'webrick', '~> 1.7'
+gem 'webrick', '~> 1.8.1'
 
 gem 'google-apis-drive_v3'
 gem 'googleauth'
