@@ -49,15 +49,22 @@ def create_cards(config_file, site_context)
 
       unless card['link'] or page_name == nil
 
+        full_name = "#{card['name']}"
+
+        unless card['cevi-name'] == nil
+          full_name += " v/o #{card['cevi-name']}"
+        end
+
         # create a markdown file and save it in the auto_generated_pages folder
         markdown_file = File.new("contact/auto_generated_pages/#{page_name}.md", "w")
         markdown_file.puts("---")
         markdown_file.puts("permalink: #{link}")
-        markdown_file.puts("title: #{card['name']} v/o #{card['cevi-name']}")
+        markdown_file.puts("title: #{full_name}")
         markdown_file.puts("contact_page: true")
         markdown_file.puts("---")
         markdown_file.puts("# Nimm mit uns Kontakt auf!")
-        markdown_file.puts("## Kontakt zu #{card['name']} v/o #{card['cevi-name']}")
+        # insert "Kontakt zu <name> []v/o <cevi-name>]" print the part in parenthesis only if ceviname is set
+        markdown_file.puts("## Kontakt zu #{full_name}")
         markdown_file.puts("")
         markdown_file.puts("[[ contact-form :: #{card['contact_form']} ]]")
 
