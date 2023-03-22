@@ -49,8 +49,8 @@ module DriveDownloader
       }
 
       # Log the results
-      puts 'Time needed to find ' + response.files.length.to_s + ' files: ' + time.real.to_s + 's' unless response.files.empty?
-      puts 'No files found' if response.files.empty?
+      puts ('Time needed to find ' + response.files.length.to_s + ' files: ' + time.real.to_s + 's').blue unless response.files.empty?
+      puts 'No files found'.red if response.files.empty?
 
       # filter response.files to only include non-trashed files
       response.files = response.files.select { |file| !file.trashed }

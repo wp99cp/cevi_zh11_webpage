@@ -65,7 +65,7 @@ def resize_gallery_image(img_src, options, postfix)
   FileUtils.mkdir_p(dest_dir)
 
   if _must_create?(src_path, dest_path)
-    puts "   Resizing '#{img_src}' to '#{dest_path_rel}' - using options: '#{options}'".green
+    puts "   Resizing '#{img_src} - using options: '#{options}'".green
 
     _process_img(src_path, options, dest_path)
 
@@ -111,24 +111,62 @@ def split_params(params)
   params.split("::").map(&:strip)
 end
 
-def download_photos(config, uuid, site_context, tagged_with_webpage = true)
+def update_google_drive_cache(files, file, path_1800x1200, path_255x170, uuid)
 
-   files = DriveDownloader.list_files(config, uuid)
+  files.each do |cache_file|
+    if cache_file['id'] == file['id']
+
+      # check if there is a path key
+      if cache_file['paths'].nil?
+        cache_file['paths'] = []
+      end
+
+      # append the new paths
+      cache_file['paths'] << path_1800x1200
+      cache_file['paths'] << path_255x170
+
+    end
+  end
+
+  cache_file_path = 'google_drive_cache/' + uuid + '_files.json'
+  File.write(cache_file_path, JSON.pretty_generate(files))
+end
+
+def generate_gallery_html(config, uuid, site_context, tagged_with_webpage = true)
+
+  files = DriveDownloader.list_files(config, uuid)
+  puts "Found #{files.length} files in gallery #{uuid}.".blue
 
   optimized_img_paths = []
 
   semaphore = Mutex.new
+
   results = files.map do |file|
     next unless (file['mimeType'] == 'image/jpeg' or file['mimeType'] == 'image/png' or file['mimeType'] == 'image/heif')
 
-    local_file_path = DriveDownloader.download_file(file, 'gallery', uuid[0, 10])
+    # check if the file has already been processed
+    if file['paths'].nil?
 
-    # check if image should be displayed on webpage
-    e = Exiftool.new(local_file_path)
-    next unless ((tagged_with_webpage and e[:keywords].to_s.include?('Webpage')) or not tagged_with_webpage)
+      # download the data and prefix it with the first 10 characters of the folder uuid
+      local_file_path = DriveDownloader.download_file(file, 'gallery', uuid[0, 10] + '_')
 
-    path_1800x1200 = resize_gallery_image(local_file_path, '1800x1200', '')
-    path_255x170 = resize_gallery_image(local_file_path, '255x170', '')
+      # check if image should be displayed on webpage
+      e = Exiftool.new(local_file_path)
+      next unless ((tagged_with_webpage and e[:keywords].to_s.include?('Webpage')) or not tagged_with_webpage)
+
+      path_1800x1200 = resize_gallery_image(local_file_path, '1800x1200', '')
+      path_255x170 = resize_gallery_image(local_file_path, '255x170', '')
+
+      # update the google_drive_cache with the new paths
+      # delete original file
+      update_google_drive_cache(files, file, path_1800x1200, path_255x170, uuid)
+      puts "   Deleting #{local_file_path}\n".red
+      File.delete(local_file_path)
+    else
+      puts " - File #{file['name']} has already been processed, skipping...".green
+      path_1800x1200 = file['paths'][0]
+      path_255x170 = file['paths'][1]
+    end
 
     optimized_img_paths.append path_1800x1200
     optimized_img_paths.append path_255x170
@@ -137,8 +175,6 @@ def download_photos(config, uuid, site_context, tagged_with_webpage = true)
     landscape = image_size.width > image_size.height
 
     semaphore.synchronize {
-
-      puts " - #{file['name']} (#{file['id']}, #{file['mimeType']})".green
 
       "<a href=\"{{ site.baseurl }}/#{path_1800x1200}\" data-cropped=\"true\" target=\"_blank\"
     data-pswp-width=\"#{image_size.width}\"  data-pswp-height=\"#{image_size.height}\" >
@@ -182,12 +218,14 @@ def gallery(config, gallery_settings, site)
     tagged = true
   end
 
-  html_code = download_photos(config, gallery_settings, site, tagged)
+  html_code = generate_gallery_html(config, gallery_settings, site, tagged)
 
-  "<div class=\"gallery-container\">
-<script type=\"module\" src=\"{{ site.baseurl }}/script/gallery/gallery.js\"></script>
-#{html_code}
-</div>"
+  "
+  <div class=\"gallery-container\">
+    <script type=\"module\" src=\"{{ site.baseurl }}/script/gallery/gallery.js\"></script>
+    #{html_code}
+  </div>
+  "
 
 end
 
