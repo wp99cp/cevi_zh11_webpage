@@ -46,6 +46,7 @@ jobs:
           path: |
             gallery
             imgs
+            google_drive_cache
             docs
           # Updates the cache after every run, by saving a new copy
           key: ${{ runner.os }}-static-files-v3.3-${{ github.run_id }}
