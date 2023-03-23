@@ -20,7 +20,7 @@ verbunden, zuerst als Mitglieder des Jungtrupps, dann der Jungmännerabteilung,
 später der Männerabteilung. Seit Jahrzehnten nehmen auch die Gattinnen am
 Programm teil, heute auch Witwen von verstorbenen Mitgliedern.
 
-![Maibummel: Pfäffikon - Junkerhof - Aathal](/assets/Maennerabteilung.jpg)
+![Maibummel: Pfäffikon - Junckerhof - Aathal](/assets/Maennerabteilung.jpg)
 
 ## Jahresprogramm der Männerabteilung
 
