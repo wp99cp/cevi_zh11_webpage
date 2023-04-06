@@ -12,6 +12,10 @@ news-entry-caption: Komm vorbei! Und werde Cevianer! Cevi-Schnupperprogramm am 2
 date: 2023-03-02T12:00
 ---
 
+{% comment %}
+###############################
+###############################
+
 # Cevi-Schupperprogramm vom 25. März 2023
 
 ## Komm vorbei! Und werde Cevianer!
@@ -67,9 +71,9 @@ Schnupper-Datum. Bei uns ist jeder Samstag ein Schnupperprogramm.
 
 [Kontakt aufnehmen](/kontakt)
 
-{% comment %}
 ###############################
 ###############################
+{% endcomment %}
 
 # Bei uns ist jeder Samstag ein Schnupperprogramm.
 
@@ -101,11 +105,3 @@ Nimm mit uns Kontakt auf und wir finden ein individuelles Schnupper-Datum. Bei u
 Schnupperprogramm.
 
 [[ contact-form :: forms/schnuppern.yml ]]
-
-###############################
-###############################
-{% endcomment %}
-
-
-
-
