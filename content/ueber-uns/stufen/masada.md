@@ -17,6 +17,6 @@ Leitermangel leider aufgelöst. Umso mehr freuen wir uns, die es die Stufe Masad
 
 [[ cards :: contact/masada_stufenleiter.yml ]]
 
-## Gruppenleiter der Stufe Masada
+## Eindrück aus unserem letzten Lager
 
-[[ cards :: contact/masada_gruppenleiter.yml ]]
+[[ gallery 1P8FUSSGoS6HJp5ReemAwqRKP2wyKYCJk ]]

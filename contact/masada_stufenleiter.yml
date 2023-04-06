@@ -18,3 +18,15 @@ cards:
     image: /assets/portrait_pictures/placeholder.png
     function: Stufenleiter
     contact_form: forms/people/melvyn_gunten.yml
+
+  - name: Roman Greiner
+    cevi-name: Spider
+    image: /assets/portrait_pictures/placeholder.png
+    function: Gruppenleiter
+    contact_form:
+
+  - name: Louis Noack
+    cevi-name: Hecht
+    image: /assets/portrait_pictures/placeholder.png
+    function: Gruppenleiter
+    contact_form:

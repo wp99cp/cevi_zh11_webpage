@@ -21,6 +21,6 @@ cards:
 
   - name: Marc Bachmann
     cevi-name: Taifun
-    image: /assets/portrait_pictures/placeholder.png
+    image: /assets/portrait_pictures/marc_bachmann.jpg
     function: Stufenleiter
     contact_form: forms/people/marc_bachmann.yml

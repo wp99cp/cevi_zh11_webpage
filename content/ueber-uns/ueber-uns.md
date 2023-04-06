@@ -34,7 +34,7 @@ Geschichten und die Natur.
 [Erfahre mehr zu den Fröschlis.](/stufen/froeschli)
 
 Ab der 1. Klasse, also ca. mit 6 Jahren, geht es dann so richtig los. Du wechselst zu den Grossen. Von nun an finden die
-Programme in alters- und geschlechter­getrennten Gruppen statt. Den Stufen.
+Programme in alters- und geschlechtergetrennten Gruppen statt, den Stufen.
 
 [Informationen zu den Stufen im Cevi Züri 11.](/stufen)
 
@@ -68,28 +68,30 @@ sind.
 Nebst dem Sommerlager findet noch ein kleineres Lager über Pfingsten oder Auffahrt sowie im Dezember das Chlauslager
 statt. Diese Lager finden in den Stufen statt.
 
+[Erfahre mehr zu den einzelnen Stufen.](/stufen)
+
 ## Wir tragen wesentliches zur Entwicklung der Kinder teil.
 
-Dadurch, dass die Kinder im Cevi genau einmal die Gruppe wechseln, nämlich von den Fröschli zu den Grossen. Bieten wir
-ihnen die einmalige Gelegenheit, ihre komplette Kindheit und Jugend mit denselben Bezugspersonen (Leitern) zu
-verbringen. Wir schaffen somit eine emotionale und persönliche Bindung, die keine andere Institution (Sportverein,
-Schule usw.) bieten kann.
+Im Cevi haben die Kinder die Chance, ihre komplette Kindheit und Jugend mit denselben Bezugspersonen, den eigenen
+Leitern, zu verbringen. Dies schafft eine einzigartige emotionale und persönliche Bindung, die in keiner anderen
+Institution wie Sportvereinen oder Schulen zu finden ist.
 
 Nicht selten entstanden aus dem Cevi Beziehungen und Freundschaften, die ein Leben lang halten. So gibt es immer wieder
 Leiter aus Stufen des Cevi Züri 11, die auch gemeinsam in die Ferien fahren oder gar zusammen in eine WG ziehen.
 
-Wir versuchen den Kindern die Möglichkeit zu bieten, sich in unseren Programmen frei von Leistungsdruck zu entwickeln,
-auszutoben und zu entfalten. In diesem Punkt unterscheidet sich der Cevi deutlich von anderen Sport- und
-Freizeitvereinen, bei uns gibt es kein ständiger Leistungsdruck, keine Qualifikationen und kein Druck in eine höhere
-Liga aufzusteigen. Die Kinder dürfen bei uns Kinder bleiben!
+Unsere Programme bieten den Kindern die Möglichkeit, sich frei von Leistungsdruck zu entwickeln, auszutoben und zu
+entfalten. Im Cevi gibt es im Gegensatz zu anderen Sport- und Freizeitvereinen keinen ständigen Leistungsdruck, keine
+Qualifikationen und keine Pflicht, in eine höhere Liga aufzusteigen. Bei uns dürfen die Kinder einfach Kinder sein!
+
+![Treffen ehemaligen Cevianer/innen beim Cevi-E-Znacht](/assets/cevi-e-znacht.jpg)
 
 ## Unser Leiter tragen grosse Verantwortung.
 
 Der Cevi kann entscheiden zur Entwicklung der Kinder und Jugendlichen beitragen. Dieser riesigen Verantwortung sind wir
-uns bewusst. Daher schulen wir unserer Leiter durch verschiedenste Kurse. ierfür bietet der Cevi Regionalverband eine
+uns bewusst. Daher schulen wir unserer Leiter durch verschiedenste Kurse. Hierfür bietet der Cevi Regionalverband eine
 breite Palette an Ausbildungskursen bis hin zu Jugend+Sport-Kursen an.
 
-[Übersicht unserer Ausbildungskursen](/cevi/kurse)
+[Übersicht unserer Ausbildungskursen](https://ceviregionzuerich.ch/kurse/)
 
 Im Cevi wirst du bereits früh selbst zu einem Hilfsleiter/ einer Hilfsleiterin. Denn mit etwa 13 Jahre nimmst du nicht
 mehr an jedem Programm einfach nur als Teilnehmerin oder Teilnehmer teil, sondern du hilfst aktiv mit. So z.B. bei den
@@ -104,6 +106,8 @@ Dieser Zyklus wiederholt sich im Idealfall alle sieben Jahre, sprich du bist 7 J
 Hilfsleiter bzw. Gruppenleiter und zum Schluss begleitest du deine Kids noch einmal ca. 5 bis 7 Jahre beim Übergang zum
 Leiter sein.
 
+![Die Aubildung ist ein wichtiger Bestandteil des Leiterwerdens](/assets/ausbildung.jpg)
+
 ## Den Cevi gibt es auf der ganzen Welt.
 
 Denn Cevi, so wie du ihn als Cevi Züri 11 kennst, gibt es nicht nur in Affoltern, Seebach und Oerlikon. Nein! Denn mit
@@ -115,6 +119,7 @@ in der Schweiz an: der Region Zürich.
 
 [Cevi Region Zürich](/cevi/region-zuerich)
 
-Der Cevi Züri 11 ist somit nur eine kleine Ortsgruppe unter vielen, denn uns gibt es auf der ganzen Welt unter dem Namen YMCA.
+Der Cevi Züri 11 ist somit nur eine kleine Ortsgruppe unter vielen, denn uns gibt es auf der ganzen Welt unter dem Namen
+YMCA.
 
 [Mehr zum Cevi Schweiz und dem YMCA](/cevi/cevi-schweiz)
