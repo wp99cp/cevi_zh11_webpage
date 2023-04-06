@@ -60,9 +60,8 @@ Der Fallbalken muss vom Benutzer selber aufgebaut werden. Die folgende Anleitung
 optimalerweise durch drei bis fünf erwachsene Personen. Dabei muss mit einer Aufbauzeit von ca. 1 bis 1.5 Stunden
 gerechnet werden.
 
+[[ google_drive document :: 1vnHvsV7iVJB0u9YJqMDrBb10mgIkcpkd ]]
+
 Der Platz für den Fallbalken muss so waagrecht wie möglich sein (ansonsten droht Kippgefahr). Dafür sind wir bezüglich
 des Untergrunds flexibel: Grass oder Hartbelag. Der Fallbalken benötigt im aufgebauten Zustand eine ungefähre Fläche von
 5 auf 10 Meter.
-
-
-

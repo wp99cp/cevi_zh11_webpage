@@ -29,7 +29,7 @@ cards:
     cevi-name:
     image: /assets/material_pictures/gulaschkanone.jpg
     function: Miete ab CHF 50.-
-    link: /material/kontakt
+    link: /material/gulaschkanone
 
   - name: Weiteres Material
     cevi-name:
