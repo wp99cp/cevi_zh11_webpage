@@ -8,25 +8,23 @@ sub-menu-priority: 5
 
 # Über die Stufe Sinai.
 
-Einmal pro Woche mit Freunden in den Wald - genau das bietet dir die Stufe Sinai. Wir sind die jüngste der drei Knaben
-Stufen im Cevi Züri 11, bei uns sind Buben der ersten bis dritten Klasse willkommen. Jede Woche bieten wir dabei ein
-abwechslungsreiches Programm draussen im Wald an. Wir sind ein Team aus 9 Leitenden.
+Die Stufe Sinai ist die jüngste der drei Knabenstufen im Cevi Züri 11 und bietet Buben der ersten bis dritten Klasse die
+Möglichkeit, einmal pro Woche draußen im Wald Zeit mit Freunden zu verbringen. Unser Leiter-Team besteht aus 9
+motivierten Leitenden, die jede Woche ein abwechslungsreiches Programm für die Teilnehmer gestalten.
 
 [Mehr über die Aktivitäten des Cevi.](/ueber-uns)
 
-## Stufenleiter der Stufe Sinai
+## Stufen- und Gruppenleiter der Stufe Sinai
 
 [[ cards :: contact/sinai_stufenleiter.yml ]]
-
-## Gruppenleiter der Stufe Sinai
-
 [[ cards :: contact/sinai_gruppenleiter.yml ]]
 
 ## Unser nächstes Lager
 
-Im Dezember 2022 werden wir ein Chlauslager durchführen. Infos folgen im November.
-Das Chlauslager findet vom 3. bis 4. Dezember in Steg im Tösstal (ZH) statt.
+Wir freuen uns auf unser nächstes Pfingstlager, das vom 27. bis 29. Mai 2023 in der Nähe von Elgg
+stattfindet.
 
 ## Fotos aus der Stufe Sinai
 
+Schau dir unsere Fotos aus vergangenen Aktivitäten an!
 [[ gallery 1vpQbgEDXnWrDUja4ZN4yGVMgqunsrtzv ]]
