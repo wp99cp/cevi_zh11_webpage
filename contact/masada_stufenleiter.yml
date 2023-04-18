@@ -9,7 +9,7 @@ cards:
 
   - name: Moritz Jufer
     cevi-name: Mungg
-    image: /assets/portrait_pictures/placeholder.png
+    image: /assets/portrait_pictures/moritz_jufer.jpg
     function: Stufenleiter
     contact_form: forms/people/moritz_jufer.yml
 
@@ -22,11 +22,11 @@ cards:
   - name: Roman Greiner
     cevi-name: Spider
     image: /assets/portrait_pictures/placeholder.png
-    function: Gruppenleiter
+    function: Stufenleiter
     contact_form:
 
   - name: Louis Noack
     cevi-name: Hecht
-    image: /assets/portrait_pictures/placeholder.png
-    function: Gruppenleiter
+    image: /assets/portrait_pictures/louis_noack.jpg
+    function: Stufenleiter
     contact_form:

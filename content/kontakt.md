@@ -25,7 +25,7 @@ Fragen jeglicher Art offen.
 
 Hast du eine Frage rund zum Samstag-Nachmittag? Zum nächsten Stufen-PfiLa?
 
-Dann kontaktiere direkt deine verantwortliche Stufenleiterin/deinen verantwortlicher Stufenleiter.
+Dann kontaktiere direkt deine verantwortliche Stufenleiterin/deinen verantwortlichen Stufenleiter.
 
 [[ cards :: contact/kontakt_stufenleitung.yml ]]
 
