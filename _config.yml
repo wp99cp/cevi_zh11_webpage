@@ -55,8 +55,6 @@ defaults:
 
   - scope:
       path: "content/ueber-uns"
-    values:
-      news-entry: true
 
 imageoptim:
   svgo: false   # Disabling svgo because it throws some error

@@ -10,6 +10,7 @@ permalink: /schnuppern
 news-entry-title: Schnupperprogramm am 25. März
 news-entry-caption: Komm vorbei! Und werde Cevianer! Cevi-Schnupperprogramm am 25. März 2023.
 date: 2023-03-02T12:00
+news-entry: true
 ---
 
 {% comment %}
