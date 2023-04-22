@@ -23,10 +23,10 @@ cards:
     cevi-name: Spider
     image: /assets/portrait_pictures/placeholder.png
     function: Stufenleiter
-    contact_form:
+    contact_form: forms/people/roman_greiner.yml
 
   - name: Louis Noack
     cevi-name: Hecht
     image: /assets/portrait_pictures/louis_noack.jpg
     function: Stufenleiter
-    contact_form:
+    contact_form: forms/people/louis_noack.yml
