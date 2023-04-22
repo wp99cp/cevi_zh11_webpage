@@ -139,6 +139,14 @@ textarea {
 input[type=checkbox] {
   height: 25px;
   width: 25px;
+  padding: 0;
+}
+
+input[type='date'], input[type='time'] {
+  -webkit-appearance: none;
+  text-align: left;
+  height: 22px;
+  background-color: white;
 }
 
 input[type=checkbox] + label {
