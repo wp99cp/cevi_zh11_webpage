@@ -13,7 +13,7 @@ Bei uns im Cevi ist immer etwas los! Hier findest du alle News-Beiträge in chro
 
 <div class="news-feed">
 
-    {%- assign pages = site.html_pages | sort: 'date' | reverse , true -%}
+    {%- assign pages = site.html_pages | sort: 'date' | reverse -%}
     {%- for p in pages -%}
         {%- if p.news-entry -%}
             <div class="news-entry">
