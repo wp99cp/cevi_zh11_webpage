@@ -17,7 +17,7 @@ von ca. 80 Litern und kann entweder mit Gas oder Holz befeuert werden.
 
 Unsere Gulaschkanone kann man mieten. Sie muss in Seebach mit einem Lieferwagen oder einem großen Anhänger abgeholt
 werden. Für den Transport und Aufbau ist der Mieter selber verantwortlich. Optional kannst du bei uns einen passenden
-[Autoanhänger mieten](/material/anhanger).
+[Autoanhänger mieten](/material/anhaenger).
 
 ### Gulaschkanone mieten. Preiskategorien.
 
