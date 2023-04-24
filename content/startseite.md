@@ -13,7 +13,8 @@ Im Cevi Züri 11 erlebst du jeden Samstag von 14:00 bis 17:00 Uhr ein spannendes
 Kinder und Jugendlichen bieten wir eine abwechslungsreiche und sinnvolle Freizeitbeschäftigung voller Sport, Spass und
 Action.
 
-Bei uns sind alle ab 4 Jahren herzlich willkommen.
+Bei uns sind alle ab 4 Jahren herzlich willkommen. Wir sind in den Quartieren Affoltern, Seebach und Oerlikon der Stadt
+Zürich aktiv.
 
 [Erfahre mehr über den Cevi Züri 11](/ueber-uns) oder [nimm mit uns Kontakt auf](/kontakt).
 
