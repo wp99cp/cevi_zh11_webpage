@@ -1,5 +1,5 @@
 ---
-title: Mietmaterial - Fallbalken
+title: Miete unseren Fallbalken
 permalink: /material/fallbalken
 sub-menu: Material
 sub-menu-name: Fallbalken
