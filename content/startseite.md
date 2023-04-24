@@ -1,5 +1,5 @@
 ---
-title: Startseite
+title: Abenteuer erleben? Komm in den Cevi Züri 11!
 main-menu: Startseite
 main-menu-priority: 1
 permalink: /
