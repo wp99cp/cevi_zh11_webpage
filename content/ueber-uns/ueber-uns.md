@@ -6,6 +6,7 @@ sub-menu: Cevi Züri 11
 sub-menu-name: Über uns
 sub-menu-priority: 1
 permalink: /ueber-uns
+description: Der Cevi Züri 11 ist ein Kinder- und Jugendverein in Zürich. Wir bieten spannende Freizeitprogramme in der Natur an.
 ---
 
 # Der Cevi Züri 11 bietet Programme in der Natur an.

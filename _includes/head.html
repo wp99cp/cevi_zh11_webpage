@@ -4,9 +4,20 @@
     <meta charset="UTF-8"/>
 
     <meta name="author" content="Cevi Züri 11">
-    <meta name="keywords" content="Cevi Zürich 11, Fallbalken, Freizeitbeschäftigung, Hobby, Natur, Wald, Fallbrett">
-    <meta name="description"
+
+    {% if page.keywords %}
+        <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}">
+    {% else %}
+        <meta name="keywords" content="Cevi Zürich 11, Fallbalken, Freizeitbeschäftigung, Hobby, Natur, Wald, Fallbrett">
+    {% endif %}
+
+    {% if page.description %}
+        <meta name="keywords" content="{{ page.description }}">
+    {% else %}
+        <meta name="description"
           content="Im Cevi Züri 11 erlebst du jeden Samstag von 2 bis 5 Uhr ein spannendes Programm im Wald. Unsere Programme richten sich an Kindern ab 4 Jahren.">
+    {% endif %}
+
     <meta name="format-detection" content="telephone=no">
 
     <link rel="stylesheet" href="/_template_assets/main.css">

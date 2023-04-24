@@ -4,9 +4,17 @@ permalink: /material/fallbalken
 sub-menu: Material
 sub-menu-name: Fallbalken
 sub-menu-priority: 3
+description: Präge den Moment auf deinem Event, miete unseren Fallbalken.
+keywords:
+  - Fallbalken
+  - Mieten
+  - Mietmaterial
+  - Sport
+  - Chilbi
+  - Fest
 ---
 
-# Wer getroffen wird, der fällt! Unser Fallbalken.
+# Präge den Moment auf deinem Event, miete unseren Fallbalken.
 
 ## Über den Fallbalken.
 

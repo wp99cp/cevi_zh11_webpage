@@ -6,6 +6,13 @@ sub-menu: Sommerlager
 sub-menu-name: Über das SoLa
 sub-menu-priority: 1
 permalink: /sola
+keywords:
+  - Sommerlager
+  - Zelt
+  - Cevi Züri 11
+  - SoLa
+  - Ferienlager
+description: Das Sommerlager des Cevi Züri 11 ist ein Ferienlager für Kinder und Jugendliche ab sieben Jahren.
 ---
 
 # Das Sommerlager als Höhepunkt des Cevijahres.

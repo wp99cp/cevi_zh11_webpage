@@ -3,6 +3,13 @@ title: Donwload
 footer-menu: Downloads
 footer-menu-priority: 3
 permalink: /download
+keywords:
+  - Cevi Züri 11
+  - Downloads
+  - Jahresberichte
+  - Statuten und Teilnahmebedingungen
+  - Fallbalken und Mietmaterial
+description: Hier findest du alle Dokumente des Cevi Züri 11 zum herunterladen.
 ---
 
 # Hier findest du alle Dokumente zum herunterladen.

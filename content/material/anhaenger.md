@@ -4,6 +4,11 @@ permalink: /material/anhaenger
 sub-menu: Material
 sub-menu-name: Transportanhänger
 sub-menu-priority: 4
+description: Für den Transport unseres Fallbalkens, das Material deines Lagers oder anderen grossen Gegenständen eignet sich unser Transportanhänger.
+keywords:
+  - Autoanhänger
+  - Transportanhänger
+  - Mieten
 ---
 
 # Für das Grosse. Unser Transportanhänger.

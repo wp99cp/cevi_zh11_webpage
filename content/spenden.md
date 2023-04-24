@@ -1,6 +1,14 @@
 ---
 title: Den Cevi Züri 11 Spenden
 permalink: /spenden
+description: Unterstütze den Cevi Züri 11 mit deiner Spende
+keywords:
+  - Cevi Züri 11
+  - unterstützen
+  - spenden
+  - ehrenamtlich
+  - Spendenkonto
+  - Finanzaktion
 ---
 
 # Unterstütze uns mit deiner Spende

@@ -5,6 +5,13 @@ regenerate: true
 sub-menu: Cevi Züri 11
 sub-menu-name: Cevi News
 sub-menu-priority: 4
+description: Hier findest du alle News-Beiträge in chronologischer Reihenfolge.
+keywords:
+  - Cevi Züri 11
+  - News
+  - Cevi-News
+  - Neuigkeiten
+  - News-Beiträge
 ---
 
 # Cevi News
