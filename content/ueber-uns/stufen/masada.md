@@ -17,6 +17,6 @@ Leitermangel leider aufgelöst. Umso mehr freuen wir uns, die es die Stufe Masad
 
 [[ cards :: contact/masada_stufenleiter.yml ]]
 
-## Eindrück aus unserem letzten Lager
+## Eindrücke aus unserem letzten Lager
 
 [[ gallery 1P8FUSSGoS6HJp5ReemAwqRKP2wyKYCJk ]]
