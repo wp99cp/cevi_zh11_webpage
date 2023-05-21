@@ -4,7 +4,7 @@ cards:
   - name: Jordis Göldi
     cevi-name: Marabu
     function: Stufe Amos
-    image: /assets/portrait_pictures/jordis_goaldi.jpg
+    image: /assets/portrait_pictures/jordis_goeldi.jpg
     contact_form: forms/people/jordis_goeldi.yml
 
   - name: Jaël Göldi

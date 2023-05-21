@@ -1,0 +1,27 @@
+type: with_picture
+
+cards:
+  - name: Rahel Bewersdorff
+    cevi-name: Athowa
+    image: /assets/portrait_pictures/rahel_bewersdorff.jpg
+    function: Stufenleiterin
+    contact_form: forms/people/rahel_bewersdorff.yml
+
+  - name: Jordis Göldi
+    cevi-name: Marabu
+    image: /assets/portrait_pictures/jordis_goeldi.jpg
+    function: Stufenleiterin
+    contact_form: forms/people/jordis_goeldi.yml
+
+  - name: Lena Strub
+    cevi-name: Dava
+    image: /assets/portrait_pictures/lena_strub.jpg
+    function: Stufenleiterin
+    contact_form: forms/people/lena_strub.yml
+
+  - name: Susanna Läuchli
+    cevi-name: Ginger
+    image: /assets/portrait_pictures/susanna_laeuchli.jpg
+    function: Stufenleiterin
+    contact_form: forms/people/susanna_laeuchli.yml
+
