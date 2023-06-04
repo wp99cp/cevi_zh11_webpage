@@ -22,7 +22,7 @@ cards:
   - name: Lucien Fauster
     cevi-name: Thunder
     function: Stufe Masada
-    image: /assets/portrait_pictures/placeholder.png
+    image: /assets/portrait_pictures/lucien_fauster.jpg
     contact_form: forms/people/lucien_fauster.yml
 
   - name: Cyrill Püntener

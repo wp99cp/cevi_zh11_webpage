@@ -1,9 +1,9 @@
 type: with_picture
 
 cards:
-  - name: Lucien Lauster
+  - name: Lucien Fauster
     cevi-name: Thunder
-    image: /assets/portrait_pictures/placeholder.png
+    image: /assets/portrait_pictures/lucien_fauster.jpg
     function: Stufenleiter
     contact_form: forms/people/lucien_fauster.yml
 
