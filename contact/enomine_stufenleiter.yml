@@ -9,13 +9,13 @@ cards:
 
   - name: Kim Hagen
     cevi-name: Panda
-    image: /assets/portrait_pictures/placeholder.png
+    image: /assets/portrait_pictures/kim_hagen.jpg
     function: Stufenleiter
     contact_form: forms/people/kim_hagen.yml
 
   - name: Marius Schudel
     cevi-name: Falk
-    image: /assets/portrait_pictures/placeholder.png
+    image: /assets/portrait_pictures/marius_schudel.jpg
     function: Stufenleiter
     contact_form: forms/people/marius_schudel.yml
 

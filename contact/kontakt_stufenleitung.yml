@@ -16,7 +16,7 @@ cards:
   - name: Marius Schudel
     cevi-name: Falk
     function: Stufe Enomine
-    image: /assets/portrait_pictures/placeholder.png
+    image: /assets/portrait_pictures/marius_schudel.jpg
     contact_form: forms/people/marius_schudel.yml
 
   - name: Lucien Fauster
