@@ -6,7 +6,7 @@ def swisstopo(map_center_lat, map_center_lon, scale, pkts)
   "<figure>
 <div id=\"viewDiv\"></div>
 <link rel=\"stylesheet\" href=\"https://js.arcgis.com/4.22/esri/themes/light/main.css\">
-<script src=\"fhttps://js.arcgis.com/4.22/init.js\"></script>
+<script src=\"https://js.arcgis.com/4.22/init.js\"></script>
 <script>
     const points = #{pkts.inspect};
     const map_center = [#{map_center_lon}, #{map_center_lat}];
