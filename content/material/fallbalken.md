@@ -31,12 +31,13 @@ raffinierter Mechanismus das Fallbrett aus und der Gegner fällt auf die Matte.
 ## Miete den Fallbalken.
 
 Unser Fallbalken kann man mieten. Er muss aber in Seebach mit einem Lieferwagen oder einem grossen Anhänger abgeholt
-werden. Für den Aufbau ist der Mieter selber verantwortlich, es gibt aber eine Anleitung.
+werden. Für den Aufbau ist der Mieter selber verantwortlich, es gibt aber eine Anleitung. Hinweis: Die
+Ball-Schutz-Netze, wie sie auf der Abbildung oben sichtbar sind, werden von uns **nicht** vermietet.
 
 ### Fallbalken mieten. Preiskategorien.
 
 Der Mietpreis des Fallbalkens richtet sich an der Anzahl der Nutzungstage (angegebener Mietpreis entspricht einem
-Nutzungstag).
+Nutzungstag; ein Wochenende entspricht einem Nutzungstag).
 
 <table style="width: 100%; text-align: center">
   <tbody><tr>
@@ -51,7 +52,7 @@ Nutzungstag).
   </tr>
 </tbody></table>
 
-Wird für den Transport des Fallbalkens zusätzlich derAnhänger gemietet, so beträgt der Mietpreis für diesen pauschal CHF
+Wird für den Transport des Fallbalkens zusätzlich der Anhänger gemietet, so beträgt der Mietpreis für diesen pauschal CHF
 100.- unabhängig von der Nutzungsdauer (Vermietung ohne Dach-Aufbau).
 
 [Kontaktiere unser Materialchef](/material/kontakt).
