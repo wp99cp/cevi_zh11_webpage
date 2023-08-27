@@ -44,11 +44,13 @@ Wir freuen uns über jedes neue Gesicht!
 
 
 **Treffpunkt: um 14.00 Uhr**
+- Bushaltestelle Glaubtenstrasse (80er, Richtung Oerlikon)
+- Bushaltestelle Staudenbühl (40er, Richtung Affoltern)
 - Bushaltestelle Hürstholz (40er, Richtung Seebach)
 
 **Rückkehr: um 17.00 Uhr**
 
-[[ swisstopo centered :: 47.41780/8.52713 :: 6_500 :: 47.41714/8.52278 ]]
+[[ swisstopo centered :: 47.41780/8.52713 :: 6_500 :: 47.42013/8.53524 47.41714/8.52278 47.41445/8.51934 ]]
 
 
 ## Freiwillige Voranmeldung
