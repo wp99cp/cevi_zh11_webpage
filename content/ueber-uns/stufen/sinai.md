@@ -21,8 +21,7 @@ motivierten Leitenden, die jede Woche ein abwechslungsreiches Programm für die 
 
 ## Unser nächstes Lager
 
-Wir freuen uns auf unser nächstes Pfingstlager, das vom 27. bis 29. Mai 2023 in der Nähe von Elgg
-stattfindet.
+Das heimelige "Chlauslager", ist wie jedes Jahr ein Highlight im Cevi Kalender! Das Lager findet am Wochenende vom 2.- 3. Dezember statt und wir übernachten in einem, im Gegensatz zur Jahreszeit gemächelig warmen Lagerhäuschen in Bülach.
 
 ## Fotos aus der Stufe Sinai
 
