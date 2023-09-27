@@ -20,6 +20,10 @@ footer-menu-priority: 1
 contact_page: true
 ---
 
+{% comment %}
+###############################
+###############################
+
 # Cevi-Schupper- und Familien-Programm vom 16. September 2023
 
 ## Komm vorbei! Und werde Cevianer!
@@ -64,10 +68,10 @@ Schnupper-Datum. Bei uns ist jeder Samstag ein Schnupperprogramm.
 
 [Kontakt aufnehmen](/kontakt)
 
+###############################
+###############################
+{% endcomment %}
 
-{% comment %}
-###############################
-###############################
 
 # Bei uns ist jeder Samstag ein Schnupperprogramm.
 
@@ -101,6 +105,3 @@ Schnupperprogramm.
 
 [[ contact-form :: forms/schnuppern.yml ]]
 
-###############################
-###############################
-{% endcomment %}
