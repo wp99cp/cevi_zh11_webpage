@@ -12,7 +12,7 @@ fotos: true
 ## Waldweihnachten (2016)
 [[ gallery 1_cYOv9DTONWmagvlqAqcEGaOj-XG76Z4 ]]
 
-## Aktion 75 Stunden (2015)
+## Aktion 72 Stunden (2015)
 [[ gallery 1oySKyMup3Tj2v0zH8UZhh5uEen51Zteg ]]
 
 ## Kürbis schnitzen auf der Juckerfarm (2014)
