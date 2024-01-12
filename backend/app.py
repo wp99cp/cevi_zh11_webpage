@@ -12,6 +12,8 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 @app.route('/form/submission', methods=['POST'])
 def return_status():
     request_json = request.json
+    print(f"Received request: {request_json}")
+    print(request_json)
 
     message_sender = MailSender()
 
@@ -57,15 +59,8 @@ def send_message_to_consignor(message_sender: MailSender, request_json):
     receiver = request_json['message']['Mail']
     subject = "Cevi Züri 11 | Bestätigung Kontaktformular"
     name = request_json['message']['Vorname'] if 'Vorname' in request_json['message'] else ''
-
-    if request_json['receiver'] == 'cevi-e-znacht_receiver':
-        subject = "Cevi Züri 11 | Bestätigung Anmeldung Cevi-E-Znacht"
-        msg = f"Lieber {name}<br><br>Vielen Dank für deine Anmeldung für den Cevi-E-Znacht! Wir freuen uns auf dich!<br>" \
-              f"Weitere Infos folgen ca. 2 Wochen vor dem Anlass.<br><br>Liebe Grüsse" \
-              f"<br>Cevi Züri 11 Team<br><br> Deine Nachricht:" + format_to_text(json=request_json['message'])
-    else:
-        msg = f"Lieber {name}<br><br>Vielen Dank für deine Anfrage, du wirst in Kürze von uns hören.<br><br>Liebe " \
-              f"Grüsse<br>Cevi Züri 11 Team<br><br> Deine Nachricht:" + format_to_text(json=request_json['message'])
+    msg = f"Lieber {name}<br><br>Vielen Dank für deine Anfrage, du wirst in Kürze von uns hören.<br><br>Liebe " \
+          f"Grüsse<br>Cevi Züri 11 Team<br><br> Deine Nachricht:" + format_to_text(json=request_json['message'])
     message_sender.send_message(receiver, subject, msg)
 
 
