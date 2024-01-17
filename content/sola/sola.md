@@ -17,14 +17,14 @@ description: Das Sommerlager des Cevi Züri 11 ist ein Ferienlager für Kinder u
 
 # Das Sommerlager als Höhepunkt des Cevijahres.
 
-## Anmeldung und Infos zum Sommerlager 2023
+## Anmeldung und Infos zum Sommerlager 2024
 
-Ab sofort kannst du dich für das Sommerlager 2023 anmelden.
+Ab sofort kannst du dich für das Sommerlager 2024 anmelden.
 
-Komm mit uns auf eine Reise in die Welt von Mittelerde. Erlebe spannende Abenteuer und tauche ein in die fantastische
-Welt von Hobbits, Zwergen und Elfen.
+Komm mit uns auf eine Reise in die Welt von Harry Potter. Erlebe spannende Abenteuer und tauche ein in die fantastische
+Welt von Zaubern und Hexen, von Hogwarts und Hogsmeade.
 
-[Anmeldung und weitere Infos zum Sommerlager 2023](/sola/2023).
+[Anmeldung und weitere Infos zum Sommerlager 2024](/sola/2024).
 
 ### Bei uns ist jeder willkommen! Auch nicht Cevi-Mitglieder.
 

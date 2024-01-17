@@ -2,7 +2,7 @@ type: with_picture
 
 cards:
   - name: Fröschli
-    cevi-name: Mädchen und Knaben
+    cevi-name: Mädchen und Jungs
     image: /assets/stufen_pictures/froeschli.jpg
     function: Kindergarten-Alter
     link: /stufen/froeschli
@@ -19,21 +19,22 @@ cards:
     function: 6- bis 9-Jährig
     link: /stufen/esperia
 
+  - name: Enomine
+    cevi-name: Jungs
+    image: /assets/stufen_pictures/enomine.jpg
+    function: 6- bis 7-Jährig
+    link: /stufen/enomine
+
   - name: Sinai
-    cevi-name: Knaben
+    cevi-name: Jungs
     image: /assets/stufen_pictures/sinai.jpg
-    function: 6- bis 9-Jährig
+    function: 8- bis 10-Jährig
     link: /stufen/sinai
 
   - name: Masada
-    cevi-name: Knaben
+    cevi-name: Jungs
     image: /assets/stufen_pictures/masada.jpg
-    function: 9- bis 12-Jährig
+    function: 11- bis 13-Jährig
     link: /stufen/masada
 
-  - name: Enomine
-    cevi-name: Knaben
-    image: /assets/stufen_pictures/enomine.jpg
-    function: 12- bis 15-Jährig
-    link: /stufen/enomine
 

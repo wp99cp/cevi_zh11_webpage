@@ -1,0 +1,32 @@
+type: with_picture
+
+cards:
+  - name:
+    cevi-name: Omen
+    image: /assets/portrait_pictures/mattis_ruckstuhl.jpg
+    function: Gruppenleiter
+    contact_form: forms/people/cedric_fauster.yml
+
+  - name:
+    cevi-name: Muskat
+    image: /assets/portrait_pictures/henri_strub.jpg
+    function: Gruppenleiter
+    contact_form: forms/people/henri_strub.yml
+
+  - name:
+    cevi-name: Wäspi
+    image: /assets/portrait_pictures/louis_strub.jpg
+    function: Gruppenleiter
+    contact_form: forms/people/louis_strub.yml
+
+  - name:
+    cevi-name: PPPP
+    image: /assets/portrait_pictures/placeholder.png
+    function: Gruppenleiter
+    contact_form: forms/people/dimitri_paras.yml
+
+  - name:
+    cevi-name: Yoda
+    image: /assets/portrait_pictures/mattia_pangrazzi.jpg
+    function: Gruppenleiter
+    contact_form: forms/people/mattia_pangrazzi.yml

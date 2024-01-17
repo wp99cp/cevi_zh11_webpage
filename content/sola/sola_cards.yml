@@ -1,6 +1,13 @@
 type: with_picture
 
 cards:
+
+  - name: Harry Potter
+    cevi-name: Sola 2024
+    image: /assets/sola/sola_2024.jpg
+    function: noch offen
+    link: /sola/2024
+
   - name: Herr Der Ringe
     cevi-name: Sola 2023
     image: /assets/sola/sola_2023.jpg
