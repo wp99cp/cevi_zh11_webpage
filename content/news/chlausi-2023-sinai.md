@@ -7,7 +7,7 @@ date: 2023-12-06T17:00
 fotos: true
 ---
 
-# Chalauslager 2023 der Stufe Sinai
+# Chlauslager 2023 der Stufe Sinai
 
 ## Zum Thema Indiana Jones
 
