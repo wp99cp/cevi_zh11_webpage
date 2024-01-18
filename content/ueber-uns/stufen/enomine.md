@@ -62,8 +62,6 @@ untereinander.
 **Panda:** <br/>
 Ich bin de Panda, 21gi und gahn gern in Cevi wäg de Lager und au de intressante Samstignamitags Programm, schlechtes
 Wetter gitts ih de Cevi nöd.
-Ich bin Panda, 21 Jahre alt und gehe gerne in den Cevi wegen den Lager und den interessanten Samstagnachmittag-Progis,
-für mich gibt es kein schlechtes Wetter im Cevi.
 
 **Falk:** <br/>
 Ich bin Falk, 21 Jahre alt und in die Cevi gehe ich gerne, um tolle Menschen kennenzulernen und die Lager sind immer ein
