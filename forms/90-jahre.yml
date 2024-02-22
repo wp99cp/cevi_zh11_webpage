@@ -1,0 +1,57 @@
+# see backend/config/forms.yml for the corresponding mail address
+receiver: lucien_fauster
+
+# defines the input cells of the form
+cells:
+
+  - element: input
+    label: Vorname(n) der Kinder
+    required: true
+
+  - element: input
+    label: Nachname
+    required: true
+
+  - element: input
+    label: Ceviname(n)
+    required: false
+
+  - element: input
+    label: Mail
+    type: email
+    required: true
+
+  - element: input
+    label: Anzahl Personen (Fleisch)
+    type: number
+    required: true
+
+  - element: input
+    label: Anzahl Personen (Vegi)
+    type: number
+    required: true
+
+  - element: checkbox
+    label: Wir bringen gerne eine Vorspeise mit
+    style_wide: true
+
+  - element: textarea
+    label: Falls ja, wir bringen mit...
+    style_wide: true
+
+  - element: checkbox
+    label: Wir möchten ein Jubiläums-Shirt bestellen
+    style_wide: true
+
+  - element: textarea
+    label: Falls ja, Anzahl und Grössen der T-Shirts...
+    style_wide: true
+
+  - element: checkbox
+    label: Ich bestätige die <a href="/teilnahmebedingungen">Teilnahmebedingungen des Cevi Züri 11</a> gelsen zu haben und bin damit einverstanden.
+    required: true
+    style_wide: true
+
+  - element: textarea
+    label: Nachricht / Anmerkung (optional)
+    style_wide: true
