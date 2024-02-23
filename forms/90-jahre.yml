@@ -1,11 +1,11 @@
 # see backend/config/forms.yml for the corresponding mail address
-receiver: lucien_fauster
+receiver: jubilaeum_receiver
 
 # defines the input cells of the form
 cells:
 
   - element: input
-    label: Vorname(n) der Kinder
+    label: Vorname(n)
     required: true
 
   - element: input
@@ -32,18 +32,22 @@ cells:
     required: true
 
   - element: checkbox
+    id: vorspeise-checked
     label: Wir bringen gerne eine Vorspeise mit
     style_wide: true
 
   - element: textarea
     label: Falls ja, wir bringen mit...
+    condition: vorspeise-checked
     style_wide: true
 
   - element: checkbox
+    id: shirt-checked
     label: Wir möchten ein Jubiläums-Shirt bestellen
     style_wide: true
 
   - element: textarea
+    condition: shirt-checked
     label: Falls ja, Anzahl und Grössen der T-Shirts...
     style_wide: true
 

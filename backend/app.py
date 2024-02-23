@@ -56,7 +56,26 @@ def format_to_text(json: any, indent=0) -> str:
 
 
 def send_message_to_consignor(message_sender: MailSender, request_json):
+
     receiver = request_json['message']['Mail']
+
+    # special message for jubilaeum_receiver
+    if request_json['receiver'] == 'jubilaeum_receiver':
+        subject = "Cevi Züri 11 | Bestätigung Anmeldung Jubiläum"
+        name = request_json['message']['Vorname(n)'] if 'Vorname(n)' in request_json['message'] else ''
+        msg = f"Lieber {name}<br><br>" \
+        "Danke für deine Anmeldung fürs 90 Jahre Cevi Züri 11 Jubiläum.<br><br>" \
+        "Weitere Infos zu genauer Zeit, Anreise etc. folgen nach Anmeldeschluss (6. Mai) auf diese Mail-Adresse.<br><br>" \
+        "Falls du angegeben hast eine Vorspeise mitzubringen folgen zudem Infos zu Menge etc. nach dem Anmeldeschluss.<br><br>" \
+        "Wir freuen uns dich am 6. Juli in Wallisellen dabeizuhaben und wünschen dir bis dahin einen schönen Frühling und viel Vorfreude aufs Fest 😉! " \
+        "Bei Fragen melde dich gerne per Mail: jubilaeum@zh11.ch<br><br><br>" \
+        "Liebe Grüsse<br>Das Jubiläumskomitee<br>jubilaeum@zh11.ch" \
+        f"<br><br><br><hr><br>Deine Nachricht:" + format_to_text(json=request_json['message'])
+        message_sender.send_message(receiver, subject, msg, "jubilaeum@zh11.ch")
+        return
+
+    # continue with default message ...
+
     subject = "Cevi Züri 11 | Bestätigung Kontaktformular"
     name = request_json['message']['Vorname'] if 'Vorname' in request_json['message'] else ''
     msg = f"Lieber {name}<br><br>Vielen Dank für deine Anfrage, du wirst in Kürze von uns hören.<br><br>Liebe " \
