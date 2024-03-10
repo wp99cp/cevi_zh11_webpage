@@ -15,7 +15,6 @@ cells:
   - element: input
     label: Geburtsdatum
     required: true
-    type: date
 
   - element: input
     label: Geschlecht
