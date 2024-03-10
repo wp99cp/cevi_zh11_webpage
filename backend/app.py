@@ -4,6 +4,7 @@ from flask_cors import CORS
 from multiprocessing import Process
 
 from send_mail import MailSender, MailReceiver
+from add_google_docs import SpreadSheetAdder
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
@@ -72,6 +73,10 @@ def send_message_to_consignor(message_sender: MailSender, request_json):
         "Liebe Grüsse<br>Das Jubiläumskomitee<br>jubilaeum@zh11.ch" \
         f"<br><br><br><hr><br>Deine Nachricht:" + format_to_text(json=request_json['message'])
         message_sender.send_message(receiver, subject, msg, "jubilaeum@zh11.ch")
+
+        google_sheets_adder = SpreadSheetAdder(spreadsheetId='1pTL4d-aTiZS2L4pNornvt1wpDKNq-PwGCz_d1JZi028')
+        google_sheets_adder.add_row(['Jubilaeum', '1223'])
+
         return
 
     # continue with default message ...

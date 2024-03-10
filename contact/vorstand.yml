@@ -1,32 +1,33 @@
-type: without_picture
+type: with_picture
 
 cards:
+
+  - name: Cyrill Püntener
+    cevi-name: JPG
+    image: /assets/portrait_pictures/cyrill_puentener.jpg
+    function: Präsident und Webseite
+    contact_form: forms/people/cyrill_puentener.yml
+
   - name: Cédric Fauster
     cevi-name: Chnobli
+    image: /assets/portrait_pictures/cedric_fauster.jpg
     function: Materialchef
     link: /material/kontakt
 
   - name: Marc Bachmann
     cevi-name: Taifun
     function: Materialchef
+    image: /assets/portrait_pictures/marc_bachmann.jpg
     link: /material/kontakt
-
-  - name: Jasmin Voss
-    cevi-name: Pepsi
-    function: Präsidentin
-    contact_form: forms/people/jasmin_voss.yml
 
   - name: Patrick Gan
     cevi-name: Tiger Ente
     function: Kassier
+    image: /assets/portrait_pictures/placeholder.png
     contact_form: forms/people/patrick_gan.yml
-
-  - name: Cyrill Püntener
-    cevi-name: JPG
-    function: Webseite
-    contact_form: forms/webadmin.yml
 
   - name: Peter Relly
     cevi-name:
+    image: /assets/portrait_pictures/placeholder.png
     function: Vertreter Männerabteilung
     contact_form: forms/people/peter_relly.yml
