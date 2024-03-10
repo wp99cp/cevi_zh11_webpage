@@ -14,6 +14,10 @@ description: Hier findest du alle Dokumente des Cevi Züri 11 zum herunterladen.
 
 # Hier findest du alle Dokumente zum herunterladen.
 
+## Jahresplan und Anlässe
+
+[[ google_drive folder :: 13XIbwCAwYK1fYkobTQgi-75-WD3kWoVp ]]
+
 ## Informationen zum Sommerlager
 
 [[ google_drive folder :: 139nBfDEZW22ukMM6HfjwpHIw4iVdNSCd ]]
