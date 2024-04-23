@@ -1,5 +1,5 @@
 ---
-title: Donwload
+title: Download
 footer-menu: Downloads
 footer-menu-priority: 3
 permalink: /download
