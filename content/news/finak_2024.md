@@ -12,7 +12,7 @@ contact_page: false
 ## Informationen zur Finanzaktion 2024 unserm Unihockey-Plausch-Turnier.
 
 Am Samstag, 22. Juni 2024 findet unsere alljährliche Finanzaktion statt.
-Mit einem Unihockey-Turnier sammeln wir Spenden um unseren TeilnehmerInnen spannende und lehrreiche Samstags-Programme
+Mit einem Unihockey-Turnier sammeln wir Spenden um unseren Teilnehmer*innen spannende und lehrreiche Samstags-Programme
 und Lager zu bieten. Das Prinzip ist ganz einfach: Für jedes erzielte Tor spenden unsere Sponsoren einen kleinen Betrag
 an unsere Abteilung.
 
