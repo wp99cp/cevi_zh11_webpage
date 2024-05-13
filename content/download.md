@@ -1,5 +1,5 @@
 ---
-title: Donwload
+title: Download
 footer-menu: Downloads
 footer-menu-priority: 3
 permalink: /download
@@ -13,6 +13,10 @@ description: Hier findest du alle Dokumente des Cevi Züri 11 zum herunterladen.
 ---
 
 # Hier findest du alle Dokumente zum herunterladen.
+
+## Jahresplan und Anlässe
+
+[[ google_drive folder :: 13XIbwCAwYK1fYkobTQgi-75-WD3kWoVp ]]
 
 ## Informationen zum Sommerlager
 

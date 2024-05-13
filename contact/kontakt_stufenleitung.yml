@@ -25,11 +25,11 @@ cards:
     image: /assets/portrait_pictures/lucien_fauster.jpg
     contact_form: forms/people/lucien_fauster.yml
 
-  - name: Cyrill Püntener
-    cevi-name: JPG
+  - name: Jérôme Fauster
+    cevi-name: Crash
     function: Stufe Sinai
-    image: /assets/portrait_pictures/cyrill_puentener.jpg
-    contact_form: forms/people/cyrill_puentener.yml
+    image: /assets/portrait_pictures/jerome_fauster.jpg
+    contact_form: forms/people/jerome_fauster.yml
 
   - name: Anja Geiser
     cevi-name: Vanille

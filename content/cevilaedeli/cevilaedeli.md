@@ -20,7 +20,7 @@ anschliessend per Mail kontaktieren.
 [[ google_drive folder :: 1VD5xsDzii2OHrWGEwmIUeRiVQPnTpsdI ]]
 
 Für weitere Artikel verweisen wir dich an dieser Stelle
-auf [den offizellen Ausrüster des Cevi Schweiz (hajk.ch)](http://hajk.ch/).
+auf [den offizellen Ausrüster des Cevi Schweiz (hajk.ch)](http://hajk.ch/) oder auf das [Cevi-Lädeli des Cevi Zürich](https://www.cevizuerich.ch/angebote/lokal).
 
 ## Anfragen für Cevi-Kleider oder Cevi-Artikel
 

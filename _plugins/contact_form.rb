@@ -20,9 +20,29 @@ def contact_form(config, config_file)
 
   form_config['cells'].each do |cell|
 
+    cell_uuid = 'id-' + SecureRandom.alphanumeric(8)
+    visibility_state = "grid"
+
+    if cell.key?('condition')
+        # conditioned elements are hidden by default, they get only shown if the condition is met
+
+        postfix = SecureRandom.alphanumeric(4)
+        visibility_state = "none"
+        html_code += "<script>
+            const checkbox_#{postfix} = document.getElementById('#{cell["condition"]}');
+            checkbox_#{postfix}.addEventListener('change', function() {
+                if (checkbox_#{postfix}.checked) {
+                    document.getElementById('#{cell_uuid}').style.display = 'grid';
+                } else {
+                    document.getElementById('#{cell_uuid}').style.display = 'none';
+                }
+            });
+        </script>"
+    end
+
     if cell['element'] == 'input'
 
-      html_code += "<div class=\"styled-input " +
+      html_code += "<div style=\"display: #{visibility_state};\" id=\"#{cell_uuid}\" class=\"styled-input " +
         (cell['style_wide'] ? "wide" : "") + "\">"
       html_code += "<input content='' onchange=\"this.setAttribute('content', this.value);\" type=\""
       html_code += (cell['type'] ? cell['type'] : "text")
@@ -31,18 +51,17 @@ def contact_form(config, config_file)
 
     elsif cell['element'] == 'textarea'
 
-      html_code += "<div class=\"styled-textarea " +
+      html_code += "<div style=\"display: #{visibility_state};\"  id=\"#{cell_uuid}\" class=\"styled-textarea " +
         (cell['style_wide'] ? "wide" : "") + "\">"
       html_code += "<textarea content='' onchange=\"this.setAttribute('content', this.value);\" "
       html_code += (cell['required'] ? " required >" : ">") + "</textarea>"
 
     elsif cell['element'] == 'checkbox'
 
-      html_code += "<div class=\"styled-checkbox " +
+      html_code += "<div style=\"display: #{visibility_state};\" id=\"#{cell_uuid}\" class=\"styled-checkbox " +
         (cell['style_wide'] ? "wide" : "") + "\">"
-      html_code += "<input content=\"false\" onchange=\"this.setAttribute('content', this.checked);\" type=\"checkbox\" "
+      html_code += "<input id=\"#{cell["id"]}\" content=\"false\" onchange=\"this.setAttribute('content', this.checked);\" type=\"checkbox\" "
       html_code += (cell['required'] ? " required />" : "/>")
-
     end
 
     html_code += "<label>" + cell['label'] + "</label></div>"
