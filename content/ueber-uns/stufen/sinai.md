@@ -29,7 +29,8 @@ Das heimelige "Chlauslager", ist wie jedes Jahr ein Highlight im Cevi Kalender! 
 ## Rückblick Auffahrtslager 2024
 
 Über Auffahrt erlebten wir ein spannendes Lager in Wädenswil. Gemeinsam mit dem Leitungsteam haben fünf Teilnehmer
-die Geschichte von Kung Fu Panda erlebt. Doch Bilder sagen mehr als Worte, deshalb hier ein paar Eindrücke:
+die Geschichte von Kung Fu Panda erlebt und erfolgreich den Knappenbeweis bestanden. Doch Bilder sagen mehr als Worte,
+deshalb hier ein paar Eindrücke:
 
 [[ gallery 1fAsJjGm_eLgs56czHe9bx3Tq_l2IGEPJ ]]
 
