@@ -34,6 +34,6 @@ würden. Wir freuen uns auf deine Anmeldung gleich hier über die Website.
 ## Anmeldung
 
 Damit wir den Anlass planen können, sind wir auf eine möglichst frühe Anmeldung angewiesen. Alle Eltern, Verwandte und
-Kolleginnen sind ebenfalls eingeladen! Bitte melde dich bis **spätestens 6. Mai 2024** an.
+Kolleginnen sind ebenfalls eingeladen! Bitte melde dich an!
 
 [[ contact-form :: forms/90-jahre.yml ]]
