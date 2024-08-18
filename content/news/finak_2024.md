@@ -2,7 +2,7 @@
 title: Finanzaktion 2024
 permalink: /finak-2024
 news-entry-title: UNIHOCKEY - PLAUSCH - TURNIER
-news-entry-caption: Informationen zur Finanzaktion 2023 unserm Unihockey-Plausch-Turnier.
+news-entry-caption: Informationen zur Finanzaktion 2024 unserem Unihockey-Plausch-Turnier.
 date: 2024-04-23T12:00
 contact_page: false
 ---
