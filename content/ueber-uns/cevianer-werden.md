@@ -9,9 +9,9 @@ sub-menu-name: Schnupperprogramm
 
 sub-menu-priority: 2
 permalink: /schnuppern
-news-entry-title: Schnupperprogramm am 9. März 2024
-news-entry-caption: Komm vorbei! Und werde Cevianer! Cevi-Schnupperprogramm vom 9. März 2024.
-date: 2024-01-17T12:00
+news-entry-title: Schnupperprogramm am 21. September 2024
+news-entry-caption: Komm vorbei! Und werde Cevianer! Cevi-Schnupperprogramm vom 21. September 2024.
+date: 2024-08-17T12:00
 news-entry: true
 description: Bei uns ist jeden Samstag Schnupperprogramm. Komm vorbei und werde Cevianer!
 
@@ -20,15 +20,13 @@ footer-menu-priority: 1
 contact_page: true
 ---
 
-{% comment %}
-###############################
-###############################
 
-# Cevi-Schupper-Programm vom 9. März 2024
+
+# Cevi-Schupper-Programm vom 21. September 2024
 
 ## Komm vorbei! Und werde Cevianer!
 
-Erlebe am Cevi-Tag vom 9. März 2024 ein unvergessliches Abenteuer und lerne den Cevi kennen! Bist du gerne in der
+Erlebe am Cevi-Tag vom 21. September 2024 ein unvergessliches Abenteuer und lerne den Cevi kennen! Bist du gerne in der
 Natur, magst Action, interessante Erlebnisse und Gemeinschaft?
 
 Der Schnuppertag bietet Kindern ab dem Kindergartenalter die Möglichkeit, Cevi-Luft zu schnuppern und die Natur zu
@@ -36,7 +34,7 @@ erleben. Gross und Klein sind eingeladen, den Cevi kennenzulernen.
 
 [Erfahre jetzt schon mehr über den Cevi.](/ueber-uns)
 
-## Infos zum Schnuppertag vom 9. März 2024
+## Infos zum Schnuppertag vom 21. September 2024
 
 An diesem Nachmittag laden wir alle Kinder aus den Quartieren Seebach, Oerlikon und Affoltern zu uns in den Cevi ein!
 Wir freuen uns über jedes neue Gesicht!
@@ -68,10 +66,9 @@ Schnupper-Datum. Bei uns ist jeder Samstag ein Schnupperprogramm.
 
 [Kontakt aufnehmen](/kontakt)
 
-
+{% comment %}
 ###############################
 ###############################
-{% endcomment %}
 
 
 # Bei uns ist jeder Samstag ein Schnupperprogramm.
@@ -106,3 +103,6 @@ Schnupperprogramm.
 
 [[ contact-form :: forms/schnuppern.yml ]]
 
+###############################
+###############################
+{% endcomment %}
