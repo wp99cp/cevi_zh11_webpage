@@ -9,14 +9,22 @@ permalink: /
 
 ## Über den Cevi Züri 11.
 
-Im Cevi Züri 11 erlebst du jeden Samstag von 14:00 bis 17:00 Uhr ein spannendes Programm draussen in der Natur. Für alle
-Kinder und Jugendlichen bieten wir eine abwechslungsreiche und sinnvolle Freizeitbeschäftigung voller Sport, Spass und
+Im Cevi Züri 11 erlebst du jeden Samstag ein spannendes Programm draussen in der Natur. Für alle Kinder und Jugendlichen bieten wir eine abwechslungsreiche und sinnvolle Freizeitbeschäftigung voller Sport, Spass und
 Action.
 
-Bei uns sind alle ab 4 Jahren herzlich willkommen. Wir sind in den Quartieren Affoltern, Seebach und Oerlikon der Stadt
-Zürich aktiv.
+<div class="spenden-container" onclick="window.location.href='/schnuppern'" style="cursor: pointer;">
+        <h3 style="margin-top: 0;">Komm vorbei und werde Cevianer!</h3>
+        <ul>
+          <li><strong>Wann?</strong> Am Samstagnachmittag von 14:00 bis 17:00 Uhr</li>
+          <li><strong>Wo?</strong> In den Quartieren Affoltern, Seebach und Oerlikon</li>
+          <li><strong>Was?</strong> Spiel, Spass und Action</li>
+          <li><strong>Wer?</strong> alle Kinder ab 4 Jahren</li>
+        </ul>
+        <a href="/schnuppern">Jetzt Schnuppern</a>
+</div>
 
 [Erfahre mehr über den Cevi Züri 11](/ueber-uns) oder [nimm mit uns Kontakt auf](/kontakt).
+
 
 ![Der Zvieri auf dem Feuer ist ein fester Bestandteil unserer Programme.](/assets/Sinai_am_Feuer.jpg)
 

@@ -12,7 +12,7 @@ Die Stufe Sinai ist die zweitjüngste der drei Knabenstufen im Cevi Züri 11 und
 Klasse die
 Möglichkeit, einmal pro Woche draußen im Wald Zeit mit Freunden zu verbringen. Unser Leiter-Team besteht aus 9
 motivierten Leitenden, die jede Woche ein abwechslungsreiches Programm für die Teilnehmer gestalten.
-§
+
 [Mehr über die Aktivitäten des Cevi.](/ueber-uns)
 
 ## Stufen- und Gruppenleiter der Stufe Sinai

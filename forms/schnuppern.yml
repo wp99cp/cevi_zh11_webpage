@@ -30,9 +30,24 @@ cells:
     required: true
 
   - element: input
+    label: Wie bist du auf uns aufmerksam geworden?
+    required: true
+    style_wide: true
+
+  - element: input
     label: Adresse
     required: true
     style_wide: true
+
+  - element: input
+    label: Postleitzahl
+    required: true
+    style_wide: false
+
+  - element: input
+    label: Ort
+    required: true
+    style_wide: false
 
   - element: textarea
     label: Nachricht

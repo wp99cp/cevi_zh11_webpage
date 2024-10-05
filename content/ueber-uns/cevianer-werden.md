@@ -20,7 +20,9 @@ footer-menu-priority: 1
 contact_page: true
 ---
 
-
+{% comment %}
+###############################
+###############################
 
 # Cevi-Schupper-Programm vom 21. September 2024
 
@@ -65,10 +67,11 @@ Du kannst nicht am Cevi-Tag teilnehmen? Kein Problem - nimm einfach mit uns Kont
 Schnupper-Datum. Bei uns ist jeder Samstag ein Schnupperprogramm.
 
 [Kontakt aufnehmen](/kontakt)
+###############################
+###############################
+{% endcomment %}
 
-{% comment %}
-###############################
-###############################
+
 
 
 # Bei uns ist jeder Samstag ein Schnupperprogramm.
@@ -103,6 +106,3 @@ Schnupperprogramm.
 
 [[ contact-form :: forms/schnuppern.yml ]]
 
-###############################
-###############################
-{% endcomment %}
