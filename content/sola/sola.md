@@ -17,14 +17,15 @@ description: Das Sommerlager des Cevi Züri 11 ist ein Ferienlager für Kinder u
 
 # Das Sommerlager als Höhepunkt des Cevijahres.
 
-## Anmeldung und Infos zum Sommerlager 2024
+## Anmeldung und Infos zum Sommerlager 2025
 
-Ab sofort kannst du dich für das Sommerlager 2024 anmelden.
+Ab sofort kannst du dich für das Sommerlager 2025 anmelden.
 
-Komm mit uns auf eine Reise in die Welt von Harry Potter. Erlebe spannende Abenteuer und tauche ein in die fantastische
-Welt von Zaubern und Hexen, von Hogwarts und Hogsmeade.
+Im Sommer 2025 darf sich der Cevi Züri 11 nämlich der Cevi Region Winterthur-Schaffhausen für ein Regionslager
+anschliessen. Gemeinsam mit den beiden Gastabteilungen Cevi Herrliberg-Erlenbach und Oettwil-Männedorf-Uetikon werden
+wir unser Camp in … aufstellen.
 
-[Anmeldung und weitere Infos zum Sommerlager 2024](/sola/2024).
+[Anmeldung und weitere Infos zum Sommerlager 2025](/sola/2025).
 
 ### Bei uns ist jeder willkommen! Auch nicht Cevi-Mitglieder.
 

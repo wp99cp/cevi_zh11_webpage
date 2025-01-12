@@ -2,10 +2,16 @@ type: with_picture
 
 cards:
 
+  - name: Weltstadt-Wasserstadt Sola 2025
+    cevi-name: Sola 2025
+    image: /assets/sola/sola_2025.png
+    function: noch offen
+    link: /sola/2025
+
   - name: Harry Potter
     cevi-name: Sola 2024
     image: /assets/sola/sola_2024.jpg
-    function: noch offen
+    function: Hochwald SO
     link: /sola/2024
 
   - name: Herr Der Ringe
