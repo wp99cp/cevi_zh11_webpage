@@ -19,14 +19,26 @@ cards:
     function: Stufenleiter
     contact_form: forms/people/melvyn_gunten.yml
 
-  - name: Roman Greiner
-    cevi-name: Spider
-    image: /assets/portrait_pictures/placeholder.png
-    function: Stufenleiter
-    contact_form: forms/people/roman_greiner.yml
-
   - name: Louis Noack
     cevi-name: Hecht
     image: /assets/portrait_pictures/louis_noack.jpg
     function: Stufenleiter
     contact_form: forms/people/louis_noack.yml
+
+  - name: Rahel Bewersdorff
+    cevi-name: Athowa
+    image: /assets/portrait_pictures/rahel_bewersdorff.jpg
+    function: Stufenleiter
+    contact_form: forms/people/rahel_bewersdorff.yml
+
+  - name: Jordis Göldi
+    cevi-name: Marabu
+    image: /assets/portrait_pictures/jordis_goeldi.jpg
+    function: Stufenleiter
+    contact_form: forms/people/jordis_goeldi.yml
+
+  - name: Lena Strub
+    cevi-name: Dava
+    image: /assets/portrait_pictures/lena_strub.jpg
+    function: Stufenleiter
+    contact_form: forms/people/lena_strub.yml
