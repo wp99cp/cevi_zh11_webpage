@@ -7,34 +7,34 @@ cards:
     function: Kindergarten-Alter
     link: /stufen/froeschli
 
-  - name: Amos
-    cevi-name: Mädchen
-    image: /assets/stufen_pictures/amos.jpg
-    function: Mittel- und Oberstufe
-    link: /stufen/amos
+  - name: Adventures
+    cevi-name: Mädchen und Jungs
+    image: /assets/stufen_pictures/masada.jpg
+    function: Jahrgang 2010-2013
+    link: /stufen/adventures
 
   - name: Esperia
     cevi-name: Mädchen
     image: /assets/stufen_pictures/esperia.jpg
-    function: 6- bis 9-Jährig
+    function: Jahrgang 2017-2018
     link: /stufen/esperia
 
   - name: Enomine
     cevi-name: Jungs
     image: /assets/stufen_pictures/enomine.jpg
-    function: 6- bis 7-Jährig
+    function: Jahrgang 2017-2018
     link: /stufen/enomine
 
   - name: Sinai
     cevi-name: Jungs
     image: /assets/stufen_pictures/sinai.jpg
-    function: 8- bis 10-Jährig
+    function: jahrgang 2014-2016
     link: /stufen/sinai
 
-  - name: Masada
-    cevi-name: Jungs
-    image: /assets/stufen_pictures/masada.jpg
-    function: 11- bis 13-Jährig
-    link: /stufen/masada
+  - name: Amos
+    cevi-name: Mädchen
+    image: /assets/stufen_pictures/amos.jpg
+    function: Jahrgang 2014-2016
+    link: /stufen/amos
 
 
