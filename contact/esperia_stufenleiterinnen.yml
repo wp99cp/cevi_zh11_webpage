@@ -3,7 +3,7 @@ type: with_picture
 cards:
   - name: Jaël Göldi
     cevi-name: Bagheera
-    image: /assets/portrait_pictures/jael_goeldi.jpg
+    image: /assets/portrait_pictures/jael_goeldi.png
     function: Stufenleiterin
     contact_form: forms/people/jael_goeldi.yml
 

@@ -15,6 +15,8 @@ motivierten Leitenden, die jede Woche ein abwechslungsreiches Programm für die 
 
 [Mehr über die Aktivitäten des Cevi.](/ueber-uns)
 
+![Das sind wir - Stufen Sinai](/assets/stufen_pictures/stufe_sinai.jpg)
+
 ## Stufen- und Gruppenleiter der Stufe Sinai
 
 [[ cards :: contact/sinai_stufenleiter.yml ]]  

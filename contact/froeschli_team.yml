@@ -2,11 +2,11 @@ type: with_picture
 
 cards:
 
-  - name: Anja Geiser
-    cevi-name: Vanille
-    image: /assets/portrait_pictures/anja_geiser.jpg
-    function: Fröschlihauptleiterin
-    contact_form: forms/people/anja_geiser.yml
+  - name: Fabio Imhof
+    cevi-name: Ovi
+    image: /assets/portrait_pictures/fabio_imhof.jpg
+    function: Stufenleiter
+    contact_form: forms/people/fabio_imhof.yml
 
   - name: Jordis Göldi
     cevi-name: Marabu

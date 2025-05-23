@@ -5,34 +5,28 @@ cards:
     cevi-name: Crash
     function: Gruppenleiter
     image: /assets/portrait_pictures/jerome_fauster.jpg
-    contact_form: forms/people/jerome_fauster.yml
 
   - name: Leonardo Hess
     cevi-name: Funghi
     function: Gruppenleiter
-    contact_form: forms/people/leonardo_hess.yml
     image: /assets/portrait_pictures/leonardo_hess.jpg
 
   - name: Leo Kurmann
     cevi-name: Golf
     function: Gruppenleiter
-    contact_form: forms/people/leo_kurmann.yml
     image: /assets/portrait_pictures/leo_kurmann.jpg
-
-  - name: Daniel Luterbach
-    cevi-name: Tukan
-    function: Gruppenleiter
-    contact_form: forms/people/daniel_luterbach.yml
-    image: /assets/portrait_pictures/placeholder.png
 
   - name: Severin Püntener
     cevi-name: Peanut
     function: Gruppenleiter
-    contact_form: forms/people/severin_puentener.yml
     image: /assets/portrait_pictures/severin_puentener.jpg
 
   - name: Arijan Staub
     cevi-name: Ragetä
     function: Gruppenleiter
-    contact_form: forms/people/arijan_staub.yml
+    image: /assets/portrait_pictures/arijan_staub.jpg
+
+  - name: Daniel Luterbach
+    cevi-name: Tukan
+    function: Gruppenleiter
     image: /assets/portrait_pictures/placeholder.png

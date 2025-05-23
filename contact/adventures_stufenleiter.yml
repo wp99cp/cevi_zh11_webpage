@@ -15,7 +15,7 @@ cards:
 
   - name: Melvyn von Gunten
     cevi-name: Phönix
-    image: /assets/portrait_pictures/placeholder.png
+    image: /assets/portrait_pictures/melvyn_von_gunten.jpg
     function: Stufenleiter
     contact_form: forms/people/melvyn_gunten.yml
 
@@ -24,6 +24,12 @@ cards:
     image: /assets/portrait_pictures/louis_noack.jpg
     function: Stufenleiter
     contact_form: forms/people/louis_noack.yml
+
+  - name: Fabio Imhof
+    cevi-name: Ovi
+    image: /assets/portrait_pictures/fabio_imhof.jpg
+    function: Stufenleiter
+    contact_form: forms/people/fabio_imhof.yml
 
   - name: Rahel Bewersdorff
     cevi-name: Athowa

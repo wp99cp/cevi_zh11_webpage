@@ -3,7 +3,7 @@ type: with_picture
 cards:
   - name: Fiona Homburg
     cevi-name: Wave
-    image: /assets/portrait_pictures/placeholder.png
+    image: /assets/portrait_pictures/fiona_homburg.jpg
     function: Stufenleiterin
     contact_form: forms/people/fiona_homburg.yml
 

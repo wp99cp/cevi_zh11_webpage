@@ -29,6 +29,8 @@ dir den Perfekten Einblick in unseren einzigartigen Cevinachmittag geben können
 
 [Melde dich jetzt für das Schnupperprogramm an.](/schnuppern)
 
+![Das sind wir - Stufen Enomine](/assets/stufen_pictures/stufe_enomine.jpg)
+
 ## Die Stufe stellt sich vor
 
 Unsere Stufe gibt es schon seit über zwei Jahrzehnten. Trotz einer Ummstrukturierung, haben wir im 2022 wieder unseren

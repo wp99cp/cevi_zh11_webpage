@@ -18,6 +18,10 @@ Viele unserer Kinder haben bereits eine Waldspielgruppe besucht und sehen im Cev
 Angebotes. Outdoor-Neulinge sind bei uns aber genauso willkommen - die Kinder gewöhnen sich in diesem Alter sehr
 schnell an die Natur!
 
+![Das sind wir - Stufen Fröschli](/assets/stufen_pictures/stufe_fröschli.jpg)
+
+### Ein paar Eindrücke
+
 [[ gallery 1UqoT-yTu5I2cRSB75yFaci_4e9dNoduK ]]
 
 Angesprochen werden Mädchen und Buben vom 4. bis zum 6. Lebensjahr (Kindergärtner). Wenn die Kinder siebenjährig sind,

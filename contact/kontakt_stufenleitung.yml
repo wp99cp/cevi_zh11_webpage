@@ -10,7 +10,7 @@ cards:
   - name: Jaël Göldi
     cevi-name: Bagheera
     function: Stufe Espiera
-    image: /assets/portrait_pictures/jael_goeldi.jpg
+    image: /assets/portrait_pictures/jael_goeldi.png
     contact_form: forms/people/jael_goeldi.yml
 
   - name: Marius Schudel
