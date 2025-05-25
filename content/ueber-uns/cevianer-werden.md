@@ -20,8 +20,6 @@ footer-menu-priority: 1
 contact_page: true
 ---
 
-
-
 # Cevi-Schupper-Programm vom 8. März 2025
 
 ## Komm vorbei! Und werde Cevianer!

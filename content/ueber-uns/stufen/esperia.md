@@ -12,8 +12,9 @@ sub-menu-priority: 2
 
 Die Stufe Esperia ist jüngere der zwei Mädchenstufen im Cevi Züri 11. Wir haben unsere
 Stufe diesen März neu eröffnet.
-Willkommen sind bei uns alle Mädchen mit Jahrgang 2017 und 2018.
-Betreut werdet ihr von einem moLvierten Team von Leiterinnen. Wir freuen uns auf euch!
+
+Willkommen sind bei uns alle Mädchen mit Jahrgang 2017 und 2018. Betreut werdet ihr von einem motivierten Team von
+Leiterinnen. Wir freuen uns auf euch!
 
 ![Das sind wir - Stufen Esperia](/assets/stufen_pictures/stufe_esperia.jpg)
 
@@ -22,18 +23,20 @@ Betreut werdet ihr von einem moLvierten Team von Leiterinnen. Wir freuen uns auf
 [[ cards :: contact/esperia_stufenleiterinnen.yml ]]
 
 ### Stufenleiterinnen
+
 Hallo, ich bin Kiwi, 19 Jahre alt und bin seit etwa 2 Jahren im Cevi.
 Besonders gerne spiele ich Spiele im Wald.
 
 Hey, mein Name ist Bagheera, ich bin 24 Jahre alt und seit 2006 im Cevi mit dabei. Seit 2020
-bin ich Stufenleitung der Stufe Esperia und seit Ende 2021
-Abteilungsleiterin des Cevi ZH11.
+bin ich Stufenleitung der Stufe Esperia und seit Ende 2021 Abteilungsleiterin des Cevi ZH11.
+
 Am meisten Freude macht mir das Spiele spielen, basteln und Cevi-Know-How erlernen in
 der Stufe, wie auch das Leiten unserer Lager.
 
 [[ cards :: contact/esperia_gruppenleiterinnen.yml ]]
 
 ### Gruppenleiterinnen
+
 Hallo, ich bin Nevada, bin 16 Jahre alt und seit 2021 im Cevi.
 Im Cevi mag ich es mit Freunden und den Teilnehmer:innen Zeit zu verbringen und Feuer zu
 machen.
@@ -53,7 +56,7 @@ Ich bin seit dem Herbst 2020 im Cevi.
 ## Werde Teil der Stufe Esperia
 
 Jeden Samstag findet unser Nachmittagsprogramm im Wald statt. Wenn du Freude an coolen
-Spielen, Basteln, Schnitzen und Bräteln hast, bist du bei uns genau richLg!
+Spielen, am Basteln, Schnitzen und Bräteln hast, bist du bei uns genau richtig!
 
 [[ contact-form :: forms/schnuppern.yml ]]
 
