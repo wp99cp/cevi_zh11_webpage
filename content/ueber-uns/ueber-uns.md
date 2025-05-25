@@ -51,12 +51,12 @@ einer Fellswand oder der Bau eines Baumhauses.
 
 ## In Lagern erleben die Kinder unvergessliche Geschichten.
 
-Nebst den Programmen am Samstagnachmittag finden im Laufe eines Cevijahres auch mehrerer Lager statt. Lager ermöglichen
+Nebst den Programmen am Samstagnachmittag finden im Laufe eines Cevijahres auch mehrere Lager statt. Lager ermöglichen
 den Kindern und Jugendlichen Unvergessliches zu erleben.
 
 [Impressionen aus vergangenen Sommerlagern](/sola)
 
-Eine Woche auf der Schule von Hogwarts. Mit den Indianern durch die Prärie. Oder einmal wie ein richtiger Detektiv auf
+Eine Woche auf der Schule von Hogwarts. Mit Jim Knopf um die Welt. Oder einmal wie ein richtiger Detektiv auf
 Spurensuche und Verfolgungsjagt gehen? Unsere Lager sind stehts durch ein Moto; eine Geschichte geprägt. Die Leiter
 schlüpfen dabei in Theaterspielen in die unterschiedlichsten Rollen. So erleben die Kinder Sachen, die sie eigentlich
 nur aus dem Fernseher oder aus Büchern kennen.
@@ -86,7 +86,7 @@ Qualifikationen und keine Pflicht, in eine höhere Liga aufzusteigen. Bei uns d�
 
 ![Treffen ehemaligen Cevianer/innen beim Cevi-E-Znacht](/assets/cevi-e-znacht.jpg)
 
-## Unser Leiter tragen grosse Verantwortung.
+## Unser Leitenden tragen eine grosse Verantwortung.
 
 Der Cevi kann entscheiden zur Entwicklung der Kinder und Jugendlichen beitragen. Dieser riesigen Verantwortung sind wir
 uns bewusst. Daher schulen wir unserer Leiter durch verschiedenste Kurse. Hierfür bietet der Cevi Regionalverband eine

@@ -1,0 +1,18 @@
+type: with_picture
+
+cards:
+  - name: Keira Bänninger
+    cevi-name: Sky
+    image: /assets/portrait_pictures/keira_baenninger.jpg
+    function: Gruppenleiterin
+
+  - name: Sirka Bänninger
+    cevi-name: Bounty
+    image: /assets/portrait_pictures/sirka_baenninger.png
+    function: Gruppenleiterin
+
+  - name: Lilian Jufer
+    cevi-name: Saphir
+    image: /assets/portrait_pictures/liliana_jufer.jpg
+    function: Gruppenleiterin
+

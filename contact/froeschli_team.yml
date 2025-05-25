@@ -2,20 +2,15 @@ type: with_picture
 
 cards:
 
-  - name: Anja Geiser
-    cevi-name: Vanille
-    image: /assets/portrait_pictures/anja_geiser.jpg
-    function: Fröschlihauptleiterin
-    contact_form: forms/people/anja_geiser.yml
+  - name: Fabio Imhof
+    cevi-name: Ovi
+    image: /assets/portrait_pictures/fabio_imhof.jpg
+    function: Stufenleiter
+    contact_form: forms/people/fabio_imhof.yml
 
-  - name: Cyrill Püntener
-    cevi-name: JPG
-    image: /assets/portrait_pictures/cyrill_puentener.jpg
+  - name: Jordis Göldi
+    cevi-name: Marabu
+    image: /assets/portrait_pictures/jordis_goeldi.jpg
     function: Fröschlileiter
-    contact_form: forms/people/cyrill_puentener.yml
+    contact_form: forms/people/jordis_goeldi.yml
 
-  - name: Matthias Ramsauer
-    cevi-name: Petrol
-    image: /assets/portrait_pictures/matthias_ramsauer.jpg
-    function: Fröschlileiter
-    contact_form: forms/people/matthias_ramsauer.yml

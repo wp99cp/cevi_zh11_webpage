@@ -10,25 +10,29 @@ sub-menu-priority: 3
 
 ## Über den Cevi Fröschli.
 
-Der Cevi Fröschli richtet sich an Kindergartenkinder - wir nennen sie liebevoll Cevianerlis. Die Programme der Cevi
+Der Cevi Fröschli richtet sich an Kindergartenkinder. Wir nennen sie liebevoll Cevianerlis. Die Programme der Cevi
 Fröschli werden speziell an das Alter der Kinder angepasst. So können sie sich langsam an den Wald und die Natur
 gewöhnen.
 
 Viele unserer Kinder haben bereits eine Waldspielgruppe besucht und sehen im Cevi eine ideale Fortsetzung dieses
-Angebotes. Outdoor-Neulinge sind bei uns aber genauso willkommen - die Kinder gewöhnen sich in diesem Alter sehr
+Angebots. Outdoor-Neulinge sind bei uns aber genauso willkommen - in diesem Alter gewöhnen sich die Kinder sehr 
 schnell an die Natur!
+
+![Das sind wir - Stufen Fröschli](/assets/stufen_pictures/stufe_fröschli.jpg)
+
+### Ein paar Eindrücke
 
 [[ gallery 1UqoT-yTu5I2cRSB75yFaci_4e9dNoduK ]]
 
-Angesprochen werden Mädchen und Buben vom 4. bis zum 6. Lebensjahr (Kindergärtner). Wenn die Kinder siebenjährig sind,
-so wechseln sie zu den "Grossen"; den Cevianern.
+Angesprochen werden Mädchen und Jungen im Alter von vier bis sechs Jahren (Kindergartenkinder). Wenn die Kinder
+sieben Jahre alte sind, wechseln sie zu den "Grossen"; den Cevianern.
 
 Über den Wechsel werden die Kinder und Eltern frühzeitig informiert.
 
 ### Was machen die Cevi-Fröschli?
 
-Die Cevi-Fröschli treffen sich ein bis zweimal im Monat und verbringen den Nachmittag von 14.00 bis 17.00 Uhr im Wald.
-Gemeinsam hören wir Geschichten, basteln, spielen und essen gemeinsam Z'vieri.
+Die Cevi-Fröschli treffen sich ein- bis zweimal im Monat und verbringen den Nachmittag von 14:00 bis 17:00 Uhr im Wald.
+Wir hören gemeinsam Geschichten, basteln, spielen und essen zusammen z'Vieri.
 
 Immer wieder finden auch Spezialprogramme statt: ein Spielnachmittag im Haus, Kuchen-/ Keksebacken und Museumsbesuche.
 

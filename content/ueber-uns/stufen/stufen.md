@@ -25,4 +25,3 @@ Der Cevi Züri 11 hat zurzeit sechs Stufen. Zwei für die Mädchen, drei für di
 jüngsten CevianerInnen ab 4 Jahren.
 
 [[ cards :: content/ueber-uns/stufen/stufen_cards.yml ]]
-

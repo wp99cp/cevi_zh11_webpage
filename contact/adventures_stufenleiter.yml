@@ -1,0 +1,50 @@
+type: with_picture
+
+cards:
+  - name: Lucien Fauster
+    cevi-name: Thunder
+    image: /assets/portrait_pictures/lucien_fauster.jpg
+    function: Stufenleiter
+    contact_form: forms/people/lucien_fauster.yml
+
+  - name: Moritz Jufer
+    cevi-name: Mungg
+    image: /assets/portrait_pictures/moritz_jufer.jpg
+    function: Stufenleiter
+    contact_form: forms/people/moritz_jufer.yml
+
+  - name: Melvyn von Gunten
+    cevi-name: Phönix
+    image: /assets/portrait_pictures/melvyn_von_gunten.jpg
+    function: Stufenleiter
+    contact_form: forms/people/melvyn_gunten.yml
+
+  - name: Louis Noack
+    cevi-name: Hecht
+    image: /assets/portrait_pictures/louis_noack.jpg
+    function: Stufenleiter
+    contact_form: forms/people/louis_noack.yml
+
+  - name: Fabio Imhof
+    cevi-name: Ovi
+    image: /assets/portrait_pictures/fabio_imhof.jpg
+    function: Stufenleiter
+    contact_form: forms/people/fabio_imhof.yml
+
+  - name: Rahel Bewersdorff
+    cevi-name: Athowa
+    image: /assets/portrait_pictures/rahel_bewersdorff.jpg
+    function: Stufenleiter
+    contact_form: forms/people/rahel_bewersdorff.yml
+
+  - name: Jordis Göldi
+    cevi-name: Marabu
+    image: /assets/portrait_pictures/jordis_goeldi.jpg
+    function: Stufenleiter
+    contact_form: forms/people/jordis_goeldi.yml
+
+  - name: Lena Strub
+    cevi-name: Dava
+    image: /assets/portrait_pictures/lena_strub.jpg
+    function: Stufenleiter
+    contact_form: forms/people/lena_strub.yml

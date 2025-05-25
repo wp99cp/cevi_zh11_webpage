@@ -10,47 +10,53 @@ sub-menu-priority: 2
 
 ## Über die Cevi Esperia
 
-Die Stufe Esperia ist die Jüngere der zwei Mädchenstufen im Cevi Züri 11. Am Schnupper-Proi vom 25. März 2023 haben wir
-unsere Stufe eröffnet. Herzlich willkommen sind alle Mädchen im Alter von 6 bis 8 Jahren.
+Die Stufe Esperia ist jüngere der zwei Mädchenstufen im Cevi Züri 11. Wir haben unsere
+Stufe diesen März neu eröffnet.
 
-![Das sind wir - Stufen Esperia](/assets/stufen_pictures/gruppenfoto_esperia.jpg)
+Willkommen sind bei uns alle Mädchen mit Jahrgang 2017 und 2018. Betreut werdet ihr von einem motivierten Team von
+Leiterinnen. Wir freuen uns auf euch!
 
-Betreut werdet ihr von einem motivierten Team von Leiterinnen. Wir freuen uns auf euch! Auf dem Foto von oben links nach
-rechts: Hullu, Saphir, Nevada, Bounty, Lena, Maria, bzw. unten von links nach rechts: Bagheera, Sky, Aloe.
+![Das sind wir - Stufen Esperia](/assets/stufen_pictures/stufe_esperia.jpg)
 
 ## Wir stellen uns vor
 
+[[ cards :: contact/esperia_stufenleiterinnen.yml ]]
+
 ### Stufenleiterinnen
 
-Mein Ceviname ist Hullu, ich bin 19 Jahre alt und seit Januar 2017 im Cevi. Im Cevi esse ich am liebsten zusammen Zvieri
-und besuche gerne unsere Lager.
+Hallo, ich bin Kiwi, 19 Jahre alt und bin seit etwa 2 Jahren im Cevi.
+Besonders gerne spiele ich Spiele im Wald.
 
-Hey, mein Name ist Bagheera, ich bin 22 Jahre alt und seit 2006 im Cevi mit dabei. Am meisten Freude macht mir das
-Spiele spielen, basteln und Cevi-Know-How erlernen in der Stufe, wie auch das Leiten unserer Lager.
+Hey, mein Name ist Bagheera, ich bin 24 Jahre alt und seit 2006 im Cevi mit dabei. Seit 2020
+bin ich Stufenleitung der Stufe Esperia und seit Ende 2021 Abteilungsleiterin des Cevi ZH11.
+
+Am meisten Freude macht mir das Spiele spielen, basteln und Cevi-Know-How erlernen in
+der Stufe, wie auch das Leiten unserer Lager.
+
+[[ cards :: contact/esperia_gruppenleiterinnen.yml ]]
 
 ### Gruppenleiterinnen
 
-Mein Ceviname ist Bounty, ich bin 15 Jahre alt und bin seit Anfang 2015 im Cevi.
-Im Cevi spiele ich am liebsten Spiele passend zum Programmthema.
+Hallo, ich bin Nevada, bin 16 Jahre alt und seit 2021 im Cevi.
+Im Cevi mag ich es mit Freunden und den Teilnehmer:innen Zeit zu verbringen und Feuer zu
+machen.
 
-Hey zusammen, ich heisse Nevada, bin 14 Jahre alt und bin seit 2021 aktiv im Cevi.
-Meine Lieblingsaktivität im Cevi ist es nach einem spannendem Programm mit meiner Stufe Zvieri zu essen und plaudern.
+Hey Hey, mein Name ist Seven-Up, ich bin 16 Jahre alt.
+Ich gehe seit dem Jahr 2017 regelmässig in den Cevi, was mir bis heute immer noch sehr
+gefällt.
 
-Mein Ceviname ist Sky und ich bin 14 Jahre alt. Seit Anfangs 2015 bin ich im Cevi mitdabei. Am liebsten mache ich ein
-Feuer fürs Zvieri. Unsere Stufe ist super!
+Heyy Hoo, mein Name ist Litschi und ich bin 15 Jahre alt.
+Ich bin seit 2015 akLv im Cevi mit dabei. Ich bin gerne draussen in der Natur und Koche
+gerne über dem Feuer.
 
-Hey, mein Name ist Lena, ich bin 17 Jahre alt und seit Anfang dieses Jahr im Cevi. Die Samstag-Nachmittagsprogramme
-bereiten mir grossen Spass.
-
-Hey, ich bin Saphir, bin 16 Jahre alt und seit ca. 2014 im Cevi. Am liebsten habe ich den Austausch mit Mitleiterinnen
-wie auch das Spiele spielen, Basteln oder Kochen.
-
-Hallo, ich bin Aloe und 16 Jahre alt. Ich bin seit 2015, also seit 7 Jahren aktiv und sehr gerne im Cevi mit dabei.
+Hallo,
+ich heisse Macha, bin 14 Jahre alt und zurzeit in der 2. Sek.
+Ich bin seit dem Herbst 2020 im Cevi.
 
 ## Werde Teil der Stufe Esperia
 
-Jeden Samstag findet unser Nachmittagsprogram im Wald statt. Wenn du Freude an coolen Aktivitäten und Spielen, Basteln
-und Bräteln hast!
+Jeden Samstag findet unser Nachmittagsprogramm im Wald statt. Wenn du Freude an coolen
+Spielen, am Basteln, Schnitzen und Bräteln hast, bist du bei uns genau richtig!
 
 [[ contact-form :: forms/schnuppern.yml ]]
 

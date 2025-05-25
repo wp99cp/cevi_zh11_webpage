@@ -22,16 +22,15 @@ Schulalltag zu schaffen und neue Leute kennenzulernen.
 
 [Mehr über die Aktivitäten des Cevi Züri 11.](/ueber-uns)
 
-Im März werden wir unsere neue Stufe eröffnen. Falls du ein Teil von uns werden willst und Freude an Spielen und der
-Zeit im Wald hast, bist du bei uns genau richtig. Unser **erstes Programm am 09.03.2024** werden wir so gestalten, dass
-wir
-dir den Perfekten Einblick in unseren einzigartigen Cevinachmittag geben können.
+Falls du ein Teil von uns werden willst und Freude an Spielen und der Zeit im Wald hast, bist du bei uns genau richtig. 
 
 [Melde dich jetzt für das Schnupperprogramm an.](/schnuppern)
 
+![Das sind wir - Stufen Enomine](/assets/stufen_pictures/stufe_enomine.jpg)
+
 ## Die Stufe stellt sich vor
 
-Unsere Stufe gibt es schon seit über zwei Jahrzehnten. Trotz einer Ummstrukturierung, haben wir im 2022 wieder unseren
+Unsere Stufe gibt es schon seit über zwei Jahrzehnten. Trotz einer Ummstrukturierungen haben wir im 2022 wieder unseren
 Namen Enomine übernommen. Wir freuen uns auf viele neue Gesichter und sind gespannt, was die Zukunft für uns bereithält.
 
 ### Unsere Gruppenleiter

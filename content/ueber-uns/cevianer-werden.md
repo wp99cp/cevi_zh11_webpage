@@ -20,10 +20,6 @@ footer-menu-priority: 1
 contact_page: true
 ---
 
-{% comment %}
-###############################
-###############################
-
 # Cevi-Schupper-Programm vom 8. März 2025
 
 ## Komm vorbei! Und werde Cevianer!
@@ -68,11 +64,11 @@ Schnupper-Datum. Bei uns ist jeder Samstag ein Schnupperprogramm.
 
 [Kontakt aufnehmen](/kontakt)
 
-###############################
-###############################
-{% endcomment %}
 
 
+{% comment %}
+###############################
+###############################
 
 # Bei uns ist jeder Samstag ein Schnupperprogramm.
 
@@ -105,3 +101,7 @@ Nimm mit uns Kontakt auf und wir finden ein individuelles Schnupper-Datum. Bei u
 Schnupperprogramm.
 
 [[ contact-form :: forms/schnuppern.yml ]]
+
+###############################
+###############################
+{% endcomment %}

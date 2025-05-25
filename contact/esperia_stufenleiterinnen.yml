@@ -1,0 +1,16 @@
+type: with_picture
+
+cards:
+  - name: Jaël Göldi
+    cevi-name: Bagheera
+    image: /assets/portrait_pictures/jael_goeldi.png
+    function: Stufenleiterin
+    contact_form: forms/people/jael_goeldi.yml
+
+  - name: Lena Krimmel
+    cevi-name: kiwi
+    image: /assets/portrait_pictures/placeholder.png
+    function: Stufenleiterin
+    contact_form: forms/people/lena_krimmel.yml
+
+

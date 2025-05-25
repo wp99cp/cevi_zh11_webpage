@@ -1,0 +1,24 @@
+type: with_picture
+
+cards:
+  - name: Lilo Gaio
+    cevi-name: Nevada
+    image: /assets/portrait_pictures/lilo_gaio.jpg
+    function: Gruppenleiterin
+
+  - name: Arina Lüscher
+    cevi-name: Litschi
+    image: /assets/portrait_pictures/placeholder.png
+    function: Gruppenleiterin
+
+  - name: Jasmin Schärer
+    cevi-name: Seven Up
+    image: /assets/portrait_pictures/placeholder.png
+    function: Gruppenleiterin
+
+  - name: Bärtschi Shaienne
+    cevi-name: Macha
+    image: /assets/portrait_pictures/placeholder.png
+    function: Gruppenleiterin
+
+
