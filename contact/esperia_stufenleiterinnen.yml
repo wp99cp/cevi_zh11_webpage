@@ -8,7 +8,7 @@ cards:
     contact_form: forms/people/jael_goeldi.yml
 
   - name: Lena Krimmel
-    cevi-name: kiwi
+    cevi-name: Kiwi
     image: /assets/portrait_pictures/placeholder.png
     function: Stufenleiterin
     contact_form: forms/people/lena_krimmel.yml
