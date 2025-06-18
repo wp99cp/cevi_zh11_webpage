@@ -46,7 +46,7 @@ Ich gehe seit dem Jahr 2017 regelmässig in den Cevi, was mir bis heute immer no
 gefällt.
 
 Heyy Hoo, mein Name ist Litschi und ich bin 15 Jahre alt.
-Ich bin seit 2015 akLv im Cevi mit dabei. Ich bin gerne draussen in der Natur und Koche
+Ich bin seit 2015 aktiv im Cevi mit dabei. Ich bin gerne draussen in der Natur und Koche
 gerne über dem Feuer.
 
 Hallo,
