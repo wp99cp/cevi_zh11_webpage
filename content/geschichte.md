@@ -1,6 +1,8 @@
 ---
 title: Werdegang – Auf und Ab des Cevi Züri 11
 permalink: /geschichte
+main-menu: Geschichte
+main-menu-priority: 9
 keywords:
   - Cevi Züri 11
   - Geschichte
