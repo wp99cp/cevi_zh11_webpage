@@ -22,11 +22,11 @@ contact_page: true
 
 
 
-# Cevi-Schupper-Programm vom 8. März 2025
+# Cevi-Schupper-Programm vom 20. September 2025
 
 ## Komm vorbei! Und werde Cevianer!
 
-Erlebe am Cevi-Tag vom 8. März 2025 ein unvergessliches Abenteuer und lerne den Cevi kennen! Bist du gerne in der
+Erlebe am Cevi-Tag vom 20. September 2025 unvergessliches Abenteuer und lerne den Cevi kennen! Bist du gerne in der
 Natur, magst Action, interessante Erlebnisse und Gemeinschaft?
 
 Der Schnuppertag bietet Kindern ab dem Kindergartenalter die Möglichkeit, Cevi-Luft zu schnuppern und die Natur zu
@@ -34,7 +34,7 @@ erleben. Gross und Klein sind eingeladen, den Cevi kennenzulernen.
 
 [Erfahre jetzt schon mehr über den Cevi.](/ueber-uns)
 
-## Infos zum Schnuppertag vom 8. März 2025
+## Infos zum Schnuppertag vom 20. September 2025
 
 An diesem Nachmittag laden wir alle Kinder aus den Quartieren Seebach, Oerlikon und Affoltern zu uns in den Cevi ein!
 Wir freuen uns über jedes neue Gesicht!
