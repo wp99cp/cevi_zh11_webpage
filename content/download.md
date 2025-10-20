@@ -40,9 +40,13 @@ description: Hier findest du alle Dokumente des Cevi Züri 11 zum herunterladen.
 
 [[ google_drive folder :: 1Z7oW06ab9XHgKIffUmNv7cP4xetvGjiq ]]
 
+{% comment %} Alte Jahresberichte werden nicht mehr in der Google-Suche angezeigt. {% endcomment %}
+[[ google_drive folder nofollow :: 1wn-zj2EY_VftgoD5_OmvROcyMX6wCsSh ]]
+
 ### Protokolle der GVs
 
-[[ google_drive folder :: 1N4lBbPAdPWCT6ziewbH6XiECzkbndYQZ ]]
+{% comment %} Die Protokolle sind öffentlich zugänglich sollen aber nicht in der Google-Suche auftauchen. Daher das "nofollow" Attribut. {% endcomment %}
+[[ google_drive folder nofollow :: 1N4lBbPAdPWCT6ziewbH6XiECzkbndYQZ ]]
 
 ### Cevilädeli
 
