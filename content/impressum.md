@@ -23,18 +23,19 @@ info@zh11.ch
 
 ### Vertretungsberechtigte Personen:
 
-Jamsin Voss v/o Pepsi , Präsidentin<br>
+Cyrill Püntener v/o JPG, , Präsident<br>
+Anja Geiser v/o Vanille, Vorstandsmitglied<br>
 Jaël Göldi v/o Bagheera, Abteilungsleiterin<br>
-Anja Geiser v/o Vanille, Abteilungsleiterin<br>
-Cyrill Püntener v/o JPG, Abteilungsleiter und Webmaster<br>
+Lena Strub v/o Dava, Abteilungsleiterin<br>
 Cédric Fauster v/o Chnobli, Abteilungsleiter<br>
+Marc Bachmann v/o Taifun, Abteilungsleiter<br>
 Patrick Gan v/o Tiger Ente, Kassier
 
 [Kontakt zu den Abteilungsleitern](/kontakt)
 
 ### Webauftritt:
 
-Cyrill Püntener, Abteilungsleiter und Webmaster
+Cyrill Püntener
 
 [Kontakt Webmaster](/kontakt)
 
