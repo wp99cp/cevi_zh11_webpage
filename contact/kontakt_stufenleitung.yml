@@ -13,17 +13,17 @@ cards:
     image: /assets/portrait_pictures/jael_goeldi.png
     contact_form: forms/people/jael_goeldi.yml
 
-  - name: Marius Schudel
-    cevi-name: Falk
-    function: Stufe Enomine
-    image: /assets/portrait_pictures/marius_schudel.jpg
-    contact_form: forms/people/marius_schudel.yml
-
   - name: Lucien Fauster
     cevi-name: Thunder
-    function: Stufe Masada
+    function: Stufe Adventure
     image: /assets/portrait_pictures/lucien_fauster.jpg
     contact_form: forms/people/lucien_fauster.yml
+
+  - name: Cédric Fauster
+    cevi-name: Chnobli
+    function: Stufe Enomine
+    image: /assets/portrait_pictures/cedric_fauster.jpg
+    contact_form: forms/people/cedric_fauster.yml
 
   - name: Jérôme Fauster
     cevi-name: Crash
@@ -31,8 +31,8 @@ cards:
     image: /assets/portrait_pictures/jerome_fauster.jpg
     contact_form: forms/people/jerome_fauster.yml
 
-  - name: Anja Geiser
-    cevi-name: Vanille
-    function: Fröschli
-    image: /assets/portrait_pictures/anja_geiser.jpg
-    contact_form: forms/people/anja_geiser.yml
+  - name: Fiona Homburg
+    cevi-name: Wave
+    function: Stufe Amos
+    image: /assets/portrait_pictures/fiona_homburg.jpg
+    contact_form: forms/people/fiona_homburg.yml
