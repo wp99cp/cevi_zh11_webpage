@@ -8,6 +8,9 @@ on:
     paths-ignore:
       - backend/*
 
+    # enable manuall workflow triggering via GitHub web interface
+    workflow_dispatch:
+
 jobs:
   jekyll_preview:
     name: Build and deploy Jekyll site
