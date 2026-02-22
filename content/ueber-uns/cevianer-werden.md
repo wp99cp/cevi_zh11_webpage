@@ -9,9 +9,9 @@ sub-menu-name: Schnupperprogramm
 
 sub-menu-priority: 2
 permalink: /schnuppern
-news-entry-title: Schnupperprogramm am 21. März 2025
-news-entry-caption: Komm vorbei! Und werde Cevianer! Cevi-Schnupperprogramm vom 21. März 2025
-date: 2025-02-06T18:00
+news-entry-title: Schnupperprogramm am 21. März 2026
+news-entry-caption: Komm vorbei! Und werde Cevianer! Cevi-Schnupperprogramm vom 21. März 2026
+date: 2026-02-22T18:00
 news-entry: true
 description: Bei uns ist jeden Samstag Schnupperprogramm. Komm vorbei und werde Cevianer!
 
@@ -21,12 +21,12 @@ contact_page: true
 ---
 
 
-# Cevi-Schupper-Programm vom 21. März 2025
+# Cevi-Schupper-Programm vom 21. März 2026
 
 
 ## Komm vorbei! Und werde Cevianer!
 
-Erlebe am Cevi-Tag vom 21. März 2025 unvergessliches Abenteuer und lerne den Cevi kennen! Bist du gerne in der
+Erlebe am Cevi-Tag vom 21. März 2026 unvergessliches Abenteuer und lerne den Cevi kennen! Bist du gerne in der
 Natur, magst Action, interessante Erlebnisse und Gemeinschaft?
 
 Der Schnuppertag bietet Kindern ab dem Kindergartenalter die Möglichkeit, Cevi-Luft zu schnuppern und die Natur zu
@@ -34,7 +34,7 @@ erleben. Gross und Klein sind eingeladen, den Cevi kennenzulernen.
 
 [Erfahre jetzt schon mehr über den Cevi.](/ueber-uns)
 
-## Infos zum Schnuppertag vom 21. März 2025
+## Infos zum Schnuppertag vom 21. März 2026
 
 An diesem Nachmittag laden wir alle Kinder aus den Quartieren Seebach, Oerlikon und Affoltern zu uns in den Cevi ein!
 Wir freuen uns über jedes neue Gesicht!
