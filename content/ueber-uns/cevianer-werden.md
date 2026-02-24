@@ -21,7 +21,7 @@ contact_page: true
 ---
 
 
-# Cevi-Schupper-Programm vom 21. März 2026
+# Cevi-Schnupper-Programm vom 21. März 2026
 
 
 ## Komm vorbei! Und werde Cevianer!
