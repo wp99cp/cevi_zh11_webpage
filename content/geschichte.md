@@ -33,7 +33,7 @@ zweiten Weltkriegs ab. Vermutlich sind die meisten Briefpartner im Weltkrieg umg
 
 Auf den 29.1.1944 hat Emil Rütti ehemalige Jungvolker zur Gründung einer JMA Seebach eingeladen. Erst am 6.8.1946
 konnten regelmässige Zusammenkünfte veranstaltet werden. Auf den 14.6.1947 wurde der Verein von der Kirchenpflege
-Seebach offiziell anerkannt. Der durch- schnittliche Besuch war mit 6 Mitgliedern äusserst schwach. Vermutlich bildeten
+Seebach offiziell anerkannt. Der durchschnittliche Besuch war mit 6 Mitgliedern äusserst schwach. Vermutlich bildeten
 die jüngeren Jungvolker nun den Jungtrupp.
 
 Ein Höhepunkt des Jungtrupps war das Hollandlager vom 17.7.-1.8.1948. Auslandreisen waren so kurz nach dem Krieg alles

@@ -16,7 +16,7 @@ Abteilungen [Altstetten-Albisrieden](https://cevi-altstetten.ch/), [Zürich 10](
 [Schwamendingen](https://www.stefanskirche.ch/cevi) antrat.
 
 Jede dieser Abteilungen war eine Zunft mit zwei Zunftmeistern. Wir waren die Bäcker und unsere Zunftmeister waren Hecht
-und Crash. Der Wettkampf war so aufgebaut, dass jede Zunft ihre Disziplin hatte, die sie gegenjede andere spielte. Unser
+und Crash. Der Wettkampf war so aufgebaut, dass jede Zunft ihre Disziplin hatte, die sie gegen jede andere spielte. Unser
 spiel als Bäckerszunft war es hierbei möglichst schnell einen möglichst guten Pizzateig zu
 machen, für den wir die Zutaten zuerst suchen oder uns erarbeiten mussten.
 

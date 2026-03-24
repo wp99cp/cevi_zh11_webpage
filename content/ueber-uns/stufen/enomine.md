@@ -59,7 +59,7 @@ Mein Name ist Taifun. Ich bin 23 Jahre alt. Am Cevi gefallen mir am besten die t
 untereinander.
 
 **Panda:** <br/>
-Ich bin de Panda, 21gi und gahn gern in Cevi wäg de Lager und au de intressante Samstignamitags Programm, schlechtes
+Ich bin de Panda, 21gi und gahn gern in Cevi wäg de Lager und au de interessante Samstignamitags Programm, schlechtes
 Wetter gitts ih de Cevi nöd.
 
 **Falk:** <br/>

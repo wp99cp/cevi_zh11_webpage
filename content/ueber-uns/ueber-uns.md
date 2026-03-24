@@ -57,7 +57,7 @@ den Kindern und Jugendlichen Unvergessliches zu erleben.
 [Impressionen aus vergangenen Sommerlagern](/sola)
 
 Eine Woche auf der Schule von Hogwarts. Mit Jim Knopf um die Welt. Oder einmal wie ein richtiger Detektiv auf
-Spurensuche und Verfolgungsjagt gehen? Unsere Lager sind stehts durch ein Moto; eine Geschichte geprägt. Die Leiter
+Spurensuche und Verfolgungsjagt gehen? Unsere Lager sind stets durch ein Moto; eine Geschichte geprägt. Die Leiter
 schlüpfen dabei in Theaterspielen in die unterschiedlichsten Rollen. So erleben die Kinder Sachen, die sie eigentlich
 nur aus dem Fernseher oder aus Büchern kennen.
 

@@ -51,7 +51,7 @@ Du glaubst immer noch, dass es Zeitreisen und Fantasiewelten nicht gibt. Da lieg
 nicht, aber es reichte, um ein paar Indianer in die Gegenwart zu holen.
 
 Und schliesslich im Jahr 2018: Der Märzhase brachte uns in die wundervolle Welt von Alice. Doch bereits nach kurzer Zeit
-stellte sich heraus, dass dort die böse Rote Königin ihr ungemacht verrichtet. Glücklicherweise konnten wir sie
+stellte sich heraus, dass dort die böse Rote Königin ihr Ungemach verrichtet. Glücklicherweise konnten wir sie
 überwältigen…
 
 Schwelge in Erinnerungen und lese die ausführlichen Berichte zu den vergangenen Lagern:

@@ -121,7 +121,7 @@ Browsertyp und Browserversion, verwendetes Betriebssystem, Referrer URL, Hostnam
 Uhrzeit der Serveranfrage.
 
 Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird
-nicht vorgenommen. Wir behalten uns vor, diese Daten nachträglich zuprüfen, wenn uns konkrete Anhaltspunkte für eine
+nicht vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte für eine
 rechtswidrige Nutzung bekannt werden.
 
 ### Dienste von Dritten
