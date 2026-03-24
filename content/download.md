@@ -9,10 +9,10 @@ keywords:
   - Jahresberichte
   - Statuten und Teilnahmebedingungen
   - Fallbalken und Mietmaterial
-description: Hier findest du alle Dokumente des Cevi Züri 11 zum herunterladen.
+description: Hier findest du alle Dokumente des Cevi Züri 11 zum Herunterladen.
 ---
 
-# Hier findest du alle Dokumente zum herunterladen.
+# Hier findest du alle Dokumente zum Herunterladen.
 
 ## Jahresplan und Anlässe
 
@@ -32,7 +32,7 @@ description: Hier findest du alle Dokumente des Cevi Züri 11 zum herunterladen.
 
 [[google_drive folder :: 1ijQiPBZ8iEBYz2HNI8rOSlpSQVR9ALUS]]
 
-### Den Cevi Züri 11 sponsoren
+### Den Cevi Züri 11 sponsern
 
 [[google_drive folder :: 1zPeyQhQZQeJpb2FQhLjNPkucqcKdVHVX]]
 
