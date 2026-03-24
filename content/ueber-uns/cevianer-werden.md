@@ -20,9 +20,11 @@ footer-menu-priority: 1
 contact_page: true
 ---
 
+{% comment %}
+###############################
+###############################
 
 # Cevi-Schnupper-Programm vom 21. März 2026
-
 
 ## Komm vorbei! Und werde Cevianer!
 
@@ -40,24 +42,24 @@ An diesem Nachmittag laden wir alle Kinder aus den Quartieren Seebach, Oerlikon 
 Wir freuen uns über jedes neue Gesicht!
 
 **Mitnehmen:**
+
 - z'Trinken, **KEIN** Zvieri
 - dem Wetter angepasste Kleidung
 - Sackmesser
 
-
 **Treffpunkt: um 14.00 Uhr**
+
 - **mit Velo:** Bushaltestelle Glaubtenstrasse (80er, Richtung Oerlikon)
 - **mit Velo:** Bushaltestelle Staudenbühl (40er/42er, Richtung Affoltern)
 - **ohne Velo:** Bushaltestelle Hürstholz (40er/42er)
 
 **Rückkehr: um 17.00 Uhr**
 
-[[ swisstopo centered :: 47.41780/8.52713 :: 6_500 :: 47.42013/8.53524 47.41714/8.52278 47.41445/8.51934 ]]
-
+[[swisstopo centered :: 47.41780/8.52713 :: 6_500 :: 47.42013/8.53524 47.41714/8.52278 47.41445/8.51934]]
 
 ## Freiwillige Voranmeldung
 
-[[ contact-form :: forms/schnuppern.yml ]]
+[[contact-form :: forms/schnuppern.yml]]
 
 ## Gibt es noch andere Daten?
 
@@ -66,10 +68,9 @@ Schnupper-Datum. Bei uns ist jeder Samstag ein Schnupperprogramm.
 
 [Kontakt aufnehmen](/kontakt)
 
-{% comment %}
 ###############################
 ###############################
-
+{% endcomment %}
 
 # Bei uns ist jeder Samstag ein Schnupperprogramm.
 
@@ -82,7 +83,6 @@ Der Schnuppertag bietet Kindern ab dem Kindergartenalter die Möglichkeit, Cevi-
 erleben. Gross und Klein sind eingeladen, den Cevi kennenzulernen.
 
 [Erfahre jetzt schon mehr über den Cevi.](/ueber-uns)
-
 
 ## Infos zum einem Schupperprogramm
 
@@ -101,7 +101,4 @@ Oerlikon und Affoltern sind bei uns im Cevi herzlich willkommen! Wir freuen uns 
 Nimm mit uns Kontakt auf und wir finden ein individuelles Schnupper-Datum. Bei uns ist jeder Samstag ein
 Schnupperprogramm.
 
-[[ contact-form :: forms/schnuppern.yml ]]
-###############################
-###############################
-{% endcomment %}
+[[contact-form :: forms/schnuppern.yml]]
