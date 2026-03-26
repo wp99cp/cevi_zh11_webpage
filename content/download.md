@@ -16,38 +16,38 @@ description: Hier findest du alle Dokumente des Cevi Züri 11 zum Herunterladen.
 
 ## Jahresplan und Anlässe
 
-[[google_drive folder :: 13XIbwCAwYK1fYkobTQgi-75-WD3kWoVp]]
+[[ google_drive folder :: 13XIbwCAwYK1fYkobTQgi-75-WD3kWoVp ]]
 
 ## Informationen zum Sommerlager
 
-[[google_drive folder :: 139nBfDEZW22ukMM6HfjwpHIw4iVdNSCd]]
+[[ google_drive folder :: 139nBfDEZW22ukMM6HfjwpHIw4iVdNSCd ]]
 
 ## Materialmiete
 
-[[google_drive folder :: 1u9EKApt1pmOX1V1QNsFEgOQW509rbA-b]]
+[[ google_drive folder :: 1u9EKApt1pmOX1V1QNsFEgOQW509rbA-b ]]
 
 ## Verein Cevi Züri 11
 
 ### Statuten und Teilnahmebedingungen
 
-[[google_drive folder :: 1ijQiPBZ8iEBYz2HNI8rOSlpSQVR9ALUS]]
+[[ google_drive folder :: 1ijQiPBZ8iEBYz2HNI8rOSlpSQVR9ALUS ]]
 
 ### Den Cevi Züri 11 sponsern
 
-[[google_drive folder :: 1zPeyQhQZQeJpb2FQhLjNPkucqcKdVHVX]]
+[[ google_drive folder :: 1zPeyQhQZQeJpb2FQhLjNPkucqcKdVHVX ]]
 
 ### Jahresberichte des Cevi Züri 11
 
-[[google_drive folder :: 1Z7oW06ab9XHgKIffUmNv7cP4xetvGjiq]]
+[[ google_drive folder :: 1Z7oW06ab9XHgKIffUmNv7cP4xetvGjiq ]]
 
 {% comment %} Alte Jahresberichte werden nicht mehr in der Google-Suche angezeigt. {% endcomment %}
-[[google_drive folder nofollow :: 1wn-zj2EY_VftgoD5_OmvROcyMX6wCsSh]]
+[[ google_drive folder nofollow :: 1wn-zj2EY_VftgoD5_OmvROcyMX6wCsSh ]]
 
 ### Protokolle der GVs
 
 {% comment %} Die Protokolle sind öffentlich zugänglich sollen aber nicht in der Google-Suche auftauchen. Daher das "nofollow" Attribut. {% endcomment %}
-[[google_drive folder nofollow :: 1Jmq5UQN-KrFB0HOOera078QmEBIWbyB_]]
+[[ google_drive folder nofollow :: 1Jmq5UQN-KrFB0HOOera078QmEBIWbyB_ ]]
 
 ### Cevilädeli
 
-[[google_drive folder :: 1VD5xsDzii2OHrWGEwmIUeRiVQPnTpsdI]]
+[[ google_drive folder :: 1VD5xsDzii2OHrWGEwmIUeRiVQPnTpsdI ]]

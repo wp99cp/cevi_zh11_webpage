@@ -55,11 +55,11 @@ Wir freuen uns über jedes neue Gesicht!
 
 **Rückkehr: um 17.00 Uhr**
 
-[[swisstopo centered :: 47.41780/8.52713 :: 6_500 :: 47.42013/8.53524 47.41714/8.52278 47.41445/8.51934]]
+[[ swisstopo centered :: 47.41780/8.52713 :: 6_500 :: 47.42013/8.53524 47.41714/8.52278 47.41445/8.51934 ]]
 
 ## Freiwillige Voranmeldung
 
-[[contact-form :: forms/schnuppern.yml]]
+[[ contact-form :: forms/schnuppern.yml ]]
 
 ## Gibt es noch andere Daten?
 
@@ -101,4 +101,4 @@ Oerlikon und Affoltern sind bei uns im Cevi herzlich willkommen! Wir freuen uns 
 Nimm mit uns Kontakt auf und wir finden ein individuelles Schnupper-Datum. Bei uns ist jeder Samstag ein
 Schnupperprogramm.
 
-[[contact-form :: forms/schnuppern.yml]]
+[[ contact-form :: forms/schnuppern.yml ]]
