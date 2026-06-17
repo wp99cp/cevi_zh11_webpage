@@ -149,6 +149,7 @@ def generate_gallery_html(config, uuid, site_context, tagged_with_webpage = true
 
       # download the data and prefix it with the first 10 characters of the folder uuid
       local_file_path = DriveDownloader.download_file(file, 'gallery', uuid[0, 10] + '_')
+      next if local_file_path.nil?
 
       # check if image should be displayed on webpage
       e = Exiftool.new(local_file_path)
