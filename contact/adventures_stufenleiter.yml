@@ -48,3 +48,15 @@ cards:
     image: /assets/portrait_pictures/lena_strub.jpg
     function: Stufenleiter
     contact_form: forms/people/lena_strub.yml
+
+  - name: Fiona Homburg
+    cevi-name: Wave
+    image: /assets/portrait_pictures/fiona_homburg.jpg
+    function: Stufenleiterin
+    contact_form: forms/people/fiona_homburg.yml
+
+  - name: Susanna Läuchli
+    cevi-name: Ginger
+    image: /assets/portrait_pictures/susanna_laeuchli.jpg
+    function: Stufenleiterin
+    contact_form: forms/people/susanna_läuchli.yml

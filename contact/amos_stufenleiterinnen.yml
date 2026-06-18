@@ -1,17 +1,6 @@
 type: with_picture
 
 cards:
-  - name: Fiona Homburg
-    cevi-name: Wave
-    image: /assets/portrait_pictures/fiona_homburg.jpg
-    function: Stufenleiterin
-    contact_form: forms/people/fiona_homburg.yml
-
-  - name: Susanna Läuchli
-    cevi-name: Ginger
-    image: /assets/portrait_pictures/susanna_laeuchli.jpg
-    function: Stufenleiterin
-    contact_form: forms/people/susanna_läuchli.yml
 
   - name: Ailin Lüscher
     cevi-name: Aloe
@@ -19,3 +8,18 @@ cards:
     function: Stufenleiterin
     contact_form: forms/people/ailin_lüscher.yml
 
+  - name: Keira Bänninger
+    cevi-name: Sky
+    image: /assets/portrait_pictures/keira_baenninger.jpg
+    function: Stufenleiterin
+    contact_form: forms/people/keira_bänninger.yml
+
+  - name: Sirka Bänninger
+    cevi-name: Bounty
+    image: /assets/portrait_pictures/sirka_baenninger.png
+    function: Stufenleiterin
+
+  - name: Lilian Jufer
+    cevi-name: Saphir
+    image: /assets/portrait_pictures/liliana_jufer.jpg
+    function: Stufenleiterin
