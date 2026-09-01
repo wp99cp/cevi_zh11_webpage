@@ -1,22 +1,22 @@
 type: with_picture
 
 cards:
-  - name:
+  - name: Mattis Ruckstuhl
     cevi-name: Omen
     image: /assets/portrait_pictures/mattis_ruckstuhl.jpg
     function: Gruppenleiter
 
-  - name:
+  - name: Henri Strub
     cevi-name: Muskat
     image: /assets/portrait_pictures/henri_strub.jpg
     function: Gruppenleiter
 
-  - name:
+  - name: Louis Strub
     cevi-name: Wäspi
     image: /assets/portrait_pictures/louis_strub.jpg
     function: Gruppenleiter
 
-  - name:
+  - name:  Mattia Pangrazzi
     cevi-name: Yoda
     image: /assets/portrait_pictures/mattia_pangrazzi.jpg
     function: Gruppenleiter

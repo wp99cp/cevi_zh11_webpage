@@ -18,8 +18,8 @@ motivierten Leitenden, die jede Woche ein abwechslungsreiches Programm für die 
 
 ## Stufen- und Gruppenleiter der Stufe Sinai
 
-[[ cards :: contact/sinai_stufenleiter.yml ]]  
 [[ cards :: contact/sinai_gruppenleiter.yml ]]
+[[ cards :: contact/sinai_stufenleiter.yml ]]
 
 ## Rückblick Auffahrtslager 2024
 
