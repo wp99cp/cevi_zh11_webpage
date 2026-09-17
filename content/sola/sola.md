@@ -17,15 +17,19 @@ description: Das Sommerlager des Cevi Züri 11 ist ein Ferienlager für Kinder u
 
 # Das Sommerlager als Höhepunkt des Cevijahres.
 
-## Anmeldung und Infos zum Sommerlager 2025
+## Anmeldung und Infos zum Sommerlager 2027
 
-Ab sofort kannst du dich für das Sommerlager 2025 anmelden.
+{% comment %}
+Ab sofort kannst du dich für das Sommerlager 2027 anmelden.
+{% endcomment %}
 
-Im Sommer 2025 darf sich der Cevi Züri 11 nämlich der Cevi Region Winterthur-Schaffhausen für ein Regionslager
-anschliessen. Gemeinsam mit den beiden Gastabteilungen Cevi Herrliberg-Erlenbach und Oettwil-Männedorf-Uetikon werden
-wir unser Camp in … aufstellen.
+Im Sommer 2027 findet das conveniat27 statt, ein nationales Cevi-Lager mit Abteilungen aus der ganzen Schweiz. 
+Wenn du dabei sein willst, dann halte dir den Zeitraum vom 24. Juli bis 2. August frei. 
+Wir freuen uns auf dich! Die Anmeldung für das conveniat27 bekommt ihr bald.
 
-[Anmeldung und weitere Infos zum Sommerlager 2025](/sola/2025).
+{% comment %}
+[Anmeldung und weitere Infos zum Sommerlager 2027](/sola/2027).
+{% endcomment %}
 
 ### Bei uns ist jeder willkommen! Auch nicht Cevi-Mitglieder.
 

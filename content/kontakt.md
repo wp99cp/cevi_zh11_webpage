@@ -20,7 +20,7 @@ Ortsgruppe strategisch und übernimmt zusätzlich weitere Aufgaben in der Abteil
 Fragen jeglicher Art offen.
 
 [[ cards :: contact/abteilungsleitung.yml ]]
-
+s
 ### Kontaktpersonen der verschiedenen Stufen
 
 Hast du eine Frage rund zum Samstag-Nachmittag? Zum nächsten Stufen-PfiLa?
