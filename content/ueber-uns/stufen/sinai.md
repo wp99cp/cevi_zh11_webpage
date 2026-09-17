@@ -16,10 +16,9 @@ motivierten Leitenden, die jede Woche ein abwechslungsreiches Programm für die 
 
 ![Das sind wir - Stufen Sinai](/assets/stufen_pictures/stufe_sinai.jpg)
 
-## Stufen- und Gruppenleiter der Stufe Sinai
+## Stufen der Stufe Sinai
 
 [[ cards :: contact/sinai_gruppenleiter.yml ]]
-[[ cards :: contact/sinai_stufenleiter.yml ]]
 
 ## Rückblick Auffahrtslager 2024
 
