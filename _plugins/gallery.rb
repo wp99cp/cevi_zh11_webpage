@@ -83,13 +83,18 @@ end
 #
 def _process_img(src_path, img_dim, dest_path)
 
-  image = MiniMagick::Image.open(src_path)
-  image = image.auto_orient
-
-  image.strip
-  image.resize img_dim
-  image.format "webp"
-  image.write dest_path
+  # One conversion pass straight to the destination format. Applying the
+  # operations in-place instead (MiniMagick::Image#auto_orient, #strip, #resize)
+  # re-encodes the *source* format after every step, which for the HEIC photos
+  # coming from Google Drive costs ~9s per step and is thrown away anyway.
+  # "[0]" picks the first frame, matching what MiniMagick::Image#format did.
+  MiniMagick::Tool::Convert.new do |convert|
+    convert << "#{src_path}[0]"
+    convert.auto_orient
+    convert.strip
+    convert.resize img_dim
+    convert << dest_path
+  end
 
   # File permissions must be set if the format got changed.
   File.chmod(0644, dest_path)

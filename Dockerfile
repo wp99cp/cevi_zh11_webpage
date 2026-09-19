@@ -2,9 +2,10 @@ FROM jekyll/builder:4.4.1
 
 # Install native dependencies: ImageMagick (rmagick / mini_magick), Ghostscript
 # and ExifTool are used by the gallery and responsive-image plugins.
-# libheif-plugin-x265 adds the HEIC *encoder*; without it ImageMagick can only
-# read HEIC, and the in-place mogrify calls on iPhone photos from Google Drive
-# fail with "no encode delegate for this image format `HEIC'".
+# libheif-plugin-x265 adds the HEIC *encoder* (Debian's ImageMagick can only
+# read HEIC). The gallery plugin no longer writes HEIC, but any code path that
+# does would otherwise die with "no encode delegate for this image format
+# `HEIC'" instead of just being slow.
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
         imagemagick \
