@@ -54,16 +54,22 @@ jobs:
       # A miss here is no longer expensive: images that are missing locally are
       # fetched from the copies already published on the live site, and only the
       # ones that genuinely changed are rebuilt. See _plugins/utils/.
+      #
+      # Restoring and saving are split so that a new copy is only uploaded when
+      # the images actually changed - see the save step at the end for why.
       - name: ⛏️ Restore static files from cache
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: |
             imgs
             google_drive_cache
             docs
-          # Updates the cache after every run, by saving a new copy
           key: ${{ runner.os }}-static-files-v4-${{ github.run_id }}
           restore-keys: ${{ runner.os }}-static-files-v4-
+
+      - name: Fingerprint the restored cache
+        id: cache-before
+        run: echo "fingerprint=$(./bin/fingerprint-cached-files.sh)" >> "$GITHUB_OUTPUT"
 
       # Build the jekyll page.
       #
@@ -79,6 +85,29 @@ jobs:
             --volume="$PWD:/srv/jekyll" \
             -e GITHUB_SHA=$GITHUB_SHA \
             jeykell-builder
+
+      - name: Fingerprint the cache after the build
+        id: cache-after
+        run: echo "fingerprint=$(./bin/fingerprint-cached-files.sh)" >> "$GITHUB_OUTPUT"
+
+      # A complete cache is around 1.6 GB, and a cache entry can never be
+      # overwritten - every save is a new entry. Saving unconditionally would
+      # therefore upload another 1.6 GB on every run, and since GitHub keeps only
+      # 10 GB per repository and evicts the least recently used entries to stay
+      # under it, a handful of runs would push out everything else, including the
+      # Docker layer cache that keeps the image build short.
+      #
+      # Most runs change nothing at all, so a new copy is only uploaded when the
+      # set of cached files is no longer the one that was restored.
+      - name: ⛏️ Save static files to cache
+        if: steps.cache-before.outputs.fingerprint != steps.cache-after.outputs.fingerprint
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            imgs
+            google_drive_cache
+            docs
+          key: ${{ runner.os }}-static-files-v4-${{ github.run_id }}
 
       # Deploy Frontend to GitHub Pages
       - name: Deploy 🚀 to Firebase Hosting
