@@ -34,9 +34,8 @@ def create_cards(config_file, site_context)
       html_code += "class=\"card\">"
       if forms_config['type'] == 'with_picture'
 
+        # The static file is registered centrally, see _plugins/derivative_cache_hooks.rb
         path_215x215 = resize_gallery_image(card['image'][1..-1], '215x215', '')
-        static_file = Jekyll::StaticFile.new(site_context, site_context.source, "imgs/gallery", File.basename(path_215x215))
-        site_context.static_files << static_file
 
         html_code += "<div class=\"card-image\">"
         html_code += "<img src=\"/#{path_215x215}\" alt=\"#{card['name']}\">"

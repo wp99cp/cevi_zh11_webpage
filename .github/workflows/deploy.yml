@@ -8,30 +8,37 @@ on:
     paths-ignore:
       - backend/*
 
-    # enable manuall workflow triggering via GitHub web interface
-    workflow_dispatch:
+  # enable manuall workflow triggering via GitHub web interface
+  workflow_dispatch:
 
 jobs:
   jekyll_preview:
     name: Build and deploy Jekyll site
     runs-on: ubuntu-latest
 
+    # A complete build of every image takes a bit over an hour; anything much
+    # beyond that is stuck rather than slow.
+    timeout-minutes: 120
+
     steps:
       # Checkout the source code
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      # In this step, this action saves a list of existing images,
-      # the cache is created without them in the post run.
-      # It also restores the cache if it exists.
-      - name: ⛏  Restore docker image from cache
-        uses: satackey/action-docker-layer-caching@v0.0.11
-        # Ignore the failure of a step and avoid terminating the job.
-        continue-on-error: true
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
 
-      # Used downstream for building the jekyll page
+      # Used downstream for building the jekyll page. The layers are cached in
+      # the GitHub Actions cache, so the image is only really rebuilt when the
+      # Dockerfile or the Gemfile changes.
       - name: Build the Docker image
-        run: docker build -t jeykell-builder .
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          load: true
+          tags: jeykell-builder
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
       # fetch and encrypt access credentials for Google Drive
       - name: Retrieve the secret and decode it to a file
@@ -43,24 +50,35 @@ jobs:
       # We cache static resources, i.g. optimized images and documents as well as
       # the _site folder and .jekyll-cache directory
       # Make sure to NOT cache the `_secrets` directory, it contains the Google Drive Access Credentials!
+      #
+      # A miss here is no longer expensive: images that are missing locally are
+      # fetched from the copies already published on the live site, and only the
+      # ones that genuinely changed are rebuilt. See _plugins/utils/.
       - name: ⛏️ Restore static files from cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             imgs
             google_drive_cache
             docs
           # Updates the cache after every run, by saving a new copy
-          key: ${{ runner.os }}-static-files-v3.3-${{ github.run_id }}
-          restore-keys: ${{ runner.os }}-static-files-v3.3-
+          key: ${{ runner.os }}-static-files-v4-${{ github.run_id }}
+          restore-keys: ${{ runner.os }}-static-files-v4-
 
-      # Allow the docker container to write to the mounted directory
-      - name: Give folder access
-        run: chmod -R 777 $PWD
-
-      # Build the jekyll page
+      # Build the jekyll page.
+      #
+      # The container runs as the runner's own user so that the files it writes
+      # into the mounted directory stay readable by the later steps. The previous
+      # `chmod -R 777 $PWD` did the same job by rewriting the mode of every file
+      # in the repository, which also quietly marked checked-in files executable.
       - name: Build 🏗️
-        run: docker run --rm --volume="$PWD:/srv/jekyll" -e GITHUB_SHA=$GITHUB_SHA jeykell-builder
+        run: |
+          docker run --rm \
+            --user "$(id -u):$(id -g)" \
+            -e HOME=/tmp \
+            --volume="$PWD:/srv/jekyll" \
+            -e GITHUB_SHA=$GITHUB_SHA \
+            jeykell-builder
 
       # Deploy Frontend to GitHub Pages
       - name: Deploy 🚀 to Firebase Hosting
