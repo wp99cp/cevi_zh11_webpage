@@ -14,7 +14,9 @@ JEKYLL_ENV=$MODE bundler exec jekyll build --incremental --profile --trace --con
 
 # Copy folder with documents to destination directory ./_site
 mkdir -p ./_site/docs
-cp -r ./docs ./_site
+if [ -d "./docs" ]; then
+  cp -r ./docs ./_site
+fi
 
 # Minify the HTML, css, js, svg and json files
 # See https://github.com/tdewolff/minify/tree/master/cmd/minify

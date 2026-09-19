@@ -47,6 +47,8 @@ def google_drive(config, element_type, uuid, nofollow: false)
       next unless %w[application/pdf audio/mpeg].include? file['mimeType']
 
       full_file_name = DriveDownloader.download_file(file, 'docs')
+      next if full_file_name.nil?
+
       # Pass the nofollow flag to the tag generator
       result += "\n#{generate_liquid_tag(file, full_file_name, nofollow)}"
     end
@@ -57,7 +59,11 @@ def google_drive(config, element_type, uuid, nofollow: false)
   when 'document'
 
     file = DriveDownloader.get_file(config, uuid)
+    return '' if file.nil?
+
     full_file_name = DriveDownloader.download_file(file, 'docs')
+    return '' if full_file_name.nil?
+
     # Pass the nofollow flag to the tag generator
     return generate_liquid_tag(file, full_file_name, nofollow)
 

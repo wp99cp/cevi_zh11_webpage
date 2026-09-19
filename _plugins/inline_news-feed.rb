@@ -1,7 +1,7 @@
 def news_feed
 
   "<div>
-<section class=\"news-feed-inline-container\"> {%- include news-feed.html n_limit=\"2\" -%} </section>
+<section class=\"news-feed-inline-container\"> {%- include news-feed.html n_limit=\"5\" -%} </section>
 </div>"
 
 end

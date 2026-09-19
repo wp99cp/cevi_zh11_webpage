@@ -14,10 +14,10 @@ cards:
     function: Materialchef
     link: /material/kontakt
 
-  - name: Marc Bachmann
-    cevi-name: Taifun
+  - name: Louis Strub
+    cevi-name: Wäspi
     function: Materialchef
-    image: /assets/portrait_pictures/marc_bachmann.jpg
+    image: /assets/portrait_pictures/louis_strub.jpg
     link: /material/kontakt
 
   - name: Patrick Gan

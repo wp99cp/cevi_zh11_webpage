@@ -1,14 +1,16 @@
 FROM jekyll/builder:latest
 
 # Install Jekyll
-RUN apk --no-cache add php8-pecl-imagick ghostscript go exiftool
+RUN apk --no-cache add php8-pecl-imagick ghostscript exiftool
 
 # Font copy
 COPY ./fonts/ /usr/share/fonts/
 
-ENV GOPATH=$HOME/gocode
-ENV PATH=$PATH:$GOPATH/bin
-RUN go install github.com/tdewolff/minify/cmd/minify@latest
+# Download and install minify CLI
+RUN wget -O /tmp/minify.tar.gz https://github.com/tdewolff/minify/releases/download/v2.24.13/minify_linux_amd64.tar.gz && \
+    tar -xzf /tmp/minify.tar.gz -C /usr/bin minify && \
+    rm /tmp/minify.tar.gz
+
 
 COPY Gemfile* ./
 RUN bundler install

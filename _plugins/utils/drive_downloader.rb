@@ -10,17 +10,27 @@ module DriveDownloader
   credentials = '_secrets/credentials.json'
   scope = 'https://www.googleapis.com/auth/drive.readonly'
 
-  authorizer = Google::Auth::ServiceAccountCredentials.make_creds(
-    json_key_io: File.open(credentials), scope: scope
-  )
+  @@drive_service = nil
 
-  Google::Apis::RequestOptions.default.retries = 5
+  if File.exist?(credentials)
+    begin
+      authorizer = Google::Auth::ServiceAccountCredentials.make_creds(
+        json_key_io: File.open(credentials), scope: scope
+      )
 
-  @@drive_service = Google::Apis::DriveV3::DriveService.new
-  @@drive_service.authorization = authorizer
-  @@drive_service.client_options.send_timeout_sec = 20
-  @@drive_service.client_options.open_timeout_sec = 20
-  @@drive_service.client_options.read_timeout_sec = 20
+      Google::Apis::RequestOptions.default.retries = 5
+
+      @@drive_service = Google::Apis::DriveV3::DriveService.new
+      @@drive_service.authorization = authorizer
+      @@drive_service.client_options.send_timeout_sec = 20
+      @@drive_service.client_options.open_timeout_sec = 20
+      @@drive_service.client_options.read_timeout_sec = 20
+    rescue => e
+      puts "Error loading Google Drive credentials: #{e.message}"
+    end
+  else
+    puts "Google Drive credentials not found at #{credentials}. Google Drive sync is disabled."
+  end
 
   @@semaphore = Mutex.new
 
@@ -35,6 +45,11 @@ module DriveDownloader
       if File.exist?(cache_file) and ignore_gdrive_cache == false
         puts "Folder content is cached at: #{cache_file}"
         return JSON.parse(File.read(cache_file))
+      end
+
+      if @@drive_service.nil?
+        puts "Google Drive service not initialized (missing credentials)."
+        return []
       end
 
       # Define details of the query
@@ -77,6 +92,11 @@ module DriveDownloader
         return JSON.parse(File.read(cache_file))
       end
 
+      if @@drive_service.nil?
+        puts "Google Drive service not initialized (missing credentials)."
+        return nil
+      end
+
       fields = 'id, name, mimeType, size, parents, modifiedTime'
 
       file = @@drive_service.get_file(file_id, supports_all_drives: true, fields: fields)
@@ -92,6 +112,7 @@ module DriveDownloader
 
   def self.download_file(file, directory, prefix='')
     @@semaphore.synchronize do
+      return nil if file.nil?
 
       file_name = prefix
       file_name += '_' unless prefix
@@ -118,6 +139,11 @@ module DriveDownloader
       if File.file?(file_path.to_s)
         puts " - #{file_path}: File is cached".green
         return file_path
+      end
+
+      if @@drive_service.nil?
+        puts "Google Drive service not initialized (missing credentials). Cannot download #{file['name']}."
+        return nil
       end
 
       FileUtils.mkdir_p directory unless File.directory?(directory)
