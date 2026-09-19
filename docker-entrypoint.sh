@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Abort on the first failing command. Without this a crashing Jekyll build is
+# silently followed by minify + deploy, which publishes a half-empty _site while
+# CI still reports success.
+set -euo pipefail
+
 if [ "$MODE" == "production" ]; then
   echo "Use Production Backend"
   CONFIG_FILE="_config.yml"
