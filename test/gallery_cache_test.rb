@@ -59,7 +59,9 @@ module DriveDownloader
     end
 
     def local_path_for(file, directory, prefix = '')
-      File.join(directory, "#{prefix}#{file['name'].sub(/\.[^.]*\z/, '')}.jpg")
+      # Mirrors DriveDownloader.parse_file_name: spaces become underscores.
+      name = file['name'].sub(/\.[^.]*\z/, '').gsub(/\s/, '_')
+      File.join(directory, "#{prefix}#{name}.jpg")
     end
 
     def download_file(file, directory, prefix = '')
@@ -141,6 +143,18 @@ Dir.mktmpdir do |dir|
     check('downloads nothing') { DriveDownloader.downloads.empty? }
     check('only the surviving photo is linked') { html.scan('<a href=').length == 1 }
     check('the deleted photo is no longer referenced') { !html.include?('a_1800x1200') }
+
+    puts 'two photos that share a file name are kept apart'
+    DriveDownloader.files = [
+      drive_file('photo-d', 'Kopie von X.jpg', '2026-01-01T00:00:00Z'),
+      drive_file('photo-e', 'Kopie von X.jpg', '2026-01-01T00:00:00Z')
+    ]
+    html = build_gallery
+    check('downloads both of them') { DriveDownloader.downloads.sort == %w[photo-d photo-e] }
+    check('gives them separate images') do
+      html.scan(%r{imgs/gallery/\S+_1800x1200\.webp}).uniq.length == 2
+    end
+    check('both appear on the page') { html.scan('<a href=').length == 2 }
 
     puts 'a photo without the Webpage keyword is skipped, and stays skipped'
     DriveDownloader.files = [

@@ -131,12 +131,25 @@ end
 
 GALLERY_MIME_TYPES = %w[image/jpeg image/png image/heif].freeze
 
+# Where a photo is downloaded to, and what its resized versions are named after.
+#
+# Two photos in the same folder can share a file name - a "Kopie von X.jpg"
+# alongside another copy of it - and without the id they would both land on the
+# same local path. That used to mean one silently overwrote the other's resized
+# versions, so the page showed the same picture twice; once downloads started
+# running concurrently it became a crash, with one thread deleting the original
+# while the other was still reading it.
+def _gallery_prefix(uuid, file)
+  "#{uuid[0, 10]}_#{Digest::SHA1.hexdigest(file['id'])[0, 8]}_"
+end
+
 # Produces the <a>...</a> snippet for a single photo, reusing the cached
 # derivatives when the photo has not changed in Drive since we last saw it.
 def _gallery_entry(file, uuid, tagged_with_webpage)
 
   key = DerivativeCache.drive_key(file)
-  local_file_path = DriveDownloader.local_path_for(file, 'gallery', uuid[0, 10] + '_')
+  prefix = _gallery_prefix(uuid, file)
+  local_file_path = DriveDownloader.local_path_for(file, 'gallery', prefix)
 
   _, path_1800x1200, = _paths(local_file_path, '1800x1200', '')
   _, path_255x170, = _paths(local_file_path, '255x170', '')
@@ -162,8 +175,15 @@ def _gallery_entry(file, uuid, tagged_with_webpage)
     end
   end
 
-  downloaded_path = DriveDownloader.download_file(file, 'gallery', uuid[0, 10] + '_')
+  downloaded_path = DriveDownloader.download_file(file, 'gallery', prefix)
   return nil if downloaded_path.nil?
+
+  # exiftool reports a file it cannot read the same way it reports not being
+  # installed at all, so say which it is rather than sending the next person
+  # looking for a missing binary.
+  if !File.file?(downloaded_path) || File.empty?(downloaded_path)
+    raise "Downloaded photo #{downloaded_path} (#{file['name']}, #{file['id']}) is missing or empty"
+  end
 
   begin
     # check if image should be displayed on webpage
