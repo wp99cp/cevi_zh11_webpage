@@ -5,6 +5,8 @@ require 'net/http'
 require 'uri'
 require 'yaml'
 
+require_relative 'build_stats'
+
 # Second-tier cache: the images already published on the live site.
 #
 # GitHub deletes an Actions cache entry that has not been read for seven days,
@@ -70,7 +72,7 @@ module RemoteDerivatives
       return false unless index
       return false unless index.dig('entries', path) == digest(key)
 
-      body = get("#{base_url}/#{path}")
+      body = BuildStats.time(:remote_fetch) { get("#{base_url}/#{path}") }
       return false if body.nil?
 
       FileUtils.mkdir_p(File.dirname(dest_path))
@@ -128,7 +130,9 @@ module RemoteDerivatives
     end
 
     def get(url)
-      uri = URI.parse(url)
+      # Escaped first: file names such as stufe_fröschli.jpg are not ASCII, and
+      # URI.parse rejects those outright rather than encoding them.
+      uri = URI.parse(URI::DEFAULT_PARSER.escape(url))
       return nil unless uri.is_a?(URI::HTTP)
 
       response = Net::HTTP.start(uri.host, uri.port,

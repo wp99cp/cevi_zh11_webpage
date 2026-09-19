@@ -33,9 +33,13 @@ end
 PUBLISHED = Dir.mktmpdir
 FileUtils.mkdir_p(File.join(PUBLISHED, 'imgs'))
 File.write(File.join(PUBLISHED, 'imgs', 'photo_255x170.webp'), 'published image bytes')
+File.write(File.join(PUBLISHED, 'imgs', 'stufe_fröschli_450x300.jpg'), 'umlaut image bytes')
 File.write(File.join(PUBLISHED, 'imgs', 'derivatives-index.json'), JSON.generate(
   'version' => 1,
-  'entries' => { 'imgs/photo_255x170.webp' => RemoteDerivatives.digest('drive:photo:v1') },
+  'entries' => {
+    'imgs/photo_255x170.webp' => RemoteDerivatives.digest('drive:photo:v1'),
+    'imgs/stufe_fröschli_450x300.jpg' => RemoteDerivatives.digest('sha1:umlaut')
+  },
   'photos' => {
     RemoteDerivatives.digest('drive:photo:v1') => {
       'included' => true, 'paths' => ['imgs/photo_255x170.webp'], 'width' => 1800, 'height' => 1200
@@ -66,6 +70,15 @@ begin
       restored = RemoteDerivatives.fetch('imgs/photo_255x170.webp', 'drive:photo:v2', 'imgs/photo_255x170.webp')
       check('refuses the stale published copy') { !restored }
       check('leaves nothing behind to be mistaken for current') { !File.exist?('imgs/photo_255x170.webp') }
+
+      puts 'a file name with non-ASCII characters is fetched, not silently skipped'
+      restored = RemoteDerivatives.fetch('imgs/stufe_fröschli_450x300.jpg', 'sha1:umlaut',
+                                         'imgs/stufe_fröschli_450x300.jpg')
+      check('fetches it') { restored }
+      check('writes the published bytes') do
+        File.exist?('imgs/stufe_fröschli_450x300.jpg') &&
+          File.read('imgs/stufe_fröschli_450x300.jpg') == 'umlaut image bytes'
+      end
 
       puts 'an image the live site has never heard of is not reused'
       restored = RemoteDerivatives.fetch('imgs/unknown_255x170.webp', 'sha1:whatever', 'imgs/unknown_255x170.webp')

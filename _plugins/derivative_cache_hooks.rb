@@ -1,6 +1,7 @@
 require 'set'
 
 require_relative 'utils/derivative_cache'
+require_relative 'utils/build_stats'
 
 # Make sure every generated image the page actually links to ends up in _site.
 #
@@ -25,4 +26,8 @@ end
 
 Jekyll::Hooks.register :site, :post_write do |_site|
   DerivativeCache.save!
+
+  # The site is built twice, each pass in its own process, so the numbers are
+  # accumulated on disk and reported once both passes are done.
+  BuildStats.flush!
 end

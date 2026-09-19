@@ -1,4 +1,5 @@
 require_relative 'utils/derivative_cache'
+require_relative 'utils/build_stats'
 
 # Teaches responsive-images-for-jekyll to use the same content-keyed cache as the
 # gallery plugin.
@@ -16,12 +17,19 @@ module ResponsiveImagesCache
   # The gem's own signature: (src_path, dest_path)
   def _must_create?(src_path, dest_path)
     DerivativeCache.reference(dest_path)
-    !DerivativeCache.fresh?(dest_path, DerivativeCache.source_key(src_path))
+
+    if DerivativeCache.fresh?(dest_path, DerivativeCache.source_key(src_path))
+      BuildStats.count(:local_reused)
+      return false
+    end
+
+    true
   end
 
   # The gem's own signature: (src_path, img_dim, dest_path, img_desc)
   def _process_img(src_path, img_dim, dest_path, img_desc)
-    super
+    BuildStats.count(:local_built)
+    BuildStats.time(:convert) { super }
     DerivativeCache.record(dest_path, DerivativeCache.source_key(src_path))
   end
 

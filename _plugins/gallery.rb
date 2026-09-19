@@ -5,6 +5,7 @@ require 'date'
 require 'benchmark'
 require_relative 'utils/drive_downloader'
 require_relative 'utils/derivative_cache'
+require_relative 'utils/build_stats'
 require 'exiftool'
 require 'parallel'
 require 'digest/sha1'
@@ -71,13 +72,17 @@ def resize_gallery_image(img_src, options, postfix, key = nil)
     key = DerivativeCache.source_key(src_path)
   end
 
-  return dest_path_rel if DerivativeCache.fresh?(dest_path, key)
+  if DerivativeCache.fresh?(dest_path, key)
+    BuildStats.count(:local_reused)
+    return dest_path_rel
+  end
 
   raise "Image at #{src_path} is not readable" unless File.readable?(src_path)
 
   FileUtils.mkdir_p(dest_dir)
 
   puts "   Resizing '#{img_src} - using options: '#{options}'".green
+  BuildStats.count(:local_built)
   _process_img(src_path, [[options, dest_path]])
 
   DerivativeCache.record(dest_path, key)
@@ -102,19 +107,21 @@ def _process_img(src_path, outputs)
   # previous output, so the results are byte for byte what one convert per size
   # produced. "[0]" picks the first frame, matching what MiniMagick::Image#format
   # did.
-  MiniMagick::Tool::Convert.new do |convert|
-    convert << "#{src_path}[0]"
-    convert.auto_orient
-    convert.strip
+  BuildStats.time(:convert) do
+    MiniMagick::Tool::Convert.new do |convert|
+      convert << "#{src_path}[0]"
+      convert.auto_orient
+      convert.strip
 
-    outputs.each do |(img_dim, dest_path)|
-      convert << '(' << '+clone'
-      convert.resize img_dim
-      convert.write dest_path
-      convert << '+delete' << ')'
+      outputs.each do |(img_dim, dest_path)|
+        convert << '(' << '+clone'
+        convert.resize img_dim
+        convert.write dest_path
+        convert << '+delete' << ')'
+      end
+
+      convert << 'null:'
     end
-
-    convert << 'null:'
   end
 
   # File permissions must be set if the format got changed.
@@ -171,6 +178,7 @@ def _gallery_entry(file, uuid, tagged_with_webpage)
     # local cache, so write the entry back either way.
     if DerivativeCache.fresh?(path_1800x1200, key) && DerivativeCache.fresh?(path_255x170, key)
       puts " - File #{file['name']} is unchanged, reusing cached images...".green
+      BuildStats.count(:gallery_reused)
       DerivativeCache.reference(path_1800x1200)
       DerivativeCache.reference(path_255x170)
       DerivativeCache.record_drive(key, cached)
@@ -201,6 +209,7 @@ def _gallery_entry(file, uuid, tagged_with_webpage)
     end
 
     puts "   Resizing '#{downloaded_path}'".green
+    BuildStats.count(:gallery_built)
     FileUtils.mkdir_p(CACHE_DIR)
     _process_img(downloaded_path, [['1800x1200', path_1800x1200], ['255x170', path_255x170]])
 
