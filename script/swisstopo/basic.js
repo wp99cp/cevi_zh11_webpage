@@ -1,55 +1,70 @@
+import {
+    AttributionControl,
+    Map as MapLibre,
+    Marker,
+    NavigationControl,
+} from 'https://unpkg.com/maplibre-gl@6.4.1/dist/maplibre-gl.mjs';
+
 const base_url = window.location.origin;
 
-fetch(base_url + '/script/swisstopo/style.json').then(resp => resp.json().then(style => {
-    require([
-            "esri/Map",
-            "esri/views/MapView",
-            "esri/layers/VectorTileLayer",
-            "esri/layers/WMTSLayer",
-            "esri/core/watchUtils",
-            "esri/layers/support/TileInfo",
-            "esri/Graphic",
-            "esri/layers/GraphicsLayer"],
-        (Map, MapView, VectorTileLayer, WMTSLayer, watchUtils, TileInfo, Graphic, GraphicsLayer) => {
+// Swisstopo publishes its basemap as a MapLibre style, and MapLibre is what
+// renders it correctly. The ArcGIS SDK this used to run on only implements part
+// of the style spec: it ignored the zoom-dependent paint functions, so buildings,
+// street names and place labels never appeared, and it stopped asking for tiles
+// one zoom level above the data, leaving the map emptier the further you zoomed
+// in. The same swisstopo sources are used in conveniat-webpage through MapLibre.
 
-            const cevi_symbol = {
-                type: "picture-marker", url: base_url + "/_template_assets/weblogo.svg", width: "32px", height: "32px"
-            };
+// The pages give a map scale ("1:6500"), which is what the old SDK took, so
+// convert it to the zoom level MapLibre wants. The scale values in the pages
+// were chosen against ArcGIS, whose scales come from a tile scheme of 256px
+// tiles; MapLibre's tiles are 512px, which is exactly one zoom level.
+const WEB_MERCATOR_SCALE_AT_ZOOM_0 = 559_082_264.028;
 
-            const tileLayer = new VectorTileLayer({
-                style: style, copyright: "© Daten:MapTiler, OpenStreetMap contributors, swisstopo"
-            });
+// Rounded because the old view snapped to whole zoom levels, and the scales in
+// the pages were picked to look right after that snapping. Keeping the fraction
+// would frame every existing map slightly tighter than its author chose.
+const zoom_for_scale = scale =>
+    Math.round(Math.log2(WEB_MERCATOR_SCALE_AT_ZOOM_0 / scale) - 1);
 
+const map = new MapLibre({
+    container: 'viewDiv',
+    style: base_url + '/script/swisstopo/style.json',
+    center: map_center,
+    zoom: zoom_for_scale(scale),
 
-            const graphicsLayer = new GraphicsLayer();
-            points.forEach(pkt => {
-                const pointGraphic = new Graphic({
-                    geometry: {type: "point", longitude: pkt[0], latitude: pkt[1]},
-                    symbol: cevi_symbol
-                });
-                graphicsLayer.add(pointGraphic);
-            });
+    // The old view refused to zoom out past 1:25000. Keep that: swisstopo only
+    // has data for Switzerland, so zooming out far enough just empties the map.
+    minZoom: zoom_for_scale(25_000),
 
-            // Create a Map
-            const map = new Map({layers: [tileLayer, graphicsLayer]});
+    // Scrolling over the map should scroll the page, not zoom; MapLibre asks for
+    // ctrl/⌘ or two fingers instead, and says so when you try.
+    cooperativeGestures: true,
 
-            // Make map view and bind it to the map
-            new MapView({
-                container: "viewDiv",
-                map: map,
-                constraints: {lods: TileInfo.create({}).lods, maxScale: 0, minScale: 25_000},
-                scale: scale,
-                center: map_center,
-                navigation: {
-                    gamepad: {
-                        enabled: false
-                    },
-                    browserTouchPanEnabled: false,
-                    momentumEnabled: false,
-                    mouseWheelZoomEnabled: false
-                }
-            });
+    dragRotate: false,
+    pitchWithRotate: false,
+    touchPitch: false,
 
-        });
+    attributionControl: false,
+});
 
+map.addControl(new NavigationControl({showCompass: false}), 'top-left');
+map.addControl(new AttributionControl({
+    compact: true,
+    customAttribution: '© Daten:MapTiler, OpenStreetMap contributors, swisstopo',
 }));
+
+points.forEach(pkt => {
+    const marker = document.createElement('img');
+    marker.src = base_url + '/_template_assets/weblogo.svg';
+    marker.alt = '';
+
+    // Set inline, because the map sits inside a <figure> and the stylesheet
+    // stretches any image in one to the full width. The old renderer drew its
+    // markers onto the canvas, so page styles never reached them; MapLibre
+    // markers are ordinary elements in the document.
+    marker.style.width = '32px';
+    marker.style.height = '32px';
+    marker.style.display = 'block';
+
+    new Marker({element: marker}).setLngLat(pkt).addTo(map);
+});
