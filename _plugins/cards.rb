@@ -13,7 +13,8 @@ def create_cards(config_file, site_context)
 
   html_code = "<div class=\"cards\">"
 
-  forms_config['cards'].each do |card|
+  # A contact file may list no cards (yet), in which case YAML yields nil.
+  (forms_config['cards'] || []).each do |card|
 
     puts config_file.split("/")[-1].split(".")[0]
 

@@ -1,7 +1,14 @@
-FROM jekyll/builder:latest
+FROM jekyll/builder:4.4.1
 
-# Install Jekyll
-RUN apk --no-cache add php8-pecl-imagick ghostscript exiftool
+# Install native dependencies: ImageMagick (rmagick / mini_magick), Ghostscript
+# and ExifTool are used by the gallery and responsive-image plugins.
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y \
+        imagemagick \
+        libmagickwand-dev \
+        ghostscript \
+        libimage-exiftool-perl && \
+    rm -rf /var/lib/apt/lists/*
 
 # Font copy
 COPY ./fonts/ /usr/share/fonts/
