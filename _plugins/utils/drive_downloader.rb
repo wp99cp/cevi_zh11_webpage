@@ -146,10 +146,19 @@ module DriveDownloader
   # Where a Drive file would be downloaded to. Deriving this without touching the
   # network lets the gallery work out the names of the images it is about to
   # build, and skip the download entirely when they are already cached.
-  def self.local_path_for(file, directory, prefix = '')
+  # Anything outside this set is replaced before a Drive file name is used on
+  # disk. Photos come in named whatever the camera or the person uploading them
+  # felt like - 'Kopie von "_N751269.jpg' is a real example - and a quote in a
+  # file name ends the href attribute it is written into early, leaving a broken
+  # link on the page.
+  UNSAFE_IN_NAMES = /[^\p{Alnum}._-]+/u
+
+  def self.local_path_for(file, directory, prefix = '', strict: false)
     file_name = prefix
     file_name += '_' unless prefix
-    file_name += parse_file_name(file['name'])
+    name = parse_file_name(file['name'])
+    name = name.gsub(UNSAFE_IN_NAMES, '_') if strict
+    file_name += name
 
     # remove leading '_' from the file name
     file_path = File.join(directory, file_name).gsub(/\/_+/, '/')
@@ -157,10 +166,10 @@ module DriveDownloader
     file_path + EXTENSIONS.fetch(file['mimeType'], '')
   end
 
-  def self.download_file(file, directory, prefix = '')
+  def self.download_file(file, directory, prefix = '', strict: false)
     return nil if file.nil?
 
-    file_path = local_path_for(file, directory, prefix)
+    file_path = local_path_for(file, directory, prefix, strict: strict)
 
     if File.file?(file_path.to_s)
       puts " - #{file_path}: File is cached".green

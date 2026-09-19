@@ -58,14 +58,16 @@ module DriveDownloader
       true
     end
 
-    def local_path_for(file, directory, prefix = '')
-      # Mirrors DriveDownloader.parse_file_name: spaces become underscores.
+    def local_path_for(file, directory, prefix = '', strict: false)
+      # Mirrors the real one: whitespace to underscores, then anything that is
+      # not safe in a file name or a URL.
       name = file['name'].sub(/\.[^.]*\z/, '').gsub(/\s/, '_')
+      name = name.gsub(/[^\p{Alnum}._-]+/u, '_') if strict
       File.join(directory, "#{prefix}#{name}.jpg")
     end
 
-    def download_file(file, directory, prefix = '')
-      path = local_path_for(file, directory, prefix)
+    def download_file(file, directory, prefix = '', strict: false)
+      path = local_path_for(file, directory, prefix, strict: strict)
       FileUtils.mkdir_p(File.dirname(path))
       FileUtils.cp(SOURCE_PHOTO, path)
       downloads << file['id']
@@ -156,6 +158,17 @@ Dir.mktmpdir do |dir|
     end
     check('both appear on the page') { html.scan('<a href=').length == 2 }
 
+    puts 'a photo whose name would break the markup is renamed'
+    DriveDownloader.files = [drive_file('photo-q', 'Kopie von "_N751269.jpg', '2026-01-01T00:00:00Z')]
+    html = build_gallery
+    check('no quote survives into the image path') do
+      html.scan(%r{imgs/gallery/\S+\.webp}).none? { |path| path.include?('"') }
+    end
+    check('the image is still produced and linked') do
+      html.scan('<a href=').length == 1 &&
+        Dir.glob('imgs/gallery/*_N751269*.webp').length == 2
+    end
+
     puts 'a photo without the Webpage keyword is skipped, and stays skipped'
     DriveDownloader.files = [
       drive_file('photo-b', 'b.jpg', '2026-01-01T00:00:00Z'),
@@ -169,9 +182,16 @@ Dir.mktmpdir do |dir|
     end
     check('leaves it off the page') { !html.include?('c_1800x1200') }
 
+    check('never claims an image that was not produced') do
+      DerivativeCache.referenced_paths.all? { |path| File.file?(path) }
+    end
+
     build_gallery(tagged: true)
     check('does not download it again on the next build') do
       !DriveDownloader.downloads.include?('photo-c')
+    end
+    check('still claims nothing that was not produced') do
+      DerivativeCache.referenced_paths.all? { |path| File.file?(path) }
     end
 
   end

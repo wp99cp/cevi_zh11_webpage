@@ -12,6 +12,11 @@ Jekyll::Hooks.register :site, :post_render do |site|
   known = site.static_files.map(&:path).to_set
 
   DerivativeCache.referenced_paths.each do |path|
+    # Jekyll stats every static file it is given, so one that does not exist
+    # brings the whole build down. Skipping is safer than trusting the callers:
+    # a missing image is a page with a broken <img>, not a failed deploy.
+    next unless File.file?(path)
+
     static_file = Jekyll::StaticFile.new(site, site.source, File.dirname(path), File.basename(path))
     site.static_files << static_file unless known.include?(static_file.path)
   end
