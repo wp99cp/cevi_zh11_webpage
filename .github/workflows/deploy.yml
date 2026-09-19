@@ -11,6 +11,17 @@ on:
   # enable manuall workflow triggering via GitHub web interface
   workflow_dispatch:
 
+# Never let an older build overwrite a newer one.
+#
+# A full build takes over an hour, so two commits landing close together - two
+# pull requests merged one after the other, say - produce two runs that overlap
+# for most of their length. Whichever finished last used to win, which meant the
+# older commit could be the one that ended up deployed. Starting a new run now
+# cancels the one it supersedes.
+concurrency:
+  group: deploy-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   jekyll_preview:
     name: Build and deploy Jekyll site
@@ -109,8 +120,30 @@ jobs:
             docs
           key: ${{ runner.os }}-static-files-v4-${{ github.run_id }}
 
+      # Second line of defence behind the `concurrency` block above, for the
+      # cases it cannot cover: a run that was already deploying when it got
+      # cancelled, or a manual run started from an older commit. Deploying is
+      # the only step worth guarding - building the images is never wasted,
+      # since they end up in the cache either way.
+      - name: Check this commit is still the newest one
+        id: freshness
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Asked over the API rather than with git, because the checkout is
+          # shallow and has no remote-tracking branch to compare against.
+          head="$(gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_REF_NAME" --jq .sha)"
+
+          if [ "$head" = "$GITHUB_SHA" ]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::$GITHUB_SHA is no longer the tip of $GITHUB_REF_NAME (now $head) - skipping the deploy so the newer build wins."
+          fi
+
       # Deploy Frontend to GitHub Pages
       - name: Deploy 🚀 to Firebase Hosting
+        if: steps.freshness.outputs.deploy == 'true'
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
