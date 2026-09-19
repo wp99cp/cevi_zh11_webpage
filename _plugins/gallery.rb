@@ -149,13 +149,11 @@ def _gallery_entry(file, uuid, tagged_with_webpage)
 
   key = DerivativeCache.drive_key(file)
   prefix = _gallery_prefix(uuid, file)
-  local_file_path = DriveDownloader.local_path_for(file, 'gallery', prefix)
+  local_file_path = DriveDownloader.local_path_for(file, 'gallery', prefix, strict: true)
 
   _, path_1800x1200, = _paths(local_file_path, '1800x1200', '')
   _, path_255x170, = _paths(local_file_path, '255x170', '')
 
-  DerivativeCache.reference(path_1800x1200)
-  DerivativeCache.reference(path_255x170)
   DerivativeCache.reference_drive(key)
 
   cached = DerivativeCache.drive_entry(key)
@@ -163,6 +161,9 @@ def _gallery_entry(file, uuid, tagged_with_webpage)
   if cached
     # The photo is not tagged for the webpage. Remembering that is what keeps us
     # from downloading it again on every build just to re-read its keywords.
+    # Nothing was ever generated for it, so it must not be marked as in use: the
+    # paths below do not exist, and claiming them would have Jekyll try to copy
+    # files that were never written.
     return nil unless cached['included']
 
     # Everything we need is already available: no download, no EXIF read, no
@@ -170,12 +171,14 @@ def _gallery_entry(file, uuid, tagged_with_webpage)
     # local cache, so write the entry back either way.
     if DerivativeCache.fresh?(path_1800x1200, key) && DerivativeCache.fresh?(path_255x170, key)
       puts " - File #{file['name']} is unchanged, reusing cached images...".green
+      DerivativeCache.reference(path_1800x1200)
+      DerivativeCache.reference(path_255x170)
       DerivativeCache.record_drive(key, cached)
       return _gallery_html(file, path_1800x1200, path_255x170, cached['width'], cached['height'])
     end
   end
 
-  downloaded_path = DriveDownloader.download_file(file, 'gallery', prefix)
+  downloaded_path = DriveDownloader.download_file(file, 'gallery', prefix, strict: true)
   return nil if downloaded_path.nil?
 
   # exiftool reports a file it cannot read the same way it reports not being
@@ -201,6 +204,8 @@ def _gallery_entry(file, uuid, tagged_with_webpage)
     FileUtils.mkdir_p(CACHE_DIR)
     _process_img(downloaded_path, [['1800x1200', path_1800x1200], ['255x170', path_255x170]])
 
+    DerivativeCache.reference(path_1800x1200)
+    DerivativeCache.reference(path_255x170)
     DerivativeCache.record(path_1800x1200, key)
     DerivativeCache.record(path_255x170, key)
 
