@@ -89,13 +89,26 @@ jobs:
       # `chmod -R 777 $PWD` did the same job by rewriting the mode of every file
       # in the repository, which also quietly marked checked-in files executable.
       - name: Build 🏗️
+        shell: bash
         run: |
+          # pipefail so that a failing build is not masked by tee succeeding.
+          set -o pipefail
+
           docker run --rm \
             --user "$(id -u):$(id -g)" \
             -e HOME=/tmp \
             --volume="$PWD:/srv/jekyll" \
             -e GITHUB_SHA=$GITHUB_SHA \
-            jeykell-builder
+            jeykell-builder | tee /tmp/build-output.log
+
+      # How much of the build was image work, and how much of it the caches
+      # avoided. Shown on the run's summary page so that a build that is slow
+      # again says why, instead of just taking longer.
+      - name: 📊 Report build time
+        if: always()
+        run: |
+          sed -n '/::build-stats-begin::/,/::build-stats-end::/p' /tmp/build-output.log |
+            grep -v '::build-stats-' >> "$GITHUB_STEP_SUMMARY" || true
 
       - name: Fingerprint the cache after the build
         id: cache-after

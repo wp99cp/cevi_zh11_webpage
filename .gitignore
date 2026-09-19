@@ -11,4 +11,6 @@ gallery
 docs
 _secrets/credentials.json
 
+.build-stats.json
+
 node_modules/

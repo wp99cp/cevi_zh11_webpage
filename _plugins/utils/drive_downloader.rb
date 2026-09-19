@@ -5,6 +5,8 @@ require 'date'
 require 'benchmark'
 require 'parallel'
 
+require_relative 'build_stats'
+
 module DriveDownloader
 
   CREDENTIALS = '_secrets/credentials.json'.freeze
@@ -86,9 +88,10 @@ module DriveDownloader
 
     response = nil
     time = Benchmark.measure {
-      response = drive_service.list_files(q: query, supports_all_drives: true, corpora: 'user', order_by: 'createdTime desc',
-                                          include_items_from_all_drives: true, fields: fields, page_size: 1000)
-
+      BuildStats.time(:drive_listing) do
+        response = drive_service.list_files(q: query, supports_all_drives: true, corpora: 'user', order_by: 'createdTime desc',
+                                            include_items_from_all_drives: true, fields: fields, page_size: 1000)
+      end
     }
 
     # Log the results
@@ -184,7 +187,9 @@ module DriveDownloader
     @@cache_mutex.synchronize { FileUtils.mkdir_p directory unless File.directory?(directory) }
 
     puts " - #{file_path}: Downloading file".yellow
-    drive_service.get_file(file['id'], download_dest: file_path, supports_all_drives: true)
+    BuildStats.time(:drive_download) do
+      drive_service.get_file(file['id'], download_dest: file_path, supports_all_drives: true)
+    end
 
     file_path
   end
