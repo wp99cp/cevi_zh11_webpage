@@ -17,6 +17,12 @@ fi
 JEKYLL_ENV=$MODE bundler exec jekyll build --incremental --profile --trace --config $CONFIG_FILE
 JEKYLL_ENV=$MODE bundler exec jekyll build --incremental --profile --trace --config $CONFIG_FILE
 
+# Drop generated images the finished site no longer links to, so that photos
+# deleted in Google Drive stop being published and the build cache stays bounded.
+# Runs here, after both passes, because --incremental skips unchanged pages and
+# the plugins therefore cannot tell on their own which images are still in use.
+ruby bin/prune-unused-images.rb ./_site
+
 # Copy folder with documents to destination directory ./_site
 mkdir -p ./_site/docs
 if [ -d "./docs" ]; then
