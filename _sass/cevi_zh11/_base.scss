@@ -1,27 +1,27 @@
-@import "sizes";
-@import "colors";
-@import "shadows_borders";
-@import "fonts";
-@import "news-entry";
-@import "download-container";
-@import "contact_form";
-@import "iframe";
-@import "cards";
+@use "sizes";
+@use "colors";
+@use "shadows_borders";
+@use "fonts";
+@use "news-entry";
+@use "download-container";
+@use "contact_form";
+@use "iframe";
+@use "cards";
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: fonts.$base-font-family;
+  font-size: fonts.$base-font-size;
 }
 
 .main-content {
 
   display: grid;
-  min-height: calc(100vh - #{$footer-height + $footer-nav-height});
+  min-height: calc(100vh - #{sizes.$footer-height + sizes.$footer-nav-height});
 
-  @media only screen and (min-width: $news-feed-breakpoint) {
+  @media only screen and (min-width: sizes.$news-feed-breakpoint) {
     grid-template-columns: auto 950px;
   }
 
@@ -37,26 +37,26 @@ main, .news-feed-container {
 
   margin: 0 auto;
 
-  @media only screen and (min-width: $news-feed-breakpoint) {
+  @media only screen and (min-width: sizes.$news-feed-breakpoint) {
     margin: 0 10%;
   }
 
   max-width: 1000px;
-  padding: #{$header-height + 25px} 12px 75px 12px;
-  min-height: calc(100vh - #{$footer-height + $footer-nav-height} - 250px);
+  padding: #{sizes.$header-height + 25px} 12px 75px 12px;
+  min-height: calc(100vh - #{sizes.$footer-height + sizes.$footer-nav-height} - 250px);
 
-  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+  @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
     padding-left: 330px;
     padding-right: 50px;
   }
 
   h1 {
-    color: $cevi-green;
+    color: colors.$cevi-green;
     line-height: 1.05em;
     margin: 10px 0 25px;
-    font-family: $base-title-font-family;
+    font-family: fonts.$base-title-font-family;
 
-    @media only screen and (min-width: $keep-nav-open-breakpoint) {
+    @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
       margin-top: 100px;
       font-size: 5em;
       line-height: 0.9em;
@@ -70,9 +70,9 @@ main, .news-feed-container {
   }
 
   h2, h3 {
-    color: $title-gray;
+    color: colors.$title-gray;
     line-height: 1.15em;
-    font-family: $base-title-font-family;
+    font-family: fonts.$base-title-font-family;
   }
 
   h3 {
@@ -80,7 +80,7 @@ main, .news-feed-container {
   }
 
   p, span, li {
-    color: $font-color;
+    color: colors.$font-color;
     line-height: 1.5em;
   }
 
@@ -98,16 +98,16 @@ main, .news-feed-container {
   }
 
   #header-spacer {
-    height: $header-height;
+    height: sizes.$header-height;
   }
 
   button {
 
     display: block;
-    background-color: $cevi-red;
+    background-color: colors.$cevi-red;
     border: none;
     border-radius: 5px;
-    box-shadow: $button-shadow;
+    box-shadow: shadows_borders.$button-shadow;
     padding: 16px 25px;
     font-weight: bold;
     font-size: 20px;
@@ -137,7 +137,7 @@ hr {
 
 a {
   text-decoration: none;
-  color: $cevi-green;
+  color: colors.$cevi-green;
   cursor: pointer;
   display: inline;
   font-weight: 600;
@@ -157,7 +157,7 @@ main, .news-feed-container {
       left: 0;
       width: 100%;
       height: 5px;
-      background-color: $cevi-green;
+      background-color: colors.$cevi-green;
       transition: transform 250ms;
       transition-timing-function: ease-in-out;
       transform: scaleX(0);
@@ -183,11 +183,11 @@ figure {
   margin: 0;
   position: relative;
 
-  @media only screen and (max-width: $keep-nav-open-breakpoint) {
+  @media only screen and (max-width: sizes.$keep-nav-open-breakpoint) {
     margin: 0 -12px;
   }
 
-  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+  @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
     margin: 50px 0;
   }
 
@@ -199,7 +199,7 @@ figure {
   span {
     display: block;
     padding: 10px;
-    color: $font-color;
+    color: colors.$font-color;
     font-style: italic;
   }
 
@@ -217,13 +217,13 @@ figure {
 
   display: block;
   font-size: 26px;
-  font-family: $font-family-cite;
+  font-family: fonts.$font-family-cite;
   padding: 25px 0;
   line-height: 28px;
 
   text-align: center;
 
-  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+  @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
     margin: 10px 150px;
     padding: 25px 12px;
   }
@@ -231,7 +231,7 @@ figure {
   .author-block {
 
     display: block;
-    font-family: $base-font-family;
+    font-family: fonts.$base-font-family;
 
     margin-top: 10px;
 
@@ -282,7 +282,7 @@ figure {
 
 .sitemap-list {
 
-  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+  @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -300,11 +300,11 @@ figure {
 
 .spenden-container {
 
-  border: $separator-border;
+  border: shadows_borders.$separator-border;
   border-radius: 10px;
   padding: 25px;
 
   &:hover {
-    background-color: $contrast-background;
+    background-color: colors.$contrast-background;
   }
 }

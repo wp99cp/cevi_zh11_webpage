@@ -1,7 +1,7 @@
-@import "colors";
-@import "shadows_borders";
-@import "fonts";
-@import "sizes";
+@use "colors";
+@use "shadows_borders";
+@use "fonts";
+@use "sizes";
 
 
 h3 ~ .input-container {
@@ -11,13 +11,13 @@ h3 ~ .input-container {
 .input-container {
   display: grid;
 
-  color: $font-color;
+  color: colors.$font-color;
   margin: 25px 0;
   grid-template-columns: 100%;
 
   position: relative;
 
-  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+  @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-column-gap: 10px;
   }
@@ -25,7 +25,7 @@ h3 ~ .input-container {
   button {
     width: 100%;
 
-    @media only screen and (min-width: $keep-nav-open-breakpoint) {
+    @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
       grid-column-start: 2;
       width: 100%
 
@@ -46,7 +46,7 @@ h3 ~ .input-container {
   border-radius: 6px;
   background-color: white;
   z-index: 1;
-  border: $separator-border;
+  border: shadows_borders.$separator-border;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -58,7 +58,7 @@ h3 ~ .input-container {
   overflow: hidden;
 
   width: 100%;
-  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+  @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
     width: calc(100% - 2px);
   }
 }
@@ -69,14 +69,14 @@ textarea {
   border: 0;
   width: calc(100% - 60px - 4px);
   border-radius: 10px;
-  border: $separator-border;
+  border: shadows_borders.$separator-border;
   resize: vertical;
   font-size: 18px;
-  font-family: $base-font-family;
+  font-family: fonts.$base-font-family;
 }
 
 input:hover, textarea:hover, input:focus, textarea:focus {
-  background-color: $contrast-background;
+  background-color: colors.$contrast-background;
 }
 
 .styled-input, .styled-textarea {
@@ -108,7 +108,7 @@ input[type=date]{
 }
 
 .styled-input.wide, .styled-textarea.wide, .styled-checkbox.wide {
-  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+  @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
     grid-column-start: 1;
     grid-column-end: 3;
   }

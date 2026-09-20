@@ -1,6 +1,6 @@
-@import "shadows_borders";
-@import "colors";
-@import "sizes";
+@use "shadows_borders";
+@use "colors";
+@use "sizes";
 
 $container-spacing: 12px;
 
@@ -11,7 +11,7 @@ $container-spacing: 12px;
   margin-bottom: 30px;
   grid-template-columns:100%;
 
-  @media only screen and (min-width: $download-breakpoint) {
+  @media only screen and (min-width: sizes.$download-breakpoint) {
     grid-template-columns: 50% 50%;
   }
 
@@ -21,7 +21,7 @@ $container-spacing: 12px;
 
   user-select: none;
 
-  border: $separator-border;
+  border: shadows_borders.$separator-border;
   border-radius: 10px;
   padding: $container-spacing;
   height: 60px;
@@ -63,7 +63,7 @@ $container-spacing: 12px;
     font-weight: bold;
     overflow: hidden;
 
-    @media only screen and (max-width: $keep-nav-open-breakpoint) {
+    @media only screen and (max-width: sizes.$keep-nav-open-breakpoint) {
       font-size: 18px;
       margin-top: 8px;
     }
@@ -82,6 +82,6 @@ $container-spacing: 12px;
 
 .download-container a:hover {
 
-  background-color: $contrast-background;
+  background-color: colors.$contrast-background;
 
 }
