@@ -20,7 +20,9 @@ footer-menu-priority: 1
 contact_page: true
 ---
 
-
+{% comment %}
+###############################
+###############################
 
 # Cevi-Schnupper-Programm vom 19. September 2026
 
@@ -66,10 +68,9 @@ Schnupper-Datum. Bei uns ist jeder Samstag ein Schnupperprogramm.
 
 [Kontakt aufnehmen](/kontakt)
 
-
-{% comment %}
 ###############################
 ###############################
+{% endcomment %}
 
 # Bei uns ist jeder Samstag ein Schnupperprogramm.
 
@@ -99,9 +100,5 @@ Oerlikon und Affoltern sind bei uns im Cevi herzlich willkommen! Wir freuen uns 
 
 Nimm mit uns Kontakt auf und wir finden ein individuelles Schnupper-Datum. Bei uns ist jeder Samstag ein
 Schnupperprogramm.
-
-###############################
-###############################
-{% endcomment %}
 
 [[ contact-form :: forms/schnuppern.yml ]]
