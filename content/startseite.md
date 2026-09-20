@@ -34,14 +34,14 @@ Action.
 
 ## Fallbalken und Mietmaterial
 
-Planst du demnächst einen Anlass und suchst noch nach einer Attraktivität? Für das Quertierfest, den Sporttag oder den
+Planst du demnächst einen Anlass und suchst noch nach einer Attraktion? Für das Quartierfest, den Sporttag oder den
 Familienanlass? Mit unserem Fallbalken liegst du garantiert nie daneben.
 
-![Unser Fallbalken kannst du mieten.](/assets/Fallbalken.jpg)
+![Unseren Fallbalken kannst du mieten.](/assets/Fallbalken.jpg)
 
 ### Wer getroffen wird, der fällt!
 
-Mit Bällen versuchen die Spieler ihre Gegner zum Fallen zu bringen. Eine kleine Metallklappe getroffen, löst ein
+Mit Bällen versuchen die Spieler ihre Gegner zum Fallen zu bringen. Wird eine kleine Metallklappe getroffen, löst ein
 raffinierter Mechanismus das Fallbrett aus und der Gegner fällt auf die weiche Matte.
 
 [Fallbalken mieten](/material)

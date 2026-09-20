@@ -23,10 +23,10 @@ cells:
     required: true
 
   - element: checkbox
-    label: Ich frage für eine Organization des Cevi's an?
+    label: Ich frage für eine Organisation des Cevi an
 
   - element: checkbox
-    label: Ich frage für einen andern Jugendverein (Pfadi, Jubla, ...) an?
+    label: Ich frage für einen anderen Jugendverein (Pfadi, Jubla, ...) an
 
   - element: textarea
     label: Nachricht / Anfrage

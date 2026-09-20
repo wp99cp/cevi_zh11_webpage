@@ -1,5 +1,5 @@
 ---
-title: Fotogallery
+title: Fotogalerie
 main-menu: Fotos
 main-menu-priority: 7
 permalink: /fotos
@@ -9,7 +9,7 @@ regenerate: true
 # Hier findest du die Fotos vergangener Anlässe.
 
 Hier findest du eine Auswahl an Fotos von vergangenen Anlässen, Lagern und Programmen.
-Aktuelle Fotos findest du auch auf unserem [Instagram Account](https://www.instagram.com/cevizh11).
+Aktuelle Fotos findest du auch auf unserem [Instagram-Account](https://www.instagram.com/cevizh11).
 
 <div class="news-feed">
 

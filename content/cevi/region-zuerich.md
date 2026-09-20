@@ -11,12 +11,12 @@ Der Cevi Züri 11 ist nur eine von vielen Ortsgruppen. Ortsgruppen sind Cevigrup
 Stadtkreis Programme anbieten. Im Kanton Zürich sind dies über 50 verschiedene Vereine. Alle diese Organisationen
 gehören der Cevi Region Zürich an.
 
-Die Region als Dachverband unterstützt dabei die einzelnen Abteilungen in ihren Tätigkeiten. Eine der Hauptaufgabe dabei
+Die Region als Dachverband unterstützt dabei die einzelnen Abteilungen in ihren Tätigkeiten. Eine der Hauptaufgaben dabei
 ist die Aus- und Weiterbildung der Leiterinnen und Leiter.
 
 Hierfür bietet die Region jährlich über 20 Kurse an. Das Ausbildungsprogramm beginnt bereits bei den Zwölfjährigen mit
 dem sogenannten Vorkurs (VOKU). In den folgenden Jahren kann jährlich ein Kurs besucht werden, die heranwachsenden
-Leiter/innen lernen so Schritt für Schritt Verantwortung zu übernehmen, Programme zu gestalten und Cevi-Wissen
+Leiter/innen lernen so Schritt für Schritt, Verantwortung zu übernehmen, Programme zu gestalten und Cevi-Wissen
 weiterzugeben.
 
 Als Höhepunkt der Ausbildung werden die Leitenden im Gruppenleiterkurs 3 (GLK3) zu J+S-Leiter/innen ausgebildet und im

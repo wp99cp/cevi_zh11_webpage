@@ -6,9 +6,9 @@ news-entry-caption: Einladung für die GV Cevi Züri 11
 date: 2023-01-31T00:00
 ---
 
-# Einladung für die GV Cevi Zürich 11
+# Einladung für die GV Cevi Züri 11
 
-Am 1. März 2023 findet um 19:30 Uhr die Generalversammlung des Cevi Zürich 11 statt. Dieses Jahr treffen wir uns wieder
+Am 1. März 2023 findet um 19:30 Uhr die Generalversammlung des Cevi Züri 11 statt. Dieses Jahr treffen wir uns wieder
 in der Jugendstube in Seebach. Wer nicht an der GV teilnehmen kann, soll sich bitte beim Vorstand abmelden. Eine
 Abmeldung muss bis am 24.2.2023 erfolgen.
 

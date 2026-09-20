@@ -110,7 +110,7 @@ function send_message(uuid, backend_url, receiver) {
     }).catch(err => {
 
         console.log("Request failed! response:", err);
-        set_timed_status(form_element, 'Es ist eine Fehler aufgetreten. Das Formular wurde nicht übermittelt!', -1)
+        set_timed_status(form_element, 'Es ist ein Fehler aufgetreten. Das Formular wurde nicht übermittelt!', -1)
 
     });
 

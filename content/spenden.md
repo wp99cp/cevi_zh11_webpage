@@ -1,5 +1,5 @@
 ---
-title: Den Cevi Züri 11 Spenden
+title: Den Cevi Züri 11 unterstützen
 permalink: /spenden
 description: Unterstütze den Cevi Züri 11 mit deiner Spende
 keywords:
@@ -13,26 +13,26 @@ keywords:
 
 # Unterstütze uns mit deiner Spende
 
-## Der Cevi ist Ehrenamtlich.
+## Der Cevi ist ehrenamtlich.
 
-Allein im Kanton Zürich engagieren sich ca. 40'000 Mitgliederinnen und Mitglieder ehrenamtlich in Sport- und
+Allein im Kanton Zürich engagieren sich ca. 40'000 Mitglieder ehrenamtlich in Sport- und
 Freizeit-Vereinen (Quelle: ZKS) und damit über 90% aller Mitarbeitenden in Vereinen.
 
 Wir vom Cevi Züri 11 gehen einen Schritt weiter: Denn bei uns arbeiten sämtliche Leiterinnen und Leiter ehrenamtlich,
-d.h. sie Investieren einen grossen Teil ihrer Freizeit in den Cevi, ohne dabei entlöhnt zu werden. Das ist nicht immer
-selbstverständlich, so ist es manchmal schwierig Leiterinnen und Leiter für den Cevi zu Motivieren.
+d.h. sie investieren einen grossen Teil ihrer Freizeit in den Cevi, ohne dabei entlöhnt zu werden. Das ist nicht immer
+selbstverständlich, so ist es manchmal schwierig, Leiterinnen und Leiter für den Cevi zu motivieren.
 
 Für viele liegt die Motivation daher auch bei den Mitleitenden, zusammen mit Kolleginnen und Kollegen ein Sommerlager
-auf die Beine zu stellen ist einfach ein unbeschreibliches Gefühl. Nicht selten entstehen so im Cevi Freundschaften, die
+auf die Beine zu stellen, ist einfach ein unbeschreibliches Gefühl. Nicht selten entstehen so im Cevi Freundschaften, die
 noch lange über den Cevi hinaus bestehen bleiben.
 
 ## Cevi unterstützen.
 
-Obwohl unserer Leiterinnen allesamt ehrenamtlich für den Cevi tätig sind, verzeichnen wir jährliche Ausgaben.
-Hauptsächlich für Material, Kosten für Aus- und Weiterbildung der Leiter aber auch Aufwände für Lager, Weekends,
+Obwohl unsere Leiterinnen und Leiter allesamt ehrenamtlich für den Cevi tätig sind, verzeichnen wir jährliche Ausgaben.
+Hauptsächlich für Material, Kosten für Aus- und Weiterbildung der Leiter, aber auch Aufwände für Lager, Weekends,
 Programmnachmittage.
 
-Der Cevi Züri 11 finanziert sich teils aus den Mitgliederbeiträgen teils aus Spenden von Privatpersonen und den
+Der Cevi Züri 11 finanziert sich teils aus den Mitgliederbeiträgen, teils aus Spenden von Privatpersonen und den
 ansässigen Kirchengemeinden. Unterstütze auch du den Cevi in seiner Tätigkeit und spende für einen guten Zweck!
 
 

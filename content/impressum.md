@@ -23,7 +23,7 @@ info@zh11.ch
 
 ### Vertretungsberechtigte Personen:
 
-Cyrill Püntener v/o JPG, , Präsident<br>
+Cyrill Püntener v/o JPG, Präsident<br>
 Anja Geiser v/o Vanille, Vorstandsmitglied<br>
 Jaël Göldi v/o Bagheera, Abteilungsleiterin<br>
 Lena Strub v/o Dava, Abteilungsleiterin<br>
@@ -104,20 +104,20 @@ Pflichten, denen wir unterliegen, schränken wir die Bearbeitung entsprechend ei
 
 ### Datenschutzerklärung für SSL-Verschlüsselung
 
-Diese WebSite nutzt aus Gründen der Sicherheit und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel
+Diese Website nutzt aus Gründen der Sicherheit und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel
 der Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung
 erkennen Sie daran, dass die Adresszeile des Browsers von "http://" auf "https://" wechselt und an dem Schloss-Symbol in
 Ihrer Browserzeile.
 
-Wenn die SSL Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen
+Wenn die SSL-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen
 werden.
 
 ### Datenschutzerklärung für Server-Log-Files
 
-Der Provider dieser WebSite erhebt und speichert automatisch Informationen in so genannten Server-Log Files, die Ihr
+Der Provider dieser Website erhebt und speichert automatisch Informationen in sogenannten Server-Log-Files, die Ihr
 Browser automatisch an uns übermittelt. Dies sind:
 
-Browsertyp und Browserversion, verwendetes Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners sowie
+Browsertyp und Browserversion, verwendetes Betriebssystem, Referrer-URL, Hostname des zugreifenden Rechners sowie
 Uhrzeit der Serveranfrage.
 
 Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird
@@ -126,7 +126,7 @@ rechtswidrige Nutzung bekannt werden.
 
 ### Dienste von Dritten
 
-Diese WebSite verwenden allenfalls Google Maps für das Einbetten von Karten, Google Invisible reCAPTCHA für den Schutz
+Diese Website verwendet allenfalls Google Maps für das Einbetten von Karten, Google Invisible reCAPTCHA für den Schutz
 gegen Bots und Spam sowie YouTube für das Einbetten von Videos.
 
 Diese Dienste der amerikanischen Google LLC verwenden unter anderem Cookies und infolgedessen werden Daten an Google in
@@ -146,10 +146,10 @@ gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
 
 ### Datenschutzerklärung für Newsletterdaten
 
-Wenn Sie den auf dieser WebSite angebotenen Newsletter beziehen möchten, benötigen wir von Ihnen eine E-Mail-Adresse
+Wenn Sie den auf dieser Website angebotenen Newsletter beziehen möchten, benötigen wir von Ihnen eine E-Mail-Adresse
 sowie Informationen, welche uns die Überprüfung gestatten, dass Sie der Inhaber der angegebenen E-Mail-Adresse sind und
 mit dem Empfang des Newsletters einverstanden sind. Weitere Daten werden nicht erhoben. Diese Daten verwenden wir
-ausschließlich für den Versand der angeforderten Informationen und geben sie nicht an Dritte weiter.
+ausschliesslich für den Versand der angeforderten Informationen und geben sie nicht an Dritte weiter.
 
 Die erteilte Einwilligung zur Speicherung der Daten, der E-Mail-Adresse sowie deren Nutzung zum Versand des Newsletters
 können Sie jederzeit widerrufen, etwa über den "Austragen"-Link im Newsletter.
@@ -176,12 +176,12 @@ Aufbewahrungsfristen abgelaufen sind.
 
 ### Datenschutzerklärung für YouTube
 
-Diese WebSite nutzt Plugins der von Google betriebenen Seite YouTube. Betreiber der Seiten ist die YouTube, LLC, 901
+Diese Website nutzt Plugins der von Google betriebenen Seite YouTube. Betreiber der Seiten ist die YouTube, LLC, 901
 Cherry Ave., San Bruno, CA 94066, USA. Wenn Sie eine unserer mit einem YouTube-Plugin ausgestatteten Seiten besuchen,
-wird eine Verbindung zu den Servern von YouTube hergestellt. Dabei wird dem Youtube-Server mitgeteilt, welche unserer
+wird eine Verbindung zu den Servern von YouTube hergestellt. Dabei wird dem YouTube-Server mitgeteilt, welche unserer
 Seiten Sie besucht haben.
 
-Wenn Sie in Ihrem YouTube-Account eingeloggt sind ermöglichen Sie YouTube, Ihr Surfverhalten direkt Ihrem persönlichen
+Wenn Sie in Ihrem YouTube-Account eingeloggt sind, ermöglichen Sie YouTube, Ihr Surfverhalten direkt Ihrem persönlichen
 Profil zuzuordnen. Dies können Sie verhindern, indem Sie sich aus Ihrem YouTube-Account ausloggen.
 
 Weitere Informationen zum Umgang von Nutzerdaten finden Sie in der Datenschutzerklärung von YouTube
@@ -194,7 +194,7 @@ ausschliesslich dem Betreiber dieser Website oder den speziell genannten Rechtei
 sämtlichen Dateien, ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.
 
 Wer ohne Einwilligung des jeweiligen Rechteinhabers eine Urheberrechtsverletzung begeht, kann sich strafbar und
-allenfalls Schadenersatzpflichtig machen.
+allenfalls schadenersatzpflichtig machen.
 
 ### Allgemeiner Haftungsausschluss
 
@@ -225,7 +225,7 @@ Falle einer Aktualisierung über die Änderung per E-Mail oder auf andere geeign
 ### Fragen an den Datenschutzbeauftragten
 
 Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den
-Datenschutz zu Beginn der Datenschutzerklärung aufgeführten, verantwortlichen Person in unserer Organisation.
+Datenschutz zu Beginn der Datenschutzerklärung aufgeführten verantwortlichen Person in unserer Organisation.
 
 *Zürich, Juni 2022*<br>
 *Quelle: Datenschutz-Generator von SwissAnwalt*

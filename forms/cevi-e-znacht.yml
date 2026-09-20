@@ -36,8 +36,8 @@ cells:
     style_wide: true
 
   - element: checkbox
-    label: Ich bin an einer <a href="/passiv-mitglied">passiv Mitgliederschaft</a> interessiert
+    label: Ich bin an einer <a href="/passiv-mitglied">Passivmitgliedschaft</a> interessiert
 
   - element: textarea
-    label: Bemerkungen und Allergen
+    label: Bemerkungen und Allergien
     style_wide: true

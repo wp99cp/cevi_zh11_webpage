@@ -7,7 +7,7 @@ permalink: /cevi/cevi-schweiz
 
 ## Der Cevi ist der drittgrösste Jugendverband in der Schweiz.
 
-Er umfasst rund 15 000 Mitglieder in über 200 lokalen
+Er umfasst rund 15'000 Mitglieder in über 200 lokalen
 Vereinen, führt jährlich über 80 Ausbildungskurse und gegen 300 Lager durch. Als christlich und international
 ausgerichtete Jugendbewegung stehen Leiterschaft und das Befähigen von Menschen im Zentrum aller Tätigkeiten. Der
 Cevi Schweiz ist Teil der europäischen und weltweiten Cevi-Verbände YMCA und YWCA mit insgesamt 70 Millionen
@@ -23,7 +23,7 @@ Leitung von freiwilligen, jungen Leitungspersonen Abenteuer im Freien, Zeltlager
 Der Cevi Züri 11 ist Teil der [Cevi Region Zürich](/cevi/region-zuerich). 
 
 Die sechs Arbeitsgebiete wiederum umfassen andere Tätigkeitsgebiete für Kinder, Jugendliche und Erwachsene wie Cevi
-Alpin oder Horyzon (internationale Entwicklungshilfe). Zudem gibt es noch viel weitere Angebote innerhalb des Cevi wie
+Alpin oder Horyzon (internationale Entwicklungshilfe). Zudem gibt es noch viele weitere Angebote innerhalb des Cevi wie
 etwa Mittagstische, Aufgabenhilfe oder Sportvereine. Der Cevi ist der vielfältigste Jugendverband der Schweiz.
 
 ## Das will der Cevi Schweiz erreichen
@@ -37,7 +37,7 @@ ermöglicht in seinen Angeboten, Gemeinschaft zu erleben. Er fördert Begabungen
 die Entwicklung der Persönlichkeit. Er verbindet Menschen und unterstützt sie in der gemeinsamen Verwirklichung ihrer
 Ideen.
 
-Der christliche Glauben, aus dem der Cevi entstanden ist, wird dabei je nach Ortsgruppe unterschiedlich stark ausgelebt.
+Der christliche Glaube, aus dem der Cevi entstanden ist, wird dabei je nach Ortsgruppe unterschiedlich stark ausgelebt.
 So wird er im Cevi Züri 11 nicht aktiv gefördert, während andere Abteilungen sehr eng mit der Kirche zusammenarbeiten.
 
-Weiter Informationen findest du auf der [offiziellen Cevi-Schweiz Webseite](https://cevi.ch).
+Weitere Informationen findest du auf der [offiziellen Cevi-Schweiz-Webseite](https://cevi.ch).

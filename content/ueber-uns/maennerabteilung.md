@@ -14,7 +14,7 @@ date: 2023-03-21T00:00
 ## Die Männerabteilung des Cevi Züri 11
 
 Im Cevi Züri 11 gibt es – schweizweit fast einzigartig – eine Gruppe, deren
-männliche Mitglieder in den 1940er- und 1950er Jahren Jungschärler im damaligen
+männliche Mitglieder in den 1940er- und 1950er-Jahren Jungschärler im damaligen
 Cevi Seebach waren. Die meisten wurden Gruppenführer und Leiter, blieben sich
 verbunden, zuerst als Mitglieder des Jungtrupps, dann der Jungmännerabteilung,
 später der Männerabteilung. Seit Jahrzehnten nehmen auch die Gattinnen am
@@ -28,7 +28,7 @@ Man trifft sich regelmässig am ersten Mittwoch im Monat, etwa hälftig im
 Kirchgemeindehaus Seebach zu Vorträgen, meist aus den eigenen Reihen, aber
 auch von externen Referenten, zum anderen Teil zu Ausflügen, Besichtigungen oder
 auch zum gemeinsamen Essen. Ein rundes Dutzend Seniorinnen und Senioren
-freuen sich jeweils am Zusammensein aber auch an der anhaltenden Verbundenheit
+freut sich jeweils am Zusammensein, aber auch an der anhaltenden Verbundenheit
 mit dem [Cevi Züri 11](/ueber-uns).
 
 [[ google_drive folder :: 1JRKKztntYgTmcUK_ISYM1h-XzU9s8hD3 ]]

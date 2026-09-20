@@ -9,13 +9,13 @@ cards:
 
   - name: Jaël Göldi
     cevi-name: Bagheera
-    function: Stufe Espiera
+    function: Stufe Esperia
     image: /assets/portrait_pictures/jael_goeldi.png
     contact_form: forms/people/jael_goeldi.yml
 
   - name: Lucien Fauster
     cevi-name: Thunder
-    function: Stufe Adventure
+    function: Stufe Adventures
     image: /assets/portrait_pictures/lucien_fauster.jpg
     contact_form: forms/people/lucien_fauster.yml
 

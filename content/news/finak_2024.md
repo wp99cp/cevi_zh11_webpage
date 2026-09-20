@@ -1,18 +1,18 @@
 ---
 title: Finanzaktion 2024
 permalink: /finak-2024
-news-entry-title: UNIHOCKEY - PLAUSCH - TURNIER
-news-entry-caption: Informationen zur Finanzaktion 2024 unserem Unihockey-Plausch-Turnier.
+news-entry-title: UNIHOCKEY-PLAUSCH-TURNIER
+news-entry-caption: Informationen zur Finanzaktion 2024, unserem Unihockey-Plausch-Turnier.
 date: 2024-04-23T12:00
 contact_page: false
 ---
 
 # UNIHOCKEY-PLAUSCH-TURNIER
 
-## Informationen zur Finanzaktion 2024 unserm Unihockey-Plausch-Turnier.
+## Informationen zur Finanzaktion 2024, unserem Unihockey-Plausch-Turnier.
 
-Am Samstag, 22. Juni 2024 findet unsere alljährliche Finanzaktion statt.
-Mit einem Unihockey-Turnier sammeln wir Spenden um unseren Teilnehmer*innen spannende und lehrreiche Samstags-Programme
+Am Samstag, 22. Juni 2024, findet unsere alljährliche Finanzaktion statt.
+Mit einem Unihockey-Turnier sammeln wir Spenden, um unseren Teilnehmer*innen spannende und lehrreiche Samstags-Programme
 und Lager zu bieten. Das Prinzip ist ganz einfach: Für jedes erzielte Tor spenden unsere Sponsoren einen kleinen Betrag
 an unsere Abteilung.
 
@@ -27,7 +27,7 @@ Die wichtigen Informationen findest du direkt hier:
 
 - Sportbekleidung
 - Ausgefüllte Sponsorenliste (Online unter [finanzaktion.ch](https://finanzaktion.ch) oder auf Papier)
-- Unihockeyausrüstung (falls du hast)
+- Unihockeyausrüstung (falls du eine hast)
 - Trinkflasche und Zvieri
 
 **Programm:**

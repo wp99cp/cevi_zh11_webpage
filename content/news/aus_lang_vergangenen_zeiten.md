@@ -2,7 +2,7 @@
 title: Fotos aus längst vergangenen Zeiten
 permalink: /fotos/aus-lang-vergangenen-zeiten
 news-entry-title: Fotos aus längst vergangenen Zeiten
-news-entry-caption: Fotos die bereits mehr als 8 Jahr alt sind.
+news-entry-caption: Fotos, die bereits mehr als 8 Jahre alt sind.
 date: 2016-01-01T00:00
 fotos: true
 ---
@@ -19,6 +19,6 @@ fotos: true
 
 [[ gallery 1UZ3W46nvMu8UuTCNveJHi46PRFImXbzC ]]
 
-## Aktion 72 Studen (2010)
+## Aktion 72 Stunden (2010)
 
 [[ gallery 1UXpHnOALkGtF0DKDvUPWKD1vC30ohGFz ]]

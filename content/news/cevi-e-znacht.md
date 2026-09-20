@@ -1,5 +1,5 @@
 ---
-title: Cevi-E Znacht
+title: Cevi-E-Znacht
 permalink: /cevi-e-znacht
 news-entry-title: In Erinnerungen schwelgen und alte Bekannte treffen
 news-entry-caption: Informationen zum Cevi-E-Znacht vom 11. November 2022
@@ -20,7 +20,7 @@ Brief findest du alle Informationen dazu.
 - **Adresse?** Pfadihuus Zürich, Rolf-Balsiger-Strasse 8, 8044 Zürich
 - **Wer?** Alle ehemaligen und aktiven Cevileiter*innen des Cevi Züri 11
 - **Kosten?** Der Abend ist für alle ehemaligen Cevianer*innen und alle aktiven Leiter gratis. Aber wir freuen uns
-  natürlich über jede Spende. Mit einem Betrag von 25.- CHF/Person deckt ihr unsere Ausgaben für diesen Abend. Unsere
+  natürlich über jede Spende. Mit einem Betrag von CHF 25.- pro Person deckt ihr unsere Ausgaben für diesen Abend. Unsere
   Kontodaten findet ihr in der PDF-Version der Infos.
 
 ## PDF-Version der Infos
@@ -34,6 +34,6 @@ Bei Fragen dürft ihr euch gerne bei uns melden!
 [[ contact-form :: forms/default.yml ]]
 
 Falls du an diesem Abend nicht dabei sein kannst, aber trotzdem gerne mit uns in Kontakt bleiben möchtest, dann ist eine
-Passiv-Mitgliederschaft bei uns genau das richtige. Details erfährst du
+Passivmitgliedschaft bei uns genau das Richtige. Details erfährst du
 unter [zh11.ch/passiv-mitglied](/passiv-mitglied).
 

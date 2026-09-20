@@ -10,11 +10,11 @@ sub-menu-priority: 6
 
 ## Über die Cevi Amos
 
-Die Stufe Amos ist die mittlere Stufe der Mädchenstufen. Wir heissen alle Mädels mit dem Jahrgängen 2014-2016 herzlich 
-Willkommen. Am Samstagnachmittag gestalten wir ein tolles Programm im Wald, mit vielen Spielen, basteln und bräteln. 
+Die Stufe Amos ist die mittlere Stufe der Mädchenstufen. Wir heissen alle Mädels mit den Jahrgängen 2014-2016 herzlich 
+willkommen. Am Samstagnachmittag gestalten wir ein tolles Programm im Wald, mit vielen Spielen, Basteln und Bräteln. 
 Wir freuen uns über jedes neue Gesicht.
 
-![Das sind wir - Stufen Amos](/assets/stufen_pictures/stufe_amos.jpg)
+![Das sind wir - Stufe Amos](/assets/stufen_pictures/stufe_amos.jpg)
 
 ## Wir stellen uns vor
 
