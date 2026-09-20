@@ -1,7 +1,19 @@
-FROM jekyll/builder:latest
+FROM jekyll/builder:4.4.1
 
-# Install Jekyll
-RUN apk --no-cache add php8-pecl-imagick ghostscript exiftool
+# Install native dependencies: ImageMagick (rmagick / mini_magick), Ghostscript
+# and ExifTool are used by the gallery and responsive-image plugins.
+# libheif-plugin-x265 adds the HEIC *encoder* (Debian's ImageMagick can only
+# read HEIC). The gallery plugin no longer writes HEIC, but any code path that
+# does would otherwise die with "no encode delegate for this image format
+# `HEIC'" instead of just being slow.
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y \
+        imagemagick \
+        libmagickwand-dev \
+        libheif-plugin-x265 \
+        ghostscript \
+        libimage-exiftool-perl && \
+    rm -rf /var/lib/apt/lists/*
 
 # Font copy
 COPY ./fonts/ /usr/share/fonts/

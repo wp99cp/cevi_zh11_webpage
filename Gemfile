@@ -8,7 +8,7 @@ source 'https://rubygems.org'
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem 'jekyll', '~> 4.3.2'
+gem 'jekyll', '~> 4.4'
 
 
 group :jekyll_plugins do
@@ -30,3 +30,5 @@ gem 'exiftool_vendored'
 gem 'parallel'
 
 gem 'jekyll-redirect-from'
+# rmagick 4.x still requires 'observer', which is no longer a default gem on Ruby 3.4
+gem 'observer'

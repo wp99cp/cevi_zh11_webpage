@@ -27,6 +27,10 @@ exclude:
   - docker-compose.yml
   - Dockerfile
 
+  # build tooling, not part of the site
+  - bin
+  - test
+
   # other ignored files
   - README.md
 

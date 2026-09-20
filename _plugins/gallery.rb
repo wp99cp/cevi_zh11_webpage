@@ -4,6 +4,8 @@ require 'fileutils'
 require 'date'
 require 'benchmark'
 require_relative 'utils/drive_downloader'
+require_relative 'utils/derivative_cache'
+require_relative 'utils/build_stats'
 require 'exiftool'
 require 'parallel'
 require 'digest/sha1'
@@ -16,6 +18,12 @@ def date_to_string(timestamp)
 end
 
 CACHE_DIR = "imgs/gallery"
+
+# Photos are downloaded and converted independently of each other, so they can
+# run concurrently. Both halves of the work release the GIL - downloading waits
+# on the network, converting waits on an ImageMagick subprocess - so threads are
+# enough and we avoid marshalling results back from forked processes.
+GALLERY_CONCURRENCY = (ENV['GALLERY_CONCURRENCY'] || 8).to_i
 
 # Generate output image filename.
 def _dest_filename(src_path, options, postfix)
@@ -31,7 +39,6 @@ end
 def _paths(img_path, options, postfix)
 
   src_path = img_path
-  raise "Image at #{src_path} is not readable" unless File.readable?(src_path)
 
   dest_dir = CACHE_DIR
 
@@ -43,18 +50,14 @@ def _paths(img_path, options, postfix)
   [src_path, dest_path, dest_dir, dest_filename, dest_path_rel]
 end
 
-# Determine whether the image needs to be written.
-def _must_create?(src_path, dest_path)
-  !File.exist?(dest_path) || File.mtime(dest_path) <= File.mtime(src_path)
-end
-
 #
 # param source: e.g. "my-image.jpg"
 # param options: e.g. "800x800>"
 # param img_desc: e.g. "800x800>"
+# param key: cache key of the input, defaults to a hash of the source file
 #
 # return dest_path_rel: Relative path for output file.
-def resize_gallery_image(img_src, options, postfix)
+def resize_gallery_image(img_src, options, postfix, key = nil)
   raise "`source` must be a string - got: #{img_src.class}" unless img_src.is_a? String
   raise "`source` may not be empty" unless img_src.length > 0
   raise "`options` must be a string - got: #{options.class}" unless options.is_a? String
@@ -62,74 +65,189 @@ def resize_gallery_image(img_src, options, postfix)
 
   src_path, dest_path, dest_dir, _, dest_path_rel = _paths(img_src, options, postfix)
 
+  DerivativeCache.reference(dest_path)
+
+  if key.nil?
+    raise "Image at #{src_path} is not readable" unless File.readable?(src_path)
+    key = DerivativeCache.source_key(src_path)
+  end
+
+  if DerivativeCache.fresh?(dest_path, key)
+    BuildStats.count(:local_reused)
+    return dest_path_rel
+  end
+
+  raise "Image at #{src_path} is not readable" unless File.readable?(src_path)
+
   FileUtils.mkdir_p(dest_dir)
 
-  if _must_create?(src_path, dest_path)
-    puts "   Resizing '#{img_src} - using options: '#{options}'".green
+  puts "   Resizing '#{img_src} - using options: '#{options}'".green
+  BuildStats.count(:local_built)
+  _process_img(src_path, [[options, dest_path]])
 
-    _process_img(src_path, options, dest_path)
-
-  end
+  DerivativeCache.record(dest_path, key)
 
   dest_path_rel
 end
 
-# Processes the image: Annotate with custom graphic and shrink to the specified img_size
+# Converts one source image into one or more sizes.
 #
-# param source: e.g. "my-image.jpg"
-# param img_dim: e.g. "800x800"
-# param dest_path: e.g. "my-image_800x800_lka34jks.jpg"
-# param img_desc: e.g. "This is a cat!"
+# param src_path: e.g. "my-image.jpg"
+# param outputs: e.g. [["1800x1200", "a.webp"], ["255x170", "b.webp"]]
 #
-def _process_img(src_path, img_dim, dest_path)
+def _process_img(src_path, outputs)
 
-  image = MiniMagick::Image.open(src_path)
-  image = image.auto_orient
+  # A single ImageMagick invocation that decodes the source once and writes every
+  # size from a clone of it.
+  #
+  # Applying the operations in-place instead (MiniMagick::Image#auto_orient,
+  # #strip, #resize) re-encodes the *source* format after every step, which for
+  # the HEIC photos coming from Google Drive costs ~9s per step and is thrown
+  # away anyway. Each size is resized from its own clone rather than from the
+  # previous output, so the results are byte for byte what one convert per size
+  # produced. "[0]" picks the first frame, matching what MiniMagick::Image#format
+  # did.
+  BuildStats.time(:convert) do
+    MiniMagick::Tool::Convert.new do |convert|
+      convert << "#{src_path}[0]"
+      convert.auto_orient
+      convert.strip
 
-  image.strip
-  image.resize img_dim
-  image.format "webp"
-  image.write dest_path
+      outputs.each do |(img_dim, dest_path)|
+        convert << '(' << '+clone'
+        convert.resize img_dim
+        convert.write dest_path
+        convert << '+delete' << ')'
+      end
+
+      convert << 'null:'
+    end
+  end
 
   # File permissions must be set if the format got changed.
-  File.chmod(0644, dest_path)
+  outputs.each { |(_, dest_path)| File.chmod(0644, dest_path) }
 
-  optimize(dest_path)
+  # image_optim only ships workers for jpeg, png and gif, so running it over the
+  # webp files we write here did nothing except spawn a process per image.
 
-end
-
-$imageoptim_options = YAML::load_file "_config.yml"
-$imageoptim_options = $imageoptim_options["imageoptim"] || {}
-$image_optim = ImageOptim.new $imageoptim_options
-
-def optimize(image)
-  puts "   Optimizing #{image}".green
-  $image_optim.optimize_image! image
 end
 
 def split_params(params)
   params.split("::").map(&:strip)
 end
 
-def update_google_drive_cache(files, file, path_1800x1200, path_255x170, uuid)
+GALLERY_MIME_TYPES = %w[image/jpeg image/png image/heif].freeze
 
-  files.each do |cache_file|
-    if cache_file['id'] == file['id']
+# Where a photo is downloaded to, and what its resized versions are named after.
+#
+# Two photos in the same folder can share a file name - a "Kopie von X.jpg"
+# alongside another copy of it - and without the id they would both land on the
+# same local path. That used to mean one silently overwrote the other's resized
+# versions, so the page showed the same picture twice; once downloads started
+# running concurrently it became a crash, with one thread deleting the original
+# while the other was still reading it.
+def _gallery_prefix(uuid, file)
+  "#{uuid[0, 10]}_#{Digest::SHA1.hexdigest(file['id'])[0, 8]}_"
+end
 
-      # check if there is a path key
-      if cache_file['paths'].nil?
-        cache_file['paths'] = []
-      end
+# Produces the <a>...</a> snippet for a single photo, reusing the cached
+# derivatives when the photo has not changed in Drive since we last saw it.
+def _gallery_entry(file, uuid, tagged_with_webpage)
 
-      # append the new paths
-      cache_file['paths'] << path_1800x1200
-      cache_file['paths'] << path_255x170
+  key = DerivativeCache.drive_key(file)
+  prefix = _gallery_prefix(uuid, file)
+  local_file_path = DriveDownloader.local_path_for(file, 'gallery', prefix, strict: true)
 
+  _, path_1800x1200, = _paths(local_file_path, '1800x1200', '')
+  _, path_255x170, = _paths(local_file_path, '255x170', '')
+
+  DerivativeCache.reference_drive(key)
+
+  cached = DerivativeCache.drive_entry(key)
+
+  if cached
+    # The photo is not tagged for the webpage. Remembering that is what keeps us
+    # from downloading it again on every build just to re-read its keywords.
+    # Nothing was ever generated for it, so it must not be marked as in use: the
+    # paths below do not exist, and claiming them would have Jekyll try to copy
+    # files that were never written.
+    return nil unless cached['included']
+
+    # Everything we need is already available: no download, no EXIF read, no
+    # resize. The images may have come from the live site rather than from the
+    # local cache, so write the entry back either way.
+    if DerivativeCache.fresh?(path_1800x1200, key) && DerivativeCache.fresh?(path_255x170, key)
+      puts " - File #{file['name']} is unchanged, reusing cached images...".green
+      BuildStats.count(:gallery_reused)
+      DerivativeCache.reference(path_1800x1200)
+      DerivativeCache.reference(path_255x170)
+      DerivativeCache.record_drive(key, cached)
+      return _gallery_html(file, path_1800x1200, path_255x170, cached['width'], cached['height'])
     end
   end
 
-  cache_file_path = 'google_drive_cache/' + uuid + '_files.json'
-  File.write(cache_file_path, JSON.pretty_generate(files))
+  downloaded_path = DriveDownloader.download_file(file, 'gallery', prefix, strict: true)
+  return nil if downloaded_path.nil?
+
+  # exiftool reports a file it cannot read the same way it reports not being
+  # installed at all, so say which it is rather than sending the next person
+  # looking for a missing binary.
+  if !File.file?(downloaded_path) || File.empty?(downloaded_path)
+    raise "Downloaded photo #{downloaded_path} (#{file['name']}, #{file['id']}) is missing or empty"
+  end
+
+  begin
+    # check if image should be displayed on webpage
+    included = true
+    if tagged_with_webpage
+      included = Exiftool.new(downloaded_path)[:keywords].to_s.include?('Webpage')
+    end
+
+    unless included
+      DerivativeCache.record_drive(key, { 'included' => false, 'paths' => [] })
+      return nil
+    end
+
+    puts "   Resizing '#{downloaded_path}'".green
+    BuildStats.count(:gallery_built)
+    FileUtils.mkdir_p(CACHE_DIR)
+    _process_img(downloaded_path, [['1800x1200', path_1800x1200], ['255x170', path_255x170]])
+
+    DerivativeCache.reference(path_1800x1200)
+    DerivativeCache.reference(path_255x170)
+    DerivativeCache.record(path_1800x1200, key)
+    DerivativeCache.record(path_255x170, key)
+
+    image_size = ImageSize.path(path_1800x1200)
+    DerivativeCache.record_drive(key, {
+      'included' => true,
+      'paths' => [path_1800x1200, path_255x170],
+      'width' => image_size.width,
+      'height' => image_size.height
+    })
+
+    _gallery_html(file, path_1800x1200, path_255x170, image_size.width, image_size.height)
+  ensure
+    # The original is several MB and is only ever needed to produce the two
+    # derivatives above.
+    File.delete(downloaded_path) if File.exist?(downloaded_path)
+  end
+
+end
+
+def _gallery_html(file, path_1800x1200, path_255x170, width, height)
+
+  landscape = width > height
+
+  "<a href=\"{{ site.baseurl }}/#{path_1800x1200}\" data-cropped=\"true\" target=\"_blank\"
+    data-pswp-width=\"#{width}\"  data-pswp-height=\"#{height}\" >
+    <img #{
+    if landscape then
+      "class=\"landscape\""
+    else
+      ""
+    end} loading=\"lazy\" src=\"{{ site.baseurl }}/#{path_255x170}\" alt=\"#{file['name'].gsub(/\.[^.]*\Z/, '')}\"/></a>"
+
 end
 
 def generate_gallery_html(config, uuid, site_context, tagged_with_webpage = true)
@@ -137,77 +255,17 @@ def generate_gallery_html(config, uuid, site_context, tagged_with_webpage = true
   files = DriveDownloader.list_files(config, uuid)
   puts "Found #{files.length} files in gallery #{uuid}.".blue
 
-  optimized_img_paths = []
+  candidates = files.select { |file| GALLERY_MIME_TYPES.include?(file['mimeType']) }
 
-  semaphore = Mutex.new
-
-  results = files.map do |file|
-    next unless (file['mimeType'] == 'image/jpeg' or file['mimeType'] == 'image/png' or file['mimeType'] == 'image/heif')
-
-    # check if the file has already been processed
-    if file['paths'].nil?
-
-      # download the data and prefix it with the first 10 characters of the folder uuid
-      local_file_path = DriveDownloader.download_file(file, 'gallery', uuid[0, 10] + '_')
-      next if local_file_path.nil?
-
-      # check if image should be displayed on webpage
-      e = Exiftool.new(local_file_path)
-      next unless ((tagged_with_webpage and e[:keywords].to_s.include?('Webpage')) or not tagged_with_webpage)
-
-      path_1800x1200 = resize_gallery_image(local_file_path, '1800x1200', '')
-      path_255x170 = resize_gallery_image(local_file_path, '255x170', '')
-
-      # update the google_drive_cache with the new paths
-      # delete original file
-      update_google_drive_cache(files, file, path_1800x1200, path_255x170, uuid)
-      puts "   Deleting #{local_file_path}\n".red
-      File.delete(local_file_path)
-    else
-      puts " - File #{file['name']} has already been processed, skipping...".green
-      path_1800x1200 = file['paths'][0]
-      path_255x170 = file['paths'][1]
-    end
-
-    optimized_img_paths.append path_1800x1200
-    optimized_img_paths.append path_255x170
-
-    image_size = ImageSize.path(path_1800x1200)
-    landscape = image_size.width > image_size.height
-
-    semaphore.synchronize {
-
-      "<a href=\"{{ site.baseurl }}/#{path_1800x1200}\" data-cropped=\"true\" target=\"_blank\"
-    data-pswp-width=\"#{image_size.width}\"  data-pswp-height=\"#{image_size.height}\" >
-    <img #{
-        if landscape then
-          "class=\"landscape\""
-        else
-          ""
-        end} loading=\"lazy\" src=\"{{ site.baseurl }}/#{path_255x170}\" alt=\"#{file['name'].gsub(/\.[^.]*\Z/, '')}\"/></a>"
-
-    }
+  results = Parallel.map(candidates, in_threads: GALLERY_CONCURRENCY) do |file|
+    _gallery_entry(file, uuid, tagged_with_webpage)
   end
 
   html_code = '<div class="gallery" id="gallery-simple">'
-  html_code += results.join(" ")
+  html_code += results.compact.join(" ")
   html_code += '</div>'
 
-  # save the path of all site_context.static_files in an array
-  static_files = []
-  site_context.static_files.each do |file|
-    static_files.append file.path
-  end
-
-  # Copy files to _site directory
-  optimized_img_paths.each do |path|
-
-    static_file = Jekyll::StaticFile.new(site_context, site_context.source, CACHE_DIR, File.basename(path))
-    site_context.static_files << static_file unless static_files.include?(static_file.path)
-
-  end
-
-  return html_code
+  html_code
 
 end
 

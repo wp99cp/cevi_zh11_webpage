@@ -8,6 +8,16 @@
 @use "iframe";
 @use "cards";
 
+// MapLibre draws the map's controls and markers as ordinary <button>, <span>
+// and <img> elements sitting in the page, so the plain element rules below
+// reach them: the 10px caption padding pushed every zoom icon out of the button
+// it belongs to, and the red-button styling drew a rounded, shadowed box inside
+// the control group. The full-width image rule misses the markers only because
+// the map script sizes them inline. Those elements are styled by maplibre-gl.css
+// and by nothing here; :where() carries no specificity of its own, so excluding
+// them leaves each selector exactly as strong as it was.
+$outside-map: ':not(:where([class*="maplibregl-"], [class*="maplibregl-"] *))';
+
 html, body {
   height: 100%;
   margin: 0;
@@ -79,7 +89,7 @@ main, .news-feed-container {
     margin: 25px 0 15px;
   }
 
-  p, span, li {
+  p, span#{$outside-map}, li {
     color: colors.$font-color;
     line-height: 1.5em;
   }
@@ -101,7 +111,7 @@ main, .news-feed-container {
     height: sizes.$header-height;
   }
 
-  button {
+  button#{$outside-map} {
 
     display: block;
     background-color: colors.$cevi-red;
@@ -192,11 +202,11 @@ figure {
   }
 
 
-  img {
+  img#{$outside-map} {
     width: 100%;
   }
 
-  span {
+  span#{$outside-map} {
     display: block;
     padding: 10px;
     color: colors.$font-color;
@@ -205,7 +215,7 @@ figure {
 
   @media only screen and (min-width: 1425px) {
 
-    span {
+    span#{$outside-map} {
       display: none;
     }
 

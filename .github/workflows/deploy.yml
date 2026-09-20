@@ -8,30 +8,48 @@ on:
     paths-ignore:
       - backend/*
 
-    # enable manuall workflow triggering via GitHub web interface
-    workflow_dispatch:
+  # enable manuall workflow triggering via GitHub web interface
+  workflow_dispatch:
+
+# Never let an older build overwrite a newer one.
+#
+# A full build takes over an hour, so two commits landing close together - two
+# pull requests merged one after the other, say - produce two runs that overlap
+# for most of their length. Whichever finished last used to win, which meant the
+# older commit could be the one that ended up deployed. Starting a new run now
+# cancels the one it supersedes.
+concurrency:
+  group: deploy-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   jekyll_preview:
     name: Build and deploy Jekyll site
     runs-on: ubuntu-latest
 
+    # A complete build of every image takes a bit over an hour; anything much
+    # beyond that is stuck rather than slow.
+    timeout-minutes: 120
+
     steps:
       # Checkout the source code
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      # In this step, this action saves a list of existing images,
-      # the cache is created without them in the post run.
-      # It also restores the cache if it exists.
-      - name: ⛏  Restore docker image from cache
-        uses: satackey/action-docker-layer-caching@v0.0.11
-        # Ignore the failure of a step and avoid terminating the job.
-        continue-on-error: true
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
 
-      # Used downstream for building the jekyll page
+      # Used downstream for building the jekyll page. The layers are cached in
+      # the GitHub Actions cache, so the image is only really rebuilt when the
+      # Dockerfile or the Gemfile changes.
       - name: Build the Docker image
-        run: docker build -t jeykell-builder .
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          load: true
+          tags: jeykell-builder
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
       # fetch and encrypt access credentials for Google Drive
       - name: Retrieve the secret and decode it to a file
@@ -43,27 +61,102 @@ jobs:
       # We cache static resources, i.g. optimized images and documents as well as
       # the _site folder and .jekyll-cache directory
       # Make sure to NOT cache the `_secrets` directory, it contains the Google Drive Access Credentials!
+      #
+      # A miss here is no longer expensive: images that are missing locally are
+      # fetched from the copies already published on the live site, and only the
+      # ones that genuinely changed are rebuilt. See _plugins/utils/.
+      #
+      # Restoring and saving are split so that a new copy is only uploaded when
+      # the images actually changed - see the save step at the end for why.
       - name: ⛏️ Restore static files from cache
-        uses: actions/cache@v3
+        uses: actions/cache/restore@v4
         with:
           path: |
             imgs
             google_drive_cache
             docs
-          # Updates the cache after every run, by saving a new copy
-          key: ${{ runner.os }}-static-files-v3.3-${{ github.run_id }}
-          restore-keys: ${{ runner.os }}-static-files-v3.3-
+          key: ${{ runner.os }}-static-files-v4-${{ github.run_id }}
+          restore-keys: ${{ runner.os }}-static-files-v4-
 
-      # Allow the docker container to write to the mounted directory
-      - name: Give folder access
-        run: chmod -R 777 $PWD
+      - name: Fingerprint the restored cache
+        id: cache-before
+        run: echo "fingerprint=$(./bin/fingerprint-cached-files.sh)" >> "$GITHUB_OUTPUT"
 
-      # Build the jekyll page
+      # Build the jekyll page.
+      #
+      # The container runs as the runner's own user so that the files it writes
+      # into the mounted directory stay readable by the later steps. The previous
+      # `chmod -R 777 $PWD` did the same job by rewriting the mode of every file
+      # in the repository, which also quietly marked checked-in files executable.
       - name: Build 🏗️
-        run: docker run --rm --volume="$PWD:/srv/jekyll" -e GITHUB_SHA=$GITHUB_SHA jeykell-builder
+        shell: bash
+        run: |
+          # pipefail so that a failing build is not masked by tee succeeding.
+          set -o pipefail
+
+          docker run --rm \
+            --user "$(id -u):$(id -g)" \
+            -e HOME=/tmp \
+            --volume="$PWD:/srv/jekyll" \
+            -e GITHUB_SHA=$GITHUB_SHA \
+            jeykell-builder | tee /tmp/build-output.log
+
+      # How much of the build was image work, and how much of it the caches
+      # avoided. Shown on the run's summary page so that a build that is slow
+      # again says why, instead of just taking longer.
+      - name: 📊 Report build time
+        if: always()
+        run: |
+          sed -n '/::build-stats-begin::/,/::build-stats-end::/p' /tmp/build-output.log |
+            grep -v '::build-stats-' >> "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Fingerprint the cache after the build
+        id: cache-after
+        run: echo "fingerprint=$(./bin/fingerprint-cached-files.sh)" >> "$GITHUB_OUTPUT"
+
+      # A complete cache is around 1.6 GB, and a cache entry can never be
+      # overwritten - every save is a new entry. Saving unconditionally would
+      # therefore upload another 1.6 GB on every run, and since GitHub keeps only
+      # 10 GB per repository and evicts the least recently used entries to stay
+      # under it, a handful of runs would push out everything else, including the
+      # Docker layer cache that keeps the image build short.
+      #
+      # Most runs change nothing at all, so a new copy is only uploaded when the
+      # set of cached files is no longer the one that was restored.
+      - name: ⛏️ Save static files to cache
+        if: steps.cache-before.outputs.fingerprint != steps.cache-after.outputs.fingerprint
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            imgs
+            google_drive_cache
+            docs
+          key: ${{ runner.os }}-static-files-v4-${{ github.run_id }}
+
+      # Second line of defence behind the `concurrency` block above, for the
+      # cases it cannot cover: a run that was already deploying when it got
+      # cancelled, or a manual run started from an older commit. Deploying is
+      # the only step worth guarding - building the images is never wasted,
+      # since they end up in the cache either way.
+      - name: Check this commit is still the newest one
+        id: freshness
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Asked over the API rather than with git, because the checkout is
+          # shallow and has no remote-tracking branch to compare against.
+          head="$(gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_REF_NAME" --jq .sha)"
+
+          if [ "$head" = "$GITHUB_SHA" ]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::$GITHUB_SHA is no longer the tip of $GITHUB_REF_NAME (now $head) - skipping the deploy so the newer build wins."
+          fi
 
       # Deploy Frontend to GitHub Pages
       - name: Deploy 🚀 to Firebase Hosting
+        if: steps.freshness.outputs.deploy == 'true'
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
