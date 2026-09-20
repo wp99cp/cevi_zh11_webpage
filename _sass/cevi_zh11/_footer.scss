@@ -1,20 +1,20 @@
-@import "colors";
-@import "sizes";
+@use "colors";
+@use "sizes";
 
 #footer-nav {
   overflow: hidden;
-  background-color: $footer-nav-background-color;
+  background-color: colors.$footer-nav-background-color;
   text-align: center;
-  color: $footer-nav-color;
+  color: colors.$footer-nav-color;
 
   padding: 50px;
 
-  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+  @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
     padding-left: 330px;
     padding-right: 50px;
   }
 
-  @media only screen and (max-width: $keep-nav-open-breakpoint) {
+  @media only screen and (max-width: sizes.$keep-nav-open-breakpoint) {
     flex-direction: column-reverse;
   }
 
@@ -34,7 +34,7 @@
 
   a {
     text-decoration: none;
-    color: $footer-nav-color;
+    color: colors.$footer-nav-color;
     font-weight: normal;
 
     &:hover span, &:hover img {
@@ -67,7 +67,7 @@
 
     }
 
-    @media only screen and (max-width: $keep-nav-open-breakpoint) {
+    @media only screen and (max-width: sizes.$keep-nav-open-breakpoint) {
       padding: 30px 0;
       margin: 0 auto;
       &:not(&:last-child) {
@@ -82,10 +82,10 @@
 #footer-container, #footer a {
 
   position: relative;
-  height: $footer-height;
+  height: sizes.$footer-height;
   overflow: hidden;
-  background-color: $footer-background-color;
-  color: $footer-color;
+  background-color: colors.$footer-background-color;
+  color: colors.$footer-color;
   text-align: center;
 }
 
@@ -94,7 +94,7 @@
 }
 
 #footer-container {
-  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+  @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
     padding-left: 330px;
     padding-right: 50px;
   }
@@ -144,7 +144,7 @@
   left: 0;
   bottom: 0;
 
-  @media only screen and (min-width: $keep-nav-open-breakpoint) {
+  @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
     left: 280px;
   }
 }
@@ -154,7 +154,7 @@
   top: 0;
   height: 75px;
 
-  @media only screen and (max-width: $keep-nav-open-breakpoint) {
+  @media only screen and (max-width: sizes.$keep-nav-open-breakpoint) {
     display: none;
   }
 
