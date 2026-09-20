@@ -8,10 +8,10 @@ permalink: /teilnahmebedingungen
 
 ## Das musst du bei der Teilnahme an unseren Angeboten beachten.
 
-Für sämtliche Angebote des Cevi Züri 11 gelten die folgenden Teilnahmebedingungen (Samstag-Machmittag, Lager,
+Für sämtliche Angebote des Cevi Züri 11 gelten die folgenden Teilnahmebedingungen (Samstag-Nachmittag, Lager,
 Spezialanlässe usw.). Bei der Teilnahme an einem solchen Angebot stimmen die Teilnehmenden diesen Bedingungen zu.
 
-- Die Versicherung ist Sache der Teilnehmerin/ des Teilnehmers bzw. dessen Eltern oder erziehungsberechtigten Person.
+- Die Versicherung ist Sache der Teilnehmerin/ des Teilnehmers bzw. deren Eltern oder erziehungsberechtigter Person.
   Der Cevi Züri 11 lehnt jede Haftung ab.
 
 - Als Entschädigung für die Angebote erhebt der Cevi Züri 11 einen angemessenen, jährlichen Mitgliederbeitrag in der
@@ -24,7 +24,7 @@ Spezialanlässe usw.). Bei der Teilnahme an einem solchen Angebot stimmen die Te
 
 - Das in Angeboten des Cevi Züri 11 gemachte Bildmaterial wird bei Bedarf für Publikationen jeglicher Medien (Print- und
   Onlinemedien; ausdrücklich auf unserer Webseite: www.zh11.ch) im Interesse des Vereins verwendet. Wir behalten uns
-  vor, auserwählte Bilder dem Regionalverband oder dem Cevi Schweiz zwecks Werbung zu Verfügung zu stellen.
+  vor, auserwählte Bilder dem Regionalverband oder dem Cevi Schweiz zwecks Werbung zur Verfügung zu stellen.
 
 - Mit der Anmeldung für ein Angebot wird der Erfassung der eigenen Daten in einer Onlinedatenbank, in den nationalen
   Sportdatenbanken sowie bei der Rega zugestimmt.

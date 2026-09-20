@@ -11,7 +11,7 @@ permalink: /kontakt
 
 ## Nimm mit uns Kontakt auf!
 
-Hast du noch offene Fragen, oder ein Anliegen rund um den Cevi Züri 11? Dann nimm mit uns Kontakt auf.
+Hast du noch offene Fragen oder ein Anliegen rund um den Cevi Züri 11? Dann nimm mit uns Kontakt auf.
 
 ### Abteilungsleitung
 
@@ -20,10 +20,9 @@ Ortsgruppe strategisch und übernimmt zusätzlich weitere Aufgaben in der Abteil
 Fragen jeglicher Art offen.
 
 [[ cards :: contact/abteilungsleitung.yml ]]
-s
 ### Kontaktpersonen der verschiedenen Stufen
 
-Hast du eine Frage rund zum Samstag-Nachmittag? Zum nächsten Stufen-PfiLa?
+Hast du eine Frage rund um den Samstagnachmittag? Zum nächsten Stufen-PfiLa?
 
 Dann kontaktiere direkt deine verantwortliche Stufenleiterin/deinen verantwortlichen Stufenleiter.
 

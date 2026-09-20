@@ -1,18 +1,18 @@
 ---
 title: Finanzaktion 2023
 permalink: /finak-2023
-news-entry-title: UNIHOCKEY - PLAUSCH - TURNIER
-news-entry-caption: Informationen zur Finanzaktion 2023 unserm Unihockey-Plausch-Turnier.
+news-entry-title: UNIHOCKEY-PLAUSCH-TURNIER
+news-entry-caption: Informationen zur Finanzaktion 2023, unserem Unihockey-Plausch-Turnier.
 date: 2023-06-10T12:00
 contact_page: false
 ---
 
 # UNIHOCKEY-PLAUSCH-TURNIER
 
-## Informationen zur Finanzaktion 2023 unserm Unihockey-Plausch-Turnier.
+## Informationen zur Finanzaktion 2023, unserem Unihockey-Plausch-Turnier.
 
-Am Samstag, 1. Juli 2023 findet unsere alljährliche Finanzaktion statt.
-Mit einem Unihockey-Turnier sammeln wir Spenden um unseren TeilnehmerInnen spannende und lehrreiche Samstags-Programme
+Am Samstag, 1. Juli 2023, findet unsere alljährliche Finanzaktion statt.
+Mit einem Unihockey-Turnier sammeln wir Spenden, um unseren TeilnehmerInnen spannende und lehrreiche Samstags-Programme
 und Lager zu bieten.
 Das Prinzip ist ganz einfach: Für jedes erzielte Tor spenden unsere Sponsoren einen kleinen Betrag an unsere Abteilung.
 
@@ -20,7 +20,7 @@ Die wichtigen Informationen findest du direkt hier:
 
 **Treffpunkt:**
 
-- 1 Juli 2023 um 14.30 Uhr
+- 1. Juli 2023 um 14.30 Uhr
 - Turnhalle Apfelbaum
 
 [[ swisstopo centered :: 47.40685/8.55508 :: 9_500 :: 47.40685/8.55508 ]]
@@ -29,7 +29,7 @@ Die wichtigen Informationen findest du direkt hier:
 
 - Sportbekleidung
 - Ausgefüllte Sponsorenliste
-- Unihockeyausrüstung (falls du hast)
+- Unihockeyausrüstung (falls du eine hast)
 - Trinkflasche und Zvieri
 
 **Programm:**

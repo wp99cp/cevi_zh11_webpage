@@ -26,11 +26,11 @@ Falls du ein Teil von uns werden willst und Freude an Spielen und der Zeit im Wa
 
 [Melde dich jetzt für das Schnupperprogramm an.](/schnuppern)
 
-![Das sind wir - Stufen Enomine](/assets/stufen_pictures/stufe_enomine.jpg)
+![Das sind wir - Stufe Enomine](/assets/stufen_pictures/stufe_enomine.jpg)
 
 ## Die Stufe stellt sich vor
 
-Unsere Stufe gibt es schon seit über zwei Jahrzehnten. Trotz einer Ummstrukturierungen haben wir im 2022 wieder unseren
+Unsere Stufe gibt es schon seit über zwei Jahrzehnten. Trotz einer Umstrukturierung haben wir im 2022 wieder unseren
 Namen Enomine übernommen. Wir freuen uns auf viele neue Gesichter und sind gespannt, was die Zukunft für uns bereithält.
 
 ### Unsere Gruppenleiter
@@ -48,7 +48,7 @@ Ich bin Muskat, seit 5 Jahren im Cevi und das Beste sind immer die Lager. Ich ma
 Kreativität kein Ende gesetzt ist.
 
 **Yoda:** <br/>
-Ich bin Yoda, gerne Draussen, knöpfe gerne Knöpfe und Feuer machen macht mir immer Spass.
+Ich bin Yoda, gerne draussen, knöpfe gerne Knöpfe und Feuer machen macht mir immer Spass.
 
 ## Unsere Stufenleiter
 
@@ -63,11 +63,11 @@ Ich bin de Panda, 21gi und gahn gern in Cevi wäg de Lager und au de interessant
 Wetter gitts ih de Cevi nöd.
 
 **Falk:** <br/>
-Ich bin Falk, 21 Jahre alt und in die Cevi gehe ich gerne, um tolle Menschen kennenzulernen und die Lager sind immer ein
+Ich bin Falk, 21 Jahre alt und in den Cevi gehe ich gerne, um tolle Menschen kennenzulernen und die Lager sind immer ein
 Highlight.
 
 **Chnobli:** <br/>
 Ich bin Chnobli und seit 16 Jahren jeden Samstag im Cevi. In dieser Zeit haben mir alle Lager immer einen Riesenspass
-gemacht. Am Samstagnachmittag mache ich am liebsten Feuer und lerne gerne neues oder gebe mein Wissen weiter.
+gemacht. Am Samstagnachmittag mache ich am liebsten Feuer und lerne gerne Neues oder gebe mein Wissen weiter.
 
 

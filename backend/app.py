@@ -67,8 +67,8 @@ def send_message_to_consignor(message_sender: MailSender, request_json):
         msg = f"Lieber {name}<br><br>" \
         "Danke für deine Anmeldung fürs 90 Jahre Cevi Züri 11 Jubiläum.<br><br>" \
         "Weitere Infos zu genauer Zeit, Anreise etc. folgen nach Anmeldeschluss (6. Mai) auf diese Mail-Adresse.<br><br>" \
-        "Falls du angegeben hast eine Vorspeise mitzubringen folgen zudem Infos zu Menge etc. nach dem Anmeldeschluss.<br><br>" \
-        "Wir freuen uns dich am 6. Juli in Wallisellen dabeizuhaben und wünschen dir bis dahin einen schönen Frühling und viel Vorfreude aufs Fest 😉! " \
+        "Falls du angegeben hast, eine Vorspeise mitzubringen, folgen zudem Infos zu Menge etc. nach dem Anmeldeschluss.<br><br>" \
+        "Wir freuen uns, dich am 6. Juli in Wallisellen dabeizuhaben und wünschen dir bis dahin einen schönen Frühling und viel Vorfreude aufs Fest 😉! " \
         "Bei Fragen melde dich gerne per Mail: jubilaeum@zh11.ch<br><br><br>" \
         "Liebe Grüsse<br>Das Jubiläumskomitee<br>jubilaeum@zh11.ch" \
         f"<br><br><br><hr><br>Deine Nachricht:" + format_to_text(json=request_json['message'])

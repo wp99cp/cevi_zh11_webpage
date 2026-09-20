@@ -1,5 +1,5 @@
 ---
-title: Cevi-E Znacht
+title: Cevi-E-Znacht
 permalink: /cevi-e-znacht-einladung
 news-entry-title: In Erinnerungen schwelgen und alte Bekannte treffen
 news-entry-caption: Am 11. November laden wir alle ehemaligen Leitenden des Cevi Züri 11 ein!
@@ -13,16 +13,16 @@ contact_page: true
 
 Um alte Cevi-Bekanntschaften wiederzubeleben, Freundschaften neu zu knüpfen und in Erinnerungen zu schwelgen, laden wir dich gerne zu einem gemeinsamen Nachtessen ein.
 
-Mit dem Cevi-E-Znacht wollen wir allen ehemaligen Leiter\*innen des Cevi Züri 11, die Gelegenheit geben, sich wieder einmal zu sehen und zu erfahren, wie der Cevi Züri 11 heute aussieht. Nebst einem feinen Znacht, werden wir Fotos zeigen und aus den letzten Lagern berichten. Natürlich kommt auch die Möglichkeit sich mit anderen ehemaligen und aktiven Leiter\*innen auszutauschen, nicht zu kurz.
+Mit dem Cevi-E-Znacht wollen wir allen ehemaligen Leiter\*innen des Cevi Züri 11 die Gelegenheit geben, sich wieder einmal zu sehen und zu erfahren, wie der Cevi Züri 11 heute aussieht. Nebst einem feinen Znacht werden wir Fotos zeigen und aus den letzten Lagern berichten. Natürlich kommt auch die Möglichkeit, sich mit anderen ehemaligen und aktiven Leiter\*innen auszutauschen, nicht zu kurz.
 
-- **Wann?** Freitag der 11. November 2022, ab 18.30 Uhr
+- **Wann?** Freitag, der 11. November 2022, ab 18.30 Uhr
 - **Wo?** Im PfadihuusZüri direkt beim Zoo Zürich
 - **Wer?** Alle ehemaligen und aktiven Cevileiter*innen des Cevi Züri 11 
 - **Anmeldung?** Bitte einfach das folgende Kontaktformular ausfüllen
 
 Wir freuen uns auf möglichst viele Anmeldungen. Gerne dürft ihr diese Einladung daher an alle, die ihr kennt, weiterleiten. Anmeldeschluss ist der 1. November 2022.
 
-Falls du an diesem Abend nicht dabei sein kannst, aber trotzdem gerne mit uns in Kontakt bleiben möchtest, dann ist eine Passiv-Mitgliederschaft bei uns genau das richtige. Details erfährst du unter [zh11.ch/passiv-mitglied](/passiv-mitglied).
+Falls du an diesem Abend nicht dabei sein kannst, aber trotzdem gerne mit uns in Kontakt bleiben möchtest, dann ist eine Passivmitgliedschaft bei uns genau das Richtige. Details erfährst du unter [zh11.ch/passiv-mitglied](/passiv-mitglied).
 
 ## Anmeldung für Cevi-E-Znacht
 

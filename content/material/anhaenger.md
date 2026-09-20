@@ -4,7 +4,7 @@ permalink: /material/anhaenger
 sub-menu: Material
 sub-menu-name: Transportanhänger
 sub-menu-priority: 4
-description: Für den Transport unseres Fallbalkens, das Material deines Lagers oder anderen grossen Gegenständen eignet sich unser Transportanhänger.
+description: Für den Transport unseres Fallbalkens, des Materials deines Lagers oder anderer grosser Gegenstände eignet sich unser Transportanhänger.
 keywords:
   - Autoanhänger
   - Transportanhänger
@@ -15,7 +15,7 @@ keywords:
 
 ## Über unseren Transportanhänger.
 
-Für den Transport unseres Fallbalkens, das Material deines Lagers oder anderen grossen Gegenständen eignet sich unser
+Für den Transport unseres Fallbalkens, des Materials deines Lagers oder anderer grosser Gegenstände eignet sich unser
 Transportanhänger.
 
 <table style="width: 100%; text-align: left">
@@ -52,28 +52,29 @@ Transportanhänger.
 </tbody>
 </table>
 
-Es ist eine 50 mm Kugelkopfkupplung montiert.
+Es ist eine 50-mm-Kugelkopfkupplung montiert.
 
 [[ gallery 1EKI3M8rGMqRicBjVobRkEoG8X7wrBEyD ]]
 
 Die Versicherung ist Sache des Mieters. Sobald der Anhänger angehängt ist, läuft die Haftpflichtversicherung über das
 Zugfahrzeug. Für sämtliche Schäden, Diebstahl, Unfall usw. muss der Mieter vollumfänglich aufkommen.
 
-Mit oder ohne Aufbau.
-Unser Transportanhänger vermieten wir im Normalfall ohne Seitenwände und ohne schützende Blache. Du kannst aber beides
-Optional dazu mieten. Mit Aufbau hat der Anhänger eine Höhe von ca. 2.8 Meter.
+### Mit oder ohne Aufbau
+
+Unseren Transportanhänger vermieten wir im Normalfall ohne Seitenwände und ohne schützende Blache. Du kannst aber beides
+optional dazu mieten. Mit Aufbau hat der Anhänger eine Höhe von ca. 2.8 Meter.
 
 ## Miete den Anhänger
 
-Unser Anhänger kann man mieten. Abgeholt werden muss er aber in Affoltern. Hierfür wird ein geeignetes Zugfahrzeug
+Unseren Anhänger kann man mieten. Abgeholt werden muss er aber in Affoltern. Hierfür wird ein geeignetes Zugfahrzeug
 benötigt. Wird der Anhänger mit Aufbau gemietet, muss dieser zuerst vom Mieter zusammen mit dem Materialchef aufgebaut
 werden.
-Hierfür fahren wir gemeinsam nach Seebach zu unserm Materiallager.
+Hierfür fahren wir gemeinsam nach Seebach zu unserem Materiallager.
 
 Für das Montieren des Aufbaus sind zwei erwachsene und starke Personen notwendig, es muss mind. mit 30 Minuten für die
 Montage gerechnet werden.
 
-[Kontaktiere unser Materialchef](/material/kontakt).
+[Kontaktiere unseren Materialchef](/material/kontakt).
 
 ## Anhänger mieten. Preiskategorien.
 
@@ -105,8 +106,8 @@ Montage gerechnet werden.
 </tbody>
 </table>
 
-Wird der Anhänger mit Gitter-Aufbau (mit oder ohne Blache) gemietet, fällt eine Pauschale von CHF 100.- an. Unabhängig
-der Anzahl Nutzungstage.
+Wird der Anhänger mit Gitter-Aufbau (mit oder ohne Blache) gemietet, fällt eine Pauschale von CHF 100.- an, unabhängig
+von der Anzahl Nutzungstage.
 
 Wird für den Transport des [Fallbalkens](/material/fallbalken) zusätzlich der Anhänger gemietet, so beträgt der
 Mietpreis für diesen pauschal CHF 100.- unabhängig von der Nutzungsdauer (Vermietung ohne Dach-Aufbau).

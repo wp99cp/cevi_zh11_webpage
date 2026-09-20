@@ -17,10 +17,10 @@ Der Cevi Züri 11 bietet eine sinnvolle und abwechslungsreiche Freizeitbeschäft
 Jeden Samstag bietet der Cevi Züri 11 für Naturbegeisterte spannende Programme im und um den Wald an. Jeweils zwischen
 14.00 und 17.00 Uhr.
 
-Bräteln und Feuer machen, spielen, basteln, stauen, lernen, lachen, rennen, Velo fahren… Diese Liste könnte ewig
+Bräteln und Feuer machen, spielen, basteln, staunen, lernen, lachen, rennen, Velo fahren… Diese Liste könnte ewig
 weitergeführt werden. Unsere Programme sind vielfältig, abwechslungsreich und an die Bedürfnisse der Kinder angepasst.
 
-[Melde dich jetzt für ein Schupperprogramm an.](/neu-im-cevi)
+[Melde dich jetzt für ein Schnupperprogramm an.](/neu-im-cevi)
 
 ### Eindrücke von unseren Programmen
 
@@ -42,12 +42,12 @@ Programme in alters- und geschlechtergetrennten Gruppen statt, den Stufen.
 Von nun an fährst du mit dem Velo in den Wald und hast jeden Samstag Cevi. Durch die Unterteilung in die verschiedenen
 Stufen, können wir optimal auf die unterschiedlichsten Bedürfnisse der Kinder eingehen.
 
-In Rollenspielen (Theatern) erleben die Jüngsten spannendste Geschichten. Haut wie im Film. Und lernen gleichzeitig die
+In Rollenspielen (Theatern) erleben die Jüngsten spannendste Geschichten. Hautnah wie im Film. Und lernen gleichzeitig die
 Grundlagen von Erster Hilfe, Kartenkunde, Umgang mit der Natur und vielem mehr.
 
-Mit mehrtägigeren Actionprogrammen stillen wir denn Adrenalin bedarf der Jugendlichen. Das Übernachten in einer Höhle
+Mit mehrtägigen Actionprogrammen stillen wir den Adrenalinbedarf der Jugendlichen. Das Übernachten in einer Höhle
 oder unter freiem Himmel gehört dabei genau so dazu, wie das Bauen und Überqueren einer Seilbrücke, das Abseilen an
-einer Fellswand oder der Bau eines Baumhauses.
+einer Felswand oder der Bau eines Baumhauses.
 
 ## In Lagern erleben die Kinder unvergessliche Geschichten.
 
@@ -57,7 +57,7 @@ den Kindern und Jugendlichen Unvergessliches zu erleben.
 [Impressionen aus vergangenen Sommerlagern](/sola)
 
 Eine Woche auf der Schule von Hogwarts. Mit Jim Knopf um die Welt. Oder einmal wie ein richtiger Detektiv auf
-Spurensuche und Verfolgungsjagt gehen? Unsere Lager sind stets durch ein Moto; eine Geschichte geprägt. Die Leiter
+Spurensuche und Verfolgungsjagd gehen? Unsere Lager sind stets durch ein Motto, eine Geschichte, geprägt. Die Leiter
 schlüpfen dabei in Theaterspielen in die unterschiedlichsten Rollen. So erleben die Kinder Sachen, die sie eigentlich
 nur aus dem Fernseher oder aus Büchern kennen.
 
@@ -71,7 +71,7 @@ statt. Diese Lager finden in den Stufen statt.
 
 [Erfahre mehr zu den einzelnen Stufen.](/stufen)
 
-## Wir tragen wesentliches zur Entwicklung der Kinder teil.
+## Wir tragen Wesentliches zur Entwicklung der Kinder bei.
 
 Im Cevi haben die Kinder die Chance, ihre komplette Kindheit und Jugend mit denselben Bezugspersonen, den eigenen
 Leitern, zu verbringen. Dies schafft eine einzigartige emotionale und persönliche Bindung, die in keiner anderen
@@ -86,33 +86,33 @@ Qualifikationen und keine Pflicht, in eine höhere Liga aufzusteigen. Bei uns d�
 
 ![Treffen ehemaligen Cevianer/innen beim Cevi-E-Znacht](/assets/cevi-e-znacht.jpg)
 
-## Unser Leitenden tragen eine grosse Verantwortung.
+## Unsere Leitenden tragen eine grosse Verantwortung.
 
-Der Cevi kann entscheiden zur Entwicklung der Kinder und Jugendlichen beitragen. Dieser riesigen Verantwortung sind wir
-uns bewusst. Daher schulen wir unserer Leiter durch verschiedenste Kurse. Hierfür bietet der Cevi Regionalverband eine
+Der Cevi kann entscheidend zur Entwicklung der Kinder und Jugendlichen beitragen. Dieser riesigen Verantwortung sind wir
+uns bewusst. Daher schulen wir unsere Leiter durch verschiedenste Kurse. Hierfür bietet der Cevi Regionalverband eine
 breite Palette an Ausbildungskursen bis hin zu Jugend+Sport-Kursen an.
 
-[Übersicht unserer Ausbildungskursen](https://ceviregionzuerich.ch/kurse/)
+[Übersicht unserer Ausbildungskurse](https://ceviregionzuerich.ch/kurse/)
 
-Im Cevi wirst du bereits früh selbst zu einem Hilfsleiter/ einer Hilfsleiterin. Denn mit etwa 13 Jahre nimmst du nicht
+Im Cevi wirst du bereits früh selbst zu einem Hilfsleiter/ einer Hilfsleiterin. Denn mit etwa 13 Jahren nimmst du nicht
 mehr an jedem Programm einfach nur als Teilnehmerin oder Teilnehmer teil, sondern du hilfst aktiv mit. So z.B. bei den
 Programmen der Fröschlis.
 
 Der Übergang vom Teilnehmer zum Leiter ist fliessend: Nach und nach geben dir deine Stufenleiter immer mehr
 Verantwortung ab. So wirst du langsam an deine neuen Aufgaben als Leiter gewöhnt. Im Alter von etwa 20 Jahren wirst du
 dann selbst zum Stufenleiter, d.h. deine ehemaligen Leiter/ Leiterinnen haben mit dem Cevi aufgehört und deine Kinder
-werden selber zu wieder zu Hilfsleitern.
+werden selber wieder zu Hilfsleitern.
 
 Dieser Zyklus wiederholt sich im Idealfall alle sieben Jahre, sprich du bist 7 Jahre Teilnehmer, danach 7 Jahre
 Hilfsleiter bzw. Gruppenleiter und zum Schluss begleitest du deine Kids noch einmal ca. 5 bis 7 Jahre beim Übergang zum
 Leiter sein.
 
-![Die Aubildung ist ein wichtiger Bestandteil des Leiterwerdens](/assets/ausbildung.jpg)
+![Die Ausbildung ist ein wichtiger Bestandteil des Leiterwerdens](/assets/ausbildung.jpg)
 
 ## Den Cevi gibt es auf der ganzen Welt.
 
-Denn Cevi, so wie du ihn als Cevi Züri 11 kennst, gibt es nicht nur in Affoltern, Seebach und Oerlikon. Nein! Denn mit
-Schwamendingen, Höng, Altstetten und Zumikon-Neumünster gibt es bereits in der Stadt Zürich einige Cevi-Gruppen.
+Den Cevi, so wie du ihn als Cevi Züri 11 kennst, gibt es nicht nur in Affoltern, Seebach und Oerlikon. Nein! Denn mit
+Schwamendingen, Höngg, Altstetten und Zumikon-Neumünster gibt es bereits in der Stadt Zürich einige Cevi-Gruppen.
 
 Im ganzen Kanton sind es schon über 40 Ortsgruppen. Ortsgruppen, so heissen die lokalen Cevi Vereine. Zusammen mit den
 Kantonen Zug, Glarus und Schaffhausen gehört der Kanton Zürich dem grössten von insgesamt sieben Cevi-Regionalverbänden

@@ -10,13 +10,13 @@ permalink: /stufen
 
 # Unsere Altersgruppen. Die Stufen.
 
-Im Cevi gibt es verschiedene Gruppen. Je nach Alter und Geschlecht gehörst du einer andern an. Wir nennen diese
+Im Cevi gibt es verschiedene Gruppen. Je nach Alter und Geschlecht gehörst du einer anderen an. Wir nennen diese
 Altersgruppen Stufen. Dies ermöglicht uns, auf die Bedürfnisse der Kinder und vor allem auch auf die der Jugendlichen
 optimal einzugehen.
 
-Unsere Kleinsten kommen zu den Fröschli, sobald die Kinder in die erste Klasse kommen wechseln sie zu den grossen in
+Unsere Kleinsten kommen zu den Fröschli, sobald die Kinder in die erste Klasse kommen, wechseln sie zu den Grossen in
 eine der Stufen. In dieser Gruppe werden die Kinder anschliessend den Rest ihrer Cevi-Karriere verbringen. Dies
-unterscheidet uns von anderen Jugendorganisationen (z.B. der Pfadi)! Im Cevi begleiten die selben Bezugspersonen die
+unterscheidet uns von anderen Jugendorganisationen (z.B. der Pfadi)! Im Cevi begleiten dieselben Bezugspersonen die
 Kinder von der ersten Klasse bis nach der Pubertät.
 
 ## Unsere Stufen

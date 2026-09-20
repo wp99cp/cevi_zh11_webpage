@@ -18,32 +18,32 @@ Viele unserer Kinder haben bereits eine Waldspielgruppe besucht und sehen im Cev
 Angebots. Outdoor-Neulinge sind bei uns aber genauso willkommen - in diesem Alter gewöhnen sich die Kinder sehr 
 schnell an die Natur!
 
-![Das sind wir - Stufen Fröschli](/assets/stufen_pictures/stufe_fröschli.jpg)
+![Das sind wir - Stufe Fröschli](/assets/stufen_pictures/stufe_fröschli.jpg)
 
 ### Ein paar Eindrücke
 
 [[ gallery 1UqoT-yTu5I2cRSB75yFaci_4e9dNoduK ]]
 
 Angesprochen werden Mädchen und Jungen im Alter von vier bis sechs Jahren (Kindergartenkinder). Wenn die Kinder
-sieben Jahre alte sind, wechseln sie zu den "Grossen"; den Cevianern.
+sieben Jahre alt sind, wechseln sie zu den "Grossen"; den Cevianern.
 
 Über den Wechsel werden die Kinder und Eltern frühzeitig informiert.
 
 ### Was machen die Cevi-Fröschli?
 
 Die Cevi-Fröschli treffen sich ein- bis zweimal im Monat und verbringen den Nachmittag von 14:00 bis 17:00 Uhr im Wald.
-Wir hören gemeinsam Geschichten, basteln, spielen und essen zusammen z'Vieri.
+Wir hören gemeinsam Geschichten, basteln, spielen und essen zusammen Zvieri.
 
 Immer wieder finden auch Spezialprogramme statt: ein Spielnachmittag im Haus, Kuchen-/ Keksebacken und Museumsbesuche.
 
 ### Wer organisiert die Programme?
 
-Geleitet werden die Programme der Cevi Fröschli von drei erfahrenen Cevianer:innen. Unterstützt werden unserer
+Geleitet werden die Programme der Cevi Fröschli von drei erfahrenen Cevianer:innen. Unterstützt werden unsere
 Fröschlileiter:innen von Hilfsleiter:innen im Jugendalter.
 
 [[ cards :: contact/froeschli_team.yml ]]
 
-## Fragen zu den Föschli?
+## Fragen zu den Fröschli?
 
 Hast du Fragen zu den Fröschli? Dann nimm mit uns Kontakt auf. Wir freuen uns auf deine Nachricht!
 

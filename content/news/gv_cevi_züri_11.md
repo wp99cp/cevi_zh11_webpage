@@ -8,7 +8,7 @@ date: 2023-03-02T12:00
 
 # Einladung für die GV Cevi Zürich 11
 
-Am 1. März 2023 fand um 19:30 Uhr die Generalversammlung des Cevi Zürich 11 statt.
+Am 1. März 2023 fand um 19:30 Uhr die Generalversammlung des Cevi Züri 11 statt.
 Nachfolgend findet ihr das Protokoll.
 
 [[ google_drive document :: 1HJ0e3K1hBtAGxxA9FrtJR4QQhReG6cRo ]]

@@ -26,7 +26,7 @@ contact_page: true
 
 ## Komm vorbei! Und werde Cevianer!
 
-Erlebe am Cevi-Tag vom 21. März 2026 unvergessliches Abenteuer und lerne den Cevi kennen! Bist du gerne in der
+Erlebe am Cevi-Tag vom 21. März 2026 ein unvergessliches Abenteuer und lerne den Cevi kennen! Bist du gerne in der
 Natur, magst Action, interessante Erlebnisse und Gemeinschaft?
 
 Der Schnuppertag bietet Kindern ab dem Kindergartenalter die Möglichkeit, Cevi-Luft zu schnuppern und die Natur zu
@@ -83,7 +83,7 @@ erleben. Gross und Klein sind eingeladen, den Cevi kennenzulernen.
 
 [Erfahre jetzt schon mehr über den Cevi.](/ueber-uns)
 
-## Infos zum einem Schupperprogramm
+## Infos zu einem Schnupperprogramm
 
 Auf Voranmeldung kannst du bei uns jeden Samstagnachmittag schnuppern kommen. Alle Kinder aus den Quartieren Seebach,
 Oerlikon und Affoltern sind bei uns im Cevi herzlich willkommen! Wir freuen uns über jedes neue Gesicht!
