@@ -58,10 +58,9 @@ points.forEach(pkt => {
     marker.src = base_url + '/_template_assets/weblogo.svg';
     marker.alt = '';
 
-    // Set inline, because the map sits inside a <figure> and the stylesheet
-    // stretches any image in one to the full width. The old renderer drew its
-    // markers onto the canvas, so page styles never reached them; MapLibre
-    // markers are ordinary elements in the document.
+    // The logo is a 600x600 svg, so the marker needs to be told how big it
+    // should be. display:block stops the browser from reserving space for a
+    // text baseline underneath it, which would push the logo off its point.
     marker.style.width = '32px';
     marker.style.height = '32px';
     marker.style.display = 'block';
