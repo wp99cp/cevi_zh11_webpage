@@ -1,6 +1,6 @@
 @charset "utf-8";
 
 // Import partials.
-@import "cevi_zh11/base";
-@import "cevi_zh11/footer";
-@import "cevi_zh11/header";
+@use "cevi_zh11/base";
+@use "cevi_zh11/footer";
+@use "cevi_zh11/header";

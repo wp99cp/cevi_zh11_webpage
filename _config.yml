@@ -62,6 +62,10 @@ defaults:
 
 imageoptim:
   svgo: false   # Disabling svgo because it throws some error
+  # pngout's licence forbids redistribution, so image_optim_pack does not ship a
+  # binary for it and every build warned about the missing worker. The other png
+  # workers (optipng, advpng, pngcrush, pngquant) run, so nothing is lost.
+  pngout: false
   jpegrecompress:
     allow_lossy: true
     quality: 3

@@ -1,6 +1,6 @@
-@import "colors";
-@import "shadows_borders";
-@import "sizes";
+@use "colors";
+@use "shadows_borders";
+@use "sizes";
 
 #header-container {
   position: fixed;
@@ -10,7 +10,7 @@
 
   background-color: white;
 
-  height: $header-height;
+  height: sizes.$header-height;
   overflow: hidden;
 
   #menu-opener {
@@ -31,10 +31,10 @@
 
   #header {
     padding: 0 10px;
-    border-bottom: $separator-border;
+    border-bottom: shadows_borders.$separator-border;
     height: calc(100% - 1px);
     overflow: hidden;
-    color: $title-gray;
+    color: colors.$title-gray;
     background-color: white;
 
     .header-title {
@@ -47,7 +47,7 @@
       top: 10px;
 
       // header text is aligned to the left on big screens
-      @media only screen and (min-width: $keep-nav-open-breakpoint) {
+      @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
         text-align: left;
         margin-left: 320px; // same as main body but correcting for margin of header (10px)
       }
@@ -61,7 +61,7 @@
       right: 0;
 
       // hide logo on big screen, as sidenav is always visible
-      @media only screen and (min-width: $keep-nav-open-breakpoint) {
+      @media only screen and (min-width: sizes.$keep-nav-open-breakpoint) {
         display: none;
       }
 
@@ -79,7 +79,7 @@
 
 }
 
-@media only screen and (max-width: $keep-nav-open-breakpoint) {
+@media only screen and (max-width: sizes.$keep-nav-open-breakpoint) {
   #menu-opener:not(:checked) ~ #header-nav-container {
     display: none;
   }
@@ -91,7 +91,7 @@
   top: 0;
   left: 0;
 
-  border-right: $separator-border;
+  border-right: shadows_borders.$separator-border;
 
   height: 100vh;
   width: 280px;
@@ -113,7 +113,7 @@
 
       span {
         padding: 10px 12px;
-        color: $font-color;
+        color: colors.$font-color;
         font-weight: 500;
       }
 
@@ -192,7 +192,7 @@
     .logoName {
       font-size: 22px;
       line-height: 35px;
-      color: $title-gray;
+      color: colors.$title-gray;
       grid-area: logoName;
       font-weight: 600;
     }
@@ -201,7 +201,7 @@
       font-size: 12px;
       line-height: 15px;
       grid-area: logoSubname;
-      color: $cevi-green;
+      color: colors.$cevi-green;
       font-weight: 600;
     }
 
