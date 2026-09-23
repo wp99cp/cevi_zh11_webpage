@@ -63,10 +63,10 @@ cards:
 
   - name: Benita Gisler
     cevi-name: Aloe
-    image:
+    image: /assets/portrait_pictures/placeholder.png
     function: Stufenleiter
 
   - name: Viviana Gisler
     cevi-name: Nyala
-    image:
+    image: /assets/portrait_pictures/placeholder.png
     function: Stufenleiter
