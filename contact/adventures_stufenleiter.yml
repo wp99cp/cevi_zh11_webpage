@@ -60,3 +60,13 @@ cards:
     image: /assets/portrait_pictures/susanna_laeuchli.jpg
     function: Stufenleiterin
     contact_form: forms/people/susanna_läuchli.yml
+
+  - name: Benita Gisler
+    cevi-name: Aloe
+    image: /assets/portrait_pictures/placeholder.png
+    function: Stufenleiter
+
+  - name: Viviana Gisler
+    cevi-name: Nyala
+    image: /assets/portrait_pictures/placeholder.png
+    function: Stufenleiter

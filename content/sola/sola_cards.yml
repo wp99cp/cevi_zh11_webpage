@@ -2,6 +2,18 @@ type: with_picture
 
 cards:
 
+  - name: conveniat27
+    cevi-name: Sola 2027
+    image: /assets/sola/sola_2027.png
+    function: noch offen
+    link: /sola/2025
+
+  - name: Chaos im Märliland
+    cevi-name: Sola 2026
+    image: /assets/sola/sola_2026.jpg
+    function: Elgg (ZH)
+    link: /sola/2026
+
   - name: Weltstadt-Wasserstadt
     cevi-name: Sola 2025
     image: /assets/sola/sola_2025.png
